@@ -105,10 +105,10 @@ def _set_axes_limits(ax, nodes_all, pad=0.15):
 def draw_panel_a(ax, seg_name='MED'):
     W = SEGMENTS[seg_name]['width']
     H = SEGMENTS[seg_name]['height']
-    nodes, elems, _, _ = generate_mesh(W, H)
+    nodes, elems, _, _ , _ = generate_mesh(W, H)
 
-    clr = {'stake': '#1f77b4', 'colmo': '#d62728'}
-    lw_map = {'stake': 2.2, 'colmo': 1.3}
+    clr = {'stake': '#1f77b4', 'colmo': '#d62728', 'colmo_embed': '#aaaaaa'}
+    lw_map = {'stake': 2.2, 'colmo': 1.3, 'colmo_embed': 0.9}
 
     for e in elems:
         p1, p2 = nodes[e['n1']], nodes[e['n2']]
@@ -148,14 +148,32 @@ def draw_panel_a(ax, seg_name='MED'):
                label='Estacas (verticais)'),
         Line2D([0], [0], color=clr['colmo'], lw=1.3,
                label='Colmos (horizontais)'),
+        Line2D([0], [0], color=clr['colmo_embed'], lw=0.9, ls='--',
+               label='Embutimento no talude (15 cm)'),
         Line2D([0], [0], marker='o', color='w', markerfacecolor='k',
                ms=4, lw=0, label='Nó interno'),
         Line2D([0], [0], marker='^', color='w', markerfacecolor='#555',
                markeredgecolor='k', ms=6, lw=0, label='Engaste (6 DOF fixo)'),
+        Line2D([0], [0], marker='o', color='w', markerfacecolor='#888',
+               markeredgecolor='k', ms=5, lw=0, label='Pino talude (u,v,w fixos)'),
         Line2D([0], [0], color=CLR_SOIL_LINE, lw=2.5,
                label='Nível do solo (z = 0)'),
     ]
     ax.legend(handles=leg, loc='upper left', fontsize=7.5, framealpha=0.92)
+
+    # ---- Barra de escala (0,5 m) ----
+    x0 = W + 0.05
+    z0 = -EMBED + 0.05
+    bar_len = 0.50
+    ax.plot([x0, x0], [0, 0], [z0, z0 + bar_len],
+            color='k', lw=2.0, zorder=10)
+    ax.plot([x0 - 0.03, x0 + 0.03], [0, 0], [z0, z0],
+            color='k', lw=1.5, zorder=10)
+    ax.plot([x0 - 0.03, x0 + 0.03], [0, 0],
+            [z0 + bar_len, z0 + bar_len],
+            color='k', lw=1.5, zorder=10)
+    ax.text(x0 + 0.06, 0, z0 + bar_len / 2, '0,5 m',
+            fontsize=8, ha='left', va='center', zorder=10)
 
 
 # ================================================================
@@ -195,7 +213,7 @@ def draw_panel_b(ax, seg_name='MED'):
                     color='#cccccc', lw=0.6, ls='--', alpha=0.45, zorder=1)
 
     # ---- Malha deformada (cor = FI) ----
-    lw_map = {'stake': 2.8, 'colmo': 1.6}
+    lw_map = {'stake': 2.8, 'colmo': 1.6, 'colmo_embed': 0.9}
     for ei, e in enumerate(elems):
         p1_d = nodes_def[e['n1']]
         p2_d = nodes_def[e['n2']]

@@ -66,6 +66,7 @@ MESH = dict(
     stake_embed=0.70,         # m
     elems_per_span=4,         # subdivisões por vão
     vert_spacing=0.12,        # m entre colmos
+    colmo_embed=0.15,         # m embutimento lateral de cada colmo no talude
 )
 
 
@@ -201,8 +202,27 @@ def generate_mesh(width, height):
                     n1=span_nds[ei], n2=span_nds[ei+1],
                     type='colmo', is_nz=is_nz, z=zl, layer=li))
 
+    # Embutimento lateral dos colmos nos taludes (pino nas extremidades)
+    emb_c = MESH['colmo_embed']
+    talude_ids = []
+    for li, zl in enumerate(z_layers):
+        # Nó do talude esquerdo: x = -emb_c
+        idx_l = len(nodes)
+        nodes.append([-emb_c, 0.0, zl])
+        nmap[('tl', li)] = idx_l
+        talude_ids.append(idx_l)
+        elements.append(dict(n1=idx_l, n2=nmap[('j', 0, li)],
+                             type='colmo_embed', is_nz=False, z=zl, layer=li))
+        # Nó do talude direito: x = width + emb_c
+        idx_r = len(nodes)
+        nodes.append([width + emb_c, 0.0, zl])
+        nmap[('tr', li)] = idx_r
+        talude_ids.append(idx_r)
+        elements.append(dict(n1=nmap[('j', n_stakes - 1, li)], n2=idx_r,
+                             type='colmo_embed', is_nz=False, z=zl, layer=li))
+
     nodes = np.array(nodes, dtype=float)
-    return nodes, elements, x_stakes, z_layers
+    return nodes, elements, x_stakes, z_layers, talude_ids
 
 
 # ================================================================
@@ -334,11 +354,15 @@ def assemble_K(nodes, elements, mat):
     return K, sec
 
 
-def get_fixed(nodes):
+def get_fixed(nodes, talude_ids=None):
     fixed = set()
+    talude_set = set(talude_ids) if talude_ids else set()
     for i, nd in enumerate(nodes):
-        if nd[2] < -1e-3:        # nós enterrados → apoio total
+        if nd[2] < -1e-3:           # nós enterrados → engaste total (6 DOF)
             for d in range(6):
+                fixed.add(i*6 + d)
+        elif i in talude_set:       # extremos no talude → pino (u,v,w fixos; θ livres)
+            for d in range(3):
                 fixed.add(i*6 + d)
     return sorted(fixed)
 
@@ -435,8 +459,8 @@ def run_simulation():
 
     for seg_name, sp in SEGMENTS.items():
         W, H = sp['width'], sp['height']
-        nodes, elems, xs, zl = generate_mesh(W, H)
-        fixed = get_fixed(nodes)
+        nodes, elems, xs, zl, talude_ids = generate_mesh(W, H)
+        fixed = get_fixed(nodes, talude_ids)
         nc = sum(1 for e in elems if e['type'] == 'colmo')
         ns = sum(1 for e in elems if e['type'] == 'stake')
         print(f"\n[{seg_name}] L={W:.2f}m  H={H:.2f}m | "
@@ -463,11 +487,12 @@ def run_simulation():
                         r.update(extra)
                         all_rows.append(r)
 
-                    mx_fi  = max(r['FI'] for r in res)
-                    mn_sf  = min(r['safety_factor'] for r in res)
-                    mx_sig = max(r['sigma_b_MPa'] for r in res)
-                    mx_tau = max(r['tau_s_MPa'] for r in res)
-                    mx_dl  = max(r['disp_lat_mm'] for r in res)
+                    res_s = [r for r in res if r['type'] != 'colmo_embed']
+                    mx_fi  = max(r['FI'] for r in res_s)
+                    mn_sf  = min(r['safety_factor'] for r in res_s)
+                    mx_sig = max(r['sigma_b_MPa'] for r in res_s)
+                    mx_tau = max(r['tau_s_MPa'] for r in res_s)
+                    mx_dl  = max(r['disp_lat_mm'] for r in res_s)
                     summary.append(dict(
                         segment=seg_name, hydro=hydro_key,
                         degradation=deg_key, time_yr=t,
@@ -499,7 +524,7 @@ def main():
 
     # Preview da malha
     for sn, sp in SEGMENTS.items():
-        nd, el, xs, zl = generate_mesh(sp['width'], sp['height'])
+        nd, el, xs, zl, _ = generate_mesh(sp['width'], sp['height'])
         nc = sum(1 for e in el if e['type'] == 'colmo')
         ns = sum(1 for e in el if e['type'] == 'stake')
         print(f"  {sn}: {len(nd)} nós  ({nc} colmo + {ns} estaca elem)  "

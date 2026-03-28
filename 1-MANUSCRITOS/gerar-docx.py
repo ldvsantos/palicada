@@ -189,13 +189,14 @@ def main():
     # Alvos padrão
     default_md_pt_controle = base_dir / "1-CONTROLE_PLITOSSOLO" / "Controle_Ravinas_Paliçadas.md"
     default_md_caracterizacao = base_dir / "2-CARACTERIZACAO_FEICAO" / "Caracterizacao_Feicao_Erosiva_Plintossolo_25122025.md"
+    default_md_fem_bambu = base_dir / "5-SIMULACAO_FEM_BAMBU" / "Simulacao_FEM_Bambu.md"
 
     # Permite: python gerar-docx.py caminho/para/arquivo.md [outro.md ...]
     md_targets: list[Path] = []
     if len(sys.argv) > 1:
         md_targets.extend(Path(arg) for arg in sys.argv[1:])
     else:
-        for candidate in (default_md_pt_controle, default_md_caracterizacao):
+        for candidate in (default_md_pt_controle, default_md_caracterizacao, default_md_fem_bambu):
             if candidate.exists():
                 md_targets.append(candidate)
 

@@ -37,11 +37,20 @@ def load():
     return df, ds, par
 
 
+def _param_hash():
+    """Retorna hash SHA-256 truncado (8 chars) do arquivo de parâmetros
+    para rastreabilidade entre figuras e simulação."""
+    import hashlib
+    p = RES / 'fem3d_parameters.json'
+    return hashlib.sha256(p.read_bytes()).hexdigest()[:8]
+
+
 def save(fig, name):
+    phash = _param_hash()
     for ext in ['png', 'pdf']:
         fig.savefig(FIG / f'{name}.{ext}')
     plt.close(fig)
-    print(f'  {name}')
+    print(f'  {name}  [params: {phash}]')
 
 
 # ================================================================
@@ -54,8 +63,8 @@ def _solve_single(seg_name, hydro_key, deg_key, t_yr):
                                   solve_system, get_fixed, postprocess)
     sp = SEGMENTS[seg_name]
     W, H = sp['width'], sp['height']
-    nodes, elems, xs, zl = generate_mesh(W, H)
-    fixed = get_fixed(nodes)
+    nodes, elems, xs, zl, talude_ids = generate_mesh(W, H)
+    fixed = get_fixed(nodes, talude_ids)
     k_deg = DEGRADATION[deg_key]
     mat = degrade(t_yr, k_deg)
     K, sec = assemble_K(nodes, elems, mat)
@@ -82,8 +91,8 @@ def fig1_wireframe(par):
 
     # ---- (a) Malha indeformada com legenda de componentes ----
     ax = axes[0]
-    nodes0, elems0, xs0, zl0 = generate_mesh(W, H)
-    colors_type = {'stake': '#1f77b4', 'colmo': '#d62728'}
+    nodes0, elems0, xs0, zl0, _ = generate_mesh(W, H)
+    colors_type = {'stake': '#1f77b4', 'colmo': '#d62728', 'colmo_embed': '#aaaaaa'}
     for e in elems0:
         x1, x2 = nodes0[e['n1']], nodes0[e['n2']]
         lw = 2.5 if e['type'] == 'stake' else 1.5
@@ -211,7 +220,8 @@ def fig1_wireframe(par):
 
     fig.tight_layout()
     fig.subplots_adjust(bottom=0.18)
-    save(fig, 'Fig_1_wireframe_3d')
+    # Fig_1_wireframe_3d é gerada exclusivamente por gerar_fig1_3d_pyvista.py (vista 3D)
+    plt.close(fig)
 
 
 # ================================================================
