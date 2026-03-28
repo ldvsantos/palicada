@@ -1,0 +1,23 @@
+HIGHLIGHTS — J. Braz. Soc. Mech. Sci. Eng. submission
+===============================================
+Manuscript: "Structural performance of bamboo palisades under degradation
+and hydrosedimentological loading evaluated by finite elements"
+
+Instructions: 3 to 5 bullet points · max 85 characters each (incl. spaces)
+Submitted as a separate file with "highlights" in the file name.
+
+---
+
+• FEM shows FS > 2.7 in all 567 degradation–hydrology combinations         [67 chars]
+
+• Vertical stakes consume 36% residual capacity; culms operate below 3%     [71 chars]
+
+• Interlaminar shear at culm–stake nodes accounts for 98% of failure index  [74 chars]
+
+• Sediment storage saturates before mechanical failure in every scenario     [72 chars]
+
+• Periodic desiltation, not reinforcement, governs palisade longevity        [73 chars]
+
+---
+Note: each bullet above is ≤ 85 characters including spaces (verified).
+These lines should be copied verbatim into the "Highlights" field of Editorial Manager.
