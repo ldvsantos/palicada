@@ -1,0 +1,78 @@
+{
+  "segments": {
+    "INF": {
+      "width": 1.5,
+      "height": 0.36
+    },
+    "MED": {
+      "width": 3.0,
+      "height": 0.76
+    },
+    "SUP": {
+      "width": 1.9,
+      "height": 0.5
+    }
+  },
+  "bamboo": {
+    "D_ext": 0.1,
+    "D_int": 0.07,
+    "E_L": 12000000000.0,
+    "G_LR": 1000000000.0,
+    "sigma_tL": 180000000.0,
+    "sigma_cL": 60000000.0,
+    "tau_LR": 10000000.0,
+    "rho": 680,
+    "nu": 0.32,
+    "node_shear_factor": 0.65,
+    "SCF": 1.8,
+    "wall_thinning": 0.001,
+    "min_wall": 0.003
+  },
+  "degradation": {
+    "optimistic": 0.03,
+    "baseline": 0.06,
+    "pessimistic": 0.1
+  },
+  "hydro": {
+    "median": {
+      "v_flow": 0.5,
+      "debris_N": 50
+    },
+    "P90": {
+      "v_flow": 1.5,
+      "debris_N": 200
+    },
+    "P95": {
+      "v_flow": 2.0,
+      "debris_N": 400
+    }
+  },
+  "sediment": {
+    "gamma": 15000.0,
+    "Ka": 0.333
+  },
+  "fill_curve": {
+    "0": 0,
+    "1": 0.35,
+    "2": 0.6,
+    "3": 0.75,
+    "4": 0.85,
+    "5": 0.92,
+    "6": 0.96,
+    "7": 0.98,
+    "8": 0.99,
+    "9": 1.0,
+    "10": 1.0
+  },
+  "mesh": {
+    "max_stake_spacing": 1.5,
+    "stake_embed": 0.7,
+    "elems_per_span": 4,
+    "vert_spacing": 0.12
+  },
+  "veg": {
+    "r": 2.0,
+    "tm": 2.0,
+    "mx": 0.3
+  }
+}

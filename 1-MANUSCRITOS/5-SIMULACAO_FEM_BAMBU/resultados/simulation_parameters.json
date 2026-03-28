@@ -1,0 +1,63 @@
+{
+  "geometry": {
+    "D_ext_m": 0.1,
+    "D_int_m": 0.07,
+    "L_culm_m": 1.5,
+    "n_internode": 5,
+    "L_node_m": 0.02,
+    "wall_thinning_rate_m_yr": 0.001
+  },
+  "material_initial": {
+    "E_L_GPa": 12.0,
+    "E_R_GPa": 1.0,
+    "sigma_T_L_MPa": 180.0,
+    "sigma_C_L_MPa": 60.0,
+    "tau_LR_MPa": 10.0,
+    "nu_LR": 0.32,
+    "rho_kg_m3": 680
+  },
+  "degradation_k": {
+    "optimistic": 0.03,
+    "baseline": 0.06,
+    "pessimistic": 0.1
+  },
+  "node_zone": {
+    "shear_factor": 0.65,
+    "stress_concentration_factor": 1.8
+  },
+  "segments": {
+    "SUP": {
+      "H_util_m": 0.5,
+      "slope_deg": 12
+    },
+    "MED": {
+      "H_util_m": 0.76,
+      "slope_deg": 10
+    },
+    "INF": {
+      "H_util_m": 0.36,
+      "slope_deg": 15
+    }
+  },
+  "hydrological": {
+    "median": {
+      "precip_mm": 95.0,
+      "v_flow_ms": 0.8,
+      "debris_N": 50
+    },
+    "P90": {
+      "precip_mm": 168.1,
+      "v_flow_ms": 2.0,
+      "debris_N": 200
+    },
+    "P95": {
+      "precip_mm": 181.8,
+      "v_flow_ms": 3.0,
+      "debris_N": 400
+    }
+  },
+  "n_elements": 28,
+  "n_nodes": 29,
+  "drag_coefficient": 1.2,
+  "serviceability_limit": 0.006666666666666667
+}

@@ -1,0 +1,84 @@
+
+=== t=0 | sigma ===
+LINEAR: y = 1.4297 + 2.0449*z | R2=0.9974 adj.R2=0.9968 F=1562.04 p=0.000002
+QUAD:   y = 1.3525 + 2.5273*z + -0.574251*z^2 | R2=0.9999 adj.R2=0.9998 F=10883.15 p=0.000002
+ANOVA lin vs quad: p=0.005408 => MELHOR: QUADRATICO
+Coefs linear:
+            Estimate Std. Error  t value     Pr(>|t|)
+(Intercept) 1.429684 0.02417978 59.12724 4.899740e-07
+z_mid       2.044901 0.05173995 39.52267 2.448583e-06
+Coefs quad:
+                              Estimate Std. Error   t value     Pr(>|t|)
+(Intercept)                  1.3525043 0.01246179 108.53207 1.724502e-06
+poly(z_mid, 2, raw = TRUE)1  2.5272717 0.06794038  37.19837 4.273367e-05
+poly(z_mid, 2, raw = TRUE)2 -0.5742508 0.07917621  -7.25282 5.407532e-03
+
+=== t=0 | tau ===
+LINEAR: y = 0.1278 + 0.0748*z | R2=0.9964 adj.R2=0.9955 F=1095.63 p=0.000005
+QUAD:   y = 0.1294 + 0.0652*z + 0.011399*z^2 | R2=0.9971 adj.R2=0.9951 F=511.07 p=0.000158
+ANOVA lin vs quad: p=0.455952 => MELHOR: LINEAR
+Coefs linear:
+              Estimate  Std. Error   t value     Pr(>|t|)
+(Intercept) 0.12781885 0.001055797 121.06384 2.791875e-08
+z_mid       0.07478001 0.002259197  33.10026 4.968071e-06
+Coefs quad:
+                              Estimate Std. Error    t value     Pr(>|t|)
+(Intercept)                 0.12935082 0.00210117 61.5613339 9.443528e-06
+poly(z_mid, 2, raw = TRUE)1 0.06520523 0.01145536  5.6921170 1.074936e-02
+poly(z_mid, 2, raw = TRUE)2 0.01139855 0.01334982  0.8538356 4.559521e-01
+
+=== t=5 | sigma ===
+LINEAR: y = 1.0219 + 1.1496*z | R2=0.9644 adj.R2=0.9555 F=108.33 p=0.000481
+QUAD:   y = 1.1419 + 0.3998*z + 0.892640*z^2 | R2=0.9823 adj.R2=0.9704 F=83.02 p=0.002364
+ANOVA lin vs quad: p=0.180674 => MELHOR: LINEAR
+Coefs linear:
+            Estimate Std. Error  t value     Pr(>|t|)
+(Intercept) 1.021880 0.05161843 19.79680 3.840778e-05
+z_mid       1.149641 0.11045324 10.40839 4.812303e-04
+Coefs quad:
+                             Estimate Std. Error    t value     Pr(>|t|)
+(Intercept)                 1.1418508 0.08085604 14.1220217 0.0007691226
+poly(z_mid, 2, raw = TRUE)1 0.3998232 0.44081860  0.9070016 0.4312705047
+poly(z_mid, 2, raw = TRUE)2 0.8926399 0.51372017  1.7375994 0.1806736704
+
+=== t=5 | tau ===
+LINEAR: y = 0.1255 + -0.0184*z | R2=0.0117 adj.R2=-0.2354 F=0.05 p=0.838666
+QUAD:   y = 0.2307 + -0.6761*z + 0.782902*z^2 | R2=0.6574 adj.R2=0.4290 F=2.88 p=0.200509
+ANOVA lin vs quad: p=0.097790 => MELHOR: LINEAR
+Coefs linear:
+               Estimate Std. Error    t value   Pr(>|t|)
+(Intercept)  0.12552710 0.03966705  3.1645181 0.03403619
+z_mid       -0.01843769 0.08487965 -0.2172216 0.83866573
+Coefs quad:
+                              Estimate Std. Error   t value   Pr(>|t|)
+(Intercept)                  0.2307491 0.05181702  4.453153 0.02107432
+poly(z_mid, 2, raw = TRUE)1 -0.6760752 0.28250090 -2.393179 0.09646476
+poly(z_mid, 2, raw = TRUE)2  0.7829018 0.32922024  2.378049 0.09778998
+
+=== t=10 | sigma ===
+LINEAR: y = 1.8354 + 1.0166*z | R2=0.5776 adj.R2=0.4720 F=5.47 p=0.079472
+QUAD:   y = 2.4444 + -2.7897*z + 4.531327*z^2 | R2=0.9302 adj.R2=0.8836 F=19.98 p=0.018448
+ANOVA lin vs quad: p=0.030078 => MELHOR: QUADRATICO
+Coefs linear:
+            Estimate Std. Error  t value     Pr(>|t|)
+(Intercept) 1.835385  0.2031268 9.035661 0.0008311043
+z_mid       1.016613  0.4346511 2.338917 0.0794724212
+Coefs quad:
+                             Estimate Std. Error   t value     Pr(>|t|)
+(Intercept)                  2.444395  0.1832407 13.339800 0.0009105545
+poly(z_mid, 2, raw = TRUE)1 -2.789701  0.9990092 -2.792468 0.0682786236
+poly(z_mid, 2, raw = TRUE)2  4.531327  1.1642231  3.892147 0.0300781907
+
+=== t=10 | tau ===
+LINEAR: y = 0.3489 + -0.3520*z | R2=0.9735 adj.R2=0.9668 F=146.72 p=0.000266
+QUAD:   y = 0.3846 + -0.5748*z + 0.265242*z^2 | R2=0.9904 adj.R2=0.9841 F=155.44 p=0.000934
+ANOVA lin vs quad: p=0.104160 => MELHOR: LINEAR
+Coefs linear:
+              Estimate Std. Error   t value     Pr(>|t|)
+(Intercept)  0.3489371 0.01358035  25.69427 1.362804e-05
+z_mid       -0.3519945 0.02905926 -12.11299 2.664810e-04
+Coefs quad:
+                              Estimate Std. Error   t value    Pr(>|t|)
+(Intercept)                  0.3845856 0.01808305 21.267738 0.000227437
+poly(z_mid, 2, raw = TRUE)1 -0.5747979 0.09858689 -5.830369 0.010050790
+poly(z_mid, 2, raw = TRUE)2  0.2652421 0.11489096  2.308642 0.104160349
