@@ -7,16 +7,36 @@ Gera DOCX a partir dos manuscritos .md
 """
 
 import os
+import re
 import subprocess
 import sys
 from pathlib import Path
 import time
 
 
+def _extract_yaml_csl(md_file: Path) -> Path | None:
+    """Lê o campo 'csl:' do YAML front matter do Markdown."""
+    try:
+        text = md_file.read_text(encoding="utf-8", errors="replace")
+    except Exception:
+        return None
+    m = re.search(r"^---\s*\n(.*?)\n---", text, re.DOTALL)
+    if not m:
+        return None
+    for line in m.group(1).splitlines():
+        cm = re.match(r"^csl:\s*['\"]?(.+?)['\"]?\s*$", line)
+        if cm:
+            csl_path = (md_file.parent / cm.group(1)).resolve()
+            if csl_path.exists():
+                return csl_path
+    return None
+
+
 def _build_resource_path(md_file: Path, base_dir: Path) -> str:
     paths = [
         md_file.parent,
         md_file.parent / "media",
+        md_file.parent / "figuras",
         base_dir,
         base_dir / "media",
     ]
@@ -190,13 +210,14 @@ def main():
     default_md_pt_controle = base_dir / "1-CONTROLE_PLITOSSOLO" / "Controle_Ravinas_Paliçadas.md"
     default_md_caracterizacao = base_dir / "2-CARACTERIZACAO_FEICAO" / "Caracterizacao_Feicao_Erosiva_Plintossolo_25122025.md"
     default_md_fem_bambu = base_dir / "5-SIMULACAO_FEM_BAMBU" / "Simulacao_FEM_Bambu.md"
+    default_md_fem_bambu_en = base_dir / "5-SIMULACAO_FEM_BAMBU" / "Simulacao_FEM_Bambu_EN.md"
 
     # Permite: python gerar-docx.py caminho/para/arquivo.md [outro.md ...]
     md_targets: list[Path] = []
     if len(sys.argv) > 1:
         md_targets.extend(Path(arg) for arg in sys.argv[1:])
     else:
-        for candidate in (default_md_pt_controle, default_md_caracterizacao, default_md_fem_bambu):
+        for candidate in (default_md_pt_controle, default_md_caracterizacao, default_md_fem_bambu, default_md_fem_bambu_en):
             if candidate.exists():
                 md_targets.append(candidate)
 
@@ -212,11 +233,15 @@ def main():
             print(f"\n❌ Arquivo Markdown não encontrado: {md_file}")
             continue
         output_file = md_file.with_suffix(".docx")
+        # Usar CSL do YAML do manuscrito, se presente; senão, usar padrão (apa.csl)
+        effective_csl = _extract_yaml_csl(md_file) or csl_file
+        if effective_csl != csl_file:
+            print(f"\U0001f4d6 CSL do YAML: {effective_csl.name}")
         result = gerar_docx(
             md_file=md_file,
             output_file=output_file,
             bib_file=bib_file,
-            csl_file=csl_file,
+            csl_file=effective_csl,
             template_file=template_file,
             lua_filter_file=lua_filter_file,
             apendices_file=None,

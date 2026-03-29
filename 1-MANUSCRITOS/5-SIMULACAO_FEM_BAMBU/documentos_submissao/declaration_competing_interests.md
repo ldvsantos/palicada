@@ -1,7 +1,7 @@
 # Declaration of Competing Interests
 
-**Journal:** Journal of the Brazilian Society of Mechanical Sciences and Engineering (Springer, ISSN 1806-3691)  
-**Manuscript title:** Structural performance of bamboo palisades under degradation and hydro-sedimentary loading assessed via finite element analysis  
+**Journal:** International Journal of River Basin Management (Taylor & Francis / IAHR, ISSN 1571-5124)  
+**Manuscript title:** Biodegradation rate rather than hydrological regime as the dominant control on structural safety of bamboo palisades in gully erosion management  
 **Authors:** Luiz Diego Vidal Santos, Emersson Guedes da Silva, Francisco Sandro Rodrigues Holanda, Marcos Oliveira Santos, Renisson Neponuceno de Araújo Filho, Henrique Antonio Silva, Sandro Griza
 
 **Corresponding author:** Luiz Diego Vidal Santos
@@ -10,7 +10,7 @@
 
 ## Declaration
 
-The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
+The authors report there are no competing interests to declare.
 
 ---
 
@@ -35,4 +35,4 @@ This research did not receive any specific grant from funding agencies in the pu
 
 ---
 
-> **Submission instruction:** Complete the Elsevier declarations tool at https://declarations.elsevier.com/ using the information above. Save the resulting Word document (.doc/.docx) and upload it during the "Attach/upload files" step in Editorial Manager. Author signatures are not required.
+> **Submission instruction:** Include this declaration in the manuscript text under the heading "Disclosure of interest" and upload via ScholarOne at https://mc.manuscriptcentral.com/jrbm.

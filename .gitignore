@@ -21,3 +21,5 @@ Thumbs.db
 
 # Temporary
 1-MANUSCRITOS/scripts/tmp_*
+
+/.luarc.json

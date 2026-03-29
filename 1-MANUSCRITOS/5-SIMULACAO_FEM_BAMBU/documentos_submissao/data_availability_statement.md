@@ -1,7 +1,7 @@
 # Data Availability Statement
 
-**Journal:** Journal of the Brazilian Society of Mechanical Sciences and Engineering  
-**Manuscript title:** Structural performance of bamboo palisades under degradation and hydro-sedimentary loading assessed via finite element analysis
+**Journal:** International Journal of River Basin Management  
+**Manuscript title:** Biodegradation rate rather than hydrological regime as the dominant control on structural safety of bamboo palisades in gully erosion management
 
 ---
 
@@ -13,15 +13,15 @@ The Python source code implementing the three-dimensional finite element model (
 
 ---
 
-## Checklist for data deposit (Ecological Engineering — Option C)
+## Checklist for data deposit (Taylor & Francis Basic Data Sharing Policy)
 
-Ecological Engineering requires authors to deposit research data in a relevant data repository, cite and link to the dataset in the article. The following actions are needed before final submission:
+Authors are encouraged to share or make open the data supporting the results or analyses presented in their paper. The following actions are needed before final submission:
 
 | Action | Status | Notes |
 |---|---|---|
 | Deposit code and processed data in a persistent repository | ⬜ To do | Archive the GitHub repository as a versioned release on **Zenodo** (https://zenodo.org) to obtain a DOI; this is more suitable than GitHub alone as it provides a permanent, citable identifier |
 | Cite the dataset in the reference list | ⬜ To do | Add a [dataset] reference following Elsevier format (see example below) |
-| Add dataset DOI to the journal submission form | ⬜ To do | Paste the Zenodo DOI when prompted in Editorial Manager |
+| Add dataset DOI to the journal submission form | ⬜ To do | Paste the Zenodo DOI when prompted in ScholarOne |
 | State unavailability of any sensitive raw data | ⬜ To do | If pluviometric raw data from third-party stations cannot be shared, state: "Raw pluviometric data are owned by [INMET/SEMARH-SE] and are available from the corresponding institution upon request." |
 
 ---

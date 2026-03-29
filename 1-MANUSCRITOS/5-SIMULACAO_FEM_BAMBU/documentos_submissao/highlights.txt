@@ -1,22 +1,23 @@
-HIGHLIGHTS — J. Braz. Soc. Mech. Sci. Eng. submission
-===============================================
-Manuscript: "Structural performance of bamboo palisades under degradation
-and hydro-sedimentary loading assessed via finite element analysis"
+HIGHLIGHTS — International Journal of River Basin Management submission
+======================================================================
+Manuscript: "Biodegradation rate rather than hydrological regime as the
+dominant control on structural safety of bamboo palisades in gully
+erosion management"
 
 Instructions: 3 to 5 bullet points · max 85 characters each (incl. spaces)
 Submitted as a separate file with "highlights" in the file name.
 
 ---
 
-• FEM shows FS > 2.7 in all 567 degradation–hydrology combinations         [67 chars]
+• Sediment storage saturates before structural failure in every scenario    [72 chars]
+
+• Biodegradation rate, not rainfall, controls long-term safety factor       [70 chars]
 
 • Vertical stakes consume 36% residual capacity; culms operate below 3%     [71 chars]
 
 • Interlaminar shear at culm–stake nodes accounts for 98% of failure index  [74 chars]
 
-• Sediment storage saturates before mechanical failure in every scenario     [72 chars]
-
-• Periodic desiltation, not reinforcement, governs palisade longevity        [73 chars]
+• Periodic desiltation is the priority intervention for palisade longevity   [74 chars]
 
 ---
 Note: each bullet above is ≤ 85 characters including spaces (verified).
