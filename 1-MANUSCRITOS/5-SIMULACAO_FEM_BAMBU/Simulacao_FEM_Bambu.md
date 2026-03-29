@@ -1,5 +1,5 @@
 ---
-title: "Taxa de biodegradação e não regime hidrológico como controle dominante da segurança estrutural de paliçadas de bambu no manejo de erosão linear"
+title: "Taxa de biodegradação como controle dominante da segurança estrutural de paliçadas de bambu no manejo de erosão linear"
 author:
   - name: Luiz Diego Vidal Santos
     affiliation: "1*"

@@ -1,7 +1,7 @@
 # Declaration of Competing Interests
 
 **Journal:** International Journal of River Basin Management (Taylor & Francis / IAHR, ISSN 1571-5124)  
-**Manuscript title:** Biodegradation rate rather than hydrological regime as the dominant control on structural safety of bamboo palisades in gully erosion management  
+**Manuscript title:** Biodegradation rate as the dominant control on structural safety of bamboo palisades in gully erosion management  
 **Authors:** Luiz Diego Vidal Santos, Emersson Guedes da Silva, Francisco Sandro Rodrigues Holanda, Marcos Oliveira Santos, Renisson Neponuceno de Araújo Filho, Henrique Antonio Silva, Sandro Griza
 
 **Corresponding author:** Luiz Diego Vidal Santos

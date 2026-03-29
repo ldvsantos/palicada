@@ -1,7 +1,7 @@
 # CRediT Author Contributions Statement
 
 **Journal:** International Journal of River Basin Management  
-**Manuscript title:** Biodegradation rate rather than hydrological regime as the dominant control on structural safety of bamboo palisades in gully erosion management
+**Manuscript title:** Biodegradation rate as the dominant control on structural safety of bamboo palisades in gully erosion management
 
 ---
 
