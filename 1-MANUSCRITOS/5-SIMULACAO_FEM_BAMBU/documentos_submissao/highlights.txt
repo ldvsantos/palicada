@@ -1,7 +1,7 @@
 HIGHLIGHTS — J. Braz. Soc. Mech. Sci. Eng. submission
 ===============================================
 Manuscript: "Structural performance of bamboo palisades under degradation
-and hydrosedimentological loading evaluated by finite elements"
+and hydro-sedimentary loading assessed via finite element analysis"
 
 Instructions: 3 to 5 bullet points · max 85 characters each (incl. spaces)
 Submitted as a separate file with "highlights" in the file name.

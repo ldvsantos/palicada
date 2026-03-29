@@ -6,7 +6,7 @@ Springer
 
 Dear Editors,
 
-We are pleased to submit our manuscript entitled "Structural performance of bamboo palisades under degradation and hydrosedimentological loading evaluated by finite elements" for consideration in the *Journal of the Brazilian Society of Mechanical Sciences and Engineering* (*J. Braz. Soc. Mech. Sci. Eng.*).
+We are pleased to submit our manuscript entitled "Structural performance of bamboo palisades under degradation and hydro-sedimentary loading assessed via finite element analysis" for consideration in the *Journal of the Brazilian Society of Mechanical Sciences and Engineering* (*J. Braz. Soc. Mech. Sci. Eng.*).
 
 Bamboo (*Bambusa vulgaris*) palisades are widely adopted in tropical bioengineering as permeable check dams for gully erosion control. Despite growing field evidence of their sediment-trapping efficiency, the temporal evolution of their structural integrity under progressive biodegradation coupled with hydrosedimentological loading has not been quantified. This gap impairs the design of maintenance protocols and the estimation of functional longevity, both critical for ecosystem restoration planning. The present study addresses this gap through a three-dimensional finite element model (Euler-Bernoulli beam elements, Tsai-Hill failure criterion) combining 21 time steps, three degradation scenarios, and three hydrological scenarios (567 combinations total), calibrated with two years of field monitoring data from a Plinthosol gully in northeastern Brazil.
 

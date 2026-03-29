@@ -82,15 +82,7 @@ for area in df['AREA'].unique():
              linewidth=2.5, markersize=7, label=f'Sedimentação Incremental - {area}', 
              alpha=0.85, markeredgecolor='black', markeredgewidth=0.5)
 
-# Eventos extremos INCREMENTAL
-ax2.scatter(eventos_incremental['DATA'], eventos_incremental['FRACIONADO'],
-           color='gold', s=300, marker='D', zorder=9,
-           label=f'Incremental Extrema (≥P95: {limiar_incremental:.4f} cm)',
-           edgecolors='darkgoldenrod', linewidth=2, alpha=0.95)
-
-# Limiar incremental
-ax2.axhline(y=limiar_incremental, color='goldenrod', linestyle=':', linewidth=2.5, 
-           alpha=0.7, label='Limiar P95 Incremental')
+# (eventos extremos incrementais e limiar P95 incremental removidos para clareza)
 
 ax2.set_ylabel('Sedimentação Incremental (cm/mês)', fontweight='bold', fontsize=13, color='saddlebrown')
 ax2.tick_params(axis='y', labelcolor='saddlebrown', labelsize=11)
@@ -110,27 +102,17 @@ ax1.legend(lines1 + lines2, labels1 + labels2,
           loc='upper left', fontsize=10, framealpha=0.95,
           edgecolor='black', fancybox=True, shadow=True)
 
-# Estatísticas
-stats_text = f"""Estatísticas (Incremental):
-• Precipitação média: {df['RAINFALL'].mean():.1f} mm
-• Sedimentação incremental média: {df['FRACIONADO'].mean():.4f} cm/mês
-• Sedimentação incremental máxima: {df['FRACIONADO'].max():.4f} cm/mês
-• Eventos precipitação extrema: {len(eventos_precip)}
-• Eventos incremental extrema: {len(eventos_incremental)}
-• Período: {df['DATA'].min().strftime('%b/%Y')} - {df['DATA'].max().strftime('%b/%Y')}
-
-Interpretação:
-Sedimentação incremental reflete TAXA mensal de erosão
-(resposta imediata ao evento do mês)"""
-
-ax1.text(0.98, 0.50, stats_text, transform=ax1.transAxes,
-        fontsize=9, verticalalignment='top', horizontalalignment='right',
-        bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.85, edgecolor='black'),
-        family='monospace')
+# (quadro de estatísticas removido para clareza)
 
 plt.tight_layout()
 plt.savefig(FIGURAS_DIR / "19_serie_eventos_extremos_INCREMENTAL.png", 
            dpi=300, bbox_inches='tight')
+# Cópia para o projeto IC
+ic_dir = BASE_DIR.parent.parent / "1-MANUSCRITOS" / "6-PROJETO_IC"
+if ic_dir.exists():
+    plt.savefig(ic_dir / "Fig_serie_temporal_sedimentacao.png",
+                dpi=300, bbox_inches='tight')
+    print(f"✓ Cópia salva em: {ic_dir / 'Fig_serie_temporal_sedimentacao.png'}")
 print("\n✓ Figura salva: 19_serie_eventos_extremos_INCREMENTAL.png")
 plt.close()
 

@@ -77,13 +77,21 @@ A seleção dos colmos seguirá critérios de diâmetro externo compatível com 
 
 ![Figura 2 -- (a) Ravina desenvolvida sobre Plintossolo Argilúvico distrófico com paliçadas de *Bambusa vulgaris* instaladas em série (P1 a P4) e (b) esquema construtivo, mostrando colmos horizontais (longarinas) fixados por arame recozido às estacas verticais parcialmente cravadas no solo e confinamento lateral nos taludes.](../5-SIMULACAO_FEM_BAMBU/figuras/Fig_0_area_estudo.png){width="6.5in"}
 
-O solo é classificado como Plintossolo Argilúvico distrófico (Figura 3), com horizonte Bt de elevada impedância hidráulica (40 a 150+ cm de profundidade), baixa coesão efetiva nos horizontes superficiais e textura argilosa a partir de 10 cm de profundidade. O clima é tropical úmido (As, Köppen-Geiger), com precipitação anual média de 1.092 mm e estação chuvosa concentrada entre março e julho.
+Quanto ao solos, este foi classificado como Plintossolo Argilúvico distrófico (Figura 3), com horizonte Bt de elevada impedância hidráulica (40 a 150+ cm de profundidade), baixa coesão efetiva nos horizontes superficiais e textura argilosa a partir de 10 cm de profundidade. O clima é tropical úmido (As, Köppen-Geiger), com precipitação anual média de 1.092 mm e estação chuvosa concentrada entre março e julho.
 
 ![Figura 3 -- Perfil do solo classificado como Plintossolo Argilúvico distrófico.](../1-CONTROLE_PLITOSSOLO/media/artigo/image11.png){width="2.5in"}
 
-Os ensaios de campo serão realizados no segmento MED ($L = 3{,}00$ m, $H = 0{,}76$ m, três estacas espaçadas 1,50 m), que acumula os maiores índices de falha previstos pelo modelo ($FI_{max} = 0{,}36$ a $t = 10$ anos sob degradação pessimista). A vista geral da ravina experimental e o perfil longitudinal com a posição das paliçadas são apresentados na Figura 4.
+O monitoramento hidrossedimentológico prévio, conduzido entre junho de 2023 e maio de 2025 mediante 24 ciclos mensais de medição por pinos de erosão e registro pluviométrico da estação automática de Aracaju-SE (INMET), caracterizou o regime de solicitação ao qual as paliçadas estão submetidas. O sítio experimental apresenta precipitação mensal média de 107 $\pm$ 116 mm, com amplitude de 0 a 397 mm e índice de erosividade acumulado ($EI_{30}$) de 5.651 MJ mm ha$^{-1}$ h$^{-1}$, configurando regime pluvial de elevada variabilidade intermensal e potencial erosivo concentrado entre março e julho (Figura 4). A sedimentação incremental acumulada nos segmentos SUP, MED e INF totalizou 48, 29 e 51 cm, respectivamente, com 72% a 74% da deposição nos segmentos extremos concentrada na estação chuvosa, enquanto o segmento MED acumulou apenas 46% no mesmo período, o que sugere remobilização parcial do material retido em eventos subsequentes.
 
-![Figura 4 -- Vista geral da ravina experimental com paliçadas de *Bambusa vulgaris* instaladas em série (P1 a P4): (a) fotografia de campo e (b) perfil longitudinal esquemático indicando o segmento MED instrumentado.](Fig_metodologia_4a.png){width="6.5in"}
+![Figura 4 -- Série temporal de precipitação mensal e sedimentação incremental por segmento (SUP, MED, INF), com marcação dos eventos extremos de precipitação acima do limiar P95 (período: junho/2023 a maio/2025).](Fig_serie_temporal_sedimentacao.png){width="6.5in"}
+
+A contribuição percentual de cada segmento ao total depositado mensalmente (Figura 5) indica alternância entre períodos dominados pelo aporte nos segmentos SUP e INF, ao passo que o MED mantém proporção mais estável (média de 39%). Essa heterogeneidade espacial e temporal da carga sedimentar implica que as paliçadas operam sob solicitações mecânicas variáveis ao longo do ano, condição que será reproduzida durante os ensaios de campo e que justifica a adoção de parâmetros mecânicos obtidos diretamente no sítio experimental.
+
+![Figura 5 -- Composição mensal da deposição incremental retida por segmento, determinada pelo método dos pinos (barras empilhadas a 100%).](Fig_composicao_deposicional.png){width="6.5in"}
+
+Os ensaios de campo serão realizados no segmento MED ($L = 3{,}00$ m, $H = 0{,}76$ m, três estacas espaçadas 1,50 m), que acumula os maiores índices de falha previstos pelo modelo ($FI_{max} = 0{,}36$ a $t = 10$ anos sob degradação pessimista). A vista geral da ravina experimental e o perfil longitudinal com a posição das paliçadas são apresentados na Figura 6.
+
+![Figura 6 -- Vista geral da ravina experimental com paliçadas de *Bambusa vulgaris* instaladas em série (P1 a P4): (a) fotografia de campo e (b) perfil longitudinal esquemático indicando o segmento MED instrumentado.](Fig_metodologia_4a.png){width="6.5in"}
 
 ## Ensaio de cisalhamento interlaminar (regiões nodal e internodal)
 
@@ -91,7 +99,7 @@ A resistência ao cisalhamento interlaminar ($\tau_{LR}$) será determinada pelo
 
 As dimensões nominais seguirão a relação span/thickness = 4 prescrita pela norma (ISO 22157:2019), com comprimento $L = 4h + 2$ mm, largura $b = h$ e espessura $h$ igual à espessura de parede do colmo (12 a 18 mm). O plano de cisalhamento será orientado na direção longitudinal-radial (L-R), coincidente com o plano de falha interlaminar do modelo FEM. Serão preparados 10 corpos de prova internodais e 10 nodais por colmo, totalizando 5 colmos e 100 corpos de prova. A umidade de equilíbrio será estabilizada em câmara climatizada a 20 ± 2 °C e 65 ± 5% UR por 72 h antes do ensaio.
 
-Os corpos de prova serão posicionados em dispositivo de flexão de três pontos com rolos de 6 mm de diâmetro, montados em máquina universal de ensaios (capacidade mínima de 10 kN, célula de carga Classe 1 conforme ISO 7500-1), com velocidade de carregamento de 1,0 mm/min até ruptura ou queda de 30% da carga máxima. A resistência ao cisalhamento interlaminar aparente será calculada por $\tau_{LR} = 0{,}75 \cdot F_{max} / (b \cdot h)$, e o fator de redução nodal será obtido pela razão $\bar{\tau}_{nodal} / \bar{\tau}_{internodal}$. A significância da diferença entre regiões será avaliada pelo teste t de Student (ou Mann-Whitney U, se a normalidade for rejeitada por Shapiro-Wilk, $\alpha = 0{,}05$).
+Os corpos de prova serão posicionados em dispositivo de flexão de três pontos com rolos de 6 mm de diâmetro, montados em máquina universal de ensaios (Figura 8a, capacidade mínima de 10 kN, célula de carga Classe 1 conforme ISO 7500-1), com velocidade de carregamento de 1,0 mm/min até ruptura ou queda de 30% da carga máxima. A resistência ao cisalhamento interlaminar aparente será calculada por $\tau_{LR} = 0{,}75 \cdot F_{max} / (b \cdot h)$, e o fator de redução nodal será obtido pela razão $\bar{\tau}_{nodal} / \bar{\tau}_{internodal}$. A significância da diferença entre regiões será avaliada pelo teste t de Student (ou Mann-Whitney U, se a normalidade for rejeitada por Shapiro-Wilk, $\alpha = 0{,}05$).
 
 ## Ensaio de degradação *in situ*
 
@@ -101,9 +109,9 @@ Em cada retirada, 10 corpos de prova de cisalhamento (5 nodais + 5 internodais) 
 
 Um sensor de temperatura e umidade do solo (tipo capacitivo, resolução 0,1 °C / 0,1% v/v) será instalado a 15 cm de profundidade, adjacente aos corpos de prova, com registro horário em datalogger autônomo. A precipitação diária será obtida da estação meteorológica automática de Aracaju-SE (INMET).
 
-A concentração dos corpos de prova enterrados e dos instrumentos de campo no segmento MED resultará numa sobreposição espacial que exigirá planejamento de layout para evitar interferência entre ensaios simultâneos (Figura 5). A disposição dos sacos de tela com corpos de prova a montante da paliçada, na zona de deposição sedimentar, e a instalação dos extensômetros, comparadores de deslocamento, macaco de prova de carga e inclinômetros nos colmos e estacas instrumentados seguirão o arranjo indicado nos painéis (a) e (b), que orientará a sequência de colheita semestral sem perturbação dos sensores permanentes.
+A concentração dos corpos de prova enterrados e dos instrumentos de campo no segmento MED resultará numa sobreposição espacial que exigirá planejamento de layout para evitar interferência entre ensaios simultâneos (Figura 7). A disposição dos sacos de tela com corpos de prova a montante da paliçada, na zona de deposição sedimentar, e a instalação dos extensômetros, comparadores de deslocamento, macaco de prova de carga e inclinômetros nos colmos e estacas instrumentados seguirão o arranjo indicado nos painéis (a) e (b), que orientará a sequência de colheita semestral sem perturbação dos sensores permanentes.
 
-![Figura 5 -- Esquema dos ensaios de campo no segmento MED: (a) localização dos instrumentos na paliçada (extensômetros, comparador de deslocamento, macaco de prova de carga e inclinômetro) e (b) disposição dos corpos de prova no ensaio de degradação *in situ*.](Fig_metodologia_4b.png){width="6.5in"}
+![Figura 7 -- Esquema dos ensaios de campo no segmento MED: (a) localização dos instrumentos na paliçada (extensômetros, comparador de deslocamento, macaco de prova de carga e inclinômetro) e (b) disposição dos corpos de prova no ensaio de degradação *in situ*.](Fig_metodologia_4b.png){width="6.5in"}
 
 ## Ensaio de flexão estática em colmos inteiros
 
@@ -119,7 +127,7 @@ Após ciclos de acomodação (0 → 100 N → 0, três repetições), o carregam
 
 ## Prova de carga lateral em estacas *in situ*
 
-A curva carga-deslocamento lateral ($p$-$y$) de estacas de *B. vulgaris* cravadas no Plintossolo Argilúvico será obtida em três estacas do segmento MED (externas E1 e E3, central E2), com pelo menos 6 meses de reconsolidação do solo, seguindo o protocolo de @broms_1964 e a formulação de curvas $p$-$y$ de @matlock_1970. O carregamento lateral será aplicado por macaco hidráulico (capacidade 20 kN) posicionado a 50 mm acima do nível do solo, reagindo contra viga de referência ancorada em estacas de aço independentes a distância mínima de 2 m. A carga será medida por célula de carga digital (resolução 1 N) e o deslocamento lateral no ponto de aplicação por dois comparadores mecânicos (curso 25 mm, resolução 0,01 mm), com terceiro comparador a 300 mm acima para registro do perfil de deslocamento.
+A curva carga-deslocamento lateral ($p$-$y$) de estacas de *B. vulgaris* cravadas no Plintossolo Argilúvico será obtida em três estacas do segmento MED (externas E1 e E3, central E2), com pelo menos 6 meses de reconsolidação do solo, seguindo o protocolo de @broms_1964 e a formulação de curvas $p$-$y$ de @matlock_1970. O carregamento lateral será aplicado por macaco hidráulico (Figura 8f, capacidade 20 kN) posicionado a 50 mm acima do nível do solo, reagindo contra viga de referência ancorada em estacas de aço independentes a distância mínima de 2 m. A carga será medida por célula de carga digital (Figura 8d, resolução 1 N) e o deslocamento lateral no ponto de aplicação por dois comparadores mecânicos (Figura 8e, curso 25 mm, resolução 0,01 mm), com terceiro comparador a 300 mm acima para registro do perfil de deslocamento.
 
 O carregamento seguirá protocolo incremental com patamares de 0,25 kN mantidos por 5 minutos, até carga máxima de 5 kN ou deslocamento de 15 mm. Serão executados três ciclos em cada estaca. O coeficiente de reação horizontal ($k_h$) será calculado pela inclinação da região linear do primeiro ciclo: $k_h = \Delta p / (\Delta y \cdot D_{ext})$ [@broms_1964], e comparado à faixa de 10 a 20 MN/m³ admitida no modelo para solos argilosos.
 
@@ -131,7 +139,7 @@ O deslocamento medido será comparado com a previsão do modelo FEM para o mesmo
 
 ## Ensaio de fator de concentração de tensão por extensometria
 
-O fator de concentração de tensão (SCF) real nas zonas nodais e junções colmo-estaca [@pilkey_pilkey_2008] será determinado por extensômetros de resistência elétrica (strain gauges uniaxiais, base de 5 mm, fator de gauge 2,0 ± 0,5%) colados em colmos inteiros. Três extensômetros serão posicionados na zona internodal, no terço central do entrenó e espaçados 120° na circunferência, enquanto outros três serão instalados na zona nodal a 5 mm de cada lado do diafragma e sobre o próprio diafragma, e um terceiro conjunto de três extensômetros será disposto na zona de junção colmo-estaca a 5 mm acima e 5 mm abaixo do ponto de amarração e sobre o arame.
+O fator de concentração de tensão (SCF) real nas zonas nodais e junções colmo-estaca [@pilkey_pilkey_2008] será determinado por extensômetros de resistência elétrica (Figura 8b, c, strain gauges uniaxiais, base de 5 mm, fator de gauge 2,0 ± 0,5%) colados em colmos inteiros. Três extensômetros serão posicionados na zona internodal, no terço central do entrenó e espaçados 120° na circunferência, enquanto outros três serão instalados na zona nodal a 5 mm de cada lado do diafragma e sobre o próprio diafragma, e um terceiro conjunto de três extensômetros será disposto na zona de junção colmo-estaca a 5 mm acima e 5 mm abaixo do ponto de amarração e sobre o arame.
 
 Colmos de 600 mm (com nó no terço central) serão submetidos a flexão em quatro pontos conforme Seção 5.3, com carregamento incremental em patamares de 0,5 kN mantidos por 30 segundos. As deformações serão adquiridas por condicionador de sinais (ponte de Wheatstone 1/4, excitação 2,5 V) a 10 Hz. O SCF será calculado como $SCF = \varepsilon_{max,nodal} / \varepsilon_{nominal,internodal}$ para cada nível de carga. Serão ensaiados 8 colmos (4 com nó, 4 com junção amarrada), reportando média, desvio padrão e intervalo de confiança de 95%.
 
@@ -139,11 +147,9 @@ Colmos de 600 mm (com nó no terço central) serão submetidos a flexão em quat
 
 Os parâmetros experimentais obtidos nos ensaios 5.1 a 5.7 serão incorporados ao modelo tridimensional de elementos finitos com vigas de Euler-Bernoulli (12 DOF) e critério de falha de Tsai-Hill [@tsai_wu_1971; @daniel_ishai_2006; @bacharoudis_philippidis_2015]. A substituição abrangerá o $\tau_{LR}$ e o fator de redução nodal obtidos no ensaio de cisalhamento, as curvas de degradação $k_\tau$ e $k_\sigma$ derivadas do monitoramento *in situ*, o $E_L$ e a $\sigma_{fL}$ com variabilidade estimada na flexão estática, o $k_\theta$ da conexão colmo-estaca, o $k_h$ para molas de Winkler [@hetenyi_1946; @reese_van_impe_2011] em substituição ao engaste, a validação direta de deslocamento em campo e o SCF nas zonas de concentração de tensão. Os fatores de segurança, os limiares de manutenção e os cenários de vida útil serão recalculados com base nos novos parâmetros.
 
-Os principais equipamentos previstos para a execução dos ensaios laboratoriais e de campo são apresentados na Figura 6, que ilustra a máquina universal de ensaios mecânicos, extensômetros de resistência elétrica com aplicação em corpo de prova compósito, célula de carga, comparador mecânico e macaco hidráulico.
+Os principais equipamentos previstos para a execução dos ensaios laboratoriais e de campo são apresentados na Figura 8, que ilustra a máquina universal de ensaios mecânicos, extensômetros de resistência elétrica com aplicação em corpo de prova compósito, célula de carga, comparador mecânico e macaco hidráulico.
 
-![Figura 6 -- Equipamentos previstos para os ensaios: (a) máquina universal de ensaios mecânicos, (b) extensômetro de resistência elétrica (*strain gauge*), (c) extensômetro colado em corpo de prova compósito, (d) célula de carga, (e) comparador mecânico e (f) macaco hidráulico. Imagens sob licenças CC0 e CC BY-SA (Wikimedia Commons).](Fig_equipamentos.png){width="6.5in"}
-
-
+![Figura 8 -- Equipamentos previstos para os ensaios: (a) máquina universal de ensaios mecânicos, (b) extensômetro de resistência elétrica (*strain gauge*), (c) extensômetro colado em corpo de prova compósito, (d) célula de carga, (e) comparador mecânico e (f) macaco hidráulico. Imagens sob licenças CC0 e CC BY-SA (Wikimedia Commons).](Fig_equipamentos.png){width="6.5in"}
 
 ## Análise estatística
 
@@ -173,7 +179,7 @@ A análise multivariada dos sete ensaios é conduzida por Análise de Componente
 
 # Cronograma de atividades (24 meses)
 
-![Figura 7 -- Cronograma de atividades distribuídas em 24 meses, com categorização por tipo de ensaio. O ensaio de degradação *in situ* (5.2) estende-se até o 30.° mês; as retiradas nos meses 24 e 30 podem ser executadas como desdobramento.](Fig_cronograma_gantt.png){width="6.5in"}
+![Figura 9 -- Cronograma de atividades distribuídas em 24 meses, com categorização por tipo de ensaio. O ensaio de degradação *in situ* (5.2) estende-se até o 30.° mês; as retiradas nos meses 24 e 30 podem ser executadas como desdobramento.](Fig_cronograma_gantt.png){width="6.5in"}
 
 # Resultados esperados
 

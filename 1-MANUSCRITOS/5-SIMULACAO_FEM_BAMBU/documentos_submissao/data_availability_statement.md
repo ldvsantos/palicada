@@ -1,7 +1,7 @@
 # Data Availability Statement
 
-**Journal:** Ecological Engineering (Option C — data deposit required)  
-**Manuscript title:** Structural performance of bamboo palisades under degradation and hydrosedimentological loading evaluated by finite elements
+**Journal:** Journal of the Brazilian Society of Mechanical Sciences and Engineering  
+**Manuscript title:** Structural performance of bamboo palisades under degradation and hydro-sedimentary loading assessed via finite element analysis
 
 ---
 

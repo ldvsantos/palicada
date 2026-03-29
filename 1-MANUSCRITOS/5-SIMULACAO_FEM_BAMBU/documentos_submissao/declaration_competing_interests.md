@@ -1,8 +1,8 @@
 # Declaration of Competing Interests
 
 **Journal:** Journal of the Brazilian Society of Mechanical Sciences and Engineering (Springer, ISSN 1806-3691)  
-**Manuscript title:** Structural performance of bamboo palisades under degradation and hydrosedimentological loading evaluated by finite elements  
-**Authors:** Luiz Diego Vidal Santos, Emersson Guedes da Silva, Francisco Sandro Rodrigues Holanda, Marcos Oliveira Santos, Renisson Neponuceno de Araújo Filho, Henrique Antonio Silva
+**Manuscript title:** Structural performance of bamboo palisades under degradation and hydro-sedimentary loading assessed via finite element analysis  
+**Authors:** Luiz Diego Vidal Santos, Emersson Guedes da Silva, Francisco Sandro Rodrigues Holanda, Marcos Oliveira Santos, Renisson Neponuceno de Araújo Filho, Henrique Antonio Silva, Sandro Griza
 
 **Corresponding author:** Luiz Diego Vidal Santos
 
