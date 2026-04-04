@@ -699,24 +699,19 @@ def fig_radar():
 # ── Executar geração de figuras ───────────────────────────────────────────────
 
 # ── Fig. 7: Ábaco de classificação processo-funcional (hachuras) ─────────────
-def fig_abaco_classificacao():
-    """Ábaco bidimensional com hachuras profissionais (grayscale-safe).
-
-    Zonas delimitadas por contornos S = 30, 55, 80 do sistema fuzzy Mamdani,
-    diferenciadas por hachuras progressivas (vazio → pontos → diagonais →
-    cruzado) em vez de cor, garantindo legibilidade em escala de cinza.
-    """
+def fig_abaco_classificacao_v2():
+    """Ábaco v2: mesma estrutura de hachuras + barra lateral de intensidade
+    fuzzy (hachuras progressivas, sem cor) + seta de tendência."""
     import matplotlib.ticker as mticker
-    from matplotlib.patches import Patch
+    from matplotlib.patches import Patch, FancyArrowPatch
     from collections import defaultdict
 
-    # ── Estilo de hachura ─────────────────────────────────────────────────
     _prev_hw = plt.rcParams.get("hatch.linewidth", 1.0)
     _prev_hc = plt.rcParams.get("hatch.color", "black")
     plt.rcParams["hatch.linewidth"] = 0.5
     plt.rcParams["hatch.color"] = "#444444"
 
-    # ── Grid 2-D ──────────────────────────────────────────────────────────
+    # ── Grid 2-D (idêntico à v1) ─────────────────────────────────────────
     n = 80
     prof_arr = np.linspace(0.01, 3.0, n)
     vib_arr  = np.linspace(0.01, 10.0, n)
@@ -741,10 +736,13 @@ def fig_abaco_classificacao():
             except Exception:
                 Z[i, j] = np.nan
 
-    # ── Figura ────────────────────────────────────────────────────────────
-    fig, ax = plt.subplots(figsize=(9, 6.5))
+    # ── Figura com gridspec: ábaco + barra lateral ────────────────────────
+    fig = plt.figure(figsize=(10.5, 6.5))
+    gs = fig.add_gridspec(1, 2, width_ratios=[20, 1], wspace=0.08)
+    ax = fig.add_subplot(gs[0])
+    ax_bar = fig.add_subplot(gs[1])
 
-    # 4 zonas discretas: preenchimento cinza claro + hachura progressiva
+    # ── Zonas com hachuras (idênticas à v1) ───────────────────────────────
     zone_levels  = [0, 30, 55, 80, 100]
     zone_fills   = ["white", "#F2F2F2", "#E5E5E5", "#D5D5D5"]
     zone_hatches = ["", "..", "///", "xxx"]
@@ -758,7 +756,6 @@ def fig_abaco_classificacao():
     ax.contourf(PP, VV, Z, levels=zone_levels, colors=zone_fills,
                 hatches=zone_hatches)
 
-    # Limites entre zonas — linhas pretas contínuas
     cs = ax.contour(PP, VV, Z, levels=[30, 55, 80],
                      colors="black", linewidths=1.4, linestyles="-")
     ax.clabel(cs, inline=True, fontsize=8,
@@ -776,11 +773,16 @@ def fig_abaco_classificacao():
                 bbox=dict(boxstyle="round,pad=0.3", fc="white", ec="black",
                           alpha=0.9, lw=0.5))
 
-    # ── Feições do inventário ─────────────────────────────────────────────
+    # ── Seta de tendência de intensidade (zorder baixo → atrás dos rótulos)
+    ax.annotate("", xy=(2.6, 0.5), xytext=(0.2, 9.0),
+                arrowprops=dict(arrowstyle="-|>", color="#666666",
+                                lw=0.8, ls=(0, (5, 5))),
+                zorder=2)
+
+    # ── Feições do inventário (idêntico à v1) ─────────────────────────────
     markers_map = {"F1": "D", "F2": "o", "F3": "s",
                    "F4": "^", "F5": "v", "F6": "p"}
 
-    # Agrupar feições em posições coincidentes (F3 e F6 se sobrepõem)
     groups = defaultdict(list)
     for _, row in feicoes.iterrows():
         f = row["Feicao"]
@@ -788,14 +790,12 @@ def fig_abaco_classificacao():
         key = (round(row["Prof_max_m"], 2), round(row["VIB_cmh"], 2))
         groups[key].append((f, sev, row))
 
-    # Plotar marcadores (preto/branco)
     for _, row in feicoes.iterrows():
         f = row["Feicao"]
         ax.scatter(row["Prof_max_m"], row["VIB_cmh"],
                    s=90, marker=markers_map[f], facecolors="white",
                    edgecolors="black", linewidths=1.3, zorder=5)
 
-    # Anotações com offsets alternados (acima/abaixo) para evitar sobreposição
     stagger_above = True
     for key in sorted(groups.keys()):
         items = groups[key]
@@ -813,16 +813,22 @@ def fig_abaco_classificacao():
                     arrowprops=dict(arrowstyle="->", color="black", lw=0.7))
         stagger_above = not stagger_above
 
-    # ── Legenda com amostras de hachura ───────────────────────────────────
+    # ── Legenda de hachuras ───────────────────────────────────────────────
+    from matplotlib.lines import Line2D
     legend_patches = [
         Patch(facecolor=f, hatch=h, edgecolor="black", lw=0.5, label=n)
         for f, h, n in zip(zone_fills, zone_hatches, zone_names)
     ]
+    legend_patches.append(
+        Line2D([0], [0], color="#666666", lw=0.8, ls="--",
+               marker=">", markersize=5, markeredgecolor="#666666",
+               label="Severidade crescente")
+    )
     ax.legend(handles=legend_patches, loc="upper right", fontsize=8,
               framealpha=0.95, edgecolor="black", fancybox=False,
               title="Zona diagnóstica", title_fontsize=9)
 
-    # ── Eixos ─────────────────────────────────────────────────────────────
+    # ── Eixos principais ─────────────────────────────────────────────────
     ax.set_xlabel("Profundidade máxima (m)", fontsize=11, fontweight="bold")
     ax.set_ylabel("VIB (cm h$^{-1}$)", fontsize=11, fontweight="bold")
     ax.set_xlim(0, 3.0)
@@ -832,12 +838,10 @@ def fig_abaco_classificacao():
     ax.tick_params(which="both", direction="in", top=True, right=True)
     ax.grid(which="major", alpha=0.2, linestyle=":", color="gray")
 
-    # Referência EGC (limiar 3 m)
     ax.axvline(x=3.0, color="#888", linestyle=":", lw=1.0, alpha=0.5)
     ax.text(2.85, 9.5, "Limiar EGC\n(3 m)", fontsize=7, color="#888",
             ha="right", va="top", fontstyle="italic")
 
-    # Nota de rodapé
     ax.text(0.01, -0.09,
             f"Variáveis fixadas: m(Al) = {m_al_fix}%, "
             f"P95 = {p95_fix} mm/mês, declividade = {decliv_fix}%\n"
@@ -845,12 +849,37 @@ def fig_abaco_classificacao():
             "(centróide)",
             transform=ax.transAxes, fontsize=7.5, color="#555", va="top")
 
+    # ── Barra lateral de intensidade (hachuras, sem cor) ──────────────────
+    bar_labels = ["0", "30", "55", "80", "100"]
+    bar_y = [0, 1, 2, 3]  # posições das faixas
+    for idx in range(4):
+        rect = plt.Rectangle((0, bar_y[idx]), 1, 1,
+                              facecolor=zone_fills[idx],
+                              hatch=zone_hatches[idx],
+                              edgecolor="black", lw=0.6)
+        ax_bar.add_patch(rect)
+
+    ax_bar.set_xlim(0, 1)
+    ax_bar.set_ylim(0, 4)
+    ax_bar.set_xticks([])
+    ax_bar.set_yticks([0, 1, 2, 3, 4])
+    ax_bar.set_yticklabels(bar_labels, fontsize=8)
+    ax_bar.yaxis.tick_right()
+    ax_bar.yaxis.set_label_position("right")
+    ax_bar.set_ylabel("Índice de severidade fuzzy (S)",
+                      fontsize=9, fontweight="bold", rotation=270,
+                      labelpad=14)
+    ax_bar.tick_params(axis="y", length=3, direction="out")
+    ax_bar.set_frame_on(True)
+    for spine in ax_bar.spines.values():
+        spine.set_edgecolor("black")
+        spine.set_linewidth(0.6)
+
     fig.tight_layout()
     fig.savefig(os.path.join(OUT_DIR, "fig_abaco_classificacao.png"),
                 bbox_inches="tight", pad_inches=0.3, dpi=300)
     plt.close()
 
-    # restaurar rcParams
     plt.rcParams["hatch.linewidth"] = _prev_hw
     plt.rcParams["hatch.color"] = _prev_hc
     print("  → fig_abaco_classificacao.png")
@@ -862,7 +891,7 @@ fig_pertinencia()
 fig_pertinencia_feicoes()
 fig_dendrograma()
 fig_radar()
-fig_abaco_classificacao()
+fig_abaco_classificacao_v2()
 print("\nTodas as figuras salvas em:", OUT_DIR)
 
 
