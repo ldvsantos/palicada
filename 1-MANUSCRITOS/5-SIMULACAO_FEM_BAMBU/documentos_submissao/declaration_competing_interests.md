@@ -1,8 +1,8 @@
 # Declaration of Competing Interests
 
-**Journal:** International Journal of River Basin Management (Taylor & Francis / IAHR, ISSN 1571-5124)  
-**Manuscript title:** Biodegradation rate as the dominant control on structural safety of bamboo palisades in gully erosion management  
-**Authors:** Luiz Diego Vidal Santos, Emersson Guedes da Silva, Francisco Sandro Rodrigues Holanda, Marcos Oliveira Santos, Renisson Neponuceno de Araújo Filho, Henrique Antonio Silva, Sandro Griza
+**Journal:** Geotechnical and Geological Engineering (Springer, ISSN 0960-3182)  
+**Manuscript title:** Sediment storage saturation as the leading functional constraint on bamboo palisade longevity in tropical gully erosion control  
+**Authors:** Luiz Diego Vidal Santos, Emersson Guedes da Silva, Francisco Sandro Rodrigues Holanda, Marcos Oliveira Santos, Renisson Neponuceno de Araújo Filho, Henrique Antonio Silva, Mateus Barbosa Santos da Silva, Sandro Griza
 
 **Corresponding author:** Luiz Diego Vidal Santos
 
@@ -35,4 +35,4 @@ This research did not receive any specific grant from funding agencies in the pu
 
 ---
 
-> **Submission instruction:** Include this declaration in the manuscript text under the heading "Disclosure of interest" and upload via ScholarOne at https://mc.manuscriptcentral.com/jrbm.
+> **Submission instruction:** Include this declaration in the manuscript text under the heading "Disclosure of interest" and upload via Editorial Manager at https://www.editorialmanager.com/beeg.

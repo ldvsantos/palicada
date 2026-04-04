@@ -12,6 +12,10 @@ import subprocess
 import sys
 from pathlib import Path
 import time
+import zipfile
+import xml.etree.ElementTree as ET
+import shutil
+import tempfile
 
 
 def _extract_yaml_csl(md_file: Path) -> Path | None:
@@ -49,6 +53,161 @@ def _build_resource_path(md_file: Path, base_dir: Path) -> str:
         except Exception:
             continue
     return os.pathsep.join(dict.fromkeys(unique_existing))
+
+
+# ── Mapeamento Pandoc → Taylor & Francis template ──
+_WML = "http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+_NS = {"w": _WML}
+
+# Mapeamento direto de estilos Pandoc → template T&F
+_STYLE_MAP = {
+    "Title": "Articletitle",
+    "Author": "Authornames",
+    "Date": "Receiveddates",
+    "FirstParagraph": "Paragraph",
+    "BodyText": "Newparagraph",
+    "Bibliography": "References",
+}
+
+
+def _get_pstyle(p_elem):
+    """Retorna o w:pStyle val de um parágrafo, ou string vazia."""
+    ps = p_elem.find(".//w:pStyle", _NS)
+    if ps is not None:
+        return ps.get(f"{{{_WML}}}val", "")
+    return ""
+
+
+def _set_pstyle(p_elem, new_style):
+    """Define o w:pStyle val de um parágrafo. Cria pPr/pStyle se necessário."""
+    ppr = p_elem.find("w:pPr", _NS)
+    if ppr is None:
+        ppr = ET.SubElement(p_elem, f"{{{_WML}}}pPr")
+        # inserir como primeiro filho
+        p_elem.remove(ppr)
+        p_elem.insert(0, ppr)
+    ps = ppr.find("w:pStyle", _NS)
+    if ps is None:
+        ps = ET.SubElement(ppr, f"{{{_WML}}}pStyle")
+    ps.set(f"{{{_WML}}}val", new_style)
+
+
+def _get_text(p_elem):
+    """Retorna texto concatenado de w:t dentro de um parágrafo."""
+    return "".join(
+        t.text for t in p_elem.findall(f".//{{{_WML}}}t") if t.text
+    )
+
+
+def _remap_styles_to_template(docx_path: Path) -> bool:
+    """
+    Pós-processa DOCX gerado pelo Pandoc, remapeando estilos para o
+    template Taylor & Francis (modelo_formatacao.docx).
+    
+    Retorna True se bem-sucedido, False se falhar.
+    """
+    try:
+        tmp_fd, tmp_path = tempfile.mkstemp(suffix=".docx")
+        os.close(tmp_fd)
+
+        # Registrar namespaces OOXML para não perder prefixos na serialização
+        _ooxml_ns = {
+            "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+            "r": "http://schemas.openxmlformats.org/officeDocument/2006/relationships",
+            "wp": "http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing",
+            "a": "http://schemas.openxmlformats.org/drawingml/2006/main",
+            "pic": "http://schemas.openxmlformats.org/drawingml/2006/picture",
+            "mc": "http://schemas.openxmlformats.org/markup-compatibility/2006",
+            "o": "urn:schemas-microsoft-com:office:office",
+            "v": "urn:schemas-microsoft-com:vml",
+            "m": "http://schemas.openxmlformats.org/officeDocument/2006/math",
+            "wps": "http://schemas.microsoft.com/office/word/2010/wordprocessingShape",
+            "w14": "http://schemas.microsoft.com/office/word/2010/wordml",
+            "w15": "http://schemas.microsoft.com/office/word/2012/wordml",
+            "w16se": "http://schemas.microsoft.com/office/word/2015/wordml/symex",
+            "wpg": "http://schemas.microsoft.com/office/word/2010/wordprocessingGroup",
+            "wpc": "http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas",
+            "wp14": "http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing",
+        }
+        for prefix, uri in _ooxml_ns.items():
+            ET.register_namespace(prefix, uri)
+
+        with zipfile.ZipFile(str(docx_path), "r") as zin:
+            tree = ET.parse(zin.open("word/document.xml"))
+            root = tree.getroot()
+            body = root.find(f".//{{{_WML}}}body")
+            if body is None:
+                return False
+
+            paragraphs = [
+                c for c in body
+                if c.tag == f"{{{_WML}}}p"
+            ]
+
+            # --- Fase 1: mapeamento direto ---
+            for p in paragraphs:
+                sty = _get_pstyle(p)
+                if sty in _STYLE_MAP:
+                    _set_pstyle(p, _STYLE_MAP[sty])
+
+            # --- Fase 2: contexto — Abstract, Keywords, Figurecaption, Tabletitle ---
+            all_children = list(body)
+            in_abstract = False
+            heading_styles = {"Ttulo1", "Ttulo2", "Ttulo3", "Ttulo4"}
+
+            for i, elem in enumerate(all_children):
+                if elem.tag != f"{{{_WML}}}p":
+                    continue
+                sty = _get_pstyle(elem)
+                txt = _get_text(elem).strip()
+
+                # Detectar seção Resumo/Abstract
+                if sty in heading_styles:
+                    lower = txt.lower().replace("1.", "").replace("2.", "").strip()
+                    in_abstract = lower in ("resumo", "abstract")
+
+                # Parágrafos dentro da seção Resumo → Abstract
+                if in_abstract and sty in ("Paragraph", "Newparagraph"):
+                    if txt.lower().startswith(("palavras-chave", "keywords")):
+                        _set_pstyle(elem, "Keywords")
+                    else:
+                        _set_pstyle(elem, "Abstract")
+
+                # Legendas de figura: texto com "Figura N" antes de um Figure
+                if sty in ("Newparagraph", "Paragraph", "BodyText"):
+                    if re.match(
+                        r"^(Figura|Figure|Fig\.)\s*\d+", txt, re.IGNORECASE
+                    ):
+                        _set_pstyle(elem, "Figurecaption")
+
+                # Legendas de tabela: texto com "Tabela N" ou "Table N"
+                if sty in ("Newparagraph", "Paragraph", "BodyText"):
+                    if re.match(
+                        r"^(Tabela|Table|TABELA|TABLE)\s*\d+", txt, re.IGNORECASE
+                    ):
+                        _set_pstyle(elem, "Tabletitle")
+
+            # --- Fase 3: gravar DOCX modificado ---
+            with zipfile.ZipFile(tmp_path, "w", zipfile.ZIP_DEFLATED) as zout:
+                for item in zin.infolist():
+                    if item.filename == "word/document.xml":
+                        xml_bytes = ET.tostring(
+                            root, xml_declaration=True, encoding="UTF-8"
+                        )
+                        zout.writestr(item, xml_bytes)
+                    else:
+                        zout.writestr(item, zin.read(item.filename))
+
+        # Substituir original
+        shutil.move(tmp_path, str(docx_path))
+        return True
+
+    except Exception as e:
+        print(f"⚠️  Erro no pós-processamento de estilos: {e}")
+        if os.path.exists(tmp_path):
+            os.unlink(tmp_path)
+        return False
+
 
 def gerar_docx(
     md_file: Path,
@@ -161,6 +320,9 @@ def gerar_docx(
         
         # Verificar se o arquivo foi criado
         if output_file.exists():
+            # Pós-processar estilos para o template T&F
+            if _remap_styles_to_template(output_file):
+                print("📐 Estilos remapeados para o template Taylor & Francis")
             print(f"\n✅ Arquivo {output_file.name} gerado com sucesso!")
             print(f"📍 Localização: {output_file.absolute()}")
             print(f"📊 Tamanho: {output_file.stat().st_size / 1024:.1f} KB")
@@ -208,7 +370,7 @@ def main():
     
     # Alvos padrão
     default_md_pt_controle = base_dir / "1-CONTROLE_PLITOSSOLO" / "Controle_Ravinas_Paliçadas.md"
-    default_md_caracterizacao = base_dir / "2-CARACTERIZACAO_FEICAO" / "Caracterizacao_Feicao_Erosiva_Plintossolo_25122025.md"
+    default_md_caracterizacao = base_dir / "2-CARACTERIZACAO_FEICAO" / "Caracterizacao_Feicao_Erosiva_Plintossolo.qmd"
     default_md_fem_bambu = base_dir / "5-SIMULACAO_FEM_BAMBU" / "Simulacao_FEM_Bambu.md"
     default_md_fem_bambu_en = base_dir / "5-SIMULACAO_FEM_BAMBU" / "Simulacao_FEM_Bambu_EN.md"
 

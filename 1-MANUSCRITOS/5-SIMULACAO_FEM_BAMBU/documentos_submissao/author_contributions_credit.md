@@ -1,7 +1,7 @@
 # CRediT Author Contributions Statement
 
-**Journal:** International Journal of River Basin Management  
-**Manuscript title:** Biodegradation rate as the dominant control on structural safety of bamboo palisades in gully erosion management
+**Journal:** Geotechnical and Geological Engineering (Springer, ISSN 0960-3182)  
+**Manuscript title:** Sediment storage saturation as the leading functional constraint on bamboo palisade longevity in tropical gully erosion control
 
 ---
 

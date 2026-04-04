@@ -8,6 +8,8 @@ import pandas as pd
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
 
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
 
@@ -20,6 +22,38 @@ OUT_PNG = (
     ROOT
     / r"1-MANUSCRITOS\2-CARACTERIZACAO_FEICAO\media\fig_S1_pca_morfometria.png"
 )
+
+
+# ── Depth class styles (matching Jussimara biplot conventions) ──
+DEPTH_CLASSES = {
+    'Rasa': {
+        'feicoes': [2, 3],
+        'color': '#c0392b',
+        'marker': 's',
+        'label': 'Rasa (< 0,5 m)',
+        'size': 80,
+    },
+    'Mod. profunda': {
+        'feicoes': [1, 4],
+        'color': '#27ae60',
+        'marker': '^',
+        'label': 'Mod. profunda (0,5–1,5 m)',
+        'size': 90,
+    },
+    'Profunda': {
+        'feicoes': [5],
+        'color': '#2980b9',
+        'marker': 'o',
+        'label': 'Profunda (≥ 1,5 m)',
+        'size': 80,
+    },
+}
+
+# reverse lookup: feicao -> class key
+_feicao_to_class = {}
+for cls_key, cls_info in DEPTH_CLASSES.items():
+    for f in cls_info['feicoes']:
+        _feicao_to_class[f] = cls_key
 
 
 def _to_float(value: object) -> float:
@@ -105,54 +139,144 @@ def main() -> None:
 
     pca = PCA(n_components=2, random_state=0)
     scores = pca.fit_transform(Xz)
-
-    # loadings for biplot (components_ are unit vectors in feature space)
-    loadings = pca.components_.T
-
+    loadings = pca.components_.T  # (n_features, 2)
     explained = pca.explained_variance_ratio_
 
-    fig, ax = plt.subplots(figsize=(8.5, 5.0), dpi=200)
+    print(f"PC1: {explained[0]*100:.1f}%")
+    print(f"PC2: {explained[1]*100:.1f}%")
+    print(f"Cumulative: {sum(explained)*100:.1f}%")
 
-    ax.scatter(scores[:, 0], scores[:, 1], s=55)
+    # ── Scale factor for loading arrows ──
+    scale_factor = (
+        max(np.abs(scores).max(axis=0))
+        / max(np.abs(loadings).max(axis=0))
+        * 0.75
+    )
 
-    for (feicao, (x, y)) in zip(complete.index.tolist(), scores, strict=False):
-        ax.text(x + 0.04, y + 0.04, str(feicao), fontsize=10)
+    # ── Compute axis limits from data (scores + scaled loading tips) ──
+    tips = loadings * scale_factor  # (n_features, 2)
+    all_x = np.concatenate([scores[:, 0], tips[:, 0], [0.0]])
+    all_y = np.concatenate([scores[:, 1], tips[:, 1], [0.0]])
+    margin_x = (all_x.max() - all_x.min()) * 0.30  # 30% margin for labels
+    margin_y = (all_y.max() - all_y.min()) * 0.30
+    xlim = (all_x.min() - margin_x, all_x.max() + margin_x)
+    ylim = (all_y.min() - margin_y, all_y.max() + margin_y)
 
-    # scale arrows to match score space
-    arrow_scale = 1.8
+    # ── Create figure (Jussimara style) ──
+    fig, ax = plt.subplots(figsize=(8, 6), dpi=300)
+
+    ax.set_xlim(xlim)
+    ax.set_ylim(ylim)
+
+    # Reference lines
+    ax.axhline(0, color='#aaaaaa', linewidth=0.6, linestyle='--', zorder=1)
+    ax.axvline(0, color='#aaaaaa', linewidth=0.6, linestyle='--', zorder=1)
+
+    # ── Plot scatter by depth class ──
+    feicao_list = complete.index.tolist()
+    for cls_key, sty in DEPTH_CLASSES.items():
+        mask = [f in sty['feicoes'] for f in feicao_list]
+        if not any(mask):
+            continue
+        idx = [i for i, m in enumerate(mask) if m]
+        ax.scatter(
+            scores[idx, 0], scores[idx, 1],
+            c=sty['color'], marker=sty['marker'], s=sty['size'],
+            alpha=0.85, edgecolors='k', linewidths=0.5,
+            label=sty['label'], zorder=3,
+        )
+
+    # ── Label points with feição numbers ──
+    try:
+        from adjustText import adjust_text
+        _has_adjust = True
+    except ImportError:
+        _has_adjust = False
+
+    texts = []
+    for i, feicao in enumerate(feicao_list):
+        cls_key = _feicao_to_class.get(feicao, list(DEPTH_CLASSES.keys())[0])
+        color = DEPTH_CLASSES[cls_key]['color']
+        texts.append(ax.text(
+            scores[i, 0], scores[i, 1], f"F{feicao}",
+            fontsize=10, color=color, fontweight='bold',
+            ha='center', va='bottom', zorder=4,
+        ))
+
+    if _has_adjust:
+        adjust_text(
+            texts, ax=ax,
+            arrowprops=dict(arrowstyle='-', color='gray', lw=0.3, alpha=0.4),
+            expand=(1.4, 1.6),
+            force_text=(0.35, 0.45),
+            force_points=(0.25, 0.35),
+            lim=200,
+        )
+
+    # ── Loading vectors with bbox labels ──
+    var_labels = {
+        "comprimento_m": "Comprimento",
+        "largura_media_m": "Largura média",
+        "prof_max_m": "Prof. máxima",
+    }
+
     for i, var in enumerate(cols):
-        ax.arrow(
-            0,
-            0,
-            loadings[i, 0] * arrow_scale,
-            loadings[i, 1] * arrow_scale,
-            head_width=0.06,
-            head_length=0.08,
-            linewidth=1.2,
-            length_includes_head=True,
+        tx = loadings[i, 0] * scale_factor
+        ty = loadings[i, 1] * scale_factor
+
+        ax.annotate(
+            '', xy=(tx, ty), xytext=(0, 0),
+            arrowprops=dict(
+                arrowstyle='->', color='black', lw=1.6,
+                shrinkA=0, shrinkB=2,
+            ),
+            zorder=5,
         )
+
+        # offset label away from origin
+        norm = np.sqrt(tx**2 + ty**2)
+        ox = tx / norm * 0.15 if norm > 0 else 0.15
+        oy = ty / norm * 0.15 if norm > 0 else 0.15
+
         ax.text(
-            loadings[i, 0] * (arrow_scale + 0.12),
-            loadings[i, 1] * (arrow_scale + 0.12),
-            var.replace("_m", ""),
-            fontsize=10,
+            tx + ox, ty + oy, var_labels.get(var, var),
+            fontsize=9, fontweight='bold',
+            ha='left' if tx >= 0 else 'right',
+            va='bottom' if ty >= 0 else 'top',
+            color='black',
+            bbox=dict(
+                boxstyle='round,pad=0.25', facecolor='#fffde7',
+                edgecolor='#666666', alpha=0.92, linewidth=0.6,
+            ),
+            zorder=6,
         )
 
-    ax.axhline(0, linewidth=0.8)
-    ax.axvline(0, linewidth=0.8)
+    # ── Axis labels with variance ──
+    ax.set_xlabel(
+        f'PC1 ({explained[0]*100:.1f}%)',
+        fontsize=13, fontweight='bold', labelpad=8,
+    )
+    ax.set_ylabel(
+        f'PC2 ({explained[1]*100:.1f}%)',
+        fontsize=13, fontweight='bold', labelpad=8,
+    )
 
-    ax.set_xlabel(f"PC1 ({explained[0]*100:.1f}%)")
-    ax.set_ylabel(f"PC2 ({explained[1]*100:.1f}%)")
-    ax.set_title("PCA (morfometria): feições com dados completos")
+    # Legend
+    ax.legend(
+        loc='best', fontsize=9, framealpha=0.92,
+        edgecolor='gray', fancybox=True, borderpad=0.8,
+    )
 
-    ax.set_aspect("equal", adjustable="datalim")
-    fig.tight_layout()
+    ax.tick_params(labelsize=10)
+    ax.grid(True, alpha=0.15, linewidth=0.4)
+
+    plt.tight_layout()
 
     OUT_PNG.parent.mkdir(parents=True, exist_ok=True)
-    fig.savefig(OUT_PNG)
+    fig.savefig(OUT_PNG, dpi=300, bbox_inches='tight', facecolor='white')
     plt.close(fig)
 
-    print(f"OK: {OUT_PNG}")
+    print(f"\nOK: {OUT_PNG}")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,220 @@
+\documentclass[tikz,border=8pt]{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage{tikz}
+\usetikzlibrary{calc,positioning,fit,arrows.meta}
+
+\begin{document}
+
+\begin{tikzpicture}[
+    x=1cm,y=1cm,
+    >=Latex,
+    line cap=round,
+    line join=round,
+    box/.style={
+        draw,
+        rounded corners=2pt,
+        minimum height=0.82cm,
+        minimum width=1.8cm,
+        align=center,
+        font=\small
+    },
+    smallbox/.style={
+        draw,
+        rounded corners=2pt,
+        minimum height=0.82cm,
+        minimum width=1.5cm,
+        align=center,
+        font=\small
+    },
+    lab/.style={font=\small, align=left},
+    num/.style={
+        draw,
+        circle,
+        minimum size=0.55cm,
+        inner sep=0pt,
+        font=\small
+    }
+]
+
+% --------------------------------------------------
+% EIXOS VERTICAIS (níveis) — espaçamento ampliado
+% --------------------------------------------------
+\def\yTop{0}
+\def\yA{-1.6}
+\def\yB{-3.2}
+\def\yC{-4.9}
+\def\yD{-6.6}
+\def\yE{-8.5}
+\def\yF{-10.5}
+\def\yG{-12.5}
+\def\yH{-14.5}
+
+% linhas tracejadas horizontais (pontos médios entre níveis)
+\foreach \yy in {-0.8,-2.4,-4.05,-5.75,-7.55,-9.5,-11.5,-13.5} {
+    \draw[dashed, gray] (-3.2,\yy) -- (12.6,\yy);
+}
+
+% --------------------------------------------------
+% NÓS PRINCIPAIS
+% --------------------------------------------------
+\node[box, minimum width=2.3cm] (feicoes) at (2.8,\yTop) {FEIÇÕES EROSIVAS};
+
+% 1) Profundidade
+\node[smallbox] (prof1) at (0.5,\yA) {$<0{,}30\,\mathrm{m}$};
+\node[smallbox, minimum width=2.0cm] (prof2) at (2.8,\yA) {$>0{,}3\,\mathrm{m}<9\,\mathrm{m}$};
+\node[smallbox] (prof3) at (5.0,\yA) {$>9\,\mathrm{m}$};
+
+% 2) Tipo
+\node[smallbox] (sulco)    at (0.5,\yB) {SULCO};
+\node[smallbox, minimum width=1.8cm] (vocoroca) at (2.8,\yB) {VOÇOROCA};
+\node[smallbox] (ravina)   at (5.0,\yB) {RAVINA};
+
+% 3) Família
+\node[box, minimum width=1.9cm] (localizada) at (2.0,\yC) {LOCALIZADA};
+\node[box, minimum width=1.9cm] (relevo)     at (4.5,\yC) {DE RELEVO};
+
+% 4) Persistência — espaçamento ampliado para evitar sobreposição de texto
+\node[box, minimum width=1.5cm] (efemera)    at (-1.5,\yD) {EFÊMERA};
+\node[box, minimum width=1.7cm] (permanente) at (1.5,\yD) {PERMANENTE};
+\node[box, minimum width=1.7cm] (margem)     at (4.5,\yD) {DE MARGEM};
+
+% 5) Posição na paisagem — espaçamento ampliado
+\node[box, minimum width=1.5cm] (talude) at (4.0,\yE) {DE TALUDE};
+\node[box, minimum width=1.5cm] (base)   at (6.8,\yE) {DE BASE\\ALUVIAL};
+\node[box, minimum width=1.5cm] (topo)   at (9.0,\yE) {DE TOPO};
+
+% 6) Forma — posições espaçadas
+\node[box, minimum width=1.5cm] (linear)      at (1.2,\yF) {LINEAR\\(AXIAL)};
+\node[box, minimum width=1.7cm] (dendritica)  at (3.6,\yF) {DENDRÍTICA\\(DIGITADA)};
+\node[box, minimum width=1.4cm] (frontal)     at (6.2,\yF) {FRONTAL};
+
+% 7) Continuidade da forma
+\node[box, minimum width=1.8cm] (descontinua) at (2.5,\yG) {DESCONTÍNUA};
+\node[box, minimum width=1.6cm] (continua)    at (5.8,\yG) {CONTÍNUA};
+
+% 8) Forma da seção transversal
+\node[box, minimum width=1.7cm] (vshape) at (2.5,\yH) {Forma em V};
+\node[box, minimum width=1.7cm] (ushape) at (4.5,\yH) {Forma em U};
+\node[box, minimum width=1.7cm] (trap)   at (6.5,\yH) {Trapezoidal};
+
+% --------------------------------------------------
+% LIGAÇÕES SUPERIORES
+% --------------------------------------------------
+
+% feições -> profundidade
+\draw (feicoes.south) -- ++(0,-0.45) coordinate (hubA);
+\draw (hubA) |- (prof1.north);
+\draw (hubA) |- (prof2.north);
+\draw (hubA) |- (prof3.north);
+
+% profundidade -> tipo
+\draw (prof1.south) -- (sulco.north);
+\draw (prof2.south) -- (vocoroca.north);
+\draw (prof3.south) -- (ravina.north);
+
+% voçoroca -> família
+\draw (vocoroca.south) -- ++(0,-0.35) coordinate (hubFam);
+\draw (hubFam) |- (localizada.north);
+\draw (hubFam) |- (relevo.north);
+
+% --------------------------------------------------
+% PERSISTÊNCIA
+% --------------------------------------------------
+
+% barra superior da persistência
+\draw (-1.5,-5.8) -- (4.5,-5.8);
+
+% sulco -> persistência
+\draw (sulco.south) -- (0.5,-5.8);
+
+% localizada -> persistência
+\draw (localizada.south) -- ++(0,-0.35) -| (4.5,-5.8);
+
+% descidas da barra para as caixas
+\draw (efemera.north)    -- (-1.5,-5.8);
+\draw (permanente.north) -- (1.5,-5.8);
+\draw (margem.north)     -- (4.5,-5.8);
+
+% --------------------------------------------------
+% POSIÇÃO NA PAISAGEM
+% --------------------------------------------------
+
+% relevo -> posição
+\draw (relevo.south) -- ++(0,-0.42) coordinate (hubPos);
+\draw (hubPos) |- (talude.north);
+\draw (hubPos) |- (base.north);
+\draw (hubPos) |- (topo.north);
+
+% --------------------------------------------------
+% FORMA
+% --------------------------------------------------
+
+% conexão inferior vinda da persistência para linear
+\draw (efemera.south)    -- (-1.5,-9.7);
+\draw (permanente.south) -- (1.5,-9.7);
+\draw (margem.south)     -- (4.5,-9.7);
+
+\draw (-1.5,-9.7) -- (4.5,-9.7);
+\draw (1.2,-9.7) -- (linear.north);
+
+% barra superior da posição para forma
+\draw (4.0,-9.3) -- (9.0,-9.3);
+\draw (talude.south) -- (4.0,-9.3);
+\draw (base.south)   -- (6.8,-9.3);
+\draw (topo.south)   -- (9.0,-9.3);
+
+% descidas para as formas
+\draw (3.6,-9.3) -- (dendritica.north);
+\draw (6.2,-9.3) -- (frontal.north);
+
+% ligação lateral do sistema da persistência/linear até a barra de formas
+\draw (4.5,-9.7) -- (4.5,-9.3) -- (4.0,-9.3);
+
+% --------------------------------------------------
+% CONTINUIDADE DA FORMA
+% --------------------------------------------------
+\draw (dendritica.south) -- ++(0,-0.35) coordinate (hubCont);
+\draw (hubCont) |- (descontinua.north);
+\draw (hubCont) |- (continua.north);
+
+% --------------------------------------------------
+% FORMA DA SEÇÃO TRANSVERSAL
+% --------------------------------------------------
+\draw (descontinua.south) -- (vshape.north);
+
+\draw (continua.south) -- ++(0,-0.35) coordinate (hubSec);
+\draw (hubSec) |- (ushape.north);
+\draw (hubSec) |- (trap.north);
+
+% --------------------------------------------------
+% LEGENDA LATERAL NUMERADA
+% --------------------------------------------------
+\node[num] (n1) at (10.8,\yA) {1};
+\node[lab, right=0.18cm of n1] {Profundidade};
+
+\node[num] (n2) at (10.8,\yB) {2};
+\node[lab, right=0.18cm of n2] {Tipo};
+
+\node[num] (n3) at (10.8,\yC) {3};
+\node[lab, right=0.18cm of n3] {Família};
+
+\node[num] (n4) at (10.8,\yD) {4};
+\node[lab, right=0.18cm of n4] {Persistência};
+
+\node[num] (n5) at (10.8,\yE) {5};
+\node[lab, right=0.18cm of n5] {Posição na\\paisagem};
+
+\node[num] (n6) at (10.8,\yF) {6};
+\node[lab, right=0.18cm of n6] {Forma};
+
+\node[num] (n7) at (10.8,\yG) {7};
+\node[lab, right=0.18cm of n7] {Continuidade\\da forma};
+
+\node[num] (n8) at (10.8,\yH) {8};
+\node[lab, right=0.18cm of n8] {Forma da\\seção transversal};
+
+\end{tikzpicture}
+
+\end{document}
