@@ -1,6 +1,6 @@
 # Zenodo deposit — K_plint correction factor for Plinthosol erodibility
 
-[![DOI](https://zenodo.org/badge/DOI/PENDING.svg)](https://doi.org/PENDING)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19483403.svg)](https://doi.org/10.5281/zenodo.19483403)
 
 ## Description
 
