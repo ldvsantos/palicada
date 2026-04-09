@@ -1,4 +1,4 @@
-\begin{thebibliography}{56}
+\begin{thebibliography}{55}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{#1}}
 \providecommand{\urlprefix}{URL }
@@ -81,11 +81,6 @@ Cheviron B, Gumi{\`{e}}re SJ, Moussa R (2010) Sensitivity analysis of
 De~Roo A, Riezebos H (1992) Infiltration experiments on loess soils and their
   implications for modelling surface runoff and soil erosion. CATENA
   \doi{10.1016/0341-8162(92)90026-8}
-
-\bibitem[{Deng and Zhu(2016)}]{deng_zhu_2016}
-Deng P, Zhu J (2016) Analysis of effective {G}reen--{A}mpt hydraulic parameters
-  for vertically layered soils. Journal of Hydrology 538:628--639.
-  \doi{10.1016/j.jhydrol.2016.04.059}
 
 \bibitem[{Deviren~Saygin et~al.(2018)Deviren~Saygin, Huang, Flanagan, and
   Erpul}]{deviren_saygin_et_al_2018}

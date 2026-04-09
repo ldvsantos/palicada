@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.23)  9 APR 2026 09:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.23)  9 APR 2026 09:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -825,8 +825,7 @@ Package hyperref Info: Link coloring ON on input line 15.
 \@outlinefile=\write3
 \openout3 = `Simulacao_Kplint_USLE_Springer.out'.
 
-LaTeX Font Info:    Calculating math sizes for size <17.06374> on input line 33
-.
+LaTeX Font Info:    Calculating math sizes for size <12.045> on input line 33.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 33.
 
 
@@ -839,7 +838,6 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 33.
 (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Calculating math sizes for size <12.045> on input line 33.
 LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 33
 .
 LaTeX Font Info:    Calculating math sizes for size <9.03374> on input line 33.
@@ -855,12 +853,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [3]
 LaTeX Font Info:    Calculating math sizes for size <14.05249> on input line 59
 .
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4]
@@ -870,142 +868,142 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6]
-<figuras/fig_09_sitio_experimental.png, id=323, 407.121pt x 202.356pt>
+<figuras/fig_00a_area_estudo_aerea.png, id=325, 319.6305pt x 226.008pt>
+File: figuras/fig_00a_area_estudo_aerea.png Graphic file (type png)
+<use figuras/fig_00a_area_estudo_aerea.png>
+Package pdftex.def Info: figuras/fig_00a_area_estudo_aerea.png  used on input l
+ine 145.
+(pdftex.def)             Requested size: 316.20227pt x 223.58652pt.
+<figuras/fig_00b_feicoes_drone_campo.jpeg, id=327, 365.949pt x 177.0615pt>
+File: figuras/fig_00b_feicoes_drone_campo.jpeg Graphic file (type jpg)
+<use figuras/fig_00b_feicoes_drone_campo.jpeg>
+Package pdftex.def Info: figuras/fig_00b_feicoes_drone_campo.jpeg  used on inpu
+t line 146.
+(pdftex.def)             Requested size: 316.20227pt x 152.99396pt.
+<figuras/fig_09_sitio_experimental.png, id=331, 407.121pt x 202.356pt>
 File: figuras/fig_09_sitio_experimental.png Graphic file (type png)
 <use figuras/fig_09_sitio_experimental.png>
 Package pdftex.def Info: figuras/fig_09_sitio_experimental.png  used on input l
-ine 129.
+ine 155.
 (pdftex.def)             Requested size: 372.0pt x 184.90999pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7 <./figuras/fig_09_sitio_experimental.png (PNG copy)>]
-<figuras/fig_00a_area_estudo_aerea.png, id=342, 319.6305pt x 226.008pt>
-File: figuras/fig_00a_area_estudo_aerea.png Graphic file (type png)
-<use figuras/fig_00a_area_estudo_aerea.png>
-Package pdftex.def Info: figuras/fig_00a_area_estudo_aerea.png  used on input l
-ine 150.
-(pdftex.def)             Requested size: 316.20227pt x 223.58652pt.
-<figuras/fig_00b_feicoes_drone_campo.jpeg, id=346, 365.949pt x 177.0615pt>
-File: figuras/fig_00b_feicoes_drone_campo.jpeg Graphic file (type jpg)
-<use figuras/fig_00b_feicoes_drone_campo.jpeg>
-Package pdftex.def Info: figuras/fig_00b_feicoes_drone_campo.jpeg  used on inpu
-t line 159.
-(pdftex.def)             Requested size: 316.20227pt x 152.99396pt.
-
+ [7]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8 <./figuras/fig_00a_area_estudo_aerea.png>]
+ [8 <./figuras/fig_00a_area_estudo_aerea.png> <./figuras/fig_00b_feicoes_drone_
+campo.jpeg>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [9 <./figuras/fig_00b_feicoes_drone_campo.jpeg>]
+ [9 <./figuras/fig_09_sitio_experimental.png (PNG copy)>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [10]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [11]
-<figuras/fig_01_calibracao_sintetica.png, id=390, 578.16pt x 361.35pt>
+<figuras/fig_01_calibracao_sintetica.png, id=377, 578.16pt x 361.35pt>
 File: figuras/fig_01_calibracao_sintetica.png Graphic file (type png)
 <use figuras/fig_01_calibracao_sintetica.png>
 Package pdftex.def Info: figuras/fig_01_calibracao_sintetica.png  used on input
- line 231.
+ line 225.
 (pdftex.def)             Requested size: 334.79773pt x 209.24681pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [12 <./figuras/fig_01_calibracao_sintetica.png>]
-<figuras/fig_02_boxplot_parametros.png, id=409, 1300.86pt x 361.35pt>
+ [11]
+<figuras/fig_02_boxplot_parametros.png, id=395, 1300.86pt x 361.35pt>
 File: figuras/fig_02_boxplot_parametros.png Graphic file (type png)
 <use figuras/fig_02_boxplot_parametros.png>
 Package pdftex.def Info: figuras/fig_02_boxplot_parametros.png  used on input l
-ine 242.
+ine 236.
 (pdftex.def)             Requested size: 372.0pt x 103.33318pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [13 <./figuras/fig_02_boxplot_parametros.png>]
-<figuras/fig_03_sensibilidade_sobol.png, id=430, 1011.78pt x 722.7pt>
+ [12 <./figuras/fig_01_calibracao_sintetica.png> <./figuras/fig_02_boxplot_para
+metros.png>]
+<figuras/fig_03_sensibilidade_sobol.png, id=414, 1011.78pt x 722.7pt>
 File: figuras/fig_03_sensibilidade_sobol.png Graphic file (type png)
 <use figuras/fig_03_sensibilidade_sobol.png>
 Package pdftex.def Info: figuras/fig_03_sensibilidade_sobol.png  used on input 
-line 255.
+line 249.
 (pdftex.def)             Requested size: 372.0pt x 265.71863pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [13]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [14 <./figuras/fig_03_sensibilidade_sobol.png>]
-<figuras/fig_04_interacoes_s2.png, id=445, 505.89pt x 433.62pt>
+<figuras/fig_04_interacoes_s2.png, id=439, 505.89pt x 433.62pt>
 File: figuras/fig_04_interacoes_s2.png Graphic file (type png)
 <use figuras/fig_04_interacoes_s2.png>
 Package pdftex.def Info: figuras/fig_04_interacoes_s2.png  used on input line 2
-66.
+60.
 (pdftex.def)             Requested size: 260.39886pt x 223.201pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [15]
-<figuras/fig_05_estabilidade_taludes.png, id=464, 1011.78pt x 433.62pt>
+ [15 <./figuras/fig_04_interacoes_s2.png>]
+<figuras/fig_05_estabilidade_taludes.png, id=457, 1011.78pt x 433.62pt>
 File: figuras/fig_05_estabilidade_taludes.png Graphic file (type png)
 <use figuras/fig_05_estabilidade_taludes.png>
 Package pdftex.def Info: figuras/fig_05_estabilidade_taludes.png  used on input
- line 277.
+ line 271.
 (pdftex.def)             Requested size: 372.0pt x 159.43118pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [16 <./figuras/fig_04_interacoes_s2.png>]
-LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 304.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [17 <./figuras/fig_05_estabilidade_taludes.png>]
-<figuras/fig_06_infiltracao_escoamento.png, id=490, 1011.78pt x 433.62pt>
+ [16 <./figuras/fig_05_estabilidade_taludes.png>]
+LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 298.
+<figuras/fig_06_infiltracao_escoamento.png, id=475, 1011.78pt x 433.62pt>
 File: figuras/fig_06_infiltracao_escoamento.png Graphic file (type png)
 <use figuras/fig_06_infiltracao_escoamento.png>
 Package pdftex.def Info: figuras/fig_06_infiltracao_escoamento.png  used on inp
-ut line 315.
+ut line 309.
 (pdftex.def)             Requested size: 372.0pt x 159.43118pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18 <./figuras/fig_06_infiltracao_escoamento.png>]
-<figuras/fig_07_hidrograma_i60.png, id=508, 578.16pt x 361.35pt>
+ [17]
+<figuras/fig_07_hidrograma_i60.png, id=494, 578.16pt x 361.35pt>
 File: figuras/fig_07_hidrograma_i60.png Graphic file (type png)
 <use figuras/fig_07_hidrograma_i60.png>
 Package pdftex.def Info: figuras/fig_07_hidrograma_i60.png  used on input line 
-326.
+320.
 (pdftex.def)             Requested size: 297.60114pt x 186.00084pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [19 <./figuras/fig_07_hidrograma_i60.png>]
-<figuras/fig_08_erosao_virtual.png, id=522, 1011.78pt x 867.24pt>
+ [18 <./figuras/fig_06_infiltracao_escoamento.png>]
+<figuras/fig_08_erosao_virtual.png, id=508, 1011.78pt x 867.24pt>
 File: figuras/fig_08_erosao_virtual.png Graphic file (type png)
 <use figuras/fig_08_erosao_virtual.png>
 Package pdftex.def Info: figuras/fig_08_erosao_virtual.png  used on input line 
-339.
+333.
 (pdftex.def)             Requested size: 372.0pt x 318.86237pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [20 <./figuras/fig_08_erosao_virtual.png>]
+ [19 <./figuras/fig_07_hidrograma_i60.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [21]
+ [20 <./figuras/fig_08_erosao_virtual.png>]
 
 Package hyperref Warning: Difference (4) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 369.
+(hyperref)                than one, level fixed on input line 358.
 
 
 Package hyperref Warning: Difference (3) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 373.
+(hyperref)                than one, level fixed on input line 363.
 
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 375.
+(hyperref)                than one, level fixed on input line 365.
 
 (Simulacao_Kplint_USLE_Springer.bbl
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [22]
@@ -1017,30 +1015,31 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [24]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [25]
+ [25])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [26])
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [27]
+ [26]
 (Simulacao_Kplint_USLE_Springer.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-29>
  ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `Simulacao_Kplint_USLE_Springer.out' has not 
 changed.
 (rerunfilecheck)             Checksum: 0EAB2835A7ECD1FB0358F27F4E95BEB0;6243.
  ) 
 Here is how much of TeX's memory you used:
- 12560 strings out of 467871
- 198839 string characters out of 5418376
- 613961 words of memory out of 5000000
- 41100 multiletter control sequences out of 15000+600000
- 679792 words of font info for 207 fonts, out of 8000000 for 9000
+ 12532 strings out of 467871
+ 198359 string characters out of 5418376
+ 614869 words of memory out of 5000000
+ 41077 multiletter control sequences out of 15000+600000
+ 675153 words of font info for 189 fonts, out of 8000000 for 9000
  1151 hyphenation exceptions out of 8191
- 90i,13n,93p,2093b,691s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,13n,93p,2093b,693s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\vidal\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi602\ecbx
 1000.pk> <C:\Users\vidal\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
 0\ecrm0900.pk> <C:\Users\vidal\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
@@ -1048,9 +1047,9 @@ Here is how much of TeX's memory you used:
 pen/ec/dpi600\ecbx0800.pk> <C:\Users\vidal\AppData\Local\MiKTeX\fonts/pk/ljfour
 /jknappen/ec/dpi602\ecbx1200.pk> <C:\Users\vidal\AppData\Local\MiKTeX\fonts/pk/
 ljfour/jknappen/ec/dpi703\ecbx1200.pk> <C:\Users\vidal\AppData\Local\MiKTeX\fon
-ts/pk/ljfour/jknappen/ec/dpi602\ecrm0800.pk> <C:\Users\vidal\AppData\Local\MiKT
-eX\fonts/pk/ljfour/jknappen/ec/dpi602\ecbx0800.pk> <C:\Users\vidal\AppData\Loca
-l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi602\ecrm1000.pk> <C:\Users\vidal\AppDat
+ts/pk/ljfour/jknappen/ec/dpi602\ecrm1000.pk> <C:\Users\vidal\AppData\Local\MiKT
+eX\fonts/pk/ljfour/jknappen/ec/dpi602\ecrm0800.pk> <C:\Users\vidal\AppData\Loca
+l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi602\ecbx0800.pk> <C:\Users\vidal\AppDat
 a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi602\ecrm0900.pk> <C:\Users\vidal\
 AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi602\ecbx0900.pk> <C:\Users\
 vidal\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi662\ecrm1000.pk> <C:\
@@ -1062,28 +1061,27 @@ dpi592\ecrm1728.pk><C:/Users/vidal/AppData/Local/Programs/MiKTeX/fonts/type1/pu
 blic/amsfonts/cm/cmbx9.pfb><C:/Users/vidal/AppData/Local/Programs/MiKTeX/fonts/
 type1/public/amsfonts/cm/cmex10.pfb><C:/Users/vidal/AppData/Local/Programs/MiKT
 eX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/vidal/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/vidal/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/vidal/A
-ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users
-/vidal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><
-C:/Users/vidal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmm
-i9.pfb><C:/Users/vidal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
-s/cm/cmmib10.pfb><C:/Users/vidal/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmr10.pfb><C:/Users/vidal/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/public/amsfonts/cm/cmr5.pfb><C:/Users/vidal/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/vidal/AppData/Local/Programs/M
-iKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/vidal/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/vidal/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/vidal/App
-Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/
-vidal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C
-:/Users/vidal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy
-7.pfb><C:/Users/vidal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
-/cm/cmsy8.pfb>
-Output written on Simulacao_Kplint_USLE_Springer.pdf (27 pages, 7247000 bytes).
+rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/vidal/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/vidal/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/
+vidal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C
+:/Users/vidal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi
+b10.pfb><C:/Users/vidal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmr10.pfb><C:/Users/vidal/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/amsfonts/cm/cmr5.pfb><C:/Users/vidal/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmr6.pfb><C:/Users/vidal/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/vidal/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/vidal/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/vidal/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/vidal/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/v
+idal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:
+/Users/vidal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8
+.pfb>
+Output written on Simulacao_Kplint_USLE_Springer.pdf (26 pages, 7232054 bytes).
 
 PDF statistics:
- 1317 PDF objects out of 1440 (max. 8388607)
- 132 named destinations out of 1000 (max. 500000)
+ 1297 PDF objects out of 1440 (max. 8388607)
+ 129 named destinations out of 1000 (max. 500000)
  272 words of extra memory for PDF output out of 10000 (max. 10000000)
 

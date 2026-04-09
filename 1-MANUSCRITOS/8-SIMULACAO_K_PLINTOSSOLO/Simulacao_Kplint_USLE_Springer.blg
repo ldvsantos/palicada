@@ -16,45 +16,45 @@ Warning--empty journal in embrapa_2018
 `journal' is a missing field, not a string, for entry morgan_2005
 while executing---line 1810 of file sn-basic.bst
 Warning--empty journal in morgan_2005
-You've used 56 entries,
+You've used 55 entries,
             3567 wiz_defined-function locations,
-            1081 strings with 16326 characters,
-and the built_in function-call counts, 46425 in all, are:
-= -- 4402
-> -- 1602
-< -- 36
-+ -- 636
-- -- 475
-* -- 3964
-:= -- 6734
-add.period$ -- 87
-call.type$ -- 56
-change.case$ -- 445
-chr.to.int$ -- 56
-cite$ -- 59
-duplicate$ -- 3629
-empty$ -- 3956
-format.name$ -- 654
-if$ -- 9729
+            1075 strings with 16168 characters,
+and the built_in function-call counts, 45626 in all, are:
+= -- 4322
+> -- 1581
+< -- 35
++ -- 628
+- -- 469
+* -- 3897
+:= -- 6620
+add.period$ -- 85
+call.type$ -- 55
+change.case$ -- 438
+chr.to.int$ -- 55
+cite$ -- 58
+duplicate$ -- 3566
+empty$ -- 3886
+format.name$ -- 643
+if$ -- 9560
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 430
-newline$ -- 177
-num.names$ -- 224
-pop$ -- 1094
+missing$ -- 422
+newline$ -- 174
+num.names$ -- 220
+pop$ -- 1076
 preamble$ -- 1
-purify$ -- 385
+purify$ -- 379
 quote$ -- 0
-skip$ -- 1015
+skip$ -- 999
 stack$ -- 0
-substring$ -- 4087
-swap$ -- 1035
+substring$ -- 4011
+swap$ -- 1016
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 495
+type$ -- 486
 warning$ -- 3
-while$ -- 299
+while$ -- 293
 width$ -- 0
-write$ -- 653
+write$ -- 641
 (There were 3 error messages)
