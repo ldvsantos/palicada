@@ -67,12 +67,23 @@ M_AL_PCT = 99.2           # saturação por Al no BAc (pior caso)
 P95_MM = 181.8            # P95 mensal (mm), série 2005–2025
 VIB_INTERMEDIARIO = 1.53  # cm/h, terço intermediário
 
+# Parâmetros geotécnicos — Ensaio de cisalhamento direto (horizonte Bt, 1,20 m)
+# Modalidade: rápido, não adensado, inundado (ASTM D 6528-17)
+COESAO_KPA = 13.02        # kPa, coesão inundada
+PHI_GRAUS = 34.93         # graus, ângulo de atrito interno
+GAMMA_G = 2.654           # g/cm³, massa específica dos grãos
+GAMMA_SAT = 19.93         # kN/m³, peso específico saturado
+# Altura crítica de Rankine (corte vertical, fissura de tração inundada)
+KA = np.tan(np.radians(45 - PHI_GRAUS / 2)) ** 2
+HC_CRACK = 2.67 * COESAO_KPA / (GAMMA_SAT * np.sqrt(KA))  # ≈ 3.35 m
+
 # VIB por posição (usada na chave — assume-se terço intermediário como referência
 # para todas as feições, pois todas estão em topo de vale com convergência)
 feicoes["VIB_cmh"] = VIB_INTERMEDIARIO
 feicoes["Argila_B"] = ARGILA_B_PCT
 feicoes["m_Al"] = M_AL_PCT
 feicoes["P95_mm"] = P95_MM
+feicoes["H_Hc"] = feicoes["Prof_max_m"] / HC_CRACK  # razão prof./altura crítica
 
 
 # =============================================================================
@@ -115,14 +126,16 @@ def contar_indicadores_criticos(row):
         n += 1
     if row["Prof_max_m"] > 1.0 and row["Cabeca"] in ("vertical", "escarpada"):
         n += 1
+    if row["H_Hc"] > 0.40:  # instabilidade geotécnica: H/Hc > 0.40
+        n += 1
     return n
 
 
 def classificar_vulnerabilidade(n_crit):
-    """Nível 3: classe de vulnerabilidade."""
-    if n_crit >= 4:
+    """Nível 3: classe de vulnerabilidade (0–6 indicadores)."""
+    if n_crit >= 5:
         return "Crítica"
-    elif n_crit >= 2:
+    elif n_crit >= 3:
         return "Moderada"
     else:
         return "Baixa"
@@ -315,9 +328,9 @@ def fig_fluxograma():
     e terminais, paleta monocromática (grayscale-safe), 300 DPI.
     """
 
-    fig, ax = plt.subplots(figsize=(8, 14))
+    fig, ax = plt.subplots(figsize=(8, 17))
     ax.set_xlim(0, 10)
-    ax.set_ylim(0, 17)
+    ax.set_ylim(0, 20)
     ax.axis("off")
     ax.set_aspect("equal")
 
@@ -383,13 +396,13 @@ def fig_fluxograma():
     #  BLOCO EGC — Classificação morfológica prévia
     # ═══════════════════════════════════════════════════════════════════════
     ax.add_patch(FancyBboxPatch(
-        (1.2, 15.15), 7.6, 1.5,
+        (1.2, 18.15), 7.6, 1.5,
         boxstyle="round,pad=0.10", fc="white", ec=GY, lw=0.8,
         linestyle=(0, (4, 3)), zorder=2))
-    ax.text(5, 16.3, "CLASSIFICAÇÃO MORFOLÓGICA — EGC",
+    ax.text(5, 19.3, "CLASSIFICAÇÃO MORFOLÓGICA — EGC",
             ha="center", va="center", fontsize=9.5,
             fontweight="bold", color=BK, zorder=3)
-    ax.text(5, 15.65,
+    ax.text(5, 18.65,
             "(1) Tipo   (2) Família   (3) Persistência   "
             "(4) Posição na paisagem\n"
             "(5) Forma   (6) Continuidade da forma   "
@@ -398,107 +411,126 @@ def fig_fluxograma():
             zorder=3, linespacing=1.5, multialignment="center")
 
     # Seta EGC → Extensão
-    arr(5, 15.15, 5, 14.7)
+    arr(5, 18.15, 5, 17.7)
 
     # Rótulo de extensão
-    rbox(5, 14.4, 5.0, 0.45,
+    rbox(5, 17.4, 5.0, 0.45,
          "EXTENSÃO PROCESSO-FUNCIONAL",
          fs=9.5, fc=LG, bold=True)
 
-    arr(5, 14.17, 5, 13.75)
+    arr(5, 17.17, 5, 16.75)
 
     # ── Separadores de nível ──────────────────────────────────────────────
-    sep(13.6, "NÍVEL 1 — Profundidade")
-    sep(10.0, "NÍVEL 2 — Mecanismo dominante")
-    sep(5.6, "NÍVEL 3 — Vulnerabilidade funcional")
+    sep(16.6, "NÍVEL 1 — Profundidade")
+    sep(13.0, "NÍVEL 2 — Mecanismo dominante")
+    sep(8.6, "NÍVEL 3 — Vulnerabilidade funcional")
 
     # ═══════════════════════════════════════════════════════════════════════
     #  NÍVEL 1 — PROFUNDIDADE
     # ═══════════════════════════════════════════════════════════════════════
-    rbox(5, 13.2, 4.0, 0.5,
+    rbox(5, 16.2, 4.0, 0.5,
          "Feição erosiva classificada pela EGC",
          fs=9, fc=LG, bold=True)
 
-    arr(5, 12.95, 5, 12.55)
+    arr(5, 15.95, 5, 15.55)
 
-    diam(5, 11.9, 3.2, 1.2, "Profundidade\nmáxima (m)?", fs=9)
+    diam(5, 14.9, 3.2, 1.2, "Profundidade\nmáxima (m)?", fs=9)
 
     # Esquerda → SULCO
-    arr(3.4, 11.9, 2.1, 11.9, "< 0,3")
-    tbox(1.2, 11.9, 1.5, 0.4, "SULCO", fs=9)
+    arr(3.4, 14.9, 2.1, 14.9, "< 0,3")
+    tbox(1.2, 14.9, 1.5, 0.4, "SULCO", fs=9)
 
     # Direita → VOÇOROCA
-    arr(6.6, 11.9, 8.0, 11.9, "> 3,0")
-    tbox(8.8, 11.9, 1.8, 0.4, "VOÇOROCA", fs=9)
+    arr(6.6, 14.9, 8.0, 14.9, "> 3,0")
+    tbox(8.8, 14.9, 1.8, 0.4, "VOÇOROCA", fs=9)
+
+    # Anotação geotécnica no limiar 3,0 m
+    ax.text(8.8, 14.45,
+            f"Hc = {HC_CRACK:.2f} m\n(Rankine, inundado)",
+            ha="center", va="center", fontsize=6.5, color=GY,
+            fontstyle="italic", zorder=3)
 
     # Centro → RAVINA
-    arr(5, 11.3, 5, 10.75, "0,3 – 3,0")
-    rbox(5, 10.5, 2.0, 0.4, "RAVINA", fs=10, bold=True, fc=LG)
+    arr(5, 14.3, 5, 13.75, "0,3 – 3,0")
+    rbox(5, 13.5, 2.0, 0.4, "RAVINA", fs=10, bold=True, fc=LG)
 
     # ═══════════════════════════════════════════════════════════════════════
     #  NÍVEL 2 — MECANISMO DOMINANTE
     # ═══════════════════════════════════════════════════════════════════════
-    arr(5, 10.3, 5, 9.75)
+    arr(5, 13.3, 5, 12.75)
 
-    ax.text(5, 9.55, "Avaliar mecanismos (podem coexistir):",
+    ax.text(5, 12.55, "Avaliar mecanismos (podem coexistir):",
             ha="center", va="center", fontsize=8, color=GY,
             fontstyle="italic", zorder=3)
 
     # Barra de bifurcação
-    ax.plot([1.8, 8.2], [9.25, 9.25], color=BK, lw=LW, zorder=2)
-    ax.plot([5, 5], [9.4, 9.25], color=BK, lw=0.6, zorder=2)
+    ax.plot([1.8, 8.2], [12.25, 12.25], color=BK, lw=LW, zorder=2)
+    ax.plot([5, 5], [12.4, 12.25], color=BK, lw=0.6, zorder=2)
     for xp in [1.8, 5.0, 8.2]:
-        arr(xp, 9.25, xp, 8.85)
+        arr(xp, 12.25, xp, 11.85)
 
     # Três losangos de avaliação (paralelos)
-    diam(1.8, 8.2, 2.7, 1.2,
+    diam(1.8, 11.2, 2.7, 1.2,
          "VIB < 2 cm h⁻¹\nArgila (B) > 45%?", fs=7.5)
-    diam(5.0, 8.2, 2.7, 1.2,
+    diam(5.0, 11.2, 2.7, 1.2,
          "Cabeça escarpada\nProf. > 0,8 m?", fs=7.5)
-    diam(8.2, 8.2, 2.7, 1.2,
+    diam(8.2, 11.2, 2.7, 1.2,
          "VIB ≥ 2 cm h⁻¹\nDecliv. > 12%?", fs=7.5)
 
     # Setas "Sim"
-    arr(1.8, 7.6, 1.8, 7.1, "Sim")
-    arr(5.0, 7.6, 5.0, 7.1, "Sim")
-    arr(8.2, 7.6, 8.2, 7.1, "Sim")
+    arr(1.8, 10.6, 1.8, 10.1, "Sim")
+    arr(5.0, 10.6, 5.0, 10.1, "Sim")
+    arr(8.2, 10.6, 8.2, 10.1, "Sim")
 
     # Caixas de mecanismo (terminais)
-    tbox(1.8, 6.75, 2.3, 0.5, "Saturação-\ndominante", fs=8.5, fc=MG)
-    tbox(5.0, 6.75, 2.3, 0.5, "Regressão-\ndominante", fs=8.5, fc=MG)
-    tbox(8.2, 6.75, 2.3, 0.5, "Incisão-\ndominante", fs=8.5, fc=MG)
+    tbox(1.8, 9.75, 2.3, 0.5, "Saturação-\ndominante", fs=8.5, fc=MG)
+    tbox(5.0, 9.75, 2.3, 0.5, "Regressão-\ndominante", fs=8.5, fc=MG)
+    tbox(8.2, 9.75, 2.3, 0.5, "Incisão-\ndominante", fs=8.5, fc=MG)
 
     # Barra de convergência
-    ax.plot([1.8, 8.2], [6.2, 6.2], color=BK, lw=LW, zorder=2)
+    ax.plot([1.8, 8.2], [9.2, 9.2], color=BK, lw=LW, zorder=2)
     for xp in [1.8, 5.0, 8.2]:
-        ax.plot([xp, xp], [6.5, 6.2], color=BK, lw=0.6, zorder=2)
-    arr(5, 6.2, 5, 5.7)
+        ax.plot([xp, xp], [9.5, 9.2], color=BK, lw=0.6, zorder=2)
+    arr(5, 9.2, 5, 8.7)
 
     # ═══════════════════════════════════════════════════════════════════════
     #  NÍVEL 3 — VULNERABILIDADE FUNCIONAL
     # ═══════════════════════════════════════════════════════════════════════
-    rbox(5, 4.6, 7.0, 1.6,
-         "CONTAGEM DE INDICADORES CRÍTICOS (0–5)\n\n"
+    rbox(5, 7.4, 7.8, 2.0,
+         "CONTAGEM DE INDICADORES CRÍTICOS (0–6)\n\n"
          "(1) VIB < 2 cm h⁻¹           (2) Argila (B) > 45%\n"
          "(3) m(Al) > 80%                (4) P95 > 150 mm mês⁻¹\n"
-         "(5) Prof. > 1,0 m + cabeça escarpada",
-         fs=8, fc=LG)
+         "(5) Prof. > 1,0 m + cabeça escarpada\n"
+         "(6) H/Hc > 0,40  (c = 13 kPa, ϕ = 35°, inundado)",
+         fs=7.5, fc=LG)
 
     # Três saídas de vulnerabilidade
-    arr(3.0, 3.8, 2.0, 2.95, "0–1")
-    arr(5.0, 3.8, 5.0, 2.95, "2–3")
-    arr(7.0, 3.8, 8.0, 2.95, "≥ 4")
+    arr(3.0, 6.4, 2.0, 5.55, "0–2")
+    arr(5.0, 6.4, 5.0, 5.55, "3–4")
+    arr(7.0, 6.4, 8.0, 5.55, "≥ 5")
 
     # Gradiente de cinza: Baixa (claro) → Moderada → Crítica (escuro)
-    tbox(2.0, 2.6, 1.8, 0.5, "BAIXA", fs=10, fc="#E8E8E8")
-    tbox(5.0, 2.6, 2.2, 0.5, "MODERADA", fs=10, fc="#D0D0D0")
-    tbox(8.0, 2.6, 1.8, 0.5, "CRÍTICA", fs=10, fc="#B8B8B8")
+    tbox(2.0, 5.2, 1.8, 0.5, "BAIXA", fs=10, fc="#E8E8E8")
+    tbox(5.0, 5.2, 2.2, 0.5, "MODERADA", fs=10, fc="#D0D0D0")
+    tbox(8.0, 5.2, 1.8, 0.5, "CRÍTICA", fs=10, fc="#B8B8B8")
+
+    # ── Bloco geotécnico informativo ──────────────────────────────────────
+    rbox(5, 3.8, 7.8, 1.4,
+         "PARÂMETROS GEOTÉCNICOS (horizonte Bt, 1,20 m)\n"
+         f"c = {COESAO_KPA} kPa   ϕ = {PHI_GRAUS}°   "
+         f"γsat = {GAMMA_SAT} kN/m³   γg = {GAMMA_G} g/cm³\n"
+         f"Hc (Rankine, fissura inundada) = {HC_CRACK:.2f} m "
+         "≈ limiar EGC (3 m)",
+         fs=7.5, lw=0.5)
 
     # Nota interpretativa
-    rbox(5, 1.4, 7.5, 0.65,
-         "≥ 4 indicadores → equivalente funcional a voçoroca incipiente\n"
+    rbox(5, 2.4, 7.5, 0.65,
+         "≥ 5 indicadores → equivalente funcional a voçoroca incipiente\n"
          "→ intervenção prioritária de controle",
          fs=8, lw=0.5)
+
+    # Seta do bloco geotécnico para nota
+    arr(5, 3.1, 5, 2.75)
 
     fig.savefig(os.path.join(OUT_DIR, "fig_S1_chave_deterministica.png"),
                 bbox_inches="tight", pad_inches=0.3, dpi=300)
@@ -838,15 +870,26 @@ def fig_abaco_classificacao_v2():
     ax.tick_params(which="both", direction="in", top=True, right=True)
     ax.grid(which="major", alpha=0.2, linestyle=":", color="gray")
 
+    # ── Limiar EGC (3 m) e Hc geotécnico ────────────────────────────────
     ax.axvline(x=3.0, color="#888", linestyle=":", lw=1.0, alpha=0.5)
-    ax.text(2.85, 9.5, "Limiar EGC\n(3 m)", fontsize=7, color="#888",
+    ax.text(2.85, 9.5, f"Limiar EGC (3 m)\nHc = {HC_CRACK:.2f} m →",
+            fontsize=7, color="#888",
             ha="right", va="top", fontstyle="italic")
+
+    # ── Anotações H/Hc por feição ────────────────────────────────────────
+    for _, row in feicoes.iterrows():
+        h_hc = row["H_Hc"]
+        ax.text(row["Prof_max_m"], row["VIB_cmh"] - 0.55,
+                f"H/Hc={h_hc:.2f}", fontsize=6, color="#555",
+                ha="center", va="top", fontstyle="italic",
+                bbox=dict(boxstyle="round,pad=0.15", fc="white",
+                          ec="none", alpha=0.7))
 
     ax.text(0.01, -0.09,
             f"Variáveis fixadas: m(Al) = {m_al_fix}%, "
             f"P95 = {p95_fix} mm/mês, declividade = {decliv_fix}%\n"
             "Contornos: limiares de transição entre classes fuzzy Mamdani "
-            "(centróide)",
+            f"(centróide) — Hc(Rankine, inundado) = {HC_CRACK:.2f} m",
             transform=ax.transAxes, fontsize=7.5, color="#555", va="top")
 
     # ── Barra lateral de intensidade (hachuras, sem cor) ──────────────────

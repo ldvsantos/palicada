@@ -66,6 +66,40 @@ Os atributos químicos e físicos obtidos para os horizontes descritos (Tabela 1
 | Textura                          | Franco Argilo Arenosa | Argilosa | Argilosa   |         Argilosa |
 
 
+### 2.2.1 Caracterização geotécnica
+
+Para a obtenção dos parâmetros de resistência ao cisalhamento do solo, foi extraída uma amostra indeformada (bloco de solo) do talude exposto na ravina, à profundidade de 1,20 m, correspondente ao horizonte Bt do Plintossolo Argilúvico distrófico. O material foi classificado como pedregulho areno-argiloso, vermelho escuro, compatível com a presença de nódulos plínticos ferruginosos cimentados na matriz argilosa.
+
+Os ensaios de cisalhamento direto foram realizados pelo Laboratório Solo Tech Geotécnica Ltda (Aracaju–SE), na modalidade rápido, não adensado e inundado, conforme ASTM D 6528-17, utilizando quatro corpos de prova (CPs) moldados a partir do bloco indeformado, com dimensões aproximadas de 50 mm × 50 mm × 20 mm. As tensões normais aplicadas foram 20, 40, 80 e 200 kPa, com velocidade de cisalhamento de 0,5 mm/min (deformação controlada). A inundação prévia dos CPs simula a condição crítica de campo, na qual a saturação do perfil por precipitação intensa reduz a sucção matricial e a resistência efetiva do solo [@fredlund_rahardjo_1993]. A massa específica dos grãos ($\gamma_g$) foi determinada pelo método DNER-ME 93-94, obtendo-se 2,654 g/cm³.
+
+Os resultados do ensaio de cisalhamento direto são apresentados na Tabela 2, e o resumo das características dos corpos de prova na Tabela 3.
+
+**Tabela 2** -- Parâmetros de resistência ao cisalhamento do Plintossolo Argilúvico (horizonte Bt, 1,20 m) -- Ensaio rápido, não adensado, inundado.
+
+| Parâmetro                              | Valor       |
+|----------------------------------------|:-----------:|
+| Coesão ($c$), kPa                      |       13,02 |
+| Ângulo de atrito interno ($\phi$), graus |      34,93 |
+| Massa específica dos grãos ($\gamma_g$), g/cm³ | 2,654 |
+
+**Tabela 3** -- Características dos corpos de prova e resultados individuais do ensaio de cisalhamento direto (amostra indeformada, horizonte Bt, 1,20 m).
+
+| Parâmetro                                         |   CP 1 |   CP 2 |   CP 3 |   CP 4 |
+|----------------------------------------------------|-------:|-------:|-------:|-------:|
+| Tensão normal ($\sigma_n$), kPa                    |   20,0 |   40,0 |   80,0 |  200,0 |
+| Massa específica aparente úmida inicial (g/cm³)    |  1,710 |  1,650 |  1,479 |  1,511 |
+| Umidade inicial (%)                                |  11,71 |  10,65 |  14,32 |  14,43 |
+| Massa específica seca inicial (g/cm³)              |  1,531 |  1,491 |  1,294 |  1,320 |
+| Índice de vazios inicial ($e_i$)                   |  0,734 |  0,780 |  1,051 |  1,011 |
+| Grau de saturação inicial ($S_i$), %               |   42,3 |   36,2 |   36,2 |   37,9 |
+| Umidade final (%)                                  |  29,68 |  25,65 |  28,45 |  25,48 |
+| Índice de vazios no fim do cisalhamento ($e_f$)    |  0,666 |  0,620 |  0,642 |  0,487 |
+| Grau de saturação final ($S_f$), %                 |  118,3 |  109,9 |  117,6 |  138,9 |
+| Resistência ao cisalhamento de pico ($\tau_p$), kPa |  22,61 |  45,70 |  69,19 | 152,07 |
+
+A envoltória de Mohr-Coulomb obtida ($\tau = 13{,}02 + \sigma_n \cdot \tan 34{,}93°$) indica coesão baixa ($c = 13{,}02$ kPa) e ângulo de atrito moderado a alto ($\phi = 34{,}93°$). A coesão reduzida em condição inundada reflete a dissipação da sucção matricial e explica a suscetibilidade ao colapso de taludes sob saturação por eventos de chuva intensa, enquanto o ângulo de atrito elevado é compatível com a contribuição friccional dos nódulos plínticos ferruginosos presentes na matriz do horizonte Bt [@caputo_2015]. A redução do índice de vazios ao final do cisalhamento (de 0,73–1,05 para 0,49–0,67) confirma comportamento compressivo, indicando solo normalmente adensado, e o grau de saturação final superior a 100% atesta a condição inundada atingida durante o ensaio.
+
+
 ## 2.3 Levantamento planialtimétrico
 
 O levantamento planialtimétrico da área foi realizado por aerofotogrametria, utilizando o drone Air 2S associado ao receptor GNSS RTK Emlid RS2. O sistema RTK teve como função corrigir erros de escala e localização geográfica, garantindo precisão centimétrica [@fortunato_2018].
@@ -105,7 +139,7 @@ Para dar suporte à leitura hidrossedimentológica do período monitorado em rel
 
 O monitoramento da dinâmica erosiva e deposicional foi realizado pelo método dos pinos [@morgan_2005; @guerra_2005; @andrade_rocha_2014], com protocolo padronizado para garantir reprodutibilidade e minimizar incertezas instrumentais. Foram instalados pinos de ferro com 30 cm de comprimento, cravados a 10 cm de profundidade e deixando 20 cm expostos, espaçados em intervalos regulares de 1 m ao longo dos segmentos superior, intermediário e inferior da ravina. As medições foram realizadas mensalmente durante dois anos (2023–2025), utilizando régua graduada com precisão de 1 mm, registrando a altura exposta do pino como proxy da deposição acumulada a montante das paliçadas. A medição foi realizada em dois pontos principais por segmento: imediatamente a montante de cada paliçada para estimar a deposição de sedimentos, e na cabeceira da ravina para mensurar perdas por erosão regressiva.
 
-As condições de contorno do sistema foram caracterizadas pelo Plintossolo Argilúvico distrófico (Tabela 1), com relevo ondulado a muito ondulado (declividade média de 8–12%), cobertura vegetal esparsa de pastagem degradada e uso do solo predominantemente pecuário extensivo. A impedância hidráulica do horizonte Bt (40–150+ cm) favorece a geração de escoamento por excesso de saturação, enquanto a baixa coesão efetiva dos horizontes superficiais (Ap e AB) aumenta a suscetibilidade ao destacamento por impacto de gotas e ao transporte por escoamento concentrado.
+As condições de contorno do sistema foram caracterizadas pelo Plintossolo Argilúvico distrófico (Tabela 1), com relevo ondulado a muito ondulado (declividade média de 8–12%), cobertura vegetal esparsa de pastagem degradada e uso do solo predominantemente pecuário extensivo. A impedância hidráulica do horizonte Bt (40–150+ cm) favorece a geração de escoamento por excesso de saturação, enquanto a baixa coesão efetiva medida em condição inundada ($c = 13{,}02$ kPa; $\phi = 34{,}93°$; Tabela 2) confirma quantitativamente a suscetibilidade do solo ao destacamento por impacto de gotas e ao transporte por escoamento concentrado. Sob saturação, a envoltória de Mohr-Coulomb ($\tau = 13{,}02 + \sigma_n \cdot \tan 34{,}93°$) indica que tensões normais efetivas reduzidas pela poropressão resultam em resistência ao cisalhamento insuficiente para manter a estabilidade dos taludes, o que explica mecanisticamente os colapsos laterais observados em campo e o consequente aporte de sedimento ao leito da ravina.
 
 Os dados morfométricos foram obtidos por aerofotogrametria com drone Air 2S e receptor GNSS RTK Emlid RS2, processados em ambiente SIG (QGIS 3.28) com resolução espacial de 5 cm/pixel e precisão planimétrica de ±3 cm. A delimitação da ravina e a segmentação em três trechos (superior, intermediário e inferior) seguiram critérios de desnível longitudinal e posição relativa às paliçadas, permitindo análise estratificada da resposta deposicional.
 

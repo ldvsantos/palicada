@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Emersson Guedes da Silva.">
+
+<title>caracterizacao_feicao_erosiva_plintossolo</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="Caracterizacao_Feicao_Erosiva_Plintossolo_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Caracterizacao_Feicao_Erosiva_Plintossolo_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="Caracterizacao_Feicao_Erosiva_Plintossolo_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="Caracterizacao_Feicao_Erosiva_Plintossolo_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="Caracterizacao_Feicao_Erosiva_Plintossolo_files/libs/quarto-html/popper.min.js"></script>
+<script src="Caracterizacao_Feicao_Erosiva_Plintossolo_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="Caracterizacao_Feicao_Erosiva_Plintossolo_files/libs/quarto-html/anchor.min.js"></script>
+<link href="Caracterizacao_Feicao_Erosiva_Plintossolo_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Caracterizacao_Feicao_Erosiva_Plintossolo_files/libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="Caracterizacao_Feicao_Erosiva_Plintossolo_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="Caracterizacao_Feicao_Erosiva_Plintossolo_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="Caracterizacao_Feicao_Erosiva_Plintossolo_files/libs/bootstrap/bootstrap-9e3ffae467580fdb927a41352e75a2e0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="fullcontent quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Limites da classificação morfológica e como parâmetros hidrodinâmicos ampliam o diagnóstico de ravinas em Plintossolos tropicais</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Emersson Guedes da Silva. </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">Invalid Date</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="resumo" class="level1">
+<h1>Resumo</h1>
+<p>Classificações morfológicas de erosão linear tendem a homogeneizar feições com severidade processual distinta, especialmente em solos tropicais onde infiltração reduzida, toxicidade por alumínio e forçante pluviométrica sazonal condicionam trajetórias evolutivas aceleradas. Neste estudo avaliou-se se a inclusão de parâmetros hidrodinâmicos (velocidade de infiltração básica, VIB; precipitação P<sub>95</sub>) e geoquímicos (saturação por alumínio) amplia a capacidade da EGC em discriminar severidade de feições erosivas em Plintossolo Argilúvico Distrófico nos Tabuleiros Costeiros de Sergipe, Brasil. A EGC enquadrou seis feições (profundidade 0,40–1,50 m) como ravinas permanentes ativas em topo de vale, sem diferenciação de severidade. A VIB reduziu 51% entre o terço superior (3,13 cm/h) e o intermediário (1,53 cm/h), indicando transição para regime de escoamento-dominante sob intensidades recorrentes no período chuvoso, ao passo que horizontes subsuperficiais com saturação por alumínio de 84–99% são consistentes com restrição de cobertura vegetal e instabilidade de taludes sob umedecimento sazonal. Uma extensão processo-funcional em três níveis hierárquicos, complementada por inferência fuzzy Mamdani, reclassificou duas feições como voçorocas incipientes (severidade de 79,7 e 85,0), distinção validada por agrupamento hierárquico de Ward (silhouette = 0,434, k = 2) e que a classificação morfológica não captura. Um ábaco bidimensional (profundidade × VIB) sintetiza os contornos de severidade em formato de campo consultável sem computação. Os resultados sugerem que indicadores hidrodinâmicos e edáficos podem ampliar o diagnóstico de severidade erosiva em Plintossolos tropicais e subsidiar a priorização de intervenções.</p>
+<p><strong>Keywords:</strong> Process-based gully classification, fuzzy logic, erosion severity, Plinthosol, tropical weathering, Coastal Tablelands, Brazil</p>
+<section id="highlights" class="level2">
+<h2 class="anchored" data-anchor-id="highlights">Highlights</h2>
+<ul>
+<li>EGC morphological classification cannot differentiate severity in Plinthosol gullies</li>
+<li>Infiltration rate dropped 51% downslope, triggering runoff-dominated regime</li>
+<li>Mamdani fuzzy inference reclassified two features as incipient voçorocas</li>
+<li>A field-readable 2-D abacus synthesizes severity contours without computation</li>
+<li>Al saturation above 80% restricts vegetation and amplifies slope instability</li>
+</ul>
+</section>
+<section id="destaques" class="level2">
+<h2 class="anchored" data-anchor-id="destaques">Destaques</h2>
+<ul>
+<li>A VIB reduziu 51% vertente abaixo, ativando regime de escoamento-dominante</li>
+<li>Inferência fuzzy Mamdani reclassificou duas feições como voçorocas incipientes</li>
+<li>Ábaco 2-D sintetiza contornos de severidade consultáveis em campo sem computação</li>
+</ul>
+</section>
+</section>
+<section id="introdução" class="level1">
+<h1>1. Introdução</h1>
+<p>A erosão hídrica em Plintossolos subtropicais e de tabuleiros costeiros constitui um vetor crônico de degradação territorial na América do Sul, onde a convergência de elevada fração argilosa, condutividade hidráulica restritiva e sazonalidade pluviométrica extrema acelera a evolução de feições lineares <span class="citation" data-cites="cassol_et_al_2023 de_oliveira_et_al_2024">[@cassol_et_al_2023; @de_oliveira_et_al_2024]</span>.</p>
+<p>Essa vulnerabilidade intrínseca assume contornos críticos diante de projeções que indicam incrementos superiores a 11% na magnitude da erosão hídrica nessas latitudes até 2090 <span class="citation" data-cites="xiong_et_al_2024">[@xiong_et_al_2024]</span>, cenário em que solos de permeabilidade subsuperficial restrita concentrarão parcela desproporcional do risco e da produção de sedimentos <span class="citation" data-cites="kuhn_et_al_2023">[@kuhn_et_al_2023]</span>.</p>
+<p>A formulação de diretrizes de controle demanda a tipificação rigorosa dessas feições; contudo, a diferenciação operacional entre ravinas e voçorocas permanece globalmente ambígua <span class="citation" data-cites="kumar_et_al_2020">[@kumar_et_al_2020]</span>. A literatura recente registra uso sobreposto da nomenclatura para feições sob escoamento concentrado <span class="citation" data-cites="amare_et_al_2019 frankl_et_al_2021">[@amare_et_al_2019; @frankl_et_al_2021]</span>, evidenciando que critérios topológicos baseados exclusivamente na permanência do fluxo e no aprofundamento vertical transcendem as classificações puramente morfométricas predominantes <span class="citation" data-cites="rashmi_et_al_2021 mohapatra_2022 ganerod_et_al_2023">[@rashmi_et_al_2021; @mohapatra_2022; @ganerod_et_al_2023]</span>.</p>
+<p>A taxonomia morfológica foi sistematicamente unificada pela Elementary Gully Classification (EGC) <span class="citation" data-cites="thwaites_et_al_2022">[@thwaites_et_al_2022]</span>, um arcabouço que tipifica feições lineares mediante a integração de sua posição na vertente, dinâmica de atividade, geometria em planta transversal e classe de profundidade.</p>
+<p>Embora a EGC tenha estabelecido um padrão métrico rigoroso em ambientes temperados e semiáridos, sua transposição direta para Plintossolos tropicais enfrenta o viés de homogeneizar feições com severidade processual muito distinta <span class="citation" data-cites="poesen_2018">[@poesen_2018]</span>. Essa imprecisão materializa-se quando a classificação enquadra na mesma categoria morfológica vertentes cujo destacamento responde a mecanismos hidrodinâmicos díspares, não captando o gradiente contínuo de intensidade erosiva subjacente <span class="citation" data-cites="poesen_et_al_2003">[@poesen_et_al_2003]</span>.</p>
+<p>Em unidades pedológicas dominadas por horizontes plínticos coesos, a trajetória evolutiva das ravinas é balizada por um limiar de velocidade de infiltração básica frequentemente inferior a 2 cm/h e por uma toxicidade subsuperficial por alumínio que inviabiliza o aprofundamento radicular estabilizador <span class="citation" data-cites="silva_rodrigues_et_al_2021 ribeiro_filho_et_al_2023">[@silva_rodrigues_et_al_2021; @ribeiro_filho_et_al_2023]</span>.</p>
+<p>O umedecimento sazonal dessas fraturas acelera a instabilidade de taludes por cisalhamento antes que a profundidade atinja o critério clásico adotado para voçorocamento, expondo uma insuficiência diagnóstica: o enquadramento puramente geométrico oculta a severidade hidrodinâmica e edáfica que governa o colapso estrutural <span class="citation" data-cites="morgan_rickson_2020 igwe_2012">[@morgan_rickson_2020; @igwe_2012]</span>. Esse mascaramento inviabiliza a priorização de intervenções conservacionistas, visto que barreiras permeáveis e estruturas de dissipação demandam dimensionamento ancorado na taxa de escoamento e na coesão do substrato, e não apenas nas dimensões externas da ravina <span class="citation" data-cites="stokes_et_al_2014 castillo_2014">[@stokes_et_al_2014; @castillo_2014]</span>.</p>
+<p>Até o presente momento, a EGC não foi calibrada para incorporar a redução de infiltração, a suscetibilidade química a colapsos e o contraste de precipitação de projeto como vetores contínuos de severidade em Plintossolos tropicais, restando uma lacuna entre a geometria da feição e sua energia processual.</p>
+<p>Neste estudo avalia-se se a inclusão analítica da velocidade de infiltração básica, da precipitação extrema e da saturação por alumínio permite ampliar a capacidade da EGC em discriminar a severidade de feições erosivas em Plintossolo Argilúvico Distrófico nos Tabuleiros Costeiros de Sergipe, Brasil. O estudo também examina se um gradiente contínuo de severidade, estruturado por inferência fuzzy Mamdani, captura transições de instabilidade que a tipificação discreta convencional tende a omistir, fornecendo uma base hierárquica verificável para intervenções de bioengenharia.</p>
+</section>
+<section id="materiais-e-métodos" class="level1">
+<h1>2. Materiais e métodos</h1>
+<section id="caracterização-da-área-de-estudo" class="level2">
+<h2 class="anchored" data-anchor-id="caracterização-da-área-de-estudo">2.1. Caracterização da área de estudo</h2>
+<p>O estudo foi conduzido em uma área localizada no povoado Timbó, município de São Cristóvão (-10.927923° de latitude; -37.195820° de longitude), a aproximadamente 22,3 km de Aracaju, capital do estado de Sergipe, na região Nordeste do Brasil. A área está inserida na unidade geomorfológica dos tabuleiros costeiros, pertencentes ao Grupo Barreiras, que correspondem a cerca de 32% da superfície estadual <span class="citation" data-cites="azambuja_missura_araujo_2024">[@azambuja_missura_araujo_2024]</span>.</p>
+<p>A localidade climatológica úmida transita para estações concentradas severamente no período abril-setembro, sustentando precipitações médias consistentes de 1.400 mm e máximos críticos em maio (164,7 mm) sobre perfis restritos de Plintossolo Háplico Distrófico e Neossolo Flúvico Psamítico <span class="citation" data-cites="nascimento_pedrotti_2004 duarte_santos_castelhano_2021">[@nascimento_pedrotti_2004; @duarte_santos_castelhano_2021]</span>. Concomitantemente, enquanto o relevo amplificado do taboleiro exibe homogeneidade moderada em partes alteadas, o local isolado de implantação converge declividades elevadamente sinuosas (7% a 24%), arquitetando a convergência imediata do escoamento primário linear que potencializa vertentes suscetíveis (Figura 1). [<strong>Nota aos autores:</strong> Incluir mapa de localização em múltiplas escalas (Brasil → Sergipe → Área) com escala gráfica, norte e coordenadas.]</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="media/image1.png" style="width:4.4in;height:3.1in" class="figure-img"></p>
+<figcaption>Figura 1 - Foto aérea da área estudada. Map lines delineate the study area and do not necessarily depict accepted national boundaries.</figcaption>
+</figure>
+</div>
+</section>
+<section id="classificação-do-solo" class="level2">
+<h2 class="anchored" data-anchor-id="classificação-do-solo">2.2. Classificação do solo</h2>
+<p>A identificação e classificação do perfil edáfico foi realizada segundo os protocolos do Sistema Brasileiro de Classificação de Solos (SiBCS) <span class="citation" data-cites="embrapa_2018">[@embrapa_2018]</span>, com base em caracterização morfológica conforme Tomé Júnior <span class="citation" data-cites="tome_junior_1997">[@tome_junior_1997]</span>. Para geração de base diagnóstica representativa das propriedades do Plintossolo junto às feições erosivas, procedeu-se à abertura de uma trincheira com dimensões de 1,5 m de profundidade, 1,5 m de comprimento e 1,0 m de largura, localizada próximo à Feição 1, permitindo descrição detalhada de cor, textura, estrutura, consistência e demais atributos morfológicos de cada horizonte.</p>
+<p>Reconhece-se que a caracterização edáfica baseada em perfil único constitui limitação, pois a heterogeneidade lateral ao longo da vertente pode não ser integralmente captada; contudo, o perfil foi posicionado em setor representativo da topossequência, e a extrapolação aos demais pontos é respaldada pela uniformidade da classe de solo mapeada na área <span class="citation" data-cites="nascimento_pedrotti_2004">[@nascimento_pedrotti_2004]</span>.</p>
+<p>Amostras de cada horizonte foram coletadas em triplicata e submetidas a análises físicas (granulometria pelo método da pipeta com dispersante NaOH 1 mol/L, conforme metodologia da Embrapa <span class="citation" data-cites="embrapa_2018">[@embrapa_2018]</span>) e químicas (pH em água 1:2,5; cátions trocáveis Al³⁺, K⁺, Ca²⁺, Mg²⁺ por extração com KCl 1 mol/L; fósforo disponível por Mehlich-1; carbono orgânico por método de Walkley-Black), fundamentando a classificação taxonômica. Os resultados analíticos do perfil são apresentados na Tabela 1.</p>
+<p>Tabela 1. Atributos químicos e físicos do Plintossolo Argilúvico Distrófico</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 21%">
+<col style="width: 21%">
+<col style="width: 21%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Atributos</th>
+<th style="text-align: right;">Ap (0–10 cm)</th>
+<th style="text-align: right;">AB (10–25 cm)</th>
+<th style="text-align: right;">BAc (25–40 cm)</th>
+<th style="text-align: right;">Bt (40–150+ cm)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>pH em água (1:2,5)</td>
+<td style="text-align: right;">5,2</td>
+<td style="text-align: right;">4,5</td>
+<td style="text-align: right;">4,6</td>
+<td style="text-align: right;">4,6</td>
+</tr>
+<tr class="even">
+<td>P (Fósforo) – mg/dm<sup>3</sup></td>
+<td style="text-align: right;">1,4</td>
+<td style="text-align: right;">1,4</td>
+<td style="text-align: right;">1,4</td>
+<td style="text-align: right;">1,4</td>
+</tr>
+<tr class="odd">
+<td>K (Potássio) – mg/dm<sup>3</sup></td>
+<td style="text-align: right;">82,1</td>
+<td style="text-align: right;">17,0</td>
+<td style="text-align: right;">6,5</td>
+<td style="text-align: right;">5,6</td>
+</tr>
+<tr class="even">
+<td>Al (Alumínio) – cmol<sub>c</sub>/dm<sup>3</sup></td>
+<td style="text-align: right;">0,56</td>
+<td style="text-align: right;">2,9</td>
+<td style="text-align: right;">3,7</td>
+<td style="text-align: right;">5,9</td>
+</tr>
+<tr class="odd">
+<td>T (CTC a pH 7,0) – cmol<sub>c</sub>/dm<sup>3</sup></td>
+<td style="text-align: right;">5,3</td>
+<td style="text-align: right;">4,1</td>
+<td style="text-align: right;">4,4</td>
+<td style="text-align: right;">7,9</td>
+</tr>
+<tr class="even">
+<td>m (Saturação por Alumínio) - %</td>
+<td style="text-align: right;">15,2</td>
+<td style="text-align: right;">89,8</td>
+<td style="text-align: right;">99,2</td>
+<td style="text-align: right;">84,7</td>
+</tr>
+<tr class="odd">
+<td>V (Saturação por Bases) - %</td>
+<td style="text-align: right;">58,4</td>
+<td style="text-align: right;">14,5</td>
+<td style="text-align: right;">9,5</td>
+<td style="text-align: right;">13,6</td>
+</tr>
+<tr class="even">
+<td>Areia - %</td>
+<td style="text-align: right;">51,5</td>
+<td style="text-align: right;">43,6</td>
+<td style="text-align: right;">43,5</td>
+<td style="text-align: right;">39,65</td>
+</tr>
+<tr class="odd">
+<td>Silte - %</td>
+<td style="text-align: right;">14,9</td>
+<td style="text-align: right;">8,9</td>
+<td style="text-align: right;">7,5</td>
+<td style="text-align: right;">8,9</td>
+</tr>
+<tr class="even">
+<td>Argila - %</td>
+<td style="text-align: right;">33,4</td>
+<td style="text-align: right;">47,4</td>
+<td style="text-align: right;">49,2</td>
+<td style="text-align: right;">51,4</td>
+</tr>
+<tr class="odd">
+<td>Textura</td>
+<td style="text-align: right;">Franco argilo-arenosa</td>
+<td style="text-align: right;">Argilosa</td>
+<td style="text-align: right;">Argilosa</td>
+<td style="text-align: right;">Argilosa</td>
+</tr>
+</tbody>
+</table>
+<section id="caracterização-geotécnica" class="level3">
+<h3 class="anchored" data-anchor-id="caracterização-geotécnica">2.2.1 Caracterização geotécnica</h3>
+<p>Para a obtenção dos parâmetros de resistência ao cisalhamento, extraiu-se uma amostra indeformada (bloco de solo) do talude exposto adjacente à Feição 1, à profundidade de 1,20 m, correspondente ao horizonte Bt. O material foi classificado como pedregulho areno-argiloso, vermelho escuro, compatível com a presença de nódulos plínticos ferruginosos cimentados na matriz argilosa.</p>
+<p>Os ensaios de cisalhamento direto foram realizados na modalidade rápido, não adensado e inundado (ASTM D 6528-17), com quatro corpos de prova (CPs) moldados com dimensões aproximadas de 50 mm × 50 mm × 20 mm, sob tensões normais de 20, 40, 80 e 200 kPa e velocidade de cisalhamento de 0,5 mm/min (deformação controlada). A inundação prévia dos CPs simula a condição crítica de campo em que a saturação por precipitação intensa reduz a sucção matricial e a resistência efetiva <span class="citation" data-cites="fredlund_rahardjo_1993">[@fredlund_rahardjo_1993]</span>. A massa específica dos grãos (<span class="math inline">\(\gamma_g = 2{,}654\)</span> g/cm³) foi determinada pelo método DNER-ME 93-94.</p>
+<p>Tabela 1a. Parâmetros de resistência ao cisalhamento do Plintossolo (horizonte Bt, 1,20 m) — ensaio rápido, não adensado, inundado.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Parâmetro</th>
+<th style="text-align: center;">Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Coesão (<span class="math inline">\(c\)</span>), kPa</td>
+<td style="text-align: center;">13,02</td>
+</tr>
+<tr class="even">
+<td>Ângulo de atrito interno (<span class="math inline">\(\phi\)</span>), graus</td>
+<td style="text-align: center;">34,93</td>
+</tr>
+<tr class="odd">
+<td>Massa específica dos grãos (<span class="math inline">\(\gamma_g\)</span>), g/cm³</td>
+<td style="text-align: center;">2,654</td>
+</tr>
+<tr class="even">
+<td>Peso específico saturado (<span class="math inline">\(\gamma_{sat}\)</span>), kN/m³</td>
+<td style="text-align: center;">19,93</td>
+</tr>
+</tbody>
+</table>
+<p>Tabela 1b. Características dos corpos de prova e resistência ao cisalhamento de pico.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Parâmetro</th>
+<th style="text-align: right;">CP 1</th>
+<th style="text-align: right;">CP 2</th>
+<th style="text-align: right;">CP 3</th>
+<th style="text-align: right;">CP 4</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Tensão normal (<span class="math inline">\(\sigma_n\)</span>), kPa</td>
+<td style="text-align: right;">20,0</td>
+<td style="text-align: right;">40,0</td>
+<td style="text-align: right;">80,0</td>
+<td style="text-align: right;">200,0</td>
+</tr>
+<tr class="even">
+<td>Massa esp.&nbsp;seca inicial (g/cm³)</td>
+<td style="text-align: right;">1,531</td>
+<td style="text-align: right;">1,491</td>
+<td style="text-align: right;">1,294</td>
+<td style="text-align: right;">1,320</td>
+</tr>
+<tr class="odd">
+<td>Índice de vazios inicial (<span class="math inline">\(e_i\)</span>)</td>
+<td style="text-align: right;">0,734</td>
+<td style="text-align: right;">0,780</td>
+<td style="text-align: right;">1,051</td>
+<td style="text-align: right;">1,011</td>
+</tr>
+<tr class="even">
+<td>Grau de saturação inicial (<span class="math inline">\(S_i\)</span>), %</td>
+<td style="text-align: right;">42,3</td>
+<td style="text-align: right;">36,2</td>
+<td style="text-align: right;">36,2</td>
+<td style="text-align: right;">37,9</td>
+</tr>
+<tr class="odd">
+<td>Índice de vazios final (<span class="math inline">\(e_f\)</span>)</td>
+<td style="text-align: right;">0,666</td>
+<td style="text-align: right;">0,620</td>
+<td style="text-align: right;">0,642</td>
+<td style="text-align: right;">0,487</td>
+</tr>
+<tr class="even">
+<td>Grau de saturação final (<span class="math inline">\(S_f\)</span>), %</td>
+<td style="text-align: right;">118,3</td>
+<td style="text-align: right;">109,9</td>
+<td style="text-align: right;">117,6</td>
+<td style="text-align: right;">138,9</td>
+</tr>
+<tr class="odd">
+<td>Resistência de pico (<span class="math inline">\(\tau_p\)</span>), kPa</td>
+<td style="text-align: right;">22,61</td>
+<td style="text-align: right;">45,70</td>
+<td style="text-align: right;">69,19</td>
+<td style="text-align: right;">152,07</td>
+</tr>
+</tbody>
+</table>
+<p>A envoltória de Mohr-Coulomb obtida (<span class="math inline">\(\tau = 13{,}02 + \sigma_n \cdot \tan 34{,}93°\)</span>) indica coesão baixa e ângulo de atrito moderado a alto. A redução do índice de vazios ao final do cisalhamento (<span class="math inline">\(\Delta e\)</span> de <span class="math inline">\(-0{,}07\)</span> a <span class="math inline">\(-0{,}52\)</span>) confirma comportamento contrátil (solo normalmente adensado), que sob cisalhamento rápido tende a gerar poropressão positiva e reduzir a tensão efetiva, ampliando a suscetibilidade a rupturas durante eventos de saturação rápida <span class="citation" data-cites="caputo_2015">[@caputo_2015]</span>. A altura crítica de corte vertical sob condição inundada, estimada pela teoria de Rankine com fissura de tração preenchida por água, resultou em <span class="math inline">\(H_c = 3{,}35\)</span> m — valor próximo ao limiar de 3 m da EGC para classificação como voçoroca, o que sugere convergência entre o critério morfométrico e a limitação geotécnica do substrato.</p>
+<p>A Velocidade de Infiltração Básica (VIB) foi determinada mediante o método de infiltrômetro de anéis concêntricos descrito por Bernardo et al. <span class="citation" data-cites="bernardo_et_al_2008">[-@bernardo_et_al_2008]</span>. Utilizou-se equipamento composto por dois anéis de diâmetros 20 cm (interno) e 40 cm (externo), com altura de 15 cm, cravados a 5 cm de profundidade no solo para minimizar o fluxo lateral. Os anéis foram instalados em três pontos estratificados (terço superior, médio e inferior da vertente), com três réplicas por posição (total de nove ensaios).</p>
+<p>A água utilizada foi armazenada em reservatório sombreado para manter a temperatura próxima à ambiente (25 ± 2 °C), minimizando o efeito da variação de viscosidade sobre as taxas de infiltração. Não foi aplicada correção de capilaridade, o que constitui limitação do método em solos com fração argilosa elevada, onde a sucção matricial pode superestimar a VIB inicial antes da estabilização.</p>
+<p>Cada ensaio teve duração mínima de 120 minutos, com leituras registradas a intervalos de 5 minutos nos primeiros 30 min e de 10 minutos até estabilização. O critério de estabilização adotado foi a obtenção de três leituras consecutivas sem variação superior a 10% entre si. Para fins de síntese, a VIB em cada posição foi estimada como a média das cinco últimas leituras da série temporal do ensaio, utilizando a velocidade média expressa em cm/h.</p>
+</section>
+</section>
+<section id="morfologia-e-caracterização-topográfica-da-ravina" class="level2">
+<h2 class="anchored" data-anchor-id="morfologia-e-caracterização-topográfica-da-ravina">2.3 Morfologia e caracterização topográfica da ravina</h2>
+<p>A aquisição de dados geoespaciais de alta resolução foi conduzida mediante sistema aéreo não tripulado (UAV) modelo DJI Phantom 4 PRO (SZ DJI Technology Co., Ltd., Shenzhen, China), a altitude de voo de 40 m acima do terreno, gerando ortomosaicos com resolução espacial (GSD) de aproximadamente 3 cm por pixel. Dois voos fotogramétricos foram planejados com sobreposição longitudinal de 80% e lateral de 60%, abrangendo aproximadamente 5 hectares.</p>
+<p>O processamento fotogramétrico para geração do Modelo Digital de Elevação (MDE) e nuvem de pontos (densidade média de 120 pontos/m²) foi realizado no software Agisoft Metashape Professional Edition 1.6. Embora a ausência de pontos de controle terrestres (GCPs) limite a acurácia posicional absoluta ao GNSS embarcado (XY ≈ 1,5 m, Z ≈ 0,5 m), as métricas relativas viabilizaram a avaliação morfométrica detalhada de largura, comprimento e profundidade nas seções superior, média e inferior das incisões. Consequentemente, seis incisões erosivas foram identificadas e medidas sistematicamente na área, suportadas pela geração de ortomosaicos aéreos que se consolidam como técnica acurada para reconstrução topográfica e extração geométrica <span class="citation" data-cites="raj_et_al_2022 wilkinson_et_al_2024">[@raj_et_al_2022; @wilkinson_et_al_2024]</span>. Para contextualização da evolução morfológica temporal, conduziu-se adicionalmente análise multitemporal de imagens orbitais (2007–2023), rastreando a dinâmica da cobertura vegetal e da exposição edáfica.</p>
+</section>
+<section id="classificação-dos-processos-erosivos" class="level2">
+<h2 class="anchored" data-anchor-id="classificação-dos-processos-erosivos">2.4 Classificação dos processos erosivos</h2>
+<p>A tipificação das incisões erosivas conforme The Elementary Gully Classification (EGC) proposta por Thwaites et al. <span class="citation" data-cites="thwaites_et_al_2022">[-@thwaites_et_al_2022]</span> foi operacionalizada seguindo a sequência decisória hierárquica de oito níveis (Figura 2) que considera posicionamento na paisagem, grau de atividade, forma em planta, geometria da seção transversal, tipo de cabeça erosiva e classes de profundidade.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="media/fig_fluxograma_classificacao.png" class="img-fluid figure-img" style="width:6.5in"></p>
+<figcaption>Figura 2 - Fluxograma hierárquico da Elementary Gully Classification (EGC) com oito níveis de atributos classificatórios, adaptado de Thwaites et al.&nbsp;(2022)</figcaption>
+</figure>
+</div>
+<p>O enquadramento decisório da EGC fundamentou-se na integração das medidas morfométricas com a interpretação métrica do MDE fotogramétrico, identificando as frentes de expansão, a organização espacial das feições e os padrões estruturais de conectividade hidrológica. Paralelamente às restrições edáficas inerentes do substrato, o regime climático mensal agregado (série 2005–2025) definiu as janelas sazonais de máxima propensão pluviométrica, constituindo a justaposição física governante para a intensificação do escoamento concentrado e a suscetível perenidade erosiva ao longo da vertente <span class="citation" data-cites="duarte_santos_castelhano_2021">[@duarte_santos_castelhano_2021]</span>.</p>
+</section>
+<section id="análise-exploratória-de-dados-morfométricos" class="level2">
+<h2 class="anchored" data-anchor-id="análise-exploratória-de-dados-morfométricos">2.5 Análise exploratória de dados morfométricos</h2>
+<p>As variáveis morfométricas (largura, profundidade, comprimento) foram compiladas em matriz feição × atributo, a partir da qual se derivaram profundidade máxima, largura média e estimativa de volume mobilizável por aproximação geométrica de seção trapezoidal. As relações entre variáveis foram avaliadas por correlação de postos de Spearman (scipy.stats.spearmanr, SciPy 1.14, Python 3.13), adotando α = 0,05 sem correção para comparações múltiplas dado o caráter exploratório da análise e o tamanho amostral reduzido (n ≤ 6) <span class="citation" data-cites="zar_2014">[@zar_2014]</span>.</p>
+<p>Para identificação de agrupamentos morfológicos entre feições, aplicou-se clusterização hierárquica aglomerativa pelo método de Ward, com distância euclidiana calculada sobre variáveis padronizadas por z-score (média = 0, σ = 1), utilizando scipy.cluster.hierarchy. Todos os resultados estatísticos devem ser interpretados como indicativos de tendência, não como evidência confirmatória, em razão do baixo poder estatístico inerente à amostra.</p>
+<p>A VIB, quantificada por posição na vertente, foi utilizada como variável de contexto hidrológico para interpretação qualitativa da suscetibilidade erosiva, sem modelagem feição a feição, limitação decorrente da ausência de séries completas de infiltração por feição e por segmento e de medidas de condutividade hidráulica saturada.</p>
+</section>
+<section id="classificação-processo-funcional-complementar-à-egc" class="level2">
+<h2 class="anchored" data-anchor-id="classificação-processo-funcional-complementar-à-egc">2.6 Classificação processo-funcional complementar à EGC</h2>
+<p>Para superar as limitações da EGC na diferenciação de feições com profundidade inferior a 3 m porém com dinâmica funcional intensa, propôs-se uma classificação processo-funcional em três níveis hierárquicos, operando como camada decisória posterior à tipificação morfológica (Figura 7).</p>
+<p>O primeiro nível reproduz o critério de profundidade da EGC (&lt; 0,3 m → sulco; 0,3–3,0 m → ravina; &gt; 3,0 m → voçoroca). O segundo nível identifica o mecanismo dominante mediante combinação de VIB, fração argilosa do horizonte B e geometria da cabeça erosiva, diferenciando processos de saturação-dominante (VIB &lt; 2 cm/h e argila<sub>B</sub> &gt; 45%), incisão-dominante (VIB ≥ 2 cm/h e declividade &gt; 12%) e regressão-dominante (cabeça escarpada e profundidade &gt; 0,8 m).</p>
+<p>O terceiro nível quantifica a vulnerabilidade funcional por contagem de cinco indicadores críticos (VIB &lt; 2 cm/h, argila<sub>B</sub> &gt; 45%, saturação por alumínio m &gt; 80%, P95 mensal &gt; 150 mm e profundidade &gt; 1,0 m com cabeça escarpada). Feições com quatro ou mais indicadores são classificadas como de vulnerabilidade crítica, correspondendo a equivalente funcional de voçoroca incipiente.</p>
+<p>Adicionalmente, para tratar o continuum sulco–ravina–voçoroca como gradiente contínuo e não como dicotomia <span class="citation" data-cites="poesen_et_al_2003 poesen_2018">[@poesen_et_al_2003; @poesen_2018]</span>, implementou-se um sistema de inferência fuzzy tipo Mamdani <span class="citation" data-cites="mamdani_assilian_1975">[@mamdani_assilian_1975]</span> com cinco variáveis de entrada (profundidade, VIB, saturação por alumínio, P95 mensal e declividade) e uma variável de saída contínua (índice de severidade, 0–100).</p>
+<p>As funções de pertinência trapezoidais foram calibradas a partir dos limiares empíricos deste estudo (Material Suplementar, Figura S1). A variável de saída foi particionada em quatro conjuntos fuzzy: sulco [0, 0, 15, 30], ravina estável [15, 30, 45, 55], ravina transicional [40, 55, 70, 80] e voçoroca incipiente [65, 80, 100, 100].</p>
+<p>A base de regras compreende 18 regras IF-THEN derivadas do conhecimento de campo e da literatura. A defuzzificação foi realizada pelo método do centróide. A implementação utilizou a biblioteca scikit-fuzzy 0.5.0 em Python 3.13.</p>
+<p>A coerência interna da classificação foi avaliada por clustering hierárquico (Ward) e k-means (k = 2, k = 3) sobre a matriz morfométrica normalizada (profundidade, largura, comprimento e declividade) das cinco feições com dados completos, com coeficiente de silhouette como critério de qualidade do agrupamento.</p>
+<p>Para consolidação dos resultados em formato operacional, construiu-se um ábaco bidimensional mediante redução paramétrica do sistema fuzzy pentavariado a uma superfície de severidade em duas dimensões. A redução consiste em fixar três das cinco variáveis de entrada nos valores representativos do sítio, de modo que o índice de severidade passa a depender exclusivamente da profundidade e da VIB conforme a expressão proposta na Equação 1.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(S(d, v) = F_{\text{Mamdani}}\!\left(d,\; v \;\middle|\; m_{\text{Al}} = 99{,}2\%,\; P_{95} = 181{,}8 \text{ mm},\; \theta = 12\%\right)\)</span></td>
+<td style="text-align: right;">(1)</td>
+</tr>
+</tbody>
+</table>
+<p>onde <span class="math inline">\(d\)</span> é a profundidade máxima da feição (m), <span class="math inline">\(v\)</span> a velocidade de infiltração básica (cm/h), <span class="math inline">\(m_{\text{Al}}\)</span> a saturação por alumínio do horizonte diagnóstico (%), <span class="math inline">\(P_{95}\)</span> o percentil 95 da precipitação mensal (mm) e <span class="math inline">\(\theta\)</span> a declividade local (%). <span class="math inline">\(F_{\text{Mamdani}}\)</span> representa a saída defuzzificada pelo método do centróide do sistema de 18 regras descrito acima, avaliada sobre grade regular de 80 × 80 pontos no domínio <span class="math inline">\(d \in [0,\!01;\; 3{,}0]\)</span> m e <span class="math inline">\(v \in [0,\!01;\; 10{,}0]\)</span> cm/h. As isolinhas <span class="math inline">\(S = 30\)</span>, <span class="math inline">\(S = 55\)</span> e <span class="math inline">\(S = 80\)</span> particionam o espaço <span class="math inline">\(d \times v\)</span> em quatro zonas diagnósticas (sulco, ravina estável, ravina transicional e voçoroca incipiente).</p>
+<p>A lógica construtiva do ábaco inspira-se no paradigma de classificação MCT (Miniatura, Compactado, Tropical) proposto por Nogami e Villibor <span class="citation" data-cites="nogami_villibor_1981 nogami_villibor_1995">[-@nogami_villibor_1981; @nogami_villibor_1995]</span>, no qual solos tropicais são enquadrados em sete grupos por posição no espaço definido pelo coeficiente de deformabilidade <span class="math inline">\(c'\)</span> (adimensional, obtido do ensaio Mini-MCV) e pelo índice de laterização (Equação 2).</p>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(e' = \dfrac{P_i}{100} + \dfrac{20}{d'}\)</span></td>
+<td style="text-align: right;">(2)</td>
+</tr>
+</tbody>
+</table>
+<p>onde <span class="math inline">\(P_i\)</span> é a perda de massa por imersão em água (%) e <span class="math inline">\(d'\)</span> o coeficiente angular da curva Mini-MCV (mm). No ábaco MCT, limites lineares no plano <span class="math inline">\(c' \times e'\)</span> separam grupos lateríticos (LA, LA’, LG’) de não lateríticos (NA, NA’, NS’, NG’), permitindo enquadramento expedito sem ensaios complementares. A adaptação proposta preserva a estrutura bidimensional de consulta expedita, porém substitui os índices geotécnicos intrínsecos (<span class="math inline">\(c'\)</span>, <span class="math inline">\(e'\)</span>) por variáveis hidrogeomorfológicas mensuráveis em campo (<span class="math inline">\(d\)</span>, <span class="math inline">\(v\)</span>), e as fronteiras lineares entre grupos MCT pelas isolinhas não lineares de severidade fuzzy (<span class="math inline">\(S = 30, 55, 80\)</span>), conferindo ao diagrama capacidade de gradação contínua que o ábaco MCT original, de natureza discreta, não possui.</p>
+</section>
+</section>
+<section id="resultados-e-discussão" class="level1">
+<h1>3. Resultados e discussão</h1>
+<section id="inventário-morfológico-e-aplicação-da-egc" class="level2">
+<h2 class="anchored" data-anchor-id="inventário-morfológico-e-aplicação-da-egc">3.1 Inventário morfológico e aplicação da EGC</h2>
+<p>A aplicação da chave de classificação EGC <span class="citation" data-cites="thwaites_et_al_2022">[@thwaites_et_al_2022]</span> resultou no enquadramento diagnóstico de seis incisões erosivas (Tabela 2) como permanentes e ativas, sem sinais de estabilização secundária ou revegetação parcial. A taxonomia integral foi efetivada nas Feições 1, 4 e 5 por possuírem calhas contínuas com registros elucidados nos segmentos superior, intermediário e inferior, ao passo que nas Feições 2, 3 e 6, incipientes e de extensão limitada, a parametrização de seção transversal e tipo de cabeça esteve restrita apenas ao terço superior. Contudo, embora os descritores dimensionais situem satisfatoriamente a abertura erosiva no relevo, a classificação morfológica descreve a geometria sem explicitar o mecanismo temporal subjacente dominante <span class="citation" data-cites="poesen_2018 kumar_et_al_2020">[@poesen_2018; @kumar_et_al_2020]</span>.</p>
+<p>A persistência de feições trativas crônicas em Plintossolos sugere que há forte retroalimentação entre a restrição hidrodinâmica efetiva (VIB de 1,5–1,6 cm/h contida nos terços intermediário e inferior), a massiva geração de deflúvio concentrado em eventos que superem esse baixo limiar e a escassa resistência do epípedon limitante ao destacamento (horizonte Ap, 33% de argila).</p>
+<p>Em hiatos pluviométricos secos, a coesão de face estática do bloco subsuperficial mascara provisoriamente a evolução contínua da escavação; entretanto, sob regime de saturação sazonal (abril–agosto, com recargas frequentes de 141–165 mm/mês), a franca ascensão das pressões intersticiais minimiza a tensão efetiva lateral, o que acelera desprendimentos no talude e propicia rápido alargamento e colapso basal de paredes <span class="citation" data-cites="cassol_et_al_2023">[@cassol_et_al_2023]</span>. Acompanhando esse vetor de desagregação morfológica da célula, a severidade cisalhante da erosão longitudinal sobre o leito consolidado é aferida analiticamente de forma análoga à Equação 3.</p>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(\tau = \gamma \cdot R_h \cdot S\)</span></td>
+<td style="text-align: right;">(3)</td>
+</tr>
+</tbody>
+</table>
+<p>Onde <span class="math inline">\(\gamma\)</span> é o peso específico da água (kN/m³), <span class="math inline">\(R_h\)</span> o raio hidráulico da seção (m) e <span class="math inline">\(S\)</span> a declividade do leito (m/m). Preconizada para regime permanente e uniforme em canais abertos, a aplicação qualitativa da Equação 3 identifica os gradientes espaciais em que a energia erosiva atinge limiares restritivos. Nas declividades de 8–17% dos terços intermediários, <span class="math inline">\(\tau\)</span> se amplifica proporcionalmente a ponto de superar a resistência basal do horizonte Ap e sustentar incisão vertical ativa <span class="citation" data-cites="lafayette_cantalice_coutinho_2011 silva_rodrigues_et_al_2021">[@lafayette_cantalice_coutinho_2011; @silva_rodrigues_et_al_2021]</span>.</p>
+<p>Parametricamente, o ensaio de cisalhamento direto inundado (Tabela 1a) atestou a coesão do horizonte Bt em <span class="math inline">\(c = 13{,}02\)</span> kPa e atrito nulo em <span class="math inline">\(\phi = 34{,}93°\)</span>, viabilizando a estimativa analítica da altura crítica de corte vertical saturado em <span class="math inline">\(H_c = 3{,}35\)</span> m, segundo a teoria de Rankine com fissura de tração preenchida.</p>
+<p>Embora o balanço global apresente estabilidade estática perfeitamente aceitável no equilíbrio instantâneo (FOS 2,2–8,4), e a razão de encastramento <span class="math inline">\(H/H_c\)</span> opere com folgas variando de 0,12 (F2) a 0,45 (F5), as incisões mais aprofundadas já adentram a faixa crônica de degradação progressiva, onde repetidos ciclos de umedecimento-secagem e colapsos basais amortizam a coesão temporal e induzem o sistema tridimensional ao limiar gravitacional de ruptura <span class="citation" data-cites="firoozi_firoozi_2024 vanmaercke_et_al_2021">[@firoozi_firoozi_2024; @vanmaercke_et_al_2021]</span>.</p>
+<p>Tabela 2. Síntese tipológica e morfométrica das feições erosivas segundo a EGC</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Feição</th>
+<th style="text-align: right;">Comp. (m)</th>
+<th style="text-align: right;">Larg. média (m)</th>
+<th style="text-align: right;">Prof.&nbsp;máx. (m)</th>
+<th>Posição na paisagem</th>
+<th>Atividade</th>
+<th>Forma em planta</th>
+<th>Seção transversal</th>
+<th>Tipo de cabeça</th>
+<th>Classe de profundidade</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">35,0</td>
+<td style="text-align: right;">1,37</td>
+<td style="text-align: right;">1,10</td>
+<td>Topo de vale</td>
+<td>Ativa</td>
+<td>Composta/digitada</td>
+<td>Em “U”</td>
+<td>Vertical/escarpada</td>
+<td>Moderadamente profunda</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">8,0</td>
+<td style="text-align: right;">1,87</td>
+<td style="text-align: right;">0,40</td>
+<td>Topo de vale</td>
+<td>Ativa</td>
+<td>Linear</td>
+<td>Em “V”<sup>a</sup></td>
+<td>Suave<sup>a</sup></td>
+<td>Rasa</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">9,0</td>
+<td style="text-align: right;">1,30</td>
+<td style="text-align: right;">0,60</td>
+<td>Topo de vale</td>
+<td>Ativa</td>
+<td>Linear</td>
+<td>Em “V”<sup>a</sup></td>
+<td>Suave<sup>a</sup></td>
+<td>Rasa</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">20,2</td>
+<td style="text-align: right;">1,39</td>
+<td style="text-align: right;">1,40</td>
+<td>Topo de vale</td>
+<td>Ativa</td>
+<td>Linear</td>
+<td>Em “V”</td>
+<td>Vertical</td>
+<td>Moderadamente profunda</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">24,8</td>
+<td style="text-align: right;">1,38</td>
+<td style="text-align: right;">1,50</td>
+<td>Topo de vale</td>
+<td>Ativa</td>
+<td>Linear</td>
+<td>Em “V”</td>
+<td>Vertical/escarpada</td>
+<td>Profunda</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">n.d.</td>
+<td style="text-align: right;">2,37</td>
+<td style="text-align: right;">0,60</td>
+<td>Topo de vale</td>
+<td>Ativa</td>
+<td>Linear</td>
+<td>Em “V”<sup>a</sup></td>
+<td>Suave<sup>a</sup></td>
+<td>Rasa</td>
+</tr>
+</tbody>
+</table>
+<p><sup>a</sup> Classificação parcial: dados disponíveis apenas para segmento superior. n.d. = não determinado.</p>
+<p>Fonte: Autores, com base na Elementary Gully Classification (EGC) <span class="citation" data-cites="thwaites_et_al_2022">[@thwaites_et_al_2022]</span>.</p>
+<p>A atividade erosiva é indicada por cabeças abruptas, taludes sem cobertura vegetal e evidências de recuo regressivo na análise multitemporal de 16 anos (2007–2023, Figura 3). Nenhuma feição apresenta sinais de estabilização ou revegetação parcial.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="media/image4.jpeg" style="width:5in;height:2.4in" class="figure-img"></p>
+<figcaption>Figura 3 - Foto aérea com identificação das feições erosivas (a) e foto de coleta de dados morfométricos de uma feição erosiva na área estudada (b)</figcaption>
+</figure>
+</div>
+<p>A forma em planta é predominantemente linear nas Feições 2, 3, 4, 5 e 6, padrão característico de escoamento concentrado em perfis pedogênicos rasos em vias de exumação <span class="citation" data-cites="kumar_et_al_2020">[@kumar_et_al_2020]</span>. Em contraste, a Feição 1 exibe conformação dendrítica com ramificações laterais, refletindo a combinação de incisão vertical e colapso de margens sob forte convergência de fluxo em topos de vale argilosos <span class="citation" data-cites="sidorchuk_2006 dey_et_al_2018">[@sidorchuk_2006; @dey_et_al_2018]</span>.</p>
+<p>Essa morfologia em planta é consistente com a seção transversal em “V” (Tabela 2), indicando incisão vertical dominada pela tensão cisalhante do escoamento. Nas declividades de 8–17% dos terços intermediários, a vazão confinada escava o substrato argiloso (49–51% de argila em BAc e Bt; Tabela 1) antes que a maceração lateral rompa a coesão basal <span class="citation" data-cites="cassol_et_al_2023">[@cassol_et_al_2023]</span>. À medida que a incisão aprofunda a cabeceira e desestabiliza as margens, a calha evolui para o padrão em “U”.</p>
+<p>Na base dos braços dendríticos da Feição 1, a conformação trapezoidal (“U”) evidencia a perda de resistência ao cisalhamento dos taludes sob encharcamento contínuo durante a estação chuvosa (abril–agosto). Essa transição de “V” para “U” reflete o estágio de maturação da ravina, no qual a incisão do leito induz instabilidade basal e o subsequente colapso das margens <span class="citation" data-cites="bull_kirkby_1997 kirkby_bracken_2009">[@bull_kirkby_1997; @kirkby_bracken_2009]</span>. Esse mecanismo corrobora as observações de Podwojewski et al. <span class="citation" data-cites="podwojewski_et_al_2020">[-@podwojewski_et_al_2020]</span> em ravinas consolidadas, nas quais o recuo lateral estacional resulta de colapsos controlados pela variação do teor de umidade, dinâmica aplicável aos Tabuleiros Costeiros <span class="citation" data-cites="vanmaercke_et_al_2021">[@vanmaercke_et_al_2021]</span>.</p>
+<p>Esse padrão alinha-se ao modelo de Dey et al. <span class="citation" data-cites="dey_et_al_2018">[-@dey_et_al_2018]</span> para domínios lateríticos, no qual o alargamento da feição depende criticamente da deterioração da coesão do material saturado, e não apenas da tensão cisalhante transversal do escoamento. A instabilidade das paredes é governada pelo balanço entre a resistência interna do solo úmido e o alívio de tensão gerado pela incisão do leito <span class="citation" data-cites="kirkby_bracken_2009">[@kirkby_bracken_2009]</span>.</p>
+<p>As feições mais profundas (Feições 1, 4 e 5) apresentam cabeceiras escarpadas quase verticais, associadas à formação de poços de dissipação (Plunge Pool). Conforme Flores-Cervantes et al. <span class="citation" data-cites="flores_cervantes_et_al_2006">[-@flores_cervantes_et_al_2006]</span>, o recuo dessas fraturas depende do balanço espacial entre a escavação basal e o colapso por alívio de tensão do talude superior.</p>
+<p>Nas declividades locais (8–17%), a convergência de escoamento sustenta o recuo contínuo do headcut <span class="citation" data-cites="vanmaercke_et_al_2021">[@vanmaercke_et_al_2021]</span>. Rengers e Tucker <span class="citation" data-cites="rengers_tucker_2015">[-@rengers_tucker_2015]</span> reportam que até 80% do desprendimento volumétrico em ravinas processa-se pelo colapso da face vertical, fenômeno consistente com os depósitos sedimentares acumulados na base das Feições 4 e 5.</p>
+<p>Em comparação, as feições rasas (Feições 2, 3 e 6) apresentam perfis longitudinais suaves nas cabeceiras, operando em estágio inicial de aprofundamento e ainda sem instabilidade maciça dos taludes <span class="citation" data-cites="dey_et_al_2018">[@dey_et_al_2018]</span>. Contudo, a transição destas incisões incipientes para frentes escarpadas é acelerada durante a fase chuvosa (maio–agosto), quando a elevada recarga precipita o escoamento rápido na bacia de contribuição (VIB de 1,5 cm/h), ampliando a energia de chegada dos fluxos sobre o limite superior exposto <span class="citation" data-cites="cassol_et_al_2023">[@cassol_et_al_2023]</span>.</p>
+<p>Embora a EGC classifique todas as incisões como ravinas puras por restrição de profundidade (&lt; 3,0 m), este enquadramento morfológico estático subestima o estágio funcional severo do sistema. A combinação de declividades acentuadas (7–24%), substrato coeso instável sob umidade acentuada e perda crônica de proteção superficial indica alta propensão ao cisalhamento reverso de taludes, projetando o escalonamento progressivo para voçorocamentos se a energia de fundo não for contida <span class="citation" data-cites="poesen_2018 kumar_et_al_2020">[@poesen_2018; @kumar_et_al_2020]</span>.</p>
+</section>
+<section id="condicionantes-morfométricos-edáficos-e-hidráulicos" class="level2">
+<h2 class="anchored" data-anchor-id="condicionantes-morfométricos-edáficos-e-hidráulicos">3.2 Condicionantes morfométricos, edáficos e hidráulicos</h2>
+<p>A progressão da erosão linear reflete-se na variação espacial da profundidade máxima, que oscilou de 0,40 m (Feição 2) a 1,50 m (Feição 5), com comprimentos totais entre 8,0 m (Feição 2) e 35,0 m (Feição 1), e largura média de 1,30 m (Feição 3) a 2,37 m (Feição 6) (Tabela 2). O aprofundamento mais severo concentra-se nos terços intermediários das incisões mais extensas (Feições 1, 4 e 5), posições onde a combinação de declividade acentuada (8–17%) amplifica a tensão cisalhante do escoamento. Em contrapartida, as Feições 2, 3 e 6, contidas no segmento superior da rampa, registram profundidades menores (0,40–0,60 m), sugerindo estágio incipiente da incisão.</p>
+<p>As relações morfométricas exploratórias corroboram o referencial dinâmico do crescimento da ravina (n = 5 feições com comprimento disponível). A correlação de Spearman indicou tendência positiva entre profundidade máxima e comprimento (ρ = 0,70, p = 0,188), e inversa com a largura média (ρ = −0,667, p = 0,148, n = 6). Embora não atinjam significância estatística nominal pelo tamanho amostral, essas tendências reproduzem o padrão evolutivo reportado por Dey et al. <span class="citation" data-cites="dey_et_al_2018">[-@dey_et_al_2018]</span>, no qual o aprofundamento vertical acoplado ao recuo frontal são motores da expansão em estágios preliminares, prevalecendo inicialmente sobre o alargamento lateral.</p>
+<p>O desdobramento claro desse controle hidromecânico consolida-se na variação do volume estimado de solo mobilizado (6,4 a 56,1 m³), o qual revelou forte correlação positiva com a profundidade máxima (ρ = 0,90, p = 0,037, n = 5). Esse acoplamento sinaliza que a incisão vertical opera rigorosamente como amplificador de toda a escala tridimensional da calha de drenagem. Padrões idênticos de controle geométrico governando a relação volume-comprimento (V–L) e respondendo primariamente pelo afundamento foram mensurados por Kompani-Zare et al. <span class="citation" data-cites="kompani_zare_et_al_2011">[-@kompani_zare_et_al_2011]</span> em bacias do Irã e por Frankl et al. <span class="citation" data-cites="frankl_et_al_2013">[-@frankl_et_al_2013]</span> em ravinas africanas e de Sidorchuk <span class="citation" data-cites="sidorchuk_2006">[-@sidorchuk_2006]</span> em áreas controladas pelo escoamento profundo. Martins et al. <span class="citation" data-cites="martins_et_al_2024">[-@martins_et_al_2024]</span>, ao detalharem a morfologia em regiões mediterrâneas, registraram feições com centenas de metros em expansões longitudinais sem necessariamente elevar a largura transversal (1–2 m), confirmando que a dimensão horizontal obedece estritamente à resistência do limite mecânico do solo.</p>
+<p>Sob o contexto das restrições neotropicais, os levantamentos confirmam proporções operacionais documentadas para os Tabuleiros Costeiros <span class="citation" data-cites="cassol_et_al_2023 de_oliveira_et_al_2024">[@cassol_et_al_2023; @de_oliveira_et_al_2024]</span>, limitando o uso abrangente das classificações morfológicas como a EGC, uma vez que esta ignora ativamente as frações de profundímetro volumétrico em função das respostas climáticas e litológicas.</p>
+<p>Integrado à vulnerabilidade morfológica, o Plintossolo local impõe barreira drástica no perfil de solo, composto por restritos horizontes edáficos (Ap, AB, BAc, Bt) adensados em curto espaço. Os horizontes subsuperficiais (BAc e Bt) não apenas abrigam severa acumulação de 49,2% a 51,4% de fração argilosa (Tabela 1), mas configuram um meio ácido (pH 4,5–4,6) regido por alta toxicidade por saturação de alumínio (&gt; 80%) e deficiência básica (9,5–13,6%).</p>
+<p>Esse arranjo geoquímico exclui a estabilização de relva natural contínua, forçando a superfície a sofrer diretamente a lâmina hídrica torrencial e a escavação intermitente de seu epípedon. Ademais, essas paredes semimulchadas não se limitam estruturalmente ao seco: frente a longos recarregos pluviométricos (estação chuvosa), os altos teores argilosos absorvem encharcamento acentuado que precipita brutalmente os cisalhamentos internos ao eliminar pressões efetivas intergranulares, liberando o colapso estático generalizado das faces e recuos agressivos de escarpas <span class="citation" data-cites="cassol_et_al_2023 firoozi_firoozi_2024">[@cassol_et_al_2023; @firoozi_firoozi_2024]</span>.</p>
+<p>Além de condicionar a química vegetal, esses horizontes subsuperficiais argilosos conferem coesão no estado seco, mas reduzem drasticamente a condutividade hidráulica sob saturação sazonal <span class="citation" data-cites="viana_et_al_2011 shah_et_al_2017">[@viana_et_al_2011; @shah_et_al_2017]</span>. Ao operarem como barreira física, concentram o escoamento excedente em rotas preferenciais de dissipação. A flora observada no entorno resume-se a porte arbustivo-arbóreo esparso com folhas coriáceas, refletindo simultaneamente a toxicidade do substrato e a baixa recuperação ecofisiológica regional <span class="citation" data-cites="de_oliveira_et_al_2024 cassol_et_al_2023">[@de_oliveira_et_al_2024; @cassol_et_al_2023]</span>.</p>
+<p>O bloqueio na infiltração evidenciou-se pelo acentuado gradiente da Velocidade de Infiltração Básica (VIB) ao longo do declive. Ocorreu uma queda de 51% da capacidade permeável entre o terço superior (3,13 ± 0,14 cm/h) e o intermediário (1,53 ± 0,14 cm/h), estabilizando em 1,59 ± 0,05 cm/h no sopé (Figura 4). Esse declínio abrupto sinaliza a transição geomorfológica de um regime infiltração-dominante para escoamento-dominante, de forma que chuvas com intensidades superiores a 15 mm/h (1,5 cm/h) saturam o terço intermediário em episódios rápidos, gerando deflúvio contínuo.</p>
+<p>Na modelagem da série local decadal (2005–2025), chuvas de intensidade maior a 15 mm/h ocorrem amiúde nos episódios úmidos de abril a julho. Tais restrições assemelham-se diretamente às limitações de solos da Índia compilados por Patle et al. <span class="citation" data-cites="patle_et_al_2019">[-@patle_et_al_2019]</span>, nos quais faixas moderadas saturadas a menos de 1,4 cm/h reverteram bruscamente em vias de avanço canalado erosivo no período ativo.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="media/fig_vib_infiltracao.png" style="width:6in;height:2.6in" class="figure-img"></p>
+<figcaption>Figura 4 - Curvas de infiltração acumulada (a) e velocidade de infiltração (b) por posição na vertente, com indicação da VIB estabilizada</figcaption>
+</figure>
+</div>
+<p>Na síntese da variância morfodinâmica via Análise de Componentes Principais (PCA), a retenção atingiu 94,6% nos eixos primários (PC1 = 64,9%; PC2 = 29,7%). O eixo PC1 isola frentes rasas de incisões profundas e consolidadas, confirmando estatisticamente que a instabilidade trativa local afunila as vias na frente incisiva prioritária. O modelo espelha as medições rigorosas efetuadas em vertentes do planalto de Deng et al. <span class="citation" data-cites="deng_et_al_2015">[-@deng_et_al_2015]</span>, que atestaram comportamentos de aprofundamento acoplador. Simetricamente, o eixo PC2 ordena larguras atreladas ao recuo dendrítico.</p>
+<p>Esse isolamento analítico de que a geometria responde primeiro à tração linear inferior, seguida de recuo marginal secundário, demonstra a robustez da correspondência entre volume de colapso progressivo e estabilidade por fadiga temporal [ρ = 0,90; <span class="citation" data-cites="bouramtane_et_al_2022">@bouramtane_et_al_2022</span>], referendando o comportamento geomecânico induzido pela topografia das bacias de retenção rasas.</p>
+<p>Geomorfologicamente, o mapeamento ilustra contornos radiais com frentes digitadas exumadas (Figura 5), provando o trânsito da concentração de carga fluvial contínua. Na Feição 1, a ampliação dendrítica contorna confluências pluviais adjacentes maximizando a descarga. As calhas profundas (Feições 4 e 5) acusam margens de recuo subverticais mantidas vivas sobre matrizes colapsadas internas. Tais desprendimentos operam consistentemente na fase restritiva do outono, de onde o afrouxamento colapsável atua perante maceração expansiva do leque escarpo em “U” <span class="citation" data-cites="sidorchuk_2006 bull_kirkby_1997">[@sidorchuk_2006; @bull_kirkby_1997]</span>.</p>
+<p>A arquitetura dessas escavações reproduz fielmente as premissas estipuladas do avanço retrocedente da cascata erosiva formalizada por Flores-Cervantes et al. <span class="citation" data-cites="flores_cervantes_et_al_2006">[-@flores_cervantes_et_al_2006]</span>. Nessas fraturas primárias, os saltos de impacto lavam lateralmente a subcamada de apoio da vertente superior e causam rompimento cíclico das franjas limitantes até encontrar novo bloqueio estratigráfico maciço.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="media/image5.jpg" style="width:6in;height:2.9in" class="figure-img"></p>
+<figcaption>Figura 5 - Feições erosivas com cabeças verticais (a) e digitadas (b)</figcaption>
+</figure>
+</div>
+<p>Ao convergir espacialmente sobre as calhas aprofundadas (Feições 1, 4 e 5), as vias traçadas do MDE ressaltam confluências maciças da microbacia nos ângulos entre 8% e 17%. Sustentando VIBs diminutas (1,53 cm/h), precipitações curtas (&gt;15 mm/h) disparam regimes estressantes torrenciais amplificados integralmente nas aberturas limitadas do gradiente trativo, perpetuando o corte retrocedente.</p>
+<p>Por conseguinte, as ravinas, postadas obrigatoriamente neste topo de vale vulnerável (Tabela 2), ilustram o vetor crônico sem proteção das convergências hidrossedimentológicas expostas em inventários extensivos similares nos planaltos limitantes <span class="citation" data-cites="thwaites_et_al_2022 dey_et_al_2018">[@thwaites_et_al_2022; @dey_et_al_2018]</span>. A drástica transição mineral contendo até 51% de argILA super-alumínica suprime vegetação nativa contida, entregando os canais coesos a dilaceração de seu escombro. Ao passo que a coesão é momentânea na seca invernal estendida, as elevadas pressões neutras retidas no umedecimento anual rebaixam bruscamente os limites do cisalhamento efetivo, forçando ao colapso final massivo as faces do platô exposto nas correntes fluviais de saída da depressão hidrológica dos cordões litorâneos <span class="citation" data-cites="cassol_et_al_2023 firoozi_firoozi_2024">[@cassol_et_al_2023; @firoozi_firoozi_2024]</span>.</p>
+</section>
+<section id="regime-pluviométrico-e-controle-sazonal-da-atividade-erosiva" class="level2">
+<h2 class="anchored" data-anchor-id="regime-pluviométrico-e-controle-sazonal-da-atividade-erosiva">3.3 Regime pluviométrico e controle sazonal da atividade erosiva</h2>
+<p>A mobilização primária de sedimentos na área atende fisicamente à incapacidade de infiltração do perfil sob o rigor do regime pluvial. No Plintossolo limitante estudado, a coesão momentânea dos horizontes esfacela-se sob as chuvas recorrentes, fomentando massiva conectividade hidrossedimentológica em declives severos (7–24%).</p>
+<p>Sob essas circunstâncias de baixíssima condutividade, a literatura costuma alertar para a ocorrência de fluxos subsuperficiais difusos como <em>piping</em> e <em>sapping</em> capazes de cavar vãos subterrâneos e solapar massas isoladas <span class="citation" data-cites="dey_et_al_2018 dagar_2018">[@dey_et_al_2018; @dagar_2018]</span>. Contudo, não ratificamos em campo indícios dessa exfiltração; assim, a corrosão operante nas feições concentra-se unicamente pelo rasgo contínuo de lâminas rasas superiores. Vale destacar que a taxonomia oficial da EGC não engloba diretamente discriminação explícita de mecanismos subterrâneos restritos <span class="citation" data-cites="dagar_2018">[@dagar_2018]</span>.</p>
+<p>A variação estacional interanual apurada para o sítio (2005–2025, n = 7.305 dias) confirma que o cenário úmido concentra-se em uma janela de outono-inverno. Mensuramos os aportes máximos em maio (164,7 mm), abril (145,7 mm) e junho (141,5 mm), contrapostos às escassas contribuições de novembro (43,9 mm) e outubro (49,1 mm) (Figura 6).</p>
+<p>Tais registros posicionaram as curvas mensais de perigo P90 e P95 em montantes elevados (168,1 mm e 181,8 mm, respectivamente). Esse estrangulamento trimestral (abril-agosto) afoga rapidamente o manto superficial e reduz a capacidade responsiva dos terços centrais até drásticos 2 cm/h. Submetidas a esse lastro contínuo de saturação, as raízes das calhas amplificam o acúmulo de umidade em cota, elevando brutalmente a susceptibilidade de colapsamento dos platôs taludiais perante quebras agudas da atrito mecânico <span class="citation" data-cites="wang_et_al_2020">[@wang_et_al_2020]</span>.</p>
+<p>O desencadeamento sazonal conecta-se imediatamente às restrições verticais (VIB em 1,5–1,6 cm/h), constituindo o motor hidrológico impulsionador do recuo escavado. Operacionalmente, a superação da barreira de escoamento atua cada vez que uma chuva precipite momentaneamente volumes intensos (cima de 15 mm/h). Essa carga excede o balanço estático das Feições 1, 4 e 5: aprisionado o efluente e em declividades até 17%, a tensão cisalhante acobertadora amplifica impetuosamente incisões frontais ativas <span class="citation" data-cites="lafayette_cantalice_coutinho_2011">[@lafayette_cantalice_coutinho_2011]</span>.</p>
+<p>Sob as mesmas angulações geológicas e densidades, Bajirao e Vishnu <span class="citation" data-cites="bajirao_vishnu_2023">[-@bajirao_vishnu_2023]</span> relataram limites similares (VIB 1,15–1,36 cm/h), o que sugere abertamente que a compactação prévia inferior pelas rotas passadas exauriu os patamares da permeabilidade do reverso litorâneo local.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="media/image9.jpeg" style="width:6in;height:2.6in" class="figure-img"></p>
+<figcaption>Figura 6 - Série de precipitação diária e acumulado móvel de 30 dias para São Cristóvão, SE (2005–2025)</figcaption>
+</figure>
+</div>
+<p>Tal comportamento consolida-se pela concentração de precipitações superiores a 50 mm no período de abril a julho (Figura 6). A ocorrência sucessiva de eventos individuais acima de 100 mm nesse intervalo sustenta a degradação estrutural contínua por saturação antecedente, ao passo que os limiares de P90 e P95 alinham-se sistematicamente aos meses de maio e junho, o que demarca essa janela sazonal como o período de maior transferência de energia pluvial e de efetivação dos recuos regressivos na bacia amostral.</p>
+</section>
+<section id="extensão-processo-funcional-da-classificação" class="level2">
+<h2 class="anchored" data-anchor-id="extensão-processo-funcional-da-classificação">3.4 Extensão processo-funcional da classificação</h2>
+<p>A uniformidade morfológica atribuída pela EGC (ravinas ativas em topo de vale) não capturou o gradiente de severidade processual evidenciado entre incisões com profundidade de 0,40 m e 1,50 m. A convergência simultânea de infiltração restrita (VIB de 1,53 cm/h nos terços intermediário e inferior), saturação tóxica por alumínio (84–99%) e elevada energia pluvial (P<sub>95</sub> de 181,8 mm) exige a adoção de limiares processo-funcionais (Tabela 3) capazes de quantificar a suscetibilidade ao colapso geomorfológico não explicada pela taxonomia exclusivamente geométrica.</p>
+<p>Tabela 3. Critérios complementares propostos para classificação de feições erosivas em Plintossolos tropicais</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Indicador</th>
+<th>Parâmetro</th>
+<th>Baixa vulnerabilidade</th>
+<th>Moderada</th>
+<th>Crítica</th>
+<th>Fundamentação</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Geração de enxurrada</td>
+<td>VIB (cm/h)</td>
+<td>&gt; 6,0</td>
+<td>2,0–6,0</td>
+<td>&lt; 2,0</td>
+<td>Limiar empírico deste estudo; VIB &lt; 2 cm/h no terço intermediário coincide com feições de maior profundidade</td>
+</tr>
+<tr class="even">
+<td>Impedância hidráulica</td>
+<td>Argila no horizonte B (%)</td>
+<td>&lt; 35</td>
+<td>35–45</td>
+<td>&gt; 45</td>
+<td>Horizontes BAc e Bt com 49–51% de argila operam como barreira hidráulica</td>
+</tr>
+<tr class="odd">
+<td>Restrição vegetacional</td>
+<td>Sat. por Al, m (%)</td>
+<td>&lt; 50</td>
+<td>50–80</td>
+<td>&gt; 80</td>
+<td>m = 84–99% nos horizontes subsuperficiais é consistente com a ausência de cobertura vegetal observada nas feições</td>
+</tr>
+<tr class="even">
+<td>Forçante sazonal</td>
+<td>P95 mensal (mm)</td>
+<td>&lt; 100</td>
+<td>100–150</td>
+<td>&gt; 150</td>
+<td>P95 = 181,8 mm na série 2005–2025; limiares acima de 150 mm sustentam saturação prolongada</td>
+</tr>
+<tr class="odd">
+<td>Evolução morfológica</td>
+<td>Profundidade + cabeça ativa</td>
+<td>&lt; 0,5 m, suave</td>
+<td>0,5–1,0 m, suave/vertical</td>
+<td>&gt; 1,0 m, escarpada</td>
+<td>Feições 4 e 5, com 1,4–1,5 m e cabeças escarpadas, operam como ravinas transicionais</td>
+</tr>
+<tr class="even">
+<td>Instabilidade geotécnica</td>
+<td>H/H<sub>c</sub> (razão prof./altura crítica)</td>
+<td>&lt; 0,25</td>
+<td>0,25–0,40</td>
+<td>&gt; 0,40</td>
+<td>H<sub>c</sub> = 3,35 m (Rankine, inundado); F4 e F5 com H/H<sub>c</sub> = 0,42–0,45 indicam proximidade ao limiar de degradação progressiva</td>
+</tr>
+</tbody>
+</table>
+<section id="resultados-da-chave-determinística-processo-funcional" class="level3">
+<h3 class="anchored" data-anchor-id="resultados-da-chave-determinística-processo-funcional">3.4.1 Resultados da chave determinística processo-funcional</h3>
+<p>A integração da profundidade e da contagem de indicadores restritivos definiu a vulnerabilidade funcional das feições (Figura 7). A profundidade condiciona o mecanismo dominante ao passo que a acumulação de variáveis críticas quantifica a severidade. Consequentemente, feições limitadas dimensionalmente a ravinas pela EGC adquirem comportamento geotécnico de voçoroca incipiente ao convergirem quatro ou mais indicadores restritivos, embasando a priorização do controle.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="media/fig_S1_chave_deterministica.png" class="img-fluid figure-img" style="width:6.5in"></p>
+<figcaption>Figura 7 - Extensão processo-funcional para classificação de feições erosivas em Plintossolos tropicais</figcaption>
+</figure>
+</div>
+<p><em>Nota: Articulação a base morfológica da EGC (sete atributos) com três níveis complementares de profundidade, mecanismo dominante e vulnerabilidade funcional </em></p>
+<p>No Plintossolo Argilúvico Distrófico estudado, a convergência estrita de quatro indicadores edafo-climáticos severos categorizou todas as incisões como críticas (Tabela 4). A profundidade atrelada à escarpa operou como diferenciador mecanicista. As Feições 1, 4 e 5 acumularam cinco indicadores sob o espectro duplo de saturação e regressão, ao passo que as Feições 2, 3 e 6 estacionaram em quatro condicionantes impulsionados pelo encharcamento. Essa divisão funcional contorna a taxonomia estática ao atestar que a capacidade preditiva em matrizes coesas saturadas provém da trajetória mecânica do colapso e não apenas do somatório de fatores dimensionais.</p>
+<p>O isolamento mecanicista orienta diretamente o dimensionamento preventivo. Feições propelidas unicamente por saturação (Feições 2, 3 e 6) demandam o confinamento hidrológico do escoamento a montante, enquanto os sistemas retrocedentes (Feições 1, 4 e 5) exigem adicionalmente a contenção física da cabeceira por paliçadas permeáveis e amortecimento do fluxo basal <span class="citation" data-cites="lucas_borja_et_al_2021 tang_catchment_2019">[@lucas_borja_et_al_2021; @tang_catchment_2019]</span>. Embora o escalonamento em gradiente do controle linear tenha sido outrora conjecturado por Poesen et al. <span class="citation" data-cites="poesen_et_al_2003">[-@poesen_et_al_2003]</span>, o enquadramento determinístico reportado consolida as tensões físicas reais do terreno em métricas viáveis capazes de suportar o cálculo da intervenção biotecnológica <span class="citation" data-cites="leroux_2020">[@leroux_2020]</span>.</p>
+<p>Tabela 4. Classificação processo-funcional integrada das feições erosivas (chave determinística + inferência fuzzy Mamdani)</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 15%">
+<col style="width: 9%">
+<col style="width: 15%">
+<col style="width: 9%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Feição</th>
+<th style="text-align: center;">Prof.&nbsp;(m)</th>
+<th>EGC original</th>
+<th>Mecanismo dominante</th>
+<th style="text-align: center;">N° ind.</th>
+<th>Vulnerabilidade</th>
+<th style="text-align: center;">Severidade fuzzy</th>
+<th>Classe fuzzy</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">F1</td>
+<td style="text-align: center;">1,10</td>
+<td>Ravina mod. profunda</td>
+<td>Saturação + Regressão</td>
+<td style="text-align: center;">5</td>
+<td>Crítica</td>
+<td style="text-align: center;">72,9</td>
+<td>Ravina transicional</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">F2</td>
+<td style="text-align: center;">0,40</td>
+<td>Ravina rasa</td>
+<td>Saturação</td>
+<td style="text-align: center;">4</td>
+<td>Crítica</td>
+<td style="text-align: center;">52,5</td>
+<td>Ravina transicional</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">F3</td>
+<td style="text-align: center;">0,60</td>
+<td>Ravina rasa</td>
+<td>Saturação</td>
+<td style="text-align: center;">4</td>
+<td>Crítica</td>
+<td style="text-align: center;">73,4</td>
+<td>Ravina transicional</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">F4</td>
+<td style="text-align: center;">1,40</td>
+<td>Ravina mod. profunda</td>
+<td>Saturação + Regressão</td>
+<td style="text-align: center;">5</td>
+<td>Crítica</td>
+<td style="text-align: center;">79,7</td>
+<td>Voçoroca incipiente</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">F5</td>
+<td style="text-align: center;">1,50</td>
+<td>Ravina profunda</td>
+<td>Saturação + Regressão</td>
+<td style="text-align: center;">5</td>
+<td>Crítica</td>
+<td style="text-align: center;">85,0</td>
+<td>Voçoroca incipiente</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">F6</td>
+<td style="text-align: center;">0,60</td>
+<td>Ravina rasa</td>
+<td>Saturação</td>
+<td style="text-align: center;">4</td>
+<td>Crítica</td>
+<td style="text-align: center;">73,4</td>
+<td>Ravina transicional</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="classificação-contínua-e-validação-por-agrupamento" class="level3">
+<h3 class="anchored" data-anchor-id="classificação-contínua-e-validação-por-agrupamento">3.4.2 Classificação contínua e validação por agrupamento</h3>
+<p>A atribuição associada de graus de pertinência simultâneos explicitou a gradação erosiva supostamente omitida pelos compartimentos discretos lineares convencionais <span class="citation" data-cites="bennett_wells_2019 arabameri_et_al_2020">[@bennett_wells_2019; @arabameri_et_al_2020]</span>. Sustentando índices de pertinência elevados (79,7 e 85,0), as Feições 4 e 5 alinharam-se na taxonomia como voçorocas incipientes. Esse escalonamento demonstra isoladamente as interações limitantes entre restrição pedogenética e precipitações extremas mapeadas no espectro paramétrico de <span class="citation" data-cites="valentin_poesen_li_2005">@valentin_poesen_li_2005</span>.</p>
+<p>A variação de profundidade repercutiu assimetricamente sobre a severidade total calculada. Ao passo que a métrica aglomerou estatisticamente as Feições 4 e 5 (distantes apenas 5,3 pontos contínuos no agregado fuzzy), as correlatas Feições 2 e 3 fragmentaram a distribuição distanciadas por margens de 20,9 pontos sobre perfis curtos (0,40 m e 0,60 m, respectivamente). O espalhamento algorítmico da leitura indica enfaticamente que a estreita camada superficial operante em 0,3–0,6 m concentra fortes disparidades hidromecânicas não lineares.</p>
+<p>Ainda no limiar diminuto da Feição 2 (0,40 m de corte), o acoplamento determinou participações nos níveis de ravina estável (<span class="math inline">\(\mu = 0,25\)</span>) e concomitantemente em ravina transicional (<span class="math inline">\(\mu = 0,84\)</span>). A justaposição constata fisicamente que a impermeabilidade severa geradora do bloqueio de 1,53 cm/h e as chuvas perigosas concentradas (<span class="math inline">\(P95 = 181,8\)</span> mm) escalonam retrocessões incipientes aos limites instáveis definidos por Poesen <span class="citation" data-cites="poesen_2018">[-@poesen_2018]</span>. Essa constatação anula a segurança esperada apenas pela visão geométrica isolada, requerendo balançamento com os vetores funcionais de escoamento <span class="citation" data-cites="frankl_et_al_2021">[@frankl_et_al_2021]</span>.</p>
+<p>O dimensionamento preditivo entre as mecânicas operou de maneira estritamente complementar, contornando a exclusão redundante identificada em limiares puramente discretos combinados no domínio fuzzy <span class="citation" data-cites="roy_saha_2019 arabameri_et_al_2020">[@roy_saha_2019; @arabameri_et_al_2020]</span>. A contagem de traços determinou um grau unificado de avanço e vulnerabilidade à base geral. Ao agregar o cômputo da fuzzy iterada, as faixas limítrofes entre 52,5 e 85,0 extraíram assimetrias profundas da base crítica. A separação consolidativa dividiu corretamente restrições dominantes de saturação das progressões conjuntas trativas (saturação e avanço regressivo), evidenciando a precisão hierárquica do método.</p>
+<p>O comportamento matemático do processo validou-se internamente perante a clusterização de separação aglomerativa (método de Ward), em concordância análoga a avaliações da literatura baseadas no perfilhamento morfológico tridimensional <span class="citation" data-cites="cheng_et_al_2021 ciccolini_et_al_2024">[@cheng_et_al_2021; @ciccolini_et_al_2024]</span>. O agrupamento segregou o comportamento espacial dividindo linearmente os pares de recuo superficial (Feições 2 e 3) e o esgoto denso do volume acoplado de exaustão superior (Feições 1, 4 e 5). Consequentemente, o índice avaliativo de Silhouette atestou robustez satisfatória em divisão paritária de blocos dualistas (<span class="math inline">\(k = 2\)</span>, valor 0,434), preterindo particionamento difusos forçados em patamares triplos (<span class="math inline">\(k = 3\)</span>, valor de queda abrupta para 0,298). A transição natural das respostas atesta irrefutavelmente a consonância objetiva entre métodos exatos independentes amarrando o modelo inferencial.</p>
+</section>
+<section id="ábaco-de-classificação-bidimensional" class="level3">
+<h3 class="anchored" data-anchor-id="ábaco-de-classificação-bidimensional">3.4.3 Ábaco de classificação bidimensional</h3>
+<p>Para sintetizar a classificação em formato operacional de pronta consulta, parametrizou-se um ábaco bidimensional (Figura 8). A profundidade máxima baliza o eixo geométrico ao passo que a VIB baliza ortogonalmente a severidade hidráulica. Essa modelagem condensa atributos multifatoriais em contornos limitantes práticos, análogo funcionalmente aos envelopes mapeados globalmente por Torri e Poesen <span class="citation" data-cites="torri_poesen_2014">[-@torri_poesen_2014]</span>. As curvas de isovalor iteradas na lógica Mamdani (<span class="math inline">\(S = 30, 55\)</span> e <span class="math inline">\(80\)</span>) agrupam a transição agêntica, suportados pela inércia dos agravantes fixados localmente (saturação por alumínio e percentil P95 extremo).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="media/fig_abaco_classificacao.png" class="img-fluid figure-img" style="width:6.5in"></p>
+<figcaption>Figura 8 - Ábaco de classificação processo-funcional de feições erosivas em Plintossolos tropicais</figcaption>
+</figure>
+</div>
+<p><em>Nota</em>: Contornos de severidade fuzzy Mamdani (S = 30, 55, 80) delimitam quatro zonas diagnósticas. As seis feições do inventário são plotadas com seus respectivos índices de severidade. Variáveis fixadas: m(Al) = 99,2%, P95 = 181,8 mm/mês, declividade = 12%.</p>
+<p>O estrangulamento da VIB no limite local (1,53 cm/h) forçou todas as seis feições amostradas à base crítica do diagrama; nestas condições opressivas, a distância horizontal separou rigidamente a evolução geomórfica hierarquizada. Adentrando a barreira paramétrica correspondente (<span class="math inline">\(S \ge 80\)</span>), as Feições 4 e 5 transicionaram isoladamente ao enquadramento agudo de voçoroca incipiente.</p>
+<p>A não linearidade manifesta nas curvas atesta que a agressividade imposta pela incisão atrela-se intimamente ao gargalo condutivo da calha, repetindo mecanicamente a proporção matemática consolidada no regime torrencial por Tang et al. <span class="citation" data-cites="tang_et_al_2022">[-@tang_et_al_2022]</span>. O limite severo imposto no patamar de VIB &lt; 2 cm/h propicia que rebaixos estritos de 0,5 m na ravina transponham imediatamente as delimitações diagnósticas (de <span class="math inline">\(S &lt; 55\)</span> para <span class="math inline">\(S &gt; 55\)</span>). Isso reflete fisicamente que o somatório de argila superior a 45% e o percentil de 181,8 mm neutralizam a inércia do topo da vertente.</p>
+<p>Esse mecanismo intrincado baliza o alerta registrado por Ghosh e Guchhait <span class="citation" data-cites="ghosh_guchhait_2016">[-@ghosh_guchhait_2016]</span> e Hayas et al. <span class="citation" data-cites="hayas_et_al_2017">[-@hayas_et_al_2017]</span> para complexos de alta concentração argilosa expostos nos trópicos. Sob a restrição extrema da saturação por alumínio excedendo 80%, a resistência dissipada de cobertura reduz imediatamente as demandas morfométricas mínimas para escalonarem as vertentes a episódios crônicos de avanço.</p>
+<p>Em via inversão, as calhas com permeabilidade razoável simuladas (VIB acima de 6 cm/h) forçam a atenuação edáfica. Esse alívio requer aberturas escavadas superiores a 2 m de profundidade para acusarem índices de preocupação. O deslocamento de faixas assenta empiricamente o postulado balizador de resposta condicional validado por Poesen <span class="citation" data-cites="poesen_2018">[-@poesen_2018]</span>, estabelecendo a relação entre resistores múltiplos convergentes e susceptibilidades limiares isoladas na superfície.</p>
+<p>A compressão concentrada do grupo das seis células litorâneas rastreadas (Feições de 1 a 6) represa explicitamente a restrição imposta pela barreira pedológica do Plintossolo Argilúvico. Encarceradas em 1,53 cm/h de reabastecimento superficial, as oscilações remanescentes dependem puramente das declividades frontais geradoras do corte inferior regressivo. Padrão idêntico sobreveio no modelamento indiano das ravinas de Rarh aferidas por Majhi et al. <span class="citation" data-cites="majhi_et_al_2021">[-@majhi_et_al_2021]</span>, ratificando a dominância topográfica sobre o alicerce colapsável saturado no envelope de chuvas.</p>
+<p>Simulando-se inversamente uma VIB ampliada teórica de 4 cm/h na localidade de ocorrência, todas as feições sofreriam imediato rebaixamento paramétrico de alerta, restabelecendo a exigência geométrica superior a 2 m de escavação para reativação transicional. A sensibilidade contínua assegura que este ábaco reflete condições regionalizadas de um envelope restrito de saturação, ancorando-se no preceito geográfico idêntico aos nomogramas restritos testados por Bouaichi e Touaibia <span class="citation" data-cites="bouaichi_touaibia_2024">[-@bouaichi_touaibia_2024]</span> em bacias do norte africano. Transcrições de métricas idênticas em pedologias similares demandarão forçosa recalibração de limites edáficos e pluviais.</p>
+<p>Sob uso extensivo real no terreno, o arranjo transforma a contagem multifatorial intrincada numa interface consultiva binária (profundidade versus permeabilidade) sem qualquer computação preliminar no front de trabalho. A simplificação atende incondicionalmente aos imperativos operacionais urgentes elencados por Poesen <span class="citation" data-cites="poesen_2018">[-@poesen_2018]</span> e Vanmaercke et al. <span class="citation" data-cites="vanmaercke_et_al_2021">[-@vanmaercke_et_al_2021]</span>. O protocolo exime-se de topografia robusta remota ao transferir a ancoragem para variáveis locais (trena e infiltrômetros). A justaposição no plano vetorial emula o paradigma do ábaco MCT validado de Nogami e Villibor <span class="citation" data-cites="nogami_villibor_1995">[-@nogami_villibor_1995]</span>, trocando métricas laborais subsuperficiais herméticas por mensurações hidrogeomorfológicas de campo, preceito fundamental exigido empiricamente por Anderson et al. <span class="citation" data-cites="anderson_et_al_2021">[-@anderson_et_al_2021]</span> para rastrear processos de ruptura.</p>
+<p>Eventuais inflexões conjunturais atenuadas em Plintossolos submetidos a regimes pluviais rasos (<span class="math inline">\(P95 &lt; 100\)</span> mm) ou rebaixados da toxicidade de saturação estrutural transladam invariavelmente as curvas agressivas ao topo limítrofe inativo exposto neste estudo. Em tais ocorrências espaciais, as famílias parametrizadoras dependentes da cobertura e do estresse geográfico reproduzem a dependência matricial adaptativa topográfica mapeada assertivamente por Torri e Poesen <span class="citation" data-cites="torri_poesen_2014">[-@torri_poesen_2014]</span>, delineando os ajustes regionais subsequenciais imediatos aplicáveis da proposição.</p>
+</section>
+</section>
+</section>
+<section id="conclusões" class="level1">
+<h1>4. Conclusões</h1>
+<p>A modelagem de classificação processo-funcional anexada mitigou restrições puramente morfológicas da tipologia base ao integrar o balanço de componentes geotécnicos, edáficos limitantes e forçantes hídricas nas matrizes neotropicais sob degradação aguda. Constatou-se interdependência vetorial nas dinâmicas operacionais de predição via Mamdani, onde parâmetros da enxurrada transicionaram linearidades outrora omitidas confirmando a suscetibilidade grave das incisões em topografias rasantes. O balizador construído viabiliza a priorização de reengenharias e controles de monitoramento de fluxo aplicáveis em vertentes descapitalizadas, estendendo-se às aferidoras adaptações limitantes em regimes hidrogeomóricos equivalentes.</p>
+</section>
+<section id="declaration-of-competing-interests" class="level1">
+<h1>Declaration of competing interests</h1>
+<p>Os autores declaram que não possuem conflitos de interesse financeiros ou pessoais conhecidos que possam ter influenciado o trabalho reportado neste artigo.</p>
+</section>
+<section id="funding" class="level1">
+<h1>Funding</h1>
+<p>Esta pesquisa não recebeu financiamento específico de agências de fomento dos setores público, comercial ou sem fins lucrativos.</p>
+</section>
+<section id="credit-author-statement" class="level1">
+<h1>CRediT author statement</h1>
+<p><strong>Silva. E. G:</strong> Conceptualization, Investigation, Data curation, Formal analysis, Writing – original draft, Visualization.</p>
+</section>
+<section id="data-availability" class="level1">
+<h1>Data availability</h1>
+<p>Os dados morfométricos, os resultados de infiltração e as séries climatológicas utilizados neste estudo estão disponíveis no repositório do projeto em <a href="https://doi.org/10.5281/zenodo.19284972">https://doi.org/10.5281/zenodo.19284972</a>.</p>
+</section>
+<section id="referências" class="level1">
+<h1>Referências</h1>
+<div id="refs" role="list">
+
+</div>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
