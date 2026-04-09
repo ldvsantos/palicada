@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99e
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Simulacao_Kplint_USLE_Springer_PTBR.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: sn-basic.bst
+Reallocating 'name_of_file' (item size: 1) to 23 items.
+Database file #1: ../referencias_artigos.bib
+sn-basic.bst [2024/07/19 v1.1 bibliography style]
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+You've used 55 entries,
+            3567 wiz_defined-function locations,
+            1080 strings with 16212 characters,
+and the built_in function-call counts, 45855 in all, are:
+= -- 4349
+> -- 1586
+< -- 40
++ -- 628
+- -- 469
+* -- 3906
+:= -- 6637
+add.period$ -- 88
+call.type$ -- 55
+change.case$ -- 441
+chr.to.int$ -- 70
+cite$ -- 55
+duplicate$ -- 3579
+empty$ -- 3908
+format.name$ -- 643
+if$ -- 9635
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 428
+newline$ -- 174
+num.names$ -- 220
+pop$ -- 1078
+preamble$ -- 1
+purify$ -- 379
+quote$ -- 0
+skip$ -- 1006
+stack$ -- 0
+substring$ -- 4021
+swap$ -- 1035
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 477
+warning$ -- 0
+while$ -- 293
+width$ -- 0
+write$ -- 647

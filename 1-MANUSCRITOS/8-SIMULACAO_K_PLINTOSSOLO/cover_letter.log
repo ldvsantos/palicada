@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.23)  9 APR 2026 20:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.23)  9 APR 2026 20:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -185,8 +185,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 tex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count291
-)
-No file cover_letter.aux.
+) (cover_letter.aux)
 \openout1 = `cover_letter.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
@@ -207,6 +206,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
 LaTeX Font Info:    ... okay on input line 16.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 16.
 LaTeX Font Info:    ... okay on input line 16.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -242,6 +242,7 @@ LaTeX Font Info:    ... okay on input line 16.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring OFF on input line 16.
+(cover_letter.out) (cover_letter.out)
 \@outlinefile=\write3
 \openout3 = `cover_letter.out'.
 
@@ -251,29 +252,22 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 26.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 26.
-[1
+ [1
 
-{C:/Users/vidal/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
-(cover_letter.aux)
+{C:/Users/vidal/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2] (cover_l
+etter.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-29>
  ***********
-
-
-Package rerunfilecheck Warning: File `cover_letter.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `cover_letter.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+Package rerunfilecheck Info: File `cover_letter.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 8214 strings out of 467871
- 127823 string characters out of 5418376
- 550787 words of memory out of 5000000
- 37050 multiletter control sequences out of 15000+600000
+ 8222 strings out of 467871
+ 128328 string characters out of 5418376
+ 550847 words of memory out of 5000000
+ 37052 multiletter control sequences out of 15000+600000
  633778 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,7n,79p,1010b,482s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -284,9 +278,9 @@ Here is how much of TeX's memory you used:
 pen/ec/dpi600\ecrm1095.pk><C:/Users/vidal/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/public/amsfonts/cm/cmmi10.pfb><C:/Users/vidal/AppData/Local/Programs/MiKTe
 X/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-Output written on cover_letter.pdf (2 pages, 72784 bytes).
+Output written on cover_letter.pdf (2 pages, 72478 bytes).
 PDF statistics:
- 185 PDF objects out of 1000 (max. 8388607)
+ 184 PDF objects out of 1000 (max. 8388607)
  3 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
