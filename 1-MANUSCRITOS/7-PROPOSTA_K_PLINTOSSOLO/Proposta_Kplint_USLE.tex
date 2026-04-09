@@ -116,6 +116,7 @@
 \bibliographystyle{elsarticle-harv}
 
 
+\usepackage{xcolor}
 \makeatletter
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
 \AtBeginDocument{%
@@ -162,8 +163,8 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
 \hypersetup{
-  pdftitle={Fator de correção da erodibilidade USLE para Plintossolos tropicais com erosão linear: fundamentação teórica e desenho experimental},
-  pdfauthor={Emersson Guedes da Silva; Luiz Diego Vidal Santos},
+  pdftitle={Impedância hidráulica, toxicidade por alumínio e vulnerabilidade geotécnica como amplificadores da erodibilidade efetiva em Plintossolos tropicais com erosão linear},
+  pdfauthor={Emersson Guedes da Silva},
   pdflang={pt-BR},
   pdfkeywords={soil erodibility, USLE correction
 factor, Plinthosol, Ferralsol, Acrisol, infiltration rate, aluminum
@@ -180,24 +181,19 @@ saturation, slope stability, tropical weathering},
 \begin{document}
 
 \begin{frontmatter}
-\title{Fator de correção da erodibilidade USLE para Plintossolos
-tropicais com erosão linear: fundamentação teórica e desenho
-experimental}
+\title{Impedância hidráulica, toxicidade por alumínio e vulnerabilidade
+geotécnica como amplificadores da erodibilidade efetiva em Plintossolos
+tropicais com erosão linear}
 \author[1]{Emersson Guedes da Silva%
 \corref{cor1}%
 }
  \ead{emersson.guedes@example.com} 
-\author[1]{Luiz Diego Vidal Santos%
-%
-}
 
-
-\affiliation[1]{organization={Universidade Federal de Sergipe, Programa
-de Pós-Graduação em Recursos Hídricos},city={São
+\affiliation[1]{organization={Universidade Federal de
+Sergipe, Departamento de Zootecnia},city={São
 Cristóvão},country={Brasil},countrysep={,},postcodesep={}}
 
 \cortext[cor1]{Corresponding author}
-
 
         
 \begin{abstract}
@@ -217,18 +213,20 @@ As formas funcionais foram derivadas dos dados de campo obtidos em
 Plintossolo Argilúvico Distrófico nos Tabuleiros Costeiros de Sergipe
 (VIB = 1,53--3,13 cm/h, saturação por alumínio m = 15--99\%, coesão c =
 13,02 kPa, ângulo de atrito \(\phi\) = 34,93°, altura crítica \(H_c\) =
-3,35 m). O desenho experimental é multi-classe, com 56 parcelas padrão
+3,35 m). O desenho experimental é multi-classe, com 14 parcelas padrão
 Wischmeier distribuídas em três sítios pedologicamente contrastantes
 (Plintossolo como alvo de calibração, Latossolo Vermelho-Amarelo como
 controle negativo e Argissolo Vermelho-Amarelo como controle parcial),
 de modo a isolar a contribuição de cada termo de correção e testar a
-especificidade pedológica do fator proposto. A viabilidade matemática e
-a consistência física da formulação foram previamente validadas por
-cinco testes computacionais (calibração sintética, sensibilidade de
-Sobol, estabilidade de taludes, infiltração Green-Ampt e erosão virtual)
-descritos em manuscrito complementar. Apresentam-se as hipóteses, o
-protocolo de ensaios por classe de solo, a estratégia de calibração
-sequencial e a validação cruzada entre sítios.
+especificidade pedológica do fator proposto. A replicação temporal ao
+longo de dois anos hidrológicos compensa o número reduzido de parcelas,
+gerando centenas de observações independentes de \(K_{obs}\) por sítio.
+A viabilidade matemática e a consistência física da formulação foram
+previamente validadas por cinco testes computacionais (calibração
+sintética, sensibilidade de Sobol, estabilidade de taludes, infiltração
+Green-Ampt e erosão virtual) descritos em manuscrito complementar.
+Apresentam-se as hipóteses, o protocolo de ensaios por classe de solo, a
+estratégia de calibração sequencial e a validação cruzada entre sítios.
 \end{abstract}
 
 
@@ -246,53 +244,36 @@ rate \sep aluminum saturation \sep slope stability \sep
 
 \section{1. Introdução}\label{introduuxe7uxe3o}
 
-A Equação Universal de Perdas de Solo, na formulação original de
-\citet{wischmeier_smith_1978} e na revisão RUSLE de
-\citet{renard_et_al_1997}, permanece como o modelo empírico mais
-utilizado globalmente para estimativa de erosão laminar e em sulcos
-(Equação~\ref{eq-usle}).
+A erosão hídrica acelerada constitui uma das principais ameaças à
+sustentabilidade de solos tropicais, com taxas de perda de solo que
+excedem a pedogênese natural em ordens de grandeza nas vertentes mais
+vulneráveis \citep{poesen_2018}. A Equação Universal de Perdas de Solo
+(USLE), na formulação original de \citet{wischmeier_smith_1978} e na
+revisão RUSLE de \citet{renard_et_al_1997}, permanece como o modelo
+empírico mais adotado globalmente para estimativa de erosão laminar e em
+sulcos, estruturando a perda de solo como produto de seis fatores que
+descrevem erosividade da chuva, erodibilidade do solo, comprimento e
+declividade da rampa, cobertura vegetal e práticas conservacionistas.
 
-\begin{equation}\phantomsection\label{eq-usle}{
-A = R \times K \times L \times S \times C \times P
-}\end{equation}
-
-onde \(A\) é a perda de solo média anual (t ha\(^{-1}\) ano\(^{-1}\)),
-\(R\) o fator de erosividade da chuva (MJ mm ha\(^{-1}\) h\(^{-1}\)
-ano\(^{-1}\)), \(K\) o fator de erodibilidade do solo (t h MJ\(^{-1}\)
-mm\(^{-1}\)), \(L\) o fator de comprimento de rampa, \(S\) o fator de
-declividade, \(C\) o fator de cobertura e manejo e \(P\) o fator de
-práticas conservacionistas.
-
-O fator \(K\) sintetiza a suscetibilidade intrínseca do solo ao
-destacamento e transporte por impacto de gotas e escoamento laminar. Sua
-estimativa pelo nomograma de \citet{wischmeier_et_al_1971} depende de
-cinco propriedades do horizonte superficial, conforme a
-Equação~\ref{eq-nomograma}.
-
-\begin{equation}\phantomsection\label{eq-nomograma}{
-100\,K = 2{,}1 \times 10^{-4}\,M^{1{,}14}\,(12 - a) + 3{,}25\,(b - 2) + 2{,}5\,(c - 3)
-}\end{equation}
-
-onde
-\(M = (\%\text{silte} + \%\text{areia muito fina}) \times (100 - \%\text{argila})\),
-\(a\) é o teor de matéria orgânica (\%), \(b\) o código de estrutura do
-solo (1--4) e \(c\) o código de permeabilidade (1--6). A
-Equação~\ref{eq-nomograma} foi calibrada em parcelas experimentais de
-solos temperados do Meio-Oeste dos Estados Unidos, em condições edáficas
-e climáticas distintas dos trópicos úmidos \citep{alewell_et_al_2019}.
-
-A aplicação do nomograma a solos tropicais intemperizados enfrenta
-limitações reconhecidas na literatura. Solos com elevada fração argilosa
-(\textgreater{} 40\%) mas com argilas 1:1 (caulinita) e oxi-hidróxidos
-de ferro e alumínio apresentam microagregação estável que reduz a
-erodibilidade efetiva em relação ao previsto pela granulometria
-\citep{silva_et_al_2009, bertoni_lombardi_neto_2017}. Em contrapartida,
-Plintossolos com impedância hidráulica em subsuperfície, saturação por
-alumínio superior a 80\% e VIB inferior a 2 cm/h podem apresentar
-erodibilidade efetiva superior à prevista pelo nomograma, porque a
-geração de escoamento concentrado sob intensidades de chuva recorrentes
-amplifica o destacamento e a capacidade de transporte em magnitudes que
-a equação empírica não prevê \citep{poesen_2018, cassol_et_al_2023}.
+O fator de erodibilidade (\(K\)) sintetiza a suscetibilidade intrínseca
+do solo ao destacamento e transporte por impacto de gotas e escoamento
+laminar. Sua estimativa pelo nomograma de \citet{wischmeier_et_al_1971}
+depende de cinco propriedades do horizonte superficial, notadamente
+granulometria, matéria orgânica, estrutura e permeabilidade, e foi
+calibrada em parcelas experimentais de solos temperados do Meio-Oeste
+dos Estados Unidos, em condições edáficas e climáticas distintas dos
+trópicos úmidos \citep{alewell_et_al_2019}. A aplicação desse nomograma
+a solos tropicais intemperizados enfrenta limitações reconhecidas na
+literatura. Solos com elevada fração argilosa (\textgreater{} 40\%) mas
+com argilas 1:1 (caulinita) e oxi-hidróxidos de ferro e alumínio
+apresentam microagregação estável que reduz a erodibilidade efetiva em
+relação ao previsto pela granulometria
+\citep{silva_et_al_2009, bertoni_lombardi_neto_2017}, ao passo que em
+Plintossolos com impedância hidráulica em subsuperfície a erodibilidade
+efetiva pode superar a prevista porque a geração de escoamento
+concentrado sob intensidades de chuva recorrentes amplifica o
+destacamento em magnitudes que a equação empírica não prevê
+\citep{poesen_2018, cassol_et_al_2023}.
 
 Essa discrepância é particularmente aguda quando a erosão transcende o
 domínio laminar e em sulcos para o qual a USLE foi calibrada. Em
@@ -306,7 +287,24 @@ SWAT tratam erosão em ravinas como processo separado, porém sua
 complexidade computacional e demanda de dados limitam a adoção em
 contextos operacionais de planejamento \citep{alewell_et_al_2019}.
 
-Em trabalho anterior conduzido no mesmo sítio experimental,
+Em Plintossolos tropicais, três condições edáficas convergem para
+amplificar a erodibilidade efetiva de modo não captado pelo nomograma. A
+impedância hidráulica imposta pela presença de plintita em subsuperfície
+reduz drasticamente a velocidade de infiltração básica (VIB),
+convertendo o regime de percolação vertical predominante em escoamento
+hortoniano a partir de intensidades de chuva relativamente modestas. A
+saturação por alumínio elevada nos horizontes subsuperficiais
+(frequentemente superior a 80\%) restringe a colonização radicular e
+suprime a cobertura vegetal, expondo o horizonte a destacamento direto e
+retroalimentando a amplificação da erodibilidade, processo cíclico
+documentado em solos álicos tropicais \citep{cassol_et_al_2023}. A
+proximidade geotécnica ao limiar de ruptura por cisalhamento, expressa
+pela razão entre profundidade da feição e altura crítica de Rankine
+(\(H/H_c\)), introduz contribuição de colapso de taludes que cresce de
+modo não linear à medida que a feição se aprofunda
+\citep{poesen_et_al_2003, sidorchuk_2006}.
+
+Em trabalho anterior conduzido nos Tabuleiros Costeiros de Sergipe,
 caracterizou-se um Plintossolo Argilúvico Distrófico com VIB de 1,53
 cm/h nos terços intermediário e inferior da vertente, saturação por
 alumínio de 84--99\% nos horizontes subsuperficiais, coesão sob
@@ -314,43 +312,75 @@ saturação de 13,02 kPa e ângulo de atrito de 34,93° (horizonte Bt, 1,20
 m), resultando em altura crítica de corte vertical \(H_c\) = 3,35 m.
 Seis feições erosivas com profundidade de 0,40--1,50 m e razão \(H/H_c\)
 de 0,12--0,45 foram classificadas por inferência fuzzy Mamdani como
-ravinas transicionais a voçorocas incipientes. Esses dados sugerem que
-três condições edáficas convergentes (regime hidráulico de
-escoamento-dominante, toxicidade por alumínio e proximidade geotécnica
-ao limiar de ruptura) amplificam a erodibilidade efetiva do Plintossolo
-de modo que o nomograma de Wischmeier não captura, motivando a
-proposição de um fator de correção específico. A confirmação de que essa
-amplificação é atribuível às propriedades diagnósticas do Plintossolo, e
-não a um artefato generalizável a qualquer solo tropical intemperizado,
-requer confrontação com classes pedológicas contrastantes. Latossolos
-Vermelho-Amarelos da mesma região apresentam VIB tipicamente superior a
-6 cm/h, saturação por alumínio inferior a 30\% e feições erosivas
-lineares ausentes ou incipientes, constituindo controle negativo no qual
-se espera \(\alpha \approx \beta \approx \gamma \approx 1\) e, portanto,
-\(K_{obs} \approx K_{RUSLE}\)
+ravinas transicionais a voçorocas incipientes. Esses dados sugerem que a
+convergência das três condições amplificadoras eleva a erodibilidade
+efetiva do Plintossolo acima do previsto pelo nomograma, motivando a
+proposição de um fator de correção específico.
+
+A confirmação de que essa amplificação é atribuível às propriedades
+diagnósticas do Plintossolo, e não a um artefato generalizável a
+qualquer solo tropical intemperizado, requer confrontação com classes
+pedológicas contrastantes. Latossolos Vermelho-Amarelos da mesma região
+apresentam VIB tipicamente superior a 6 cm/h, saturação por alumínio
+inferior a 30\% e feições erosivas lineares ausentes ou incipientes,
+constituindo controle negativo no qual se espera erodibilidade observada
+próxima à prevista pelo nomograma
 \citep{silva_et_al_2009, bertoni_lombardi_neto_2017}. Argissolos
 Vermelho-Amarelos, por sua vez, compartilham com o Plintossolo o
 gradiente textural abrupto (horizonte Bt adensado) que gera impedância
 hidráulica e redução da VIB, porém sem plintita e frequentemente com
 saturação por alumínio intermediária, operando como controle parcial que
-isola o efeito do regime hidráulico (\(\alpha\)) das demais
-amplificações (\(\beta\), \(\gamma\)).
+permite isolar o efeito do regime hidráulico das demais amplificações.
 
-Este trabalho propõe a fundamentação teórica e o desenho experimental
+Até o presente momento, nenhum estudo propôs um fator de correção para o
+\(K\) da USLE/RUSLE que incorpore simultaneamente impedância hidráulica
+subsuperficial, toxicidade edáfica por alumínio e vulnerabilidade
+geotécnica ao colapso de taludes, nem validou tal formulação por
+confrontação multi-classe entre solos tropicais com gradientes
+contrastantes dessas propriedades.
+
+Este estudo propõe a fundamentação teórica e o desenho experimental
 multi-classe para calibração de um fator de correção multiplicativo
 (\(K_{plint}\)) que incorpora regime hidráulico, toxicidade edáfica e
 vulnerabilidade geotécnica ao fator \(K\) da USLE/RUSLE, utilizando
-Plintossolo como alvo, Latossolo como controle negativo e Argissolo como
-controle parcial. A viabilidade matemática (identificabilidade
-paramétrica, sensibilidade e consistência física) da formulação proposta
-foi previamente avaliada por cinco testes computacionais apresentados em
-manuscrito complementar, cujos resultados sustentam a adequação do
-desenho experimental aqui descrito.
+Plintossolo como alvo de calibração, Latossolo como controle negativo e
+Argissolo como controle parcial. A viabilidade matemática
+(identificabilidade paramétrica, sensibilidade e consistência física) da
+formulação proposta foi previamente avaliada por cinco testes
+computacionais apresentados em manuscrito complementar, cujos resultados
+sustentam a adequação do desenho experimental aqui descrito.
 
 \section{2. Fundamentação teórica}\label{fundamentauxe7uxe3o-teuxf3rica}
 
-\subsection{\texorpdfstring{2.1 Estrutura do fator de correção
-\(K_{plint}\)}{2.1 Estrutura do fator de correção K\_\{plint\}}}\label{estrutura-do-fator-de-correuxe7uxe3o-k_plint}
+\subsection{2.1 A USLE e o nomograma de
+erodibilidade}\label{a-usle-e-o-nomograma-de-erodibilidade}
+
+A perda de solo média anual pela USLE é expressa como produto de seis
+fatores (Equação~\ref{eq-usle}).
+
+\begin{equation}\phantomsection\label{eq-usle}{
+A = R \times K \times L \times S \times C \times P
+}\end{equation}
+
+onde \(A\) é a perda de solo média anual (t ha\(^{-1}\) ano\(^{-1}\)),
+\(R\) o fator de erosividade da chuva (MJ mm ha\(^{-1}\) h\(^{-1}\)
+ano\(^{-1}\)), \(K\) o fator de erodibilidade do solo (t h MJ\(^{-1}\)
+mm\(^{-1}\)), \(L\) o fator de comprimento de rampa, \(S\) o fator de
+declividade, \(C\) o fator de cobertura e manejo e \(P\) o fator de
+práticas conservacionistas. O fator \(K\) é estimado pela equação do
+nomograma (Equação~\ref{eq-nomograma}).
+
+\begin{equation}\phantomsection\label{eq-nomograma}{
+100\,K = 2{,}1 \times 10^{-4}\,M^{1{,}14}\,(12 - a) + 3{,}25\,(b - 2) + 2{,}5\,(c - 3)
+}\end{equation}
+
+onde
+\(M = (\%\text{silte} + \%\text{areia muito fina}) \times (100 - \%\text{argila})\),
+\(a\) é o teor de matéria orgânica (\%), \(b\) o código de estrutura do
+solo (1--4) e \(c\) o código de permeabilidade (1--6).
+
+\subsection{\texorpdfstring{2.2 Estrutura do fator de correção
+\(K_{plint}\)}{2.2 Estrutura do fator de correção K\_\{plint\}}}\label{estrutura-do-fator-de-correuxe7uxe3o-k_plint}
 
 A erodibilidade corrigida para Plintossolos tropicais com erosão linear
 é expressa como produto do fator \(K\) do nomograma de Wischmeier por
@@ -364,46 +394,87 @@ onde \(K_{RUSLE}\) é o fator de erodibilidade obtido pela
 Equação~\ref{eq-nomograma} ou por medição direta em parcela padrão,
 \(\alpha\) o fator de amplificação por regime hidráulico, \(\beta\) o
 fator de penalização por toxicidade edáfica e \(\gamma\) o fator de
-vulnerabilidade geotécnica. O caráter multiplicativo assegura que, na
-ausência de condições amplificadoras (\(\alpha = \beta = \gamma = 1\)),
-\(K_{plint}\) reduz-se a \(K_{RUSLE}\).
+vulnerabilidade geotécnica. A estrutura multiplicativa implica que cada
+fator opera como amplificador independente.
 
-\subsection{\texorpdfstring{2.2 Fator de amplificação por regime
+Quando nenhuma das três condições amplificadoras está presente (solo bem
+drenado, ausência de toxicidade por alumínio, ausência de feição erosiva
+profunda), os três fatores assumem valor unitário e \(K_{plint}\) se
+reduz a \(K_{RUSLE}\). Quando as três condições convergem, como em
+Plintossolos com voçorocas ativas, os fatores se multiplicam e a razão
+\(\delta = K_{plint}/K_{RUSLE} = \alpha \times \beta \times \gamma\)
+pode atingir valores de 2 a 10 ou superiores \citep{poesen_2018}. A
+variável \(\delta\) é adimensional e independente do valor absoluto de
+\(K_{RUSLE}\), permitindo comparar o grau de amplificação entre classes
+pedológicas com erodibilidade basal distinta.
+
+\subsection{\texorpdfstring{2.3 Fator de amplificação por regime
 hidráulico
-\(\alpha(VIB)\)}{2.2 Fator de amplificação por regime hidráulico \textbackslash alpha(VIB)}}\label{fator-de-amplificauxe7uxe3o-por-regime-hidruxe1ulico-alphavib}
+\(\alpha(VIB)\)}{2.3 Fator de amplificação por regime hidráulico \textbackslash alpha(VIB)}}\label{fator-de-amplificauxe7uxe3o-por-regime-hidruxe1ulico-alphavib}
 
 O nomograma de Wischmeier atribui à permeabilidade um peso relativamente
 baixo no cômputo de \(K\) (código 1--6, contribuição máxima de 7,5\% no
-valor final). Em Plintossolos com impedância hidráulica subsuperficial,
-a VIB pode variar de 3,13 cm/h no terço superior a 1,53 cm/h no
-intermediário (redução de 51\%), transição que converte o regime
-infiltração-dominante em escoamento-dominante e amplifica a energia
-erosiva efetiva de modo desproporcional ao previsto pelo código de
-permeabilidade \citep{poesen_2018}.
+valor final). Em solos com boa drenagem interna, a maior parte da
+precipitação infiltra e percola verticalmente, gerando pouco escoamento
+superficial e, consequentemente, baixa energia disponível para
+destacamento e transporte de partículas \citep{deroo_1992}. Em
+Plintossolos, horizontes subsuperficiais com plintita ou petroplintita
+apresentam condutividade hidráulica saturada muito inferior à dos
+horizontes sobrejacentes, criando barreira à percolação que favorece a
+saturação do perfil e o escoamento hortoniano por excesso de saturação
+\citep{padmanabhan_2005}. A VIB, determinada em campo por infiltrômetro
+de duplo anel, reflete essa impedância integrada ao longo do perfil e
+constitui a variável de entrada mais acessível para expressar o
+contraste hidrológico entre classes de solo
+\citep{bertoni_lombardi_neto_2017}.
+
+No Plintossolo estudado, a VIB varia de 3,13 cm/h no terço superior a
+1,53 cm/h no intermediário (redução de 51\%), transição que converte o
+regime de percolação vertical predominante em escoamento hortoniano e
+amplifica a energia erosiva efetiva de modo desproporcional ao previsto
+pelo código de permeabilidade do nomograma \citep{poesen_2018}.
 
 A forma funcional proposta para \(\alpha\) é uma lei de potência
-referenciada a um patamar de VIB acima do qual a contribuição hidráulica
-é negligenciável (Equação~\ref{eq-alpha}).
+referenciada a um limiar de VIB acima do qual o perfil opera
+predominantemente sob regime de percolação vertical e a contribuição da
+impedância hidráulica à erodibilidade é negligenciável
+(Equação~\ref{eq-alpha}).
 
 \begin{equation}\phantomsection\label{eq-alpha}{
 \alpha(VIB) = \left(\dfrac{VIB_{ref}}{VIB_{local}}\right)^{n_1}
 }\end{equation}
 
-onde \(VIB_{ref}\) é o limiar de referência (cm/h) acima do qual o solo
-opera em regime infiltração-dominante e \(n_1\) o expoente de
-amplificação a calibrar. O limiar \(VIB_{ref}\) = 6,0 cm/h foi adotado
-com base no ábaco de classificação fuzzy desenvolvido para o sítio, no
-qual feições situadas acima de 6 cm/h não atingem severidade
-transicional mesmo com profundidades de 2 m, indicando que a
-contribuição do regime hidráulico à erodibilidade efetiva tende a ser
-desprezível nesse patamar.
+onde \(VIB_{ref}\) é o limiar de referência (cm/h) acima do qual o
+perfil opera sob percolação vertical predominante e \(n_1\) o expoente
+de amplificação a calibrar. O expoente \(n_1\) governa a intensidade da
+penalização à medida que a VIB decresce, de modo que para \(n_1 = 1\) a
+relação é linear e reduzir a VIB pela metade duplica \(\alpha\),
+enquanto valores de \(n_1 > 1\) produzem penalização mais severa em
+solos com impedância acentuada e \(n_1 < 1\) atenua a diferenciação
+entre solos com VIB moderada e muito baixa \citep{kinnell_2005}. O
+limiar \(VIB_{ref}\) = 6,0 cm/h corresponde ao limite inferior de solos
+classificados como bem drenados na pedologia tropical
+\citep{embrapa_2018} e foi adotado como ponto de neutralidade
+(\(\alpha = 1\)) do fator hidráulico.
+
+Esse valor foi corroborado empiricamente pela classificação fuzzy de
+severidade desenvolvida para o sítio, na qual feições situadas acima
+desse patamar não atingem severidade transicional mesmo com
+profundidades de 2 m.
 
 Para \(VIB_{local} \geq VIB_{ref}\), adota-se \(\alpha = 1\) (sem
 correção). Para \(VIB_{local} < VIB_{ref}\), \(\alpha > 1\) com
-magnitude crescente conforme o inverso da infiltração. Nos dados de
-campo deste sítio, \(\alpha\) assume valores de referência para três
-posições da vertente (Tabela 1) que serão confrontados com a
-erodibilidade observada.
+magnitude crescente conforme o inverso da infiltração. No Plintossolo
+estudado, a VIB do horizonte intermediário (BAc) é 1,53 cm/h, resultando
+em \(\alpha = (6{,}0/1{,}53)^{n_1} = 3{,}92^{n_1}\), o que para
+\(n_1 = 1\) indica que a impedância hidráulica subsuperficial amplifica
+a erodibilidade efetiva em quase quatro vezes em relação a um solo com
+VIB de referência. Um Latossolo Vermelho-Amarelo típico com VIB de 9
+cm/h apresenta \(\alpha = 1\) (\(VIB > VIB_{ref}\)), ilustrando a
+capacidade do fator de distinguir classes bem drenadas de classes com
+impedância hidráulica sem modelagem hidrológica detalhada. Os valores de
+\(\alpha\) para três posições da vertente e cenários de \(n_1\) são
+apresentados na Tabela 1.
 
 Tabela 1. Valores de \(\alpha\) para três posições da vertente em função
 de \(n_1\) hipotético
@@ -435,63 +506,82 @@ Terço intermediário & 1,53 & 1,98 & 3,92 & 7,76 \\
 Terço inferior & 1,59 & 1,94 & 3,77 & 7,33 \\
 \end{longtable}
 
-\subsection{\texorpdfstring{2.3 Fator de penalização por toxicidade
+\subsection{\texorpdfstring{2.4 Fator de penalização por toxicidade
 edáfica
-\(\beta(m_{Al})\)}{2.3 Fator de penalização por toxicidade edáfica \textbackslash beta(m\_\{Al\})}}\label{fator-de-penalizauxe7uxe3o-por-toxicidade-eduxe1fica-betam_al}
+\(\beta(m_{Al})\)}{2.4 Fator de penalização por toxicidade edáfica \textbackslash beta(m\_\{Al\})}}\label{fator-de-penalizauxe7uxe3o-por-toxicidade-eduxe1fica-betam_al}
 
 A saturação por alumínio (\(m\)) nos horizontes subsuperficiais do
 Plintossolo estudado varia de 15,2\% no Ap a 99,2\% no BAc, constituindo
 gradiente de toxicidade que restringe progressivamente a colonização
-radicular e a cobertura vegetal \citep{de_oliveira_et_al_2024}. Embora o
-fator \(C\) da USLE capture parcialmente o efeito da cobertura, ele não
-incorpora o mecanismo causal edáfico que a determina nem a
+radicular e a cobertura vegetal \citep{de_oliveira_et_al_2024}.
+
+Embora o fator \(C\) da USLE capture parcialmente o efeito da cobertura,
+ele não incorpora o mecanismo causal edáfico que a determina nem a
 retroalimentação entre perda de cobertura, exposição do horizonte e
 amplificação da erodibilidade, processo cíclico documentado em solos
 álicos tropicais \citep{cassol_et_al_2023}.
 
 A forma funcional proposta é uma sigmoide logística com inflexão no
-limiar de toxicidade moderada (Equação~\ref{eq-beta}).
+limiar de caráter álico (Equação~\ref{eq-beta}).
 
 \begin{equation}\phantomsection\label{eq-beta}{
 \beta(m) = 1 + \dfrac{\beta_{max} - 1}{1 + \exp\!\left[-k_2\,(m - m_0)\right]}
 }\end{equation}
 
 onde \(m\) é a saturação por alumínio do horizonte diagnóstico (\%,
-0--100), \(m_0\) o ponto de inflexão (\%), \(k_2\) a taxa de transição
-(adimensional) e \(\beta_{max}\) o fator máximo de amplificação. A
-sigmoide garante que \(\beta \approx 1\) para \(m \ll m_0\) (sem
-toxicidade relevante) e \(\beta \to \beta_{max}\) para \(m \gg m_0\)
-(toxicidade extrema).
+0--100), \(m_0\) o ponto de inflexão coincidente com o limiar
+convencional de caráter álico (\%), \(k_2\) o parâmetro de inclinação da
+sigmoide (adimensional) e \(\beta_{max}\) o fator máximo de
+amplificação. Para \(m_{Al}\) muito abaixo de \(m_0\), o denominador é
+grande e \(\beta\) se aproxima de 1, indicando que a fitotoxicidade é
+insuficiente para suprimir mensuravelmente a vegetação. Para \(m_{Al}\)
+muito acima de \(m_0\), a função converge para \(\beta_{max}\),
+representando a amplificação máxima atribuível exclusivamente à
+toxicidade. O parâmetro \(k_2\) controla a abruptidade da transição, com
+valores altos produzindo mudança rápida em torno de 50\% e valores
+baixos gerando gradiente suave ao longo de toda a faixa de saturação.
 
 Com base na literatura de fitotoxicidade por alumínio em solos
 tropicais, propõe-se \(m_0\) = 50\% como ponto de inflexão, valor acima
 do qual a maioria das gramíneas forrageiras tropicais apresenta redução
 de cobertura superior a 50\% \citep{embrapa_2018}. Os parâmetros \(k_2\)
 e \(\beta_{max}\) constituem os termos a calibrar experimentalmente.
-Para o Plintossolo estudado, o horizonte BAc opera com \(m\) = 99,2\%,
-posicionando-se no platô superior da sigmoide
-(\(\beta \approx \beta_{max}\)), enquanto o horizonte Ap (\(m\) =
-15,2\%) permanece na faixa basal (\(\beta \approx 1\)).
+Para o Plintossolo estudado, considerando valores preliminares de
+\(\beta_{max} = 2{,}5\) e \(k_2 = 0{,}10\), o horizonte Ap (\(m\) =
+15,2\%) resulta em \(\beta \approx 1{,}04\), praticamente sem
+amplificação, enquanto o horizonte BAc (\(m\) = 99,2\%) atinge
+\(\beta \approx 2{,}47\), próximo ao máximo.
 
-\subsection{\texorpdfstring{2.4 Fator de vulnerabilidade geotécnica
-\(\gamma(H/H_c)\)}{2.4 Fator de vulnerabilidade geotécnica \textbackslash gamma(H/H\_c)}}\label{fator-de-vulnerabilidade-geotuxe9cnica-gammahh_c}
+Agronomicamente, esse gradiente vertical indica que a superfície do solo
+ainda pode sustentar cobertura vegetal esparsa, porém os horizontes
+subsuperficiais expostos nos taludes das feições erosivas estão
+desprovidos de proteção radicular contra o desprendimento por escoamento
+concentrado \citep{vannoppen_2015}. A sigmoide captura essa não
+linearidade com apenas dois parâmetros livres (\(\beta_{max}\) e
+\(k_2\)).
+
+\subsection{\texorpdfstring{2.5 Fator de vulnerabilidade geotécnica
+\(\gamma(H/H_c)\)}{2.5 Fator de vulnerabilidade geotécnica \textbackslash gamma(H/H\_c)}}\label{fator-de-vulnerabilidade-geotuxe9cnica-gammahh_c}
 
 A USLE foi concebida para erosão laminar e em sulcos, processos
-governados por destacamento superficial. Em vertentes com feições
-erosivas que se aprofundam em direção à altura crítica de ruptura por
-cisalhamento (\(H_c\)), a contribuição de colapso de taludes (mass
-wasting) à perda total de solo cresce de modo não linear, processo que o
-fator \(K\) não contempla \citep{poesen_et_al_2003, sidorchuk_2006}.
+governados por destacamento superficial por impacto de gotas (splash) e
+tensão cisalhante de escoamento raso. Em vertentes com feições erosivas
+que se aprofundam em direção à altura crítica de ruptura por
+cisalhamento (\(H_c\)), a contribuição de movimentos de massa nas
+paredes das feições (escorregamentos translacionais e rotacionais) à
+perda total de solo cresce de modo não linear, processo que o fator
+\(K\) não contempla \citep{poesen_et_al_2003, sidorchuk_2006}.
 
 A razão \(H/H_c\) (profundidade máxima da feição dividida pela altura
-crítica de Rankine) constitui proxy adimensional da proximidade ao
-limiar de ruptura. Para \(H/H_c \to 0\) (sulcos rasos), a contribuição
-geotécnica é desprezível; para \(H/H_c \to 1\), o talude opera próximo
-ao equilíbrio limite e episódios de saturação sazonal podem disparar
-colapso e mobilização volumétrica, amplificando a perda de solo em
-ordens de grandeza superiores ao previsto pela USLE.
+crítica de Rankine) constitui indicador adimensional normalizado da
+proximidade ao limiar de ruptura. Para \(H/H_c \to 0\) (sulcos rasos), a
+contribuição geotécnica é desprezível; para \(H/H_c \to 1\), o talude
+opera próximo ao equilíbrio limite e episódios de saturação sazonal com
+desenvolvimento de poropressões positivas podem disparar escorregamentos
+translacionais e mobilização volumétrica de solo, amplificando a perda
+de solo em ordens de grandeza superiores ao previsto pela USLE.
 
-A forma funcional proposta é uma expansão quadrática
+A forma funcional proposta é uma função de potência com origem unitária
 (Equação~\ref{eq-gamma}).
 
 \begin{equation}\phantomsection\label{eq-gamma}{
@@ -499,12 +589,19 @@ A forma funcional proposta é uma expansão quadrática
 }\end{equation}
 
 onde \(H\) é a profundidade máxima da feição (m), \(H_c\) a altura
-crítica de corte vertical sob saturação (m) e \(k_3\), \(n_3\) os
-parâmetros a calibrar. Para \(H/H_c = 0\), \(\gamma = 1\) (sem
-contribuição geotécnica). A escolha de \(n_3 = 2\) como valor inicial é
-motivada pela dependência quadrática entre volume mobilizado por colapso
-e altura de queda em modelos de ruptura planar
-\citep{fredlund_rahardjo_1993}.
+crítica de corte vertical sob saturação (m), \(k_3\) o coeficiente de
+escala da amplificação geotécnica e \(n_3\) o expoente de curvatura da
+resposta. Para \(H/H_c = 0\), \(\gamma = 1\) (sem contribuição
+geotécnica).
+
+Valores elevados de \(n_3\) (\textgreater{} 2) fazem com que \(\gamma\)
+permaneça próximo de 1 para feições rasas e aumente abruptamente apenas
+quando \(H/H_c\) se aproxima de 1, comportamento fisicamente coerente
+porque o volume de solo mobilizado pela cunha de ruptura cresce com
+potência cúbica ou superior da altura da parede. A escolha de
+\(n_3 = 2\) como valor inicial é motivada pela dependência quadrática
+entre volume mobilizado por colapso e altura de queda em modelos de
+ruptura planar \citep{fredlund_rahardjo_1993}.
 
 A altura crítica \(H_c\) é estimada pela teoria de Rankine para corte
 vertical com fissura de tração preenchida por água
@@ -514,10 +611,17 @@ vertical com fissura de tração preenchida por água
 H_c = \dfrac{2\,c}{\gamma_{sat}} \cdot \tan\!\left(45° + \dfrac{\phi}{2}\right) + \dfrac{2\,c}{\gamma_{sat} \cdot \tan\!\left(45° + \dfrac{\phi}{2}\right)}
 }\end{equation}
 
-onde \(c\) é a coesão sob saturação (kPa), \(\gamma_{sat}\) o peso
-específico saturado (kN/m³) e \(\phi\) o ângulo de atrito interno
-(graus). Para o Plintossolo estudado (\(c\) = 13,02 kPa, \(\phi\) =
-34,93°, \(\gamma_{sat}\) = 19,93 kN/m³), \(H_c\) = 3,35 m.
+onde \(c\) é a coesão efetiva sob saturação (kPa), \(\phi\) o ângulo de
+atrito interno (°) e \(\gamma_{sat}\) o peso específico saturado do solo
+(kN/m³). A formulação assume análise em tensões totais com pressão
+neutra nula (\(u = 0\)), consistente com a determinação de \(c\) e
+\(\phi\) por ensaio de cisalhamento direto em amostras saturadas (ASTM
+D3080).
+
+A influência de poropressões positivas sob condições de campo é avaliada
+separadamente na análise de estabilidade de taludes apresentada no
+manuscrito complementar. Para o Plintossolo estudado (\(c\) = 13,02 kPa,
+\(\phi\) = 34,93°, \(\gamma_{sat}\) = 19,93 kN/m³), \(H_c\) = 3,35 m.
 
 Os valores de \(\gamma\) para as seis feições inventariadas são
 apresentados na Tabela 2 para cenários de \(k_3\) e \(n_3\).
@@ -558,8 +662,23 @@ F5 & 1,50 & 0,45 & 1,40 & 2,01 & 1,18 \\
 F6 & 0,60 & 0,18 & 1,06 & 1,16 & 1,01 \\
 \end{longtable}
 
-\subsection{\texorpdfstring{2.5 Expressão expandida do
-\(K_{plint}\)}{2.5 Expressão expandida do K\_\{plint\}}}\label{expressuxe3o-expandida-do-k_plint}
+As seis feições mapeadas apresentam profundidades de 0,40 a 1,50 m
+(\(H/H_c = 0{,}12\) a 0,45), intervalo no qual \(\gamma\) permanece
+próximo de 1 e o colapso geotécnico não é o mecanismo dominante de perda
+de solo. Em voçorocas regionais com profundidade superior a 2 m
+(\(H/H_c > 0{,}6\)), contudo, \(\gamma\) pode contribuir
+substancialmente para a amplificação total, o que justifica a inclusão
+desse termo no modelo.
+
+A adoção da teoria de Rankine para cortes verticais é uma simplificação
+conservadora; para geometrias de talude com inclinação inferior a 90°,
+métodos de equilíbrio limite como Bishop simplificado podem fornecer
+valores de fator de segurança menos conservadores
+\citep{fredlund_rahardjo_1993}, aspecto que requer verificação em
+trabalho complementar.
+
+\subsection{\texorpdfstring{2.6 Expressão expandida do
+\(K_{plint}\)}{2.6 Expressão expandida do K\_\{plint\}}}\label{expressuxe3o-expandida-do-k_plint}
 
 A substituição das Equação~\ref{eq-alpha}, Equação~\ref{eq-beta} e
 Equação~\ref{eq-gamma} na Equação~\ref{eq-kplint} produz a expressão
@@ -570,11 +689,17 @@ K_{plint} = K_{RUSLE} \times \left(\dfrac{VIB_{ref}}{VIB_{local}}\right)^{n_1} \
 }\end{equation}
 
 A Equação~\ref{eq-kplint-exp} contém cinco parâmetros livres (\(n_1\),
-\(\beta_{max}\), \(k_2\), \(k_3\), \(n_3\)) e dois parâmetros fixados a
-priori (\(VIB_{ref}\) = 6 cm/h, \(m_0\) = 50\%). A calibração requer, no
-mínimo, estimativas independentes de \(K_{obs}\) em posições da vertente
-com variação simultânea de VIB, \(m\) e \(H/H_c\), conforme descrito na
-seção 3.
+\(\beta_{max}\), \(k_2\), \(k_3\), \(n_3\)) a serem estimados por
+calibração em campo, e dois parâmetros fixados a priori (\(VIB_{ref}\) =
+6 cm/h e \(m_0\) = 50\%) derivados de evidências pedológicas e limiares
+de fitotoxicidade documentados em solos tropicais \citep{embrapa_2018}.
+A razão
+\(\delta = K_{plint}/K_{RUSLE} = \alpha \times \beta \times \gamma\)
+sintetiza a amplificação total da erodibilidade e constitui a
+variável-resposta da validação computacional e experimental. A
+calibração requer, no mínimo, estimativas independentes de \(K_{obs}\)
+em posições da vertente com variação simultânea de VIB, \(m\) e
+\(H/H_c\), conforme descrito na seção 4.
 
 \section{3. Hipóteses}\label{hipuxf3teses}
 
@@ -618,121 +743,344 @@ as realizações.
 
 \section{4. Desenho experimental}\label{desenho-experimental}
 
-\subsection{4.1 Delineamento
+\subsection{4.1 Área de estudo e dados de
+entrada}\label{uxe1rea-de-estudo-e-dados-de-entrada}
+
+O sítio experimental está localizado na unidade geomorfológica dos
+Tabuleiros Costeiros do estado de Sergipe, Nordeste do Brasil, sobre um
+Plintossolo Háplico desenvolvido a partir de sedimentos do Grupo
+Barreiras \citep{nascimento_pedrotti_2004}. O clima é tropical úmido (As
+na classificação de Köppen), com precipitação média anual de 1200 a 1400
+mm concentrada entre abril e agosto e temperatura média de 25 °C.
+
+O uso predominante da terra é pastagem degradada com cobertura esparsa,
+condição que expõe os horizontes subsuperficiais à ação direta do
+escoamento concentrado. O sítio ocupa um interflúvio suavemente ondulado
+onde a combinação de vegetação esparsa e plintita subsuperficial
+favoreceu o desenvolvimento de múltiplas feições de erosão linear ao
+longo do eixo de drenagem (Fig. Figura~\ref{fig-area-aerea}).
+
+\begin{figure}
+
+\centering{
+
+\includegraphics[width=0.9\linewidth,height=\textheight,keepaspectratio]{figuras/fig_00a_area_estudo_aerea.png}
+
+}
+
+\caption{\label{fig-area-aerea}Vista aérea mostrando a paisagem de
+pastagem degradada e a ocorrência de feições de erosão linear no
+Plintossolo Háplico dos Tabuleiros Costeiros de Sergipe, Nordeste do
+Brasil.}
+
+\end{figure}%
+
+Seis feições erosivas ativas (F1 a F6) foram identificadas a partir de
+ortomosaicos derivados de VANT com densidade média de nuvem de pontos de
+120 pontos/m², e seus parâmetros morfométricos (profundidade, largura e
+comprimento) validados por medições diretas em campo com trena (Fig.
+Figura~\ref{fig-feicoes-campo}). As profundidades das feições variaram
+de 0,40 m (F2) a 1,50 m (F5), correspondendo a profundidades
+normalizadas \(H/H_c\) de 0,12 a 0,45 em relação à altura crítica
+\(H_c = 3{,}35\) m calculada a partir dos parâmetros geotécnicos medidos
+em campo via Equação~\ref{eq-hc}. Esse intervalo indica que o colapso
+lateral de talude ainda não se tornou o mecanismo dominante de perda de
+solo em nenhuma das feições levantadas, condição que restringe a faixa
+de calibração do fator geotécnico \(\gamma\).
+
+\begin{figure}
+
+\centering{
+
+\includegraphics[width=0.9\linewidth,height=\textheight,keepaspectratio]{figuras/fig_00b_feicoes_drone_campo.jpeg}
+
+}
+
+\caption{\label{fig-feicoes-campo}Feições de erosão linear no sítio
+experimental.}
+
+\end{figure}%
+
+\emph{Nota: Ortomosaico derivado de VANT mostrando a distribuição
+espacial das feições erosivas mapeadas e medição em campo dos parâmetros
+morfométricos (profundidade, largura e comprimento) em uma das feições
+erosivas ativas.}
+
+Todas as propriedades de entrada do Plintossolo foram obtidas de
+medições em campo e análises laboratoriais conduzidas em amostras
+coletadas no sítio experimental. A velocidade de infiltração básica
+(VIB) foi determinada in situ por ensaios com infiltrômetro de duplo
+anel em três horizontes representativos (Ap, BAc e Bf), resultando em
+valores de 3,13, 1,53 e 1,59 cm/h, respectivamente, que confirmam que os
+horizontes plíntico e subplíntico impõem impedância hidráulica abaixo do
+limiar de referência adotado (\(VIB_{ref}\) = 6,0 cm/h). A saturação por
+alumínio (\(m_{Al}\)) foi quantificada por análise de fertilidade de
+rotina em amostras de cada horizonte genético, com valores variando de
+15,2\% no Ap a 99,2\% no Bf, gradiente vertical consistente com a
+lixiviação progressiva de bases e concentração de alumínio trocável em
+profundidade.
+
+Os parâmetros geotécnicos (coesão efetiva \(c\) = 13,02 kPa, ângulo de
+atrito interno \(\phi\) = 34,93° e peso específico saturado
+\(\gamma_{sat}\) = 19,93 kN/m³) foram determinados por ensaio de
+cisalhamento direto (ASTM D3080) em amostras indeformadas extraídas do
+horizonte Bt sob condições saturadas. A erodibilidade \(K_{RUSLE}\) =
+0,035 t h MJ\(^{-1}\) mm\(^{-1}\) foi estimada a partir da distribuição
+granulométrica, teor de matéria orgânica, código de estrutura e classe
+de permeabilidade do horizonte superficial utilizando o nomograma padrão
+\citep{wischmeier_et_al_1971}.
+
+Dois perfis virtuais (Latossolo e Argissolo) foram parametrizados a
+partir de valores medianos da literatura regional para VIB, saturação
+por alumínio, propriedades geotécnicas e \(K_{RUSLE}\)
+\citep{silva_et_al_2009, bertoni_lombardi_neto_2017}. O Latossolo opera
+como controle negativo
+(\(\alpha \approx \beta \approx \gamma \approx 1\)), representando solos
+bem drenados sem impedância hidráulica, toxicidade ou feições erosivas
+profundas, enquanto o Argissolo funciona como controle parcial,
+compartilhando impedância hidráulica moderada no horizonte Bt, porém sem
+plintita ou toxicidade extrema por alumínio. As propriedades dos três
+perfis são sumarizadas na Tabela 3.
+
+Tabela 3. Propriedades dos três perfis de solo utilizados no
+experimento.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Propriedade
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Plintossolo (campo)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Latossolo (virtual)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Argissolo (virtual)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+VIB superior (cm/h) & 3,13 & 12,0 & 4,5 \\
+VIB intermediária (cm/h) & 1,53 & 9,0 & 2,5 \\
+VIB inferior (cm/h) & 1,59 & 7,0 & 2,8 \\
+\(m_{Al}\) Ap (\%) & 15,2 & 10,0 & 20,0 \\
+\(m_{Al}\) subsuperfície (\%) & 84--99 & 20,0 & 45,0 \\
+\(c\) (kPa, saturado) & 13,02 & 30,0 & 18,0 \\
+\(\phi\) (°) & 34,93 & 30,0 & 32,0 \\
+\(\gamma_{sat}\) (kN/m³) & 19,93 & 18,0 & 19,0 \\
+\(H_c\) (m) & 3,35 & 5,77 & 4,33 \\
+\(H/H_c\) médio & 0,28 & 0,00 & 0,08 \\
+\(K_{RUSLE}\) (t h MJ\(^{-1}\) mm\(^{-1}\)) & 0,035 & 0,015 & 0,025 \\
+\end{longtable}
+
+\emph{Nota: Os valores do Plintossolo foram obtidos de medições em
+campo; os valores do Latossolo e do Argissolo foram parametrizados a
+partir da literatura regional.}
+
+\subsection{4.2 Delineamento
 multi-classe}\label{delineamento-multi-classe}
 
-O experimento adota delineamento fatorial hierarquizado com dois fatores
-fixos: classe de solo (três níveis) e posição na vertente (três níveis),
-com quatro repetições por combinação. Os três sítios experimentais
+O experimento adota delineamento com fator fixo principal (classe de
+solo, três níveis) e três parcelas de solo nu por sítio, dispostas ao
+longo do gradiente de vertente no sítio-alvo (S1, 3 posições × 1
+repetição) e agrupadas em posição única nos sítios-controle (S2 e S3, 1
+posição × 3 repetições). A replicação temporal ao longo de dois anos
+hidrológicos (dezenas de eventos erosivos por estação) compensa o número
+reduzido de unidades espaciais, gerando centenas de observações
+independentes de \(K_{obs}\) por sítio. Os três sítios experimentais
 representam classes pedológicas com gradiente decrescente de
 amplificação esperada para os termos \(\alpha\), \(\beta\) e \(\gamma\).
 
-O sítio-alvo (S1) é instalado em Plintossolo Argilúvico Distrófico nos
-Tabuleiros Costeiros de Sergipe, onde VIB varia de 3,13 cm/h no terço
-superior a 1,53 cm/h no intermediário, saturação por alumínio atinge
-99,2\% no horizonte BAc e seis feições erosivas com \(H/H_c\) de
-0,12--0,45 foram inventariadas. O sítio-controle negativo (S2) é
-instalado em Latossolo Vermelho-Amarelo Distrófico, preferencialmente na
-mesma região fisiográfica, selecionado por apresentar VIB tipicamente
-superior a 6 cm/h, saturação por alumínio inferior a 30\%, espessura
-homogênea do horizonte Bw sem impedância hidráulica abrupta e ausência
-de feições erosivas lineares ativas. O sítio-controle parcial (S3) é
-instalado em Argissolo Vermelho-Amarelo Distrófico, com gradiente
-textural abrupto (horizonte Bt adensado) que reproduz impedância
-hidráulica similar à do Plintossolo, porém sem plintita e com saturação
-por alumínio intermediária (tipicamente 30--60\%), constituindo classe
-que isola o efeito do regime hidráulico (\(\alpha\)) das demais
-amplificações.
+O sítio-alvo (S1) é instalado no Plintossolo Argilúvico Distrófico
+descrito na seção 4.1, onde VIB varia de 3,13 cm/h no terço superior a
+1,53 cm/h no intermediário, saturação por alumínio atinge 99,2\% no
+horizonte BAc e seis feições erosivas com \(H/H_c\) de 0,12--0,45 foram
+inventariadas. O sítio-controle negativo (S2) é instalado em Latossolo
+Vermelho-Amarelo Distrófico, preferencialmente na mesma região
+fisiográfica, selecionado por apresentar VIB tipicamente superior a 6
+cm/h, saturação por alumínio inferior a 30\%, espessura homogênea do
+horizonte Bw sem impedância hidráulica abrupta e ausência de feições
+erosivas lineares ativas. O sítio-controle parcial (S3) é instalado em
+Argissolo Vermelho-Amarelo Distrófico, com gradiente textural abrupto
+(horizonte Bt adensado) que reproduz impedância hidráulica similar à do
+Plintossolo, porém sem plintita e com saturação por alumínio
+intermediária (tipicamente 30--60\%), constituindo classe que isola o
+efeito do regime hidráulico (\(\alpha\)) das demais amplificações.
 
-\subsection{4.2 Parcelas de erosão e distribuição por
+\subsection{4.3 Parcelas de erosão e distribuição por
 sítio}\label{parcelas-de-erosuxe3o-e-distribuiuxe7uxe3o-por-suxedtio}
 
-As parcelas seguem o padrão Wischmeier (22,13 m de comprimento na
-direção do declive × 1,83 m de largura = 40,5 m²), com calhas coletoras
-(Geib) na extremidade inferior conectadas a tanques de armazenamento de
-sedimentos. Cada parcela é delimitada por chapas galvanizadas enterradas
-a 15 cm para evitar entrada lateral de escoamento. A superfície das
-parcelas principais é mantida em pousio (solo nu e capinado) durante o
-período experimental para isolar o fator \(K\) dos efeitos de \(C\) e
-\(P\) (\(C = P = 1{,}0\)).
+As parcelas seguem o padrão Wischmeier (\textcolor{red}{22,13 m de
+comprimento na direção do declive × 1,83 m de largura = 40,5 m²}), com
+\textcolor{red}{calhas coletoras (Geib) na extremidade inferior
+conectadas a tanques de armazenamento de sedimentos}. Cada parcela é
+delimitada por \textcolor{red}{chapas galvanizadas enterradas a 15 cm}
+para evitar entrada lateral de escoamento. A superfície das parcelas
+principais é mantida em pousio (solo nu e capinado) durante o período
+experimental para isolar o fator \(K\) dos efeitos de \(C\) e \(P\)
+(\(C = P = 1{,}0\)). A configuração da parcela individual e a
+distribuição das 14 unidades nos três sítios são apresentadas na Fig.
+Figura~\ref{fig-esquema}.
 
-No sítio S1 (Plintossolo), o arranjo compreende 12 parcelas em solo nu
-(3 posições × 4 repetições), 4 parcelas com horizonte BAc exposto por
-escavação controlada (2 posições × 2 repetições) para isolar o efeito de
-\(\beta\) e 6 parcelas com cobertura vegetal natural para quantificar a
-interação \(\beta \times C\), totalizando 22 parcelas. No sítio S2
-(Latossolo), 12 parcelas em solo nu e 4 parcelas com cobertura vegetal
-constituem o arranjo mínimo necessário para estimar \(K_{obs}\) e
-verificar se \(\delta \approx 1{,}0\) (16 parcelas). No sítio S3
-(Argissolo), 12 parcelas em solo nu, 2 parcelas com horizonte Bt exposto
-e 4 parcelas com cobertura vegetal permitem isolar a contribuição do
-gradiente textural (18 parcelas). O total geral do experimento é de 56
-parcelas.
+\begin{figure}
 
-\subsection{4.3 Protocolo de ensaios}\label{protocolo-de-ensaios}
+\centering{
 
-\subsubsection{4.3.1 Ensaios comuns às três
+\includegraphics[width=1\linewidth,height=\textheight,keepaspectratio]{figuras/fig_esquema_parcela_experimento.png}
+
+}
+
+\caption{\label{fig-esquema}Esquema do experimento de erosão. (a)
+Parcela padrão Wischmeier com divisor Geib, tanques de coleta e
+armazenamento de sedimentos e chapas galvanizadas de delimitação
+lateral. (b) Distribuição das parcelas nos três sítios pedológicos.}
+
+\end{figure}%
+
+A configuração física descrita na Fig. Figura~\ref{fig-esquema} reproduz
+o desenho clássico de parcelas de monitoramento de erosão hídrica
+empregado em condições edafoclimáticas brasileiras (Fig.
+Figura~\ref{fig-geib}), em que o divisor Geib de múltiplas aberturas
+fraciona o deflúvio excedente do primeiro tanque para o segundo,
+ampliando a capacidade de coleta sem perda de representatividade
+amostral \citep{melo_neto_et_al_2021}.
+
+\begin{figure}
+
+\begin{minipage}{0.50\linewidth}
+
+\centering{
+
+\pandocbounded{\includegraphics[keepaspectratio]{figuras/geib_a.jpeg}}
+
+}
+
+\subcaption{\label{fig-geib-a}Croqui da parcela com divisor Geib e
+tanques de coleta}
+
+\end{minipage}%
+%
+\begin{minipage}{0.50\linewidth}
+
+\centering{
+
+\pandocbounded{\includegraphics[keepaspectratio]{figuras/geib_b.jpeg}}
+
+}
+
+\subcaption{\label{fig-geib-b}Parcela instalada em campo}
+
+\end{minipage}%
+
+\caption{\label{fig-geib}Parcela de monitoramento de erosão hídrica do
+solo com divisor Geib. (a) Croqui esquemático e (b) vista de campo.
+Adaptado de \citet{melo_neto_et_al_2021} (CC BY 4.0).}
+
+\end{figure}%
+
+No sítio S1 (Plintossolo), o arranjo compreende \textcolor{red}{3
+parcelas em solo nu (3 posições × 1 repetição, ao longo do gradiente de
+VIB)}, \textcolor{red}{1 parcela com horizonte BAc exposto por escavação
+controlada} para isolar o efeito de \(\beta\) e \textcolor{red}{1
+parcela com cobertura vegetal natural} para quantificar a interação
+\(\beta \times C\), totalizando \textcolor{red}{5 parcelas}. No sítio S2
+(Latossolo), \textcolor{red}{3 parcelas em solo nu (1 posição × 3
+repetições) e 1 parcela com cobertura vegetal} constituem o arranjo
+mínimo necessário para estimar \(K_{obs}\) e verificar se
+\(\delta \approx 1{,}0\) (\textcolor{red}{4 parcelas}). No sítio S3
+(Argissolo), \textcolor{red}{3 parcelas em solo nu (1 posição × 3
+repetições), 1 parcela com horizonte Bt exposto e 1 parcela com
+cobertura vegetal} permitem isolar a contribuição do gradiente textural
+(\textcolor{red}{5 parcelas}). \textcolor{red}{O total geral do
+experimento é de 14 parcelas}.
+
+\subsection{4.4 Protocolo de ensaios}\label{protocolo-de-ensaios}
+
+\subsubsection{4.4.1 Ensaios comuns às três
 classes}\label{ensaios-comuns-uxe0s-truxeas-classes}
 
 O protocolo de monitoramento em campo compreende quatro componentes
-simultâneos realizados durante dois anos hidrológicos consecutivos
-(abril a março), cobrindo a totalidade da estação chuvosa
+simultâneos realizados durante \textcolor{red}{dois anos hidrológicos
+consecutivos (abril a março)}, cobrindo a totalidade da estação chuvosa
 (abril--agosto) e o período seco (setembro--março). A medição contínua
-de precipitação utiliza pluviógrafo de báscula (resolução 0,2 mm,
-intervalo de registro de 5 min) instalado na crista de cada vertente,
-para cálculo do índice de erosividade \(R\) (EI\(_{30}\)) por evento
-\citep{wischmeier_smith_1978}. A coleta de sedimentos em tanques de
-armazenamento ocorre após cada evento erosivo com precipitação superior
-a 10 mm, quantificando a perda de solo por parcela em t ha\(^{-1}\)
-evento\(^{-1}\). A VIB é medida sazonalmente por infiltrômetro de anéis
-duplos (3 posições × 3 repetições por sítio) e amostras de solo são
-coletadas para determinação de granulometria completa (com areia muito
-fina separada), matéria orgânica (Walkley-Black ou combustão seca),
-complexo sortivo completo (pH, Al³⁺, H+Al, CTC, V\%, saturação por
-alumínio \(m\)), limites de Atterberg (LL, LP, IP), densidade do solo e
-de partículas (\(\gamma_{sat}\)) e mineralogia por difração de raios X
-(DRX) do horizonte diagnóstico. Cada sítio conta com levantamento
-topográfico por estação total ou GNSS-RTK para determinação dos fatores
-\(L\) e \(S\).
+de precipitação utiliza \textcolor{red}{pluviógrafo de báscula
+(resolução 0,2 mm, intervalo de registro de 5 min) instalado na crista
+de cada vertente}, para cálculo do índice de erosividade \(R\)
+(EI\(_{30}\)) por evento \citep{wischmeier_smith_1978}. A coleta de
+sedimentos em \textcolor{red}{tanques de armazenamento} ocorre após cada
+evento erosivo com precipitação superior a 10 mm, quantificando a perda
+de solo por parcela em t ha\(^{-1}\) evento\(^{-1}\). A VIB é medida
+sazonalmente por \textcolor{red}{infiltrômetro de anéis duplos (3
+posições × 3 repetições por sítio)} e \textcolor{red}{amostras de solo
+são coletadas para determinação de granulometria completa (com areia
+muito fina separada), matéria orgânica (Walkley-Black ou combustão
+seca), complexo sortivo completo (pH, Al³⁺, H+Al, CTC, V\%, saturação
+por alumínio \(m\)), limites de Atterberg (LL, LP, IP), densidade do
+solo e de partículas (\(\gamma_{sat}\)) e mineralogia por difração de
+raios X (DRX) do horizonte diagnóstico}. Cada sítio conta com
+\textcolor{red}{levantamento topográfico por estação total ou GNSS-RTK}
+para determinação dos fatores \(L\) e \(S\).
 
-O ensaio de cisalhamento direto em condição saturada (tensões normais de
-25, 50, 100 e 200 kPa) é realizado em amostras indeformadas do horizonte
-diagnóstico de cada classe, fornecendo coesão (\(c\)) e ângulo de atrito
-(\(\phi\)) para cálculo de \(H_c\) pela Equação~\ref{eq-hc}. A
-condutividade hidráulica saturada por horizonte (permeâmetro de carga
-constante) é determinada em amostras indeformadas de dois a três
-horizontes por perfil, validando a presença ou ausência de impedância
-hidráulica abrupta.
+\textcolor{red}{O ensaio de cisalhamento direto em condição saturada
+(tensões normais de 25, 50, 100 e 200 kPa) é realizado em amostras
+indeformadas do horizonte diagnóstico de cada classe} (Fig.
+Figura~\ref{fig-sitio}), fornecendo coesão (\(c\)) e ângulo de atrito
+(\(\phi\)) para cálculo de \(H_c\) pela Equação~\ref{eq-hc}.
+\textcolor{red}{A condutividade hidráulica saturada por horizonte
+(permeâmetro de carga constante) é determinada em amostras indeformadas
+de dois a três horizontes por perfil}, validando a presença ou ausência
+de impedância hidráulica abrupta.
 
-\subsubsection{4.3.2 Ensaios específicos por
+\begin{figure}
+
+\centering{
+
+\includegraphics[width=1\linewidth,height=\textheight,keepaspectratio]{figuras/fig_09_sitio_experimental.png}
+
+}
+
+\caption{\label{fig-sitio}Elementos do sítio experimental em Plintossolo
+Háplico, Tabuleiros Costeiros de Sergipe. (a) Bloco indeformado extraído
+para ensaio de cisalhamento direto (\(c\) = 13,02 kPa, \(\phi\) =
+34,93°). (b) Parcelas de coleta de sedimentos posicionadas na base do
+talude erosivo. (c) Vista geral do talude com feições erosivas ativas.}
+
+\end{figure}%
+
+\subsubsection{4.4.2 Ensaios específicos por
 classe}\label{ensaios-especuxedficos-por-classe}
 
 No sítio S1 (Plintossolo), o monitoramento de profundidade das feições
-adjacentes às parcelas utiliza pinos de erosão (20 pinos por feição,
-espaçamento de 1 m longitudinal × 0,5 m transversal, leituras
-quinzenais), para quantificar o incremento volumétrico atribuível a
-colapso de taludes e incisão vertical. As quatro parcelas com horizonte
-BAc exposto por escavação controlada permitem isolar o efeito da
-toxicidade extrema (\(m\) = 99,2\%) sobre a erodibilidade observada. Um
-inventário completo das feições erosivas (profundidade, largura,
-comprimento, \(H/H_c\)) é realizado semestralmente.
+adjacentes às parcelas utiliza \textcolor{red}{pinos de erosão (20 pinos
+por feição, espaçamento de 1 m longitudinal × 0,5 m transversal,
+leituras quinzenais)}, para quantificar o incremento volumétrico
+atribuível a colapso de taludes e incisão vertical. A
+\textcolor{red}{parcela com horizonte BAc exposto por escavação
+controlada} permite isolar o efeito da toxicidade extrema (\(m\) =
+99,2\%) sobre a erodibilidade observada. \textcolor{red}{Um inventário
+completo das feições erosivas (profundidade, largura, comprimento,
+\(H/H_c\)) é realizado semestralmente}.
 
 No sítio S2 (Latossolo), não se preveem pinos de erosão nem parcelas com
 horizonte exposto, dado que a hipótese H5 prediz
-\(\delta \approx 1{,}0\) (ausência de amplificação). A mineralogia por
-DRX confirma a presença de gibbsita e oxi-hidróxidos de ferro
-responsáveis pela microagregação estável típica de Latossolos
+\(\delta \approx 1{,}0\) (ausência de amplificação). \textcolor{red}{A
+mineralogia por DRX} confirma a presença de gibbsita e oxi-hidróxidos de
+ferro responsáveis pela microagregação estável típica de Latossolos
 \citep{silva_et_al_2009}.
 
-No sítio S3 (Argissolo), pinos de erosão são instalados apenas se
-feições erosivas lineares forem identificadas durante o inventário
-inicial. Duas parcelas com horizonte Bt exposto permitem avaliar se a
-impedância hidráulica do gradiente textural abrupto, sem toxicidade
-extrema por alumínio, é suficiente para gerar \(\alpha > 1\)
-isoladamente.
+No sítio S3 (Argissolo), \textcolor{red}{pinos de erosão são instalados
+apenas se feições erosivas lineares forem identificadas durante o
+inventário inicial}. \textcolor{red}{Uma parcela com horizonte Bt
+exposto} permite avaliar se a impedância hidráulica do gradiente
+textural abrupto, sem toxicidade extrema por alumínio, é suficiente para
+gerar \(\alpha > 1\) isoladamente.
 
-\subsection{\texorpdfstring{4.4 Cálculo de
-\(K_{obs}\)}{4.4 Cálculo de K\_\{obs\}}}\label{cuxe1lculo-de-k_obs}
+\subsection{\texorpdfstring{4.5 Cálculo de
+\(K_{obs}\)}{4.5 Cálculo de K\_\{obs\}}}\label{cuxe1lculo-de-k_obs}
 
 Para cada parcela em solo nu (\(C = P = 1\)), \(K_{obs}\) é obtido por
 inversão da Equação~\ref{eq-usle} (Equação~\ref{eq-kobs}).
@@ -754,7 +1102,7 @@ exposto. A razão \(\delta = K_{obs}/K_{RUSLE}\) quantifica a
 discrepância entre erodibilidade observada e prevista, que constitui a
 variável-resposta do modelo de correção.
 
-\subsection{4.5 Procedimento de
+\subsection{4.6 Procedimento de
 calibração}\label{procedimento-de-calibrauxe7uxe3o}
 
 A calibração dos cinco parâmetros livres (\(n_1\), \(\beta_{max}\),
@@ -806,7 +1154,7 @@ três sítios (n = 56 parcelas), partindo dos valores iniciais obtidos nas
 etapas marginais. O intervalo de confiança dos parâmetros é estimado por
 bootstrap paramétrico (1000 reamostras).
 
-\subsection{4.6 Validação}\label{validauxe7uxe3o}
+\subsection{4.7 Validação}\label{validauxe7uxe3o}
 
 A estrutura multi-classe permite estratégia de validação em dois níveis.
 A validação interna utiliza validação cruzada leave-one-out (LOOCV)
@@ -855,7 +1203,7 @@ A proposta fundamenta-se em seis pressupostos cuja violação pode
 comprometer a calibração. O primeiro pressupõe que a variação de VIB ao
 longo da vertente é estável entre eventos e estações, o que pode não se
 verificar sob compactação progressiva ou recuperação estrutural sazonal;
-o monitoramento sazonal de VIB (seção 4.3) permite avaliar essa
+o monitoramento sazonal de VIB (seção 4.4) permite avaliar essa
 premissa. O segundo pressupõe que a saturação por alumínio do horizonte
 diagnóstico é o principal determinante da supressão de cobertura
 vegetal, isolando o efeito de \(\beta\) do fator \(C\); em sítios onde
@@ -901,8 +1249,8 @@ ao fator \(\alpha\) sob VIB reduzida pela impedância do horizonte Bt,
 com contribuição limitada de \(\beta\) e \(\gamma\). No sítio S1
 (Plintossolo), a erodibilidade observada no terço intermediário (VIB =
 1,53 cm/h) pode exceder a prevista pelo nomograma em fator de 2 a 4,
-indicando subestimativa sistemática do \(K\) em regime de
-escoamento-dominante com toxicidade extrema.
+indicando subestimativa sistemática do \(K\) em regime de escoamento
+hortoniano com toxicidade extrema.
 
 O expoente \(n_1\) situa-se provavelmente na faixa 0,5--1,5, com valores
 mais elevados correspondendo a maior sensibilidade do sistema à VIB. O
