@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.23)  9 APR 2026 20:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.23)  9 APR 2026 21:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -888,13 +888,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [10]
-<fig_00a_area_estudo_aerea.png, id=346, 319.6305pt x 226.008pt>
+<fig_00a_area_estudo_aerea.png, id=322, 319.6305pt x 226.008pt>
 File: fig_00a_area_estudo_aerea.png Graphic file (type png)
 <use fig_00a_area_estudo_aerea.png>
 Package pdftex.def Info: fig_00a_area_estudo_aerea.png  used on input line 172.
 
 (pdftex.def)             Requested size: 316.20227pt x 223.58652pt.
-<fig_00b_feicoes_drone_campo.jpeg, id=348, 365.949pt x 177.0615pt>
+<fig_00b_feicoes_drone_campo.jpeg, id=324, 365.949pt x 177.0615pt>
 File: fig_00b_feicoes_drone_campo.jpeg Graphic file (type jpg)
 <use fig_00b_feicoes_drone_campo.jpeg>
 Package pdftex.def Info: fig_00b_feicoes_drone_campo.jpeg  used on input line 1
@@ -904,7 +904,7 @@ Package pdftex.def Info: fig_00b_feicoes_drone_campo.jpeg  used on input line 1
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [11 <./fig_00a_area_estudo_aerea.png> <./fig_00b_feicoes_drone_campo.jpeg>]
-<fig_09_sitio_experimental.png, id=359, 407.121pt x 202.356pt>
+<fig_09_sitio_experimental.png, id=335, 407.121pt x 202.356pt>
 File: fig_09_sitio_experimental.png Graphic file (type png)
 <use fig_09_sitio_experimental.png>
 Package pdftex.def Info: fig_09_sitio_experimental.png  used on input line 182.
@@ -923,7 +923,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [15]
-<fig_01_calibracao_sintetica.png, id=401, 578.16pt x 361.35pt>
+<fig_01_calibracao_sintetica.png, id=377, 578.16pt x 361.35pt>
 File: fig_01_calibracao_sintetica.png Graphic file (type png)
 <use fig_01_calibracao_sintetica.png>
 Package pdftex.def Info: fig_01_calibracao_sintetica.png  used on input line 25
@@ -936,7 +936,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [17 <./fig_01_calibracao_sintetica.png>]
-<fig_02_boxplot_parametros.png, id=424, 1300.86pt x 361.35pt>
+<fig_02_boxplot_parametros.png, id=400, 1300.86pt x 361.35pt>
 File: fig_02_boxplot_parametros.png Graphic file (type png)
 <use fig_02_boxplot_parametros.png>
 Package pdftex.def Info: fig_02_boxplot_parametros.png  used on input line 267.
@@ -946,7 +946,7 @@ Package pdftex.def Info: fig_02_boxplot_parametros.png  used on input line 267.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [18 <./fig_02_boxplot_parametros.png>]
-<fig_03_sensibilidade_sobol.png, id=442, 1011.78pt x 722.7pt>
+<fig_03_sensibilidade_sobol.png, id=418, 1011.78pt x 722.7pt>
 File: fig_03_sensibilidade_sobol.png Graphic file (type png)
 <use fig_03_sensibilidade_sobol.png>
 Package pdftex.def Info: fig_03_sensibilidade_sobol.png  used on input line 284
@@ -959,7 +959,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [20 <./fig_03_sensibilidade_sobol.png>]
-<fig_04_interacoes_s2.png, id=465, 505.89pt x 433.62pt>
+<fig_04_interacoes_s2.png, id=441, 505.89pt x 433.62pt>
 File: fig_04_interacoes_s2.png Graphic file (type png)
 <use fig_04_interacoes_s2.png>
 Package pdftex.def Info: fig_04_interacoes_s2.png  used on input line 297.
@@ -968,7 +968,7 @@ Package pdftex.def Info: fig_04_interacoes_s2.png  used on input line 297.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [21 <./fig_04_interacoes_s2.png>]
-<fig_05_estabilidade_taludes.png, id=481, 1011.78pt x 433.62pt>
+<fig_05_estabilidade_taludes.png, id=457, 1011.78pt x 433.62pt>
 File: fig_05_estabilidade_taludes.png Graphic file (type png)
 <use fig_05_estabilidade_taludes.png>
 Package pdftex.def Info: fig_05_estabilidade_taludes.png  used on input line 31
@@ -983,7 +983,7 @@ LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 337.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [23 <./fig_05_estabilidade_taludes.png>]
-<fig_06_infiltracao_escoamento.png, id=506, 1011.78pt x 433.62pt>
+<fig_06_infiltracao_escoamento.png, id=482, 1011.78pt x 433.62pt>
 File: fig_06_infiltracao_escoamento.png Graphic file (type png)
 <use fig_06_infiltracao_escoamento.png>
 Package pdftex.def Info: fig_06_infiltracao_escoamento.png  used on input line 
@@ -993,7 +993,7 @@ Package pdftex.def Info: fig_06_infiltracao_escoamento.png  used on input line
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [24]
-<fig_07_hidrograma_i60.png, id=524, 578.16pt x 361.35pt>
+<fig_07_hidrograma_i60.png, id=500, 578.16pt x 361.35pt>
 File: fig_07_hidrograma_i60.png Graphic file (type png)
 <use fig_07_hidrograma_i60.png>
 Package pdftex.def Info: fig_07_hidrograma_i60.png  used on input line 359.
@@ -1005,7 +1005,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [26 <./fig_07_hidrograma_i60.png>]
-<fig_08_erosao_virtual.png, id=545, 1011.78pt x 867.24pt>
+<fig_08_erosao_virtual.png, id=521, 1011.78pt x 867.24pt>
 File: fig_08_erosao_virtual.png Graphic file (type png)
 <use fig_08_erosao_virtual.png>
 Package pdftex.def Info: fig_08_erosao_virtual.png  used on input line 372.
@@ -1017,19 +1017,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [28]
-
-Package hyperref Warning: Difference (4) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 399.
-
-
-Package hyperref Warning: Difference (3) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 403.
-
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 405.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [29]
@@ -1064,13 +1051,13 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-29>
  ***********
 Package rerunfilecheck Info: File `manuscript.out' has not changed.
-(rerunfilecheck)             Checksum: 3848CAA449A4C6F43FE9D2F61641F4CE;6420.
+(rerunfilecheck)             Checksum: 7499C413AE2142215A2E8060E1B77000;5567.
  ) 
 Here is how much of TeX's memory you used:
- 12734 strings out of 467871
- 199881 string characters out of 5418376
- 619860 words of memory out of 5000000
- 41260 multiletter control sequences out of 15000+600000
+ 12726 strings out of 467871
+ 199792 string characters out of 5418376
+ 619847 words of memory out of 5000000
+ 41253 multiletter control sequences out of 15000+600000
  675153 words of font info for 189 fonts, out of 8000000 for 9000
  1151 hyphenation exceptions out of 8191
  90i,13n,93p,1600b,693s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1112,9 +1099,9 @@ Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/v
 idal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:
 /Users/vidal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8
 .pfb>
-Output written on manuscript.pdf (37 pages, 7265755 bytes).
+Output written on manuscript.pdf (37 pages, 7263624 bytes).
 PDF statistics:
- 1398 PDF objects out of 1440 (max. 8388607)
- 141 named destinations out of 1000 (max. 500000)
- 280 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1379 PDF objects out of 1440 (max. 8388607)
+ 140 named destinations out of 1000 (max. 500000)
+ 232 words of extra memory for PDF output out of 10000 (max. 10000000)
 
