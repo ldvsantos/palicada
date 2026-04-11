@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt
 
 from config_simulacao import (
     PLINTOSSOLO, LATOSSOLO, ARGISSOLO, SOLOS,
-    alpha, VIB_REF, FIG_DIR,
+    alpha, VIB_REF, FIG_DIR, DISPLAY_NAME,
 )
 
 
@@ -159,11 +159,11 @@ def main():
         CE_vals = [r['coef_esc'] for r in res]
         Ksat = res[0]['Ksat_eff']
         ax1.plot(I_vals, CE_vals, 'o-', color=cor, linewidth=2, markersize=4,
-                 label=f'{nome.capitalize()} (K$_{{sat,eff}}$={Ksat:.2f} cm/h)')
+                 label=f'{DISPLAY_NAME[nome]} (K$_{{sat,eff}}$={Ksat:.2f} cm/h)')
 
-    ax1.set_xlabel('Intensidade máxima em 30 min, $I_{30}$ (mm/h)', fontsize=12)
-    ax1.set_ylabel('Coeficiente de escoamento (CE)', fontsize=12)
-    ax1.set_title('Geração de escoamento superficial\n(Green-Ampt, evento de 60 min)',
+    ax1.set_xlabel('Maximum 30-min intensity, $I_{30}$ (mm/h)', fontsize=12)
+    ax1.set_ylabel('Runoff coefficient (RC)', fontsize=12)
+    ax1.set_title('Surface runoff generation\n(Green\u2013Ampt, 60-min event)',
                   fontsize=12)
     ax1.text(-0.05, 1.12, '(a)', transform=ax1.transAxes,
              fontsize=14, fontweight='bold', va='top')
@@ -185,7 +185,7 @@ def main():
                           if r['I_mm_h'] == I)
             razoes.append(ce_solo / max(ce_lat, 0.001))
         ax2.plot(I_plot, razoes, 's-', color=cor, linewidth=2, markersize=8,
-                 label=f'{nome.capitalize()} (VIB média = {vib_med:.1f} cm/h)')
+                 label=f'{DISPLAY_NAME[nome]} (mean BIR = {vib_med:.1f} cm/h)')
 
     # α teórico para referência
     for n1_t, ls in [(0.5, ':'), (1.0, '--'), (1.5, '-.')]:
@@ -195,10 +195,10 @@ def main():
             ax2.axhline(a_val, color=cor, linestyle=ls, alpha=0.4)
         ax2.plot([], [], 'k' + ls, label=f'$\\alpha$ teórico ($n_1$={n1_t})')
 
-    ax2.set_xlabel('Intensidade máxima em 30 min, $I_{30}$ (mm/h)', fontsize=12)
-    ax2.set_ylabel('Razão CE$_{solo}$ / CE$_{Latossolo}$', fontsize=12)
-    ax2.set_title('Validação do fator de amplificação hidráulica\n'
-                  '$\\alpha$(VIB) por modelagem hidrológica', fontsize=12)
+    ax2.set_xlabel('Maximum 30-min intensity, $I_{30}$ (mm/h)', fontsize=12)
+    ax2.set_ylabel('RC$_{soil}$ / RC$_{Ferralsol}$ ratio', fontsize=12)
+    ax2.set_title('Validation of hydraulic amplification factor\n'
+                  '$\\alpha$(BIR) by hydrological modeling', fontsize=12)
     ax2.text(-0.05, 1.12, '(b)', transform=ax2.transAxes,
              fontsize=14, fontweight='bold', va='top')
     ax2.legend(fontsize=9, ncol=2)
@@ -217,13 +217,13 @@ def main():
             I_mm_h=60, Ksat_cm_h=Ksat_eff, duracao_min=duracao
         )
         ax3.plot(t, r, '-', color=cor, linewidth=2,
-                 label=f'{nome.capitalize()} (K$_{{sat,eff}}$={Ksat_eff:.2f} cm/h)')
+                 label=f'{DISPLAY_NAME[nome]} (K$_{{sat,eff}}$={Ksat_eff:.2f} cm/h)')
         ax3.fill_between(t, 0, r, color=cor, alpha=0.15)
 
-    ax3.axhline(60, color='gray', linestyle=':', label='$I_{30}$ = 60 mm/h (intensidade aplicada)')
-    ax3.set_xlabel('Tempo (min)', fontsize=12)
-    ax3.set_ylabel('Intensidade de escoamento superficial (mm/h)', fontsize=12)
-    ax3.set_title('Hidrograma de escoamento superficial — $I_{30}$ = 60 mm/h',
+    ax3.axhline(60, color='gray', linestyle=':', label='$I_{30}$ = 60 mm/h (applied intensity)')
+    ax3.set_xlabel('Time (min)', fontsize=12)
+    ax3.set_ylabel('Surface runoff intensity (mm/h)', fontsize=12)
+    ax3.set_title('Surface runoff hydrograph \u2014 $I_{30}$ = 60 mm/h',
                   fontsize=12)
     ax3.legend(fontsize=10)
     ax3.grid(True, alpha=0.3)

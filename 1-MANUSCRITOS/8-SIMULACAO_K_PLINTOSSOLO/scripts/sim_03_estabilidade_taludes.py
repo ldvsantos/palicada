@@ -122,9 +122,9 @@ def main():
         ax1.plot(H_Hc_range, FS_matrix[i, :], color=colors_ru[i],
                  linewidth=2, label=f'$r_u$ = {ru:.1f}')
     ax1.axhline(1.0, color='red', linestyle='--', linewidth=1.5,
-                label='FS = 1 (limiar de ruptura)')
+                label='FS = 1 (failure threshold)')
     ax1.axhline(1.5, color='orange', linestyle=':', linewidth=1,
-                label='FS = 1,5 (margem mínima convencional)')
+                label='FS = 1.5 (minimum conventional margin)')
 
     # Marcar feições reais
     for fn, fd in PLINTOSSOLO['feicoes'].items():
@@ -134,10 +134,10 @@ def main():
         ax1.annotate(fn, (h_hc, fs0), textcoords="offset points",
                      xytext=(5, 5), fontsize=9)
 
-    ax1.set_xlabel('Profundidade normalizada da feição (H / H$_c$)', fontsize=12)
-    ax1.set_ylabel('Fator de segurança (FS)', fontsize=12)
-    ax1.set_title('Estabilidade de corte vertical — Plintossolo\n'
-                  r'($c$ = 13,02 kPa, $\phi$ = 34,93°, H$_c$ = 3,35 m)',
+    ax1.set_xlabel('Normalized feature depth (H / H$_c$)', fontsize=12)
+    ax1.set_ylabel('Factor of safety (FS)', fontsize=12)
+    ax1.set_title('Vertical-cut stability — Plinthosol\n'
+                  r'($c$ = 13.02 kPa, $\phi$ = 34.93°, H$_c$ = 3.35 m)',
                   fontsize=12)
     ax1.text(-0.05, 1.12, '(a)', transform=ax1.transAxes,
              fontsize=14, fontweight='bold', va='top')
@@ -148,12 +148,12 @@ def main():
 
     # ── Figura 2: γ simulado vs ajustado ────────────────────────────
     ax2.plot(H_Hc_range, gamma_sim, 'ko', markersize=4, alpha=0.5,
-             label='$\\gamma$ simulado (proxy FS-volume)')
+             label='$\\gamma$ simulated (FS-volume proxy)')
     h_fit = np.linspace(0, 0.95, 100)
     ax2.plot(h_fit, gamma_func(h_fit, k3_fit, n3_fit), 'r-', linewidth=2.5,
-             label=f'Ajuste: $k_3$={k3_fit:.2f}, $n_3$={n3_fit:.2f}')
+             label=f'Fit: $k_3$={k3_fit:.2f}, $n_3$={n3_fit:.2f}')
     ax2.plot(h_fit, gamma_func(h_fit, 3.0, 2.0), 'b--', linewidth=1.5,
-             label='Proposta inicial: $k_3$=3,0, $n_3$=2,0')
+             label='Initial proposal: $k_3$=3.0, $n_3$=2.0')
 
     # Marcar feições reais
     for fn, fd in PLINTOSSOLO['feicoes'].items():
@@ -163,9 +163,9 @@ def main():
         ax2.annotate(fn, (h_hc, g_val), textcoords="offset points",
                      xytext=(5, 5), fontsize=9)
 
-    ax2.set_xlabel('Profundidade normalizada da feição (H / H$_c$)', fontsize=12)
-    ax2.set_ylabel('Fator de vulnerabilidade geotécnica ($\\gamma$)', fontsize=12)
-    ax2.set_title('Validação da forma funcional $\\gamma$(H/H$_c$)', fontsize=12)
+    ax2.set_xlabel('Normalized feature depth (H / H$_c$)', fontsize=12)
+    ax2.set_ylabel('Geotechnical vulnerability factor ($\\gamma$)', fontsize=12)
+    ax2.set_title('Validation of functional form $\\gamma$(H/H$_c$)', fontsize=12)
     ax2.text(-0.05, 1.08, '(b)', transform=ax2.transAxes,
              fontsize=14, fontweight='bold', va='top')
     ax2.legend(fontsize=10)

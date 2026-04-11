@@ -41,10 +41,10 @@ def main():
 
     # ── Avaliar δ para condições representativas de cada classe ─────
     cenarios = {
-        'Plintossolo\n(VIB=1,53 cm/h, m$_{Al}$=84%, H/H$_c$=0,33)': (1.53, 84.0, 0.33),
-        'Plintossolo\n(VIB=3,13 cm/h, m$_{Al}$=15%, H/H$_c$=0,12)': (3.13, 15.2, 0.12),
-        'Argissolo\n(VIB=2,5 cm/h, m$_{Al}$=45%, H/H$_c$=0,08)':    (2.50, 45.0, 0.08),
-        'Latossolo\n(VIB=9,0 cm/h, m$_{Al}$=20%, H/H$_c$=0)':     (9.00, 20.0, 0.00),
+        'Plinthosol\n(BIR=1.53 cm/h, m$_{Al}$=84%, H/H$_c$=0.33)': (1.53, 84.0, 0.33),
+        'Plinthosol\n(BIR=3.13 cm/h, m$_{Al}$=15%, H/H$_c$=0.12)': (3.13, 15.2, 0.12),
+        'Acrisol\n(BIR=2.5 cm/h, m$_{Al}$=45%, H/H$_c$=0.08)':    (2.50, 45.0, 0.08),
+        'Ferralsol\n(BIR=9.0 cm/h, m$_{Al}$=20%, H/H$_c$=0)':     (9.00, 20.0, 0.00),
     }
 
     resultados_sobol = {}
@@ -75,18 +75,18 @@ def main():
 
     # Labels descritivos para eixos x das barras
     param_labels_sobol = [
-        '$n_1$\n(expoente\nhidráulico)',
-        r'$\beta_{max}$' + '\n(amplif. máx.\ntoxicidade)',
-        '$k_2$\n(taxa transição\nsigmoide)',
-        '$k_3$\n(escala amplif.\ntalude)',
-        '$n_3$\n(curvatura\nresp. talude)',
+        '$n_1$\n(hydraulic\nexponent)',
+        r'$\beta_{max}$' + '\n(max. toxicity\namplification)',
+        '$k_2$\n(sigmoid\ntransition rate)',
+        '$k_3$\n(slope amplif.\nscale)',
+        '$n_3$\n(slope response\ncurvature)',
     ]
 
     panel_labels = ['(a)', '(b)', '(c)', '(d)']
     for idx, (ax, (nome, Si)) in enumerate(zip(axes.flat, resultados_sobol.items())):
         x = np.arange(len(problem['names']))
         bars1 = ax.bar(x - bar_width/2, Si['S1'], bar_width,
-                       label='$S_1$ (1ª ordem)', color=colors_s1, alpha=0.8,
+                       label='$S_1$ (first-order)', color=colors_s1, alpha=0.8,
                        yerr=Si['S1_conf'], capsize=3)
         bars2 = ax.bar(x + bar_width/2, Si['ST'], bar_width,
                        label='$S_T$ (total)', color=colors_st, alpha=0.8,
@@ -101,7 +101,7 @@ def main():
         ax.legend(fontsize=9)
         ax.grid(True, alpha=0.2, axis='y')
 
-    fig.suptitle('Análise de sensibilidade global (Sobol) — Índices $S_1$ (1ª ordem) e $S_T$ (total)',
+    fig.suptitle('Global sensitivity analysis (Sobol) — $S_1$ (first-order) and $S_T$ (total) indices',
                  fontsize=14, fontweight='bold')
     fig.tight_layout()
     fig.savefig(FIG_DIR / 'fig_03_sensibilidade_sobol.png', dpi=300)
@@ -118,11 +118,11 @@ def main():
 
     # Labels descritivos para heatmap
     param_labels_s2 = [
-        '$n_1$\n(hidráulico)',
-        r'$\beta_{max}$' + '\n(toxicidade)',
-        '$k_2$\n(sigmoide)',
-        '$k_3$\n(talude)',
-        '$n_3$\n(curvatura)',
+        '$n_1$\n(hydraulic)',
+        r'$\beta_{max}$' + '\n(toxicity)',
+        '$k_2$\n(sigmoid)',
+        '$k_3$\n(slope)',
+        '$n_3$\n(curvature)',
     ]
 
     fig3, ax3 = plt.subplots(figsize=(7, 6))
@@ -136,9 +136,9 @@ def main():
             if i != j:
                 ax3.text(j, i, f'{s2_matrix[i,j]:.3f}',
                          ha='center', va='center', fontsize=10)
-    plt.colorbar(im, ax=ax3, label='Índice $S_2$ (interação de 2ª ordem)')
-    ax3.set_title('Interações entre parâmetros — Plintossolo intermediário\n'
-                  '(VIB = 1,53 cm/h, m$_{Al}$ = 84%, H/H$_c$ = 0,33)',
+    plt.colorbar(im, ax=ax3, label='$S_2$ index (second-order interaction)')
+    ax3.set_title('Parameter interactions — Intermediate Plinthosol\n'
+                  '(BIR = 1.53 cm/h, m$_{Al}$ = 84%, H/H$_c$ = 0.33)',
                   fontsize=12, fontweight='bold')
     fig3.tight_layout()
     fig3.savefig(FIG_DIR / 'fig_04_interacoes_s2.png', dpi=300)

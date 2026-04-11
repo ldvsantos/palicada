@@ -68,6 +68,9 @@ ARGISSOLO = dict(
 
 SOLOS = dict(plintossolo=PLINTOSSOLO, latossolo=LATOSSOLO, argissolo=ARGISSOLO)
 
+# ── Display names (English, for figures) ────────────────────────────
+DISPLAY_NAME = dict(plintossolo='Plinthosol', latossolo='Ferralsol', argissolo='Acrisol')
+
 
 # ── Funções do modelo K_plint ───────────────────────────────────────
 def calc_Hc(c_kPa, phi_deg, gamma_sat):

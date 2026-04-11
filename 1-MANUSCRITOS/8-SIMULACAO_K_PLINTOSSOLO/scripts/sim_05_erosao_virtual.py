@@ -17,7 +17,7 @@ import matplotlib.pyplot as plt
 from config_simulacao import (
     PLINTOSSOLO, LATOSSOLO, ARGISSOLO, SOLOS, K_RUSLE,
     TRUE_PARAMS, delta_model, alpha, beta, gamma,
-    VIB_REF, FIG_DIR,
+    VIB_REF, FIG_DIR, DISPLAY_NAME,
 )
 
 # ── Parâmetros físicos gerais ───────────────────────────────────────
@@ -204,10 +204,10 @@ def main():
         I_vals = [r['I'] for r in resultados[nome]]
         perdas = [r['perda'] for r in resultados[nome]]
         ax.plot(I_vals, perdas, f'{mk}-', color=cor, linewidth=2, markersize=5,
-                label=nome.capitalize())
-    ax.set_xlabel('Intensidade máxima em 30 min, $I_{30}$ (mm/h)', fontsize=11)
-    ax.set_ylabel('Perda de solo (t/ha)', fontsize=11)
-    ax.set_title('Perda de solo simulada por classe pedológica', fontsize=12)
+                label=DISPLAY_NAME[nome])
+    ax.set_xlabel('Maximum 30-min intensity, $I_{30}$ (mm/h)', fontsize=11)
+    ax.set_ylabel('Soil loss (t/ha)', fontsize=11)
+    ax.set_title('Simulated soil loss by pedological class', fontsize=12)
     ax.text(-0.05, 1.12, '(a)', transform=ax.transAxes,
             fontsize=14, fontweight='bold', va='top')
     ax.legend(fontsize=10)
@@ -219,11 +219,11 @@ def main():
         I_vals = [r['I'] for r in resultados[nome] if r['K_obs'] > 0]
         K_vals = [r['K_obs'] for r in resultados[nome] if r['K_obs'] > 0]
         ax.plot(I_vals, K_vals, f'{mk}-', color=cor, linewidth=2, markersize=5,
-                label=nome.capitalize())
+                label=DISPLAY_NAME[nome])
         ax.axhline(K_RUSLE[nome], color=cor, linestyle=':', alpha=0.5)
-    ax.set_xlabel('Intensidade máxima em 30 min, $I_{30}$ (mm/h)', fontsize=11)
-    ax.set_ylabel('Erodibilidade observada, $K_{obs}$ (t h MJ$^{-1}$ mm$^{-1}$)', fontsize=11)
-    ax.set_title('$K_{obs}$ invertido vs $K_{RUSLE}$ do nomograma', fontsize=12)
+    ax.set_xlabel('Maximum 30-min intensity, $I_{30}$ (mm/h)', fontsize=11)
+    ax.set_ylabel('Observed erodibility, $K_{obs}$ (t h MJ$^{-1}$ mm$^{-1}$)', fontsize=11)
+    ax.set_title('Inverted $K_{obs}$ vs nomograph $K_{RUSLE}$', fontsize=12)
     ax.text(-0.05, 1.12, '(b)', transform=ax.transAxes,
             fontsize=14, fontweight='bold', va='top')
     ax.legend(fontsize=10)
@@ -236,12 +236,12 @@ def main():
         d_vals = [r['delta_obs'] for r in resultados[nome] if r['perda'] > 0]
         d_mod = resultados[nome][0]['delta_mod']
         ax.plot(I_vals, d_vals, f'{mk}-', color=cor, linewidth=2, markersize=5,
-                label=f'{nome.capitalize()} ($\\delta_{{mod}}$={d_mod:.1f})')
+                label=f'{DISPLAY_NAME[nome]} ($\\delta_{{mod}}$={d_mod:.1f})')
         ax.axhline(d_mod, color=cor, linestyle='--', alpha=0.6)
-    ax.axhline(1.0, color='gray', linestyle=':', alpha=0.4, label='$\\delta$ = 1 (sem correção)')
-    ax.set_xlabel('Intensidade máxima em 30 min, $I_{30}$ (mm/h)', fontsize=11)
-    ax.set_ylabel('Fator de amplificação, $\\delta$ = $K_{obs}$ / $K_{RUSLE}$', fontsize=11)
-    ax.set_title('Fator de amplificação $\\delta$ observado vs modelado', fontsize=12)
+    ax.axhline(1.0, color='gray', linestyle=':', alpha=0.4, label='$\\delta$ = 1 (no correction)')
+    ax.set_xlabel('Maximum 30-min intensity, $I_{30}$ (mm/h)', fontsize=11)
+    ax.set_ylabel('Amplification factor, $\\delta$ = $K_{obs}$ / $K_{RUSLE}$', fontsize=11)
+    ax.set_title('Observed vs modeled amplification factor $\\delta$', fontsize=12)
     ax.text(-0.05, 1.12, '(c)', transform=ax.transAxes,
             fontsize=14, fontweight='bold', va='top')
     ax.legend(fontsize=9)
@@ -255,7 +255,7 @@ def main():
         d_mod = resultados[nome][0]['delta_mod']
         if d_vals:
             ax.scatter([d_mod] * len(d_vals), d_vals, color=cor, marker=mk,
-                       s=80, alpha=0.6, label=nome.capitalize(), edgecolors='k',
+                       s=80, alpha=0.6, label=DISPLAY_NAME[nome], edgecolors='k',
                        linewidths=0.5)
 
     # Linha 1:1
@@ -270,9 +270,9 @@ def main():
         ax.plot([v_min, v_max], [v_min, v_max], 'k--', alpha=0.5, label='1:1')
         ax.set_xlim(v_min, v_max)
         ax.set_ylim(v_min, v_max)
-    ax.set_xlabel('$\\delta_{modelo}$ (predito por $K_{plint}$)', fontsize=11)
-    ax.set_ylabel('$\\delta_{obs}$ (invertido do modelo de erosão)', fontsize=11)
-    ax.set_title('Validação $\\delta$ — modelo vs processo simulado', fontsize=12)
+    ax.set_xlabel('$\\delta_{model}$ (predicted by $K_{plint}$)', fontsize=11)
+    ax.set_ylabel('$\\delta_{obs}$ (inverted from erosion model)', fontsize=11)
+    ax.set_title('$\\delta$ validation \u2014 model vs simulated process', fontsize=12)
     ax.text(-0.05, 1.12, '(d)', transform=ax.transAxes,
             fontsize=14, fontweight='bold', va='top')
     ax.legend(fontsize=10)

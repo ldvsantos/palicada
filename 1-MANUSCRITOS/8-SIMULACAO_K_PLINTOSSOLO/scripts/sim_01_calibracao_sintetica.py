@@ -144,11 +144,11 @@ def main():
     # ── Figura: viés relativo vs CV ─────────────────────────────────
     # Nomes descritivos para legenda
     param_labels = {
-        'n1': '$n_1$ (expoente hidráulico)',
-        'beta_max': r'$\beta_{max}$ (amplif. máx. toxicidade)',
-        'k2': '$k_2$ (taxa transição sigmoide)',
-        'k3': '$k_3$ (escala amplif. talude)',
-        'n3': '$n_3$ (curvatura resposta talude)',
+        'n1': '$n_1$ (hydraulic exponent)',
+        'beta_max': r'$\beta_{max}$ (max. toxicity amplification)',
+        'k2': '$k_2$ (sigmoid transition rate)',
+        'k3': '$k_3$ (slope amplification scale)',
+        'n3': '$n_3$ (slope response curvature)',
     }
 
     fig, ax = plt.subplots(figsize=(8, 5))
@@ -157,9 +157,9 @@ def main():
         ax.plot([cv * 100 for cv in cvs], biases, 'o-',
                 label=param_labels[p], linewidth=2)
 
-    ax.set_xlabel('Coeficiente de variação do ruído (%)', fontsize=12)
-    ax.set_ylabel('Viés relativo mediano (%)', fontsize=12)
-    ax.set_title('Recuperação paramétrica — Calibração sintética K$_{plint}$',
+    ax.set_xlabel('Coefficient of variation of noise (%)', fontsize=12)
+    ax.set_ylabel('Median relative bias (%)', fontsize=12)
+    ax.set_title('Parameter recovery — Synthetic calibration of K$_{plint}$',
                  fontsize=13)
     ax.legend(fontsize=9)
     ax.grid(True, alpha=0.3)
@@ -171,11 +171,11 @@ def main():
     # ── Figura: boxplot por CV para cada parâmetro ──────────────────
     # Títulos descritivos para cada subplot do boxplot
     param_titulos_box = {
-        'n1': '$n_1$ — expoente hidráulico',
-        'beta_max': r'$\beta_{max}$ — amplif. máx. toxicidade',
-        'k2': '$k_2$ — taxa transição sigmoide',
-        'k3': '$k_3$ — escala amplif. talude',
-        'n3': '$n_3$ — curvatura resposta talude',
+        'n1': '$n_1$ — hydraulic exponent',
+        'beta_max': r'$\beta_{max}$ — max. toxicity amplification',
+        'k2': '$k_2$ — sigmoid transition rate',
+        'k3': '$k_3$ — slope amplification scale',
+        'n3': '$n_3$ — slope response curvature',
     }
 
     fig2, axes = plt.subplots(1, 5, figsize=(18, 5), sharey=False)
@@ -187,13 +187,13 @@ def main():
             patch.set_facecolor('#4C72B0')
             patch.set_alpha(0.6)
         axes[i].axhline(TRUE_PARAMS[p], color='red', linestyle='--',
-                        linewidth=1.5, label=f'Verdadeiro = {TRUE_PARAMS[p]:.2f}')
+                        linewidth=1.5, label=f'True = {TRUE_PARAMS[p]:.2f}')
         axes[i].set_title(param_titulos_box[p], fontsize=11, fontweight='bold')
-        axes[i].set_xlabel('CV do ruído')
+        axes[i].set_xlabel('Noise CV')
         axes[i].legend(fontsize=8)
         axes[i].grid(True, alpha=0.3)
 
-    fig2.suptitle('Distribuição dos parâmetros estimados por nível de ruído',
+    fig2.suptitle('Distribution of estimated parameters by noise level',
                   fontsize=14, fontweight='bold')
     fig2.tight_layout()
     fig2.savefig(FIG_DIR / 'fig_02_boxplot_parametros.png', dpi=300)
