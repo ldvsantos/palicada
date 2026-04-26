@@ -1,0 +1,233 @@
+\documentclass[border=8pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{tikz}
+\usepackage{amsmath,amssymb}
+\usetikzlibrary{arrows.meta,calc}
+
+\definecolor{cusle}{HTML}{2C3E50}
+\definecolor{calpha}{HTML}{2980B9}
+\definecolor{cbeta}{HTML}{27AE60}
+\definecolor{cgamma}{HTML}{E74C3C}
+\definecolor{cmech}{HTML}{8E44AD}
+\definecolor{ccalib}{HTML}{E67E22}
+\definecolor{cvalid}{HTML}{1ABC9C}
+\definecolor{clight}{HTML}{ECF0F1}
+\definecolor{cbgalpha}{HTML}{D6EAF8}
+\definecolor{cbgbeta}{HTML}{D5F5E3}
+\definecolor{cbggamma}{HTML}{FADBD8}
+\definecolor{cbgmech}{HTML}{E8DAEF}
+\definecolor{cbgcalib}{HTML}{FDEBD0}
+\definecolor{cbgvalid}{HTML}{D1F2EB}
+
+\tikzset{
+  arr/.style={-{Stealth[length=4pt]}, line width=0.7pt, #1},
+  darr/.style={-{Stealth[length=4pt]}, line width=0.7pt, dashed, #1},
+}
+
+\begin{document}
+\begin{tikzpicture}
+
+% =============================================================
+%  PAINEL (a) -- Estrutura conceitual    x in [0, 9]
+% =============================================================
+
+\node[font=\bfseries\small] at (4.5, 0.8)
+  {(a) Modelo conceitual de $K_{plint}$};
+
+% --- K_RUSLE ---
+\node[rectangle, rounded corners=3pt, draw=cusle, line width=0.7pt,
+      fill=clight, text=cusle, text width=7.6cm,
+      align=center, inner sep=4pt, font=\scriptsize]
+  (krusle) at (4.5, -0.6)
+  {{\small\bfseries $K_{RUSLE}$ (Wischmeier \& Smith)}\\
+   Textura $\cdot$ M.O.\ $\cdot$ Estrutura $\cdot$ Permeabilidade};
+
+% --- Equac\~ao multiplicativa ---
+\node[rectangle, rounded corners=3pt, draw=cusle, line width=1.2pt,
+      fill=cbgalpha!50, text=cusle, text width=7.6cm,
+      align=center, inner sep=4pt, font=\small\bfseries]
+  (mult) at (4.5, -2.4)
+  {$K_{plint} = K_{RUSLE} \times \alpha \times \beta \times \gamma$};
+
+\draw[arr=cusle] (krusle.south) -- (mult.north);
+
+% --- Fator alpha ---
+\node[rectangle, rounded corners=3pt, draw=calpha, line width=0.7pt,
+      fill=cbgalpha, text=calpha, text width=2.1cm,
+      align=center, inner sep=3pt]
+  (alpha) at (1.4, -4.8)
+  {{\small\bfseries $\alpha$}\\[1pt]
+   {\scriptsize Imped\^ancia}\\[-1pt]
+   {\scriptsize hidr\'aulica}\\[1pt]
+   {\tiny $(VIB_{ref}/VIB)^{n_1}$}};
+
+% --- Fator beta ---
+\node[rectangle, rounded corners=3pt, draw=cbeta, line width=0.7pt,
+      fill=cbgbeta, text=cbeta, text width=2.1cm,
+      align=center, inner sep=3pt]
+  (beta) at (4.5, -4.8)
+  {{\small\bfseries $\beta$}\\[1pt]
+   {\scriptsize Toxicidade}\\[-1pt]
+   {\scriptsize ed\'afica ($m_{Al}$)}\\[1pt]
+   {\tiny $\beta_{max}$, $k_2$, $m_0$}};
+
+% --- Fator gamma ---
+\node[rectangle, rounded corners=3pt, draw=cgamma, line width=0.7pt,
+      fill=cbggamma, text=cgamma, text width=2.1cm,
+      align=center, inner sep=3pt]
+  (gamma) at (7.6, -4.8)
+  {{\small\bfseries $\gamma$}\\[1pt]
+   {\scriptsize Vulnerabilidade}\\[-1pt]
+   {\scriptsize geot\'ecnica}\\[1pt]
+   {\tiny $k_3$, $n_3$, $H/H_c$}};
+
+\draw[arr=calpha] (mult.south -| alpha) -- (alpha.north);
+\draw[arr=cbeta]  (mult.south) -- (beta.north);
+\draw[arr=cgamma] (mult.south -| gamma) -- (gamma.north);
+
+% --- Modelo mecanistico ---
+\node[rectangle, rounded corners=3pt, draw=cmech, line width=1.0pt,
+      fill=cbgmech, text=cmech, text width=7.6cm,
+      align=center, inner sep=4pt, font=\scriptsize]
+  (mech) at (4.5, -7.8)
+  {{\small\bfseries Modelo mecan\'\i stico de dispers\~ao}\\[2pt]
+   $f_d = \frac{f_{tex}}{1 + a_1 Fe_d^{a_2} \rho_b^{a_3} R_{WDPT}^{a_4}}$
+   \enspace;\enspace
+   $E_d = E_0 (f_{tex}/f_d)^{n_d}$};
+
+\draw[darr=cmech] (mech.north -| alpha) -- (alpha.south)
+  node[midway, right=1pt, font=\tiny\itshape, text=cmech] {$E_d$};
+
+% --- Entradas ---
+\foreach \ix/\txt [count=\ci from 0] in {
+  1.0/{$Fe_d$},
+  2.75/{$\rho_b$},
+  4.5/{$R_{WDPT}$},
+  6.25/{Chuva},
+  8.0/{JET}%
+}{
+  \node[rectangle, rounded corners=2pt, draw=cmech!60, line width=0.4pt,
+        fill=cbgmech!30, text=cmech, minimum width=1.2cm, minimum height=0.55cm,
+        align=center, inner sep=2pt, font=\tiny]
+    (inp\ci) at (\ix, -10.0) {\txt};
+  \draw[arr=cmech!60, line width=0.4pt] (inp\ci.north) -- (inp\ci.north |- mech.south);
+}
+
+% --- Parcelas de campo ---
+\node[rectangle, rounded corners=3pt, draw=cusle, line width=0.7pt,
+      fill=clight, text=cusle, text width=3.4cm,
+      align=center, inner sep=3pt, font=\scriptsize]
+  (field) at (2.3, -11.5)
+  {{\small\bfseries Parcelas de campo}\\[-1pt]
+   $K_{obs} = A/(R \cdot LS)$};
+
+% --- Delta ---
+\node[rectangle, rounded corners=3pt, draw=ccalib, line width=0.7pt,
+      fill=cbgcalib, text=ccalib, text width=3.4cm,
+      align=center, inner sep=3pt, font=\scriptsize]
+  (delta) at (6.7, -11.5)
+  {{\small\bfseries $\delta = K_{obs}/K_{RUSLE}$}\\[-1pt]
+   Amplifica\c{c}\~ao};
+
+\draw[arr=ccalib, line width=0.7pt] (field.east) -- (delta.west);
+\draw[darr=ccalib] (delta.north) -- ++(0, 0.4)
+  node[above, font=\tiny\itshape, text=ccalib]
+  {calibra $\alpha$, $\beta$, $\gamma$};
+
+% =============================================================
+%  PAINEL (b) -- Protocolo de calibrac\~ao    x in [10.5, 20]
+% =============================================================
+
+\node[font=\bfseries\small] at (14.5, 0.8)
+  {(b) Protocolo de calibra\c{c}\~ao e valida\c{c}\~ao};
+
+% --- Etapa 0 ---
+\node[rectangle, rounded corners=3pt, draw=calpha, line width=0.7pt,
+      fill=cbgalpha, text=calpha, text width=7.0cm,
+      align=center, inner sep=4pt, font=\scriptsize]
+  (st0) at (14.5, -0.6)
+  {{\small\bfseries Etapa 0 --- Controle negativo}\\
+   S2 (Latossolo): $\delta \approx 1{,}0$ $\rightarrow$ teste \emph{t} unilateral};
+
+% --- Etapa 1 ---
+\node[rectangle, rounded corners=3pt, draw=calpha, line width=0.7pt,
+      fill=cbgalpha, text=calpha, text width=7.0cm,
+      align=center, inner sep=4pt, font=\scriptsize]
+  (st1) at (14.5, -2.4)
+  {{\small\bfseries Etapa 1 --- Calibra\c{c}\~ao de $\alpha$ ($n_1$)}\\
+   S3 vs.\ S2: regress\~ao $\delta \sim (VIB_{ref}/VIB)^{n_1}$};
+
+% --- Etapa 2 ---
+\node[rectangle, rounded corners=3pt, draw=cbeta, line width=0.7pt,
+      fill=cbgbeta, text=cbeta, text width=7.0cm,
+      align=center, inner sep=4pt, font=\scriptsize]
+  (st2) at (14.5, -4.2)
+  {{\small\bfseries Etapa 2 --- Calibra\c{c}\~ao de $\beta$ ($\beta_{max}$, $k_2$)}\\
+   S1: Ap ($m = 15\,\%$) vs.\ BAc ($m = 99\,\%$) $\rightarrow$ ajuste sigmoidal};
+
+% --- Etapa 3 ---
+\node[rectangle, rounded corners=3pt, draw=cgamma, line width=0.7pt,
+      fill=cbggamma, text=cgamma, text width=7.0cm,
+      align=center, inner sep=4pt, font=\scriptsize]
+  (st3) at (14.5, -6.0)
+  {{\small\bfseries Etapa 3 --- Calibra\c{c}\~ao de $\gamma$ ($k_3$, $n_3$)}\\
+   F2 ($H/H_c\!=\!0{,}12$) vs.\ F5 ($H/H_c\!=\!0{,}45$)};
+
+% --- Etapa 4 ---
+\node[rectangle, rounded corners=3pt, draw=ccalib, line width=0.7pt,
+      fill=cbgcalib, text=ccalib, text width=7.0cm,
+      align=center, inner sep=4pt, font=\scriptsize]
+  (st4) at (14.5, -7.8)
+  {{\small\bfseries Etapa 4 --- Ajuste simult\^aneo}\\
+   56 parc.\ $\times$ 3 s\'\i tios $\rightarrow$ LM + Bootstrap (1000$\times$)};
+
+\draw[arr=black!60] (st0.south) -- (st1.north);
+\draw[arr=black!60] (st1.south) -- (st2.north);
+\draw[arr=black!60] (st2.south) -- (st3.north);
+\draw[arr=black!60] (st3.south) -- (st4.north);
+
+% --- Bayesiano ---
+\node[rectangle, rounded corners=3pt, draw=ccalib, line width=0.7pt,
+      fill=cbgcalib!60, text=ccalib, text width=2.0cm,
+      align=center, inner sep=3pt, font=\tiny]
+  (bayes) at (19.5, -7.8)
+  {{\scriptsize\bfseries Bayesiano}\\
+   Stan/PyMC\\
+   $\hat{R} < 1{,}01$};
+
+\draw[darr=ccalib] (st4.east) -- (bayes.west);
+
+% --- Validac\~ao ---
+\node[rectangle, rounded corners=3pt, draw=cvalid, line width=0.7pt,
+      fill=cbgvalid, text=cvalid!80!black, text width=7.0cm,
+      align=center, inner sep=4pt, font=\scriptsize]
+  (valid) at (14.5, -9.8)
+  {{\small\bfseries Valida\c{c}\~ao}\\
+   LOOCV $|$ entre s\'\i tios $|$ AICc (4 modelos)\\
+   $R^2$, RMSE, NSE, PBIAS};
+
+\draw[arr=black!60] (st4.south) -- (valid.north);
+\draw[darr=ccalib] (bayes.south) -- ++(0,-1.2) -| ([xshift=2pt]valid.east);
+
+% --- Saida final ---
+\node[rectangle, rounded corners=3pt, draw=cusle, line width=1.2pt,
+      fill=clight, text=cusle, text width=7.0cm,
+      align=center, inner sep=4pt, font=\scriptsize]
+  (output) at (14.5, -11.8)
+  {{\small\bfseries $K_{plint}$ com IC por classe pedol\'ogica}\\
+   Protocolo transfer\'\i vel para Plintossolos tropicais};
+
+\draw[arr=black!60] (valid.south) -- (output.north);
+
+% --- Legenda ---
+\node[font=\tiny, text=cgamma] at (11.2, -13.0)
+  {$\blacksquare$ S1 Plintossolo};
+\node[font=\tiny, text=calpha] at (14.2, -13.0)
+  {$\blacksquare$ S2 Latossolo};
+\node[font=\tiny, text=cbeta]  at (17.2, -13.0)
+  {$\blacksquare$ S3 Argissolo};
+
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,16 @@
+# Placeholder — Figura de campo do sítio Neossolo Litólico
+
+Substituir este arquivo `placeholder_litolico.txt` por uma imagem nomeada
+`fig_litolico_erodido.jpg` (ou .png) representando feição erosiva ativa em
+Neossolo Litólico Eutrófico da depressão sertaneja sobre cristalino.
+
+CRITÉRIOS PARA A FOTO:
+- Vertente com solum raso (≤ 50 cm) e saprólito gnáissico exposto
+- Feição em sulco/ravina rasa com armouring superficial visível (cobertura
+  por fragmentos grosseiros)
+- Escala humana ou trena de referência
+- Caatinga arbustiva degradada no entorno
+- Preferencialmente em estação seca para visibilidade do material
+
+Após inserir a imagem, o Quarto compilará automaticamente o bloco
+`#fig-litolico-campo` declarado em `Proposta_Klit_USLE.qmd`.

@@ -1,0 +1,515 @@
+\begin{thebibliography}{55}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\href}[2]{#2}
+\providecommand{\path}[1]{#1}
+\providecommand{\DOIprefix}{doi:}
+\providecommand{\ArXivprefix}{arXiv:}
+\providecommand{\URLprefix}{URL: }
+\providecommand{\Pubmedprefix}{pmid:}
+\providecommand{\doi}[1]{\href{http://dx.doi.org/#1}{\path{#1}}}
+\providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
+\providecommand{\bibinfo}[2]{#2}
+\ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Article
+\bibitem[{Alewell et~al.(2019)Alewell, Borrelli, Meusburger and
+  Panagos}]{alewell_et_al_2019}
+\bibinfo{author}{Alewell, C.}, \bibinfo{author}{Borrelli, P.},
+  \bibinfo{author}{Meusburger, K.}, \bibinfo{author}{Panagos, P.},
+  \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{Using the {USLE}: chances, challenges and limitations
+  of soil erosion modelling}.
+\newblock \bibinfo{journal}{International Soil and Water Conservation Research}
+  \bibinfo{volume}{7}, \bibinfo{pages}{203--225}.
+\newblock \DOIprefix\doi{10.1016/j.iswcr.2019.05.004}.
+%Type = Article
+\bibitem[{Auerswald et~al.(2014)Auerswald, Fiener, Martin and
+  Elhaus}]{auerswald_et_al_2014}
+\bibinfo{author}{Auerswald, K.}, \bibinfo{author}{Fiener, P.},
+  \bibinfo{author}{Martin, W.}, \bibinfo{author}{Elhaus, D.},
+  \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{Use and misuse of the k factor equation in soil
+  erosion modeling: An alternative equation for determining usle nomograph soil
+  erodibility values}.
+\newblock \bibinfo{journal}{CATENA} \bibinfo{volume}{118},
+  \bibinfo{pages}{220--225}.
+\newblock \DOIprefix\doi{10.1016/j.catena.2014.01.008}.
+%Type = Article
+\bibitem[{Bagarello et~al.(2012)Bagarello, Di~Stefano, Ferro and
+  Pampalone}]{bagarello_et_al_2012}
+\bibinfo{author}{Bagarello, V.}, \bibinfo{author}{Di~Stefano, C.},
+  \bibinfo{author}{Ferro, V.}, \bibinfo{author}{Pampalone, V.},
+  \bibinfo{year}{2012}.
+\newblock \bibinfo{title}{Estimating the usle soil erodibility factor in
+  sicily, south italy}.
+\newblock \bibinfo{journal}{Applied Engineering in Agriculture}
+  \bibinfo{volume}{28}, \bibinfo{pages}{199--206}.
+\newblock \DOIprefix\doi{10.13031/2013.41347}.
+%Type = Article
+\bibitem[{Barth{\`{e}}s and Roose(2002)}]{barthes_roose_2002}
+\bibinfo{author}{Barth{\`{e}}s, B.}, \bibinfo{author}{Roose, E.},
+  \bibinfo{year}{2002}.
+\newblock \bibinfo{title}{Aggregate stability as an indicator of soil
+  susceptibility to runoff and erosion; validation at several levels}.
+\newblock \bibinfo{journal}{Catena} \bibinfo{volume}{53},
+  \bibinfo{pages}{3--12}.
+\newblock \DOIprefix\doi{10.1016/S0341-8162(02)00232-8}.
+%Type = Article
+\bibitem[{Benavidez et~al.(2018)Benavidez, Jackson, Maxwell and
+  Norton}]{benavidez_et_al_2018}
+\bibinfo{author}{Benavidez, R.}, \bibinfo{author}{Jackson, B.},
+  \bibinfo{author}{Maxwell, D.}, \bibinfo{author}{Norton, K.},
+  \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{A review of the ({R}evised) {U}niversal {S}oil {L}oss
+  {E}quation (({R}){USLE}): with a view to increasing its global applicability
+  and improving soil loss estimates}.
+\newblock \bibinfo{journal}{Hydrology and Earth System Sciences}
+  \bibinfo{volume}{22}, \bibinfo{pages}{6059--6086}.
+\newblock \DOIprefix\doi{10.5194/hess-22-6059-2018}.
+%Type = Book
+\bibitem[{Bertoni and Lombardi~Neto(2017)}]{bertoni_lombardi_neto_2017}
+\bibinfo{author}{Bertoni, J.}, \bibinfo{author}{Lombardi~Neto, F.},
+  \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{Conservação do solo}.
+\newblock \bibinfo{edition}{10} ed., \bibinfo{publisher}{Ícone Editora},
+  \bibinfo{address}{São Paulo}.
+%Type = Article
+\bibitem[{Beven(2006)}]{beven_2006}
+\bibinfo{author}{Beven, K.}, \bibinfo{year}{2006}.
+\newblock \bibinfo{title}{A manifesto for the equifinality thesis}.
+\newblock \bibinfo{journal}{Journal of Hydrology} \bibinfo{volume}{320},
+  \bibinfo{pages}{18--36}.
+\newblock \DOIprefix\doi{10.1016/j.jhydrol.2005.07.007}.
+%Type = Article
+\bibitem[{Beven and Freer(2001)}]{beven_freer_2001}
+\bibinfo{author}{Beven, K.}, \bibinfo{author}{Freer, J.}, \bibinfo{year}{2001}.
+\newblock \bibinfo{title}{Equifinality, data assimilation, and uncertainty
+  estimation in mechanistic modelling of complex environmental systems}.
+\newblock \bibinfo{journal}{Journal of Hydrology} \bibinfo{volume}{249},
+  \bibinfo{pages}{11--29}.
+\newblock \DOIprefix\doi{10.1016/s0022-1694(01)00421-8}.
+%Type = Article
+\bibitem[{Borrelli et~al.(2017)Borrelli, Robinson, Fleischer, Lugato, Ballabio,
+  Alewell, Meusburger, Modugno, Sch{\"u}tt, Ferro, Bagarello, {Van Oost},
+  Montanarella and Panagos}]{borrelli_et_al_2017}
+\bibinfo{author}{Borrelli, P.}, \bibinfo{author}{Robinson, D.A.},
+  \bibinfo{author}{Fleischer, L.R.}, \bibinfo{author}{Lugato, E.},
+  \bibinfo{author}{Ballabio, C.}, \bibinfo{author}{Alewell, C.},
+  \bibinfo{author}{Meusburger, K.}, \bibinfo{author}{Modugno, S.},
+  \bibinfo{author}{Sch{\"u}tt, B.}, \bibinfo{author}{Ferro, V.},
+  \bibinfo{author}{Bagarello, V.}, \bibinfo{author}{{Van Oost}, K.},
+  \bibinfo{author}{Montanarella, L.}, \bibinfo{author}{Panagos, P.},
+  \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{An assessment of the global impact of 21st century
+  land use change on soil erosion}.
+\newblock \bibinfo{journal}{Nature Communications} \bibinfo{volume}{8},
+  \bibinfo{pages}{2013}.
+\newblock \DOIprefix\doi{10.1038/s41467-017-02142-7}.
+%Type = Article
+\bibitem[{Campo-Bescós et~al.(2013)Campo-Bescós, Flores-Cervantes, Bras,
+  Casalí and Giráldez}]{campo_bescos_et_al_2013}
+\bibinfo{author}{Campo-Bescós, M.A.}, \bibinfo{author}{Flores-Cervantes,
+  J.H.}, \bibinfo{author}{Bras, R.L.}, \bibinfo{author}{Casalí, J.},
+  \bibinfo{author}{Giráldez, J.V.}, \bibinfo{year}{2013}.
+\newblock \bibinfo{title}{Evaluation of a gully headcut retreat model using
+  multitemporal aerial photographs and digital elevation models}.
+\newblock \bibinfo{journal}{Journal of Geophysical Research: Earth Surface}
+  \bibinfo{volume}{118}, \bibinfo{pages}{2159--2173}.
+\newblock \DOIprefix\doi{10.1002/jgrf.20147}.
+%Type = Article
+\bibitem[{Cassol et~al.(2023)}]{cassol_et_al_2023}
+\bibinfo{author}{Cassol, C.J.}, et~al., \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{Natural fertility and intrinsic fragility of soils in
+  the brazilian cerrado}.
+\newblock \bibinfo{journal}{Revista em Agroneg{\'o}cio e Meio Ambiente}
+  \bibinfo{volume}{16}, \bibinfo{pages}{1--22}.
+%Type = Article
+\bibitem[{Chaves and Nearing(1991)}]{chaves_nearing_1991}
+\bibinfo{author}{Chaves, H.M.L.}, \bibinfo{author}{Nearing, M.A.},
+  \bibinfo{year}{1991}.
+\newblock \bibinfo{title}{Uncertainty analysis of the wepp soil erosion model}.
+\newblock \bibinfo{journal}{Transactions of the ASAE} \bibinfo{volume}{34},
+  \bibinfo{pages}{2437--2444}.
+\newblock \DOIprefix\doi{10.13031/2013.31890}.
+%Type = Article
+\bibitem[{Cheviron et~al.(2010)Cheviron, Gumi{\`{e}}re and
+  Moussa}]{cheviron_et_al_2010}
+\bibinfo{author}{Cheviron, B.}, \bibinfo{author}{Gumi{\`{e}}re, S.J.},
+  \bibinfo{author}{Moussa, R.}, \bibinfo{year}{2010}.
+\newblock \bibinfo{title}{Sensitivity analysis of distributed erosion models:
+  framework}.
+\newblock \bibinfo{journal}{Water Resources Research} \bibinfo{volume}{46},
+  \bibinfo{pages}{W08508}.
+\newblock \DOIprefix\doi{10.1029/2009WR007950}.
+%Type = Article
+\bibitem[{De~Roo and Riezebos(1992)}]{deroo_1992}
+\bibinfo{author}{De~Roo, A.}, \bibinfo{author}{Riezebos, H.},
+  \bibinfo{year}{1992}.
+\newblock \bibinfo{title}{Infiltration experiments on loess soils and their
+  implications for modelling surface runoff and soil erosion}.
+\newblock \bibinfo{journal}{CATENA}
+  \DOIprefix\doi{10.1016/0341-8162(92)90026-8}.
+%Type = Article
+\bibitem[{Deviren~Saygin et~al.(2018)Deviren~Saygin, Huang, Flanagan and
+  Erpul}]{deviren_saygin_et_al_2018}
+\bibinfo{author}{Deviren~Saygin, S.}, \bibinfo{author}{Huang, C.H.},
+  \bibinfo{author}{Flanagan, D.C.}, \bibinfo{author}{Erpul, G.},
+  \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{Process-based soil erodibility estimation for
+  empirical water erosion models}.
+\newblock \bibinfo{journal}{Journal of Hydraulic Research}
+  \bibinfo{volume}{56}, \bibinfo{pages}{181--195}.
+\newblock \DOIprefix\doi{10.1080/00221686.2017.1312577}.
+%Type = Book
+\bibitem[{{Empresa Brasileira de Pesquisa Agropecuária}(2018)}]{embrapa_2018}
+\bibinfo{author}{{Empresa Brasileira de Pesquisa Agropecuária}},
+  \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{Sistema Brasileiro de Classificação de Solos}.
+\newblock \bibinfo{edition}{5} ed., \bibinfo{publisher}{Embrapa},
+  \bibinfo{address}{Brasília}.
+%Type = Article
+\bibitem[{Fran{\c{c}}ois et~al.(2024)Fran{\c{c}}ois, Gordon, Costa~de Oliveira,
+  Rousseau and Mariano-Neto}]{francois_et_al_2024}
+\bibinfo{author}{Fran{\c{c}}ois, M.}, \bibinfo{author}{Gordon, C.A.},
+  \bibinfo{author}{Costa~de Oliveira, U.}, \bibinfo{author}{Rousseau, A.N.},
+  \bibinfo{author}{Mariano-Neto, E.}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Assessing the global sensitivity of {RUSLE} factors:
+  {A} case study of {Southern Bahia, Brazil}}.
+\newblock \bibinfo{journal}{Soil Systems} \bibinfo{volume}{8},
+  \bibinfo{pages}{125}.
+\newblock \DOIprefix\doi{10.3390/soilsystems8040125}.
+%Type = Book
+\bibitem[{Fredlund and Rahardjo(1993)}]{fredlund_rahardjo_1993}
+\bibinfo{author}{Fredlund, D.G.}, \bibinfo{author}{Rahardjo, H.},
+  \bibinfo{year}{1993}.
+\newblock \bibinfo{title}{Soil mechanics for unsaturated soils}.
+\newblock \bibinfo{publisher}{John Wiley \& Sons}, \bibinfo{address}{New York}.
+%Type = Article
+\bibitem[{Green and Ampt(1911)}]{green_ampt_1911}
+\bibinfo{author}{Green, W.H.}, \bibinfo{author}{Ampt, G.A.},
+  \bibinfo{year}{1911}.
+\newblock \bibinfo{title}{Studies on soil physics}.
+\newblock \bibinfo{journal}{The Journal of Agricultural Science}
+  \bibinfo{volume}{4}, \bibinfo{pages}{1--24}.
+\newblock \DOIprefix\doi{10.1017/S0021859600001441}.
+%Type = Article
+\bibitem[{Gudino-Elizondo et~al.(2018)Gudino-Elizondo, Biggs, Bingner, Yuan,
+  Langendoen, Taniguchi, Kretzschmar, Liden and
+  Canfield}]{gudino_elizondo_et_al_2018}
+\bibinfo{author}{Gudino-Elizondo, N.}, \bibinfo{author}{Biggs, T.W.},
+  \bibinfo{author}{Bingner, R.L.}, \bibinfo{author}{Yuan, Y.},
+  \bibinfo{author}{Langendoen, E.J.}, \bibinfo{author}{Taniguchi, K.N.},
+  \bibinfo{author}{Kretzschmar, T.}, \bibinfo{author}{Liden, D.},
+  \bibinfo{author}{Canfield, H.E.}, \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{Modelling ephemeral gully erosion from unpaved urban
+  roads: equifinality and implications for scenario analysis}.
+\newblock \bibinfo{journal}{Geosciences} \bibinfo{volume}{8},
+  \bibinfo{pages}{137}.
+\newblock \DOIprefix\doi{10.3390/geosciences8040137}.
+%Type = Article
+\bibitem[{Gupta et~al.(2024)Gupta, Borrelli, Panagos and
+  Alewell}]{gupta_et_al_2024}
+\bibinfo{author}{Gupta, S.}, \bibinfo{author}{Borrelli, P.},
+  \bibinfo{author}{Panagos, P.}, \bibinfo{author}{Alewell, C.},
+  \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{An advanced global soil erodibility ({K}) assessment
+  including the effects of saturated hydraulic conductivity}.
+\newblock \bibinfo{journal}{Science of The Total Environment}
+  \bibinfo{volume}{908}, \bibinfo{pages}{168249}.
+\newblock \DOIprefix\doi{10.1016/j.scitotenv.2023.168249}.
+%Type = Article
+\bibitem[{Gura et~al.(2022)}]{gura_et_al_2022}
+\bibinfo{author}{Gura, I.}, et~al., \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{Short-term effects of conservation agriculture
+  strategies on the soil quality of a haplic plinthosol in eastern cape, south
+  africa}.
+\newblock \bibinfo{journal}{Soil and Tillage Research} \bibinfo{volume}{220},
+  \bibinfo{pages}{105378}.
+%Type = Article
+\bibitem[{Her and Chaubey(2015)}]{her_chaubey_2015}
+\bibinfo{author}{Her, Y.}, \bibinfo{author}{Chaubey, I.}, \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{Impact of the numbers of observations and calibration
+  parameters on equifinality, model performance, and output and parameter
+  uncertainty}.
+\newblock \bibinfo{journal}{Hydrological Processes} \bibinfo{volume}{29},
+  \bibinfo{pages}{4220--4237}.
+\newblock \DOIprefix\doi{10.1002/hyp.10487}.
+%Type = Article
+\bibitem[{Horton(1933)}]{horton_1933}
+\bibinfo{author}{Horton, R.E.}, \bibinfo{year}{1933}.
+\newblock \bibinfo{title}{The role of infiltration in the hydrologic cycle}.
+\newblock \bibinfo{journal}{Transactions, American Geophysical Union}
+  \bibinfo{volume}{14}, \bibinfo{pages}{446--460}.
+\newblock \DOIprefix\doi{10.1029/TR014i001p00446}.
+%Type = Article
+\bibitem[{Kinnell(2005)}]{kinnell_2005}
+\bibinfo{author}{Kinnell, P.I.A.}, \bibinfo{year}{2005}.
+\newblock \bibinfo{title}{Raindrop-impact-induced erosion processes and
+  prediction: a review}.
+\newblock \bibinfo{journal}{Hydrological Processes}
+  \DOIprefix\doi{10.1002/hyp.5788}.
+%Type = Article
+\bibitem[{Kirkby and Bracken(2009)}]{kirkby_bracken_2009}
+\bibinfo{author}{Kirkby, M.J.}, \bibinfo{author}{Bracken, L.J.},
+  \bibinfo{year}{2009}.
+\newblock \bibinfo{title}{Gully processes and gully dynamics}.
+\newblock \bibinfo{journal}{Earth Surface Processes and Landforms}
+  \bibinfo{volume}{34}, \bibinfo{pages}{1841--1851}.
+\newblock \DOIprefix\doi{10.1002/esp.1866}.
+%Type = Article
+\bibitem[{Lafayette et~al.(2011)Lafayette, Cantalice and
+  Coutinho}]{lafayette_cantalice_coutinho_2011}
+\bibinfo{author}{Lafayette, K.P.V.}, \bibinfo{author}{Cantalice, J.R.B.},
+  \bibinfo{author}{Coutinho, R.Q.}, \bibinfo{year}{2011}.
+\newblock \bibinfo{title}{Resistência à erosão em ravinas, em latossolo
+  argiloarenoso}.
+\newblock \bibinfo{journal}{Revista Brasileira de Ciência do Solo}
+  \bibinfo{volume}{35}, \bibinfo{pages}{2167--2174}.
+%Type = Article
+\bibitem[{Lal(2001)}]{lal_2001}
+\bibinfo{author}{Lal, R.}, \bibinfo{year}{2001}.
+\newblock \bibinfo{title}{Soil degradation by erosion}.
+\newblock \bibinfo{journal}{Land Degradation \& Development}
+  \bibinfo{volume}{12}, \bibinfo{pages}{519--539}.
+\newblock \DOIprefix\doi{10.1002/ldr.472}.
+%Type = Article
+\bibitem[{Montgomery(2007)}]{montgomery_2007}
+\bibinfo{author}{Montgomery, D.R.}, \bibinfo{year}{2007}.
+\newblock \bibinfo{title}{Soil erosion and agricultural sustainability}.
+\newblock \bibinfo{journal}{Proceedings of the National Academy of Sciences}
+  \bibinfo{volume}{104}, \bibinfo{pages}{13268--13272}.
+\newblock \DOIprefix\doi{10.1073/pnas.0611508104}.
+%Type = Book
+\bibitem[{Morgan(2005)}]{morgan_2005}
+\bibinfo{author}{Morgan, R.P.C.}, \bibinfo{year}{2005}.
+\newblock \bibinfo{title}{Soil erosion and conservation}.
+\newblock \bibinfo{edition}{3} ed., \bibinfo{publisher}{Blackwell Publishing},
+  \bibinfo{address}{Oxford}.
+%Type = Techreport
+\bibitem[{Nascimento and Pedrotti(2004)}]{nascimento_pedrotti_2004}
+\bibinfo{author}{Nascimento, C.F.B.}, \bibinfo{author}{Pedrotti, A.},
+  \bibinfo{year}{2004}.
+\newblock \bibinfo{title}{Levantamento detalhado dos solos ocorrentes no Campus
+  Rural -- UFS, Povoado de Timb{\'o}, Munic{\'i}pio de S{\~a}o
+  Crist{\'o}v{\~a}o -- por{\c{c}}{\~a}o centro-litor{\^a}nea do estado de
+  Sergipe}.
+\newblock \bibinfo{type}{Technical Report}. Universidade Federal de Sergipe.
+  \bibinfo{address}{S{\~a}o Crist{\'o}v{\~a}o}.
+%Type = Article
+\bibitem[{Nearing et~al.(1989)Nearing, Foster, Lane and
+  Finkner}]{nearing_et_al_1989}
+\bibinfo{author}{Nearing, M.A.}, \bibinfo{author}{Foster, G.R.},
+  \bibinfo{author}{Lane, L.J.}, \bibinfo{author}{Finkner, S.C.},
+  \bibinfo{year}{1989}.
+\newblock \bibinfo{title}{A process-based soil erosion model for usda-water
+  erosion prediction project technology}.
+\newblock \bibinfo{journal}{Transactions of the ASAE} \bibinfo{volume}{32},
+  \bibinfo{pages}{1587--1593}.
+\newblock \DOIprefix\doi{10.13031/2013.31195}.
+%Type = Incollection
+\bibitem[{Nearing and Nicks(1998)}]{nearing_nicks_1998}
+\bibinfo{author}{Nearing, M.A.}, \bibinfo{author}{Nicks, A.D.},
+  \bibinfo{year}{1998}.
+\newblock \bibinfo{title}{Evaluation of the water erosion prediction project
+  (wepp) model for hillslopes}, in: \bibinfo{booktitle}{Modelling Soil Erosion
+  by Water}. \bibinfo{publisher}{Springer}, pp. \bibinfo{pages}{43--56}.
+\newblock \DOIprefix\doi{10.1007/978-3-642-58913-3_5}.
+%Type = Article
+\bibitem[{Accioly Teixeira~de Oliveira(1991)}]{oliveira_1991}
+\bibinfo{author}{Accioly Teixeira~de Oliveira, M.}, \bibinfo{year}{1991}.
+\newblock \bibinfo{title}{Slope geometry and gully erosion development:
+  Bananal, são paulo, brazil}.
+\newblock \bibinfo{journal}{Zeitschrift für Geomorphologie}
+  \bibinfo{volume}{34}, \bibinfo{pages}{423--434}.
+\newblock \DOIprefix\doi{10.1127/zfg/34/1991/423}.
+%Type = Article
+\bibitem[{Ostovari et~al.(2016)Ostovari, Ghorbani-Dashtaki, Bahrami, Naderi,
+  Dematte and Kerry}]{ostovari_et_al_2016}
+\bibinfo{author}{Ostovari, Y.}, \bibinfo{author}{Ghorbani-Dashtaki, S.},
+  \bibinfo{author}{Bahrami, H.A.}, \bibinfo{author}{Naderi, M.},
+  \bibinfo{author}{Dematte, J.A.M.}, \bibinfo{author}{Kerry, R.},
+  \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{Modification of the usle k factor for soil
+  erodibility assessment on calcareous soils in iran}.
+\newblock \bibinfo{journal}{Geomorphology} \bibinfo{volume}{273},
+  \bibinfo{pages}{385--395}.
+\newblock \DOIprefix\doi{10.1016/j.geomorph.2016.08.003}.
+%Type = Article
+\bibitem[{Padmanabhan and Eswaran(2005)}]{padmanabhan_2005}
+\bibinfo{author}{Padmanabhan, E.}, \bibinfo{author}{Eswaran, H.},
+  \bibinfo{year}{2005}.
+\newblock \bibinfo{title}{Plinthite and petroplinthite}.
+\newblock \bibinfo{journal}{Encyclopedia of Soil Science}
+  \DOIprefix\doi{10.1201/noe0849338304.ch276}.
+%Type = Article
+\bibitem[{Poesen(2018)}]{poesen_2018}
+\bibinfo{author}{Poesen, J.}, \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{Soil erosion in the anthropocene: Research needs}.
+\newblock \bibinfo{journal}{Earth Surface Processes and Landforms}
+  \bibinfo{volume}{43}, \bibinfo{pages}{64--84}.
+%Type = Article
+\bibitem[{Poesen et~al.(2003)Poesen, Nachtergaele, Verstraeten and
+  Valentin}]{poesen_et_al_2003}
+\bibinfo{author}{Poesen, J.}, \bibinfo{author}{Nachtergaele, J.},
+  \bibinfo{author}{Verstraeten, G.}, \bibinfo{author}{Valentin, C.},
+  \bibinfo{year}{2003}.
+\newblock \bibinfo{title}{Gully erosion and environmental change: importance
+  and research needs}.
+\newblock \bibinfo{journal}{Catena} \bibinfo{volume}{50},
+  \bibinfo{pages}{91--133}.
+\newblock \DOIprefix\doi{10.1016/S0341-8162(02)00143-1}.
+%Type = Article
+\bibitem[{Rankine(1857)}]{rankine_1857}
+\bibinfo{author}{Rankine, W.J.M.}, \bibinfo{year}{1857}.
+\newblock \bibinfo{title}{On the stability of loose earth}.
+\newblock \bibinfo{journal}{Philosophical Transactions of the Royal Society of
+  London} \bibinfo{volume}{147}, \bibinfo{pages}{9--27}.
+%Type = Article
+\bibitem[{Rao et~al.(2016)Rao, Miles, Beebe and Horst}]{rao_et_al_2016}
+\bibinfo{author}{Rao, I.M.}, \bibinfo{author}{Miles, J.W.},
+  \bibinfo{author}{Beebe, S.E.}, \bibinfo{author}{Horst, W.J.},
+  \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{Root adaptations to soils with low fertility and
+  aluminium toxicity}.
+\newblock \bibinfo{journal}{Annals of Botany} \bibinfo{volume}{118},
+  \bibinfo{pages}{593--605}.
+\newblock \DOIprefix\doi{10.1093/aob/mcw073}.
+%Type = Book
+\bibitem[{Renard et~al.(1997)Renard, Foster, Weesies, McCool and
+  Yoder}]{renard_et_al_1997}
+\bibinfo{author}{Renard, K.G.}, \bibinfo{author}{Foster, G.R.},
+  \bibinfo{author}{Weesies, G.A.}, \bibinfo{author}{McCool, D.K.},
+  \bibinfo{author}{Yoder, D.C.}, \bibinfo{year}{1997}.
+\newblock \bibinfo{title}{Predicting soil erosion by water: a guide to
+  conservation planning with the {Revised Universal Soil Loss Equation}
+  ({RUSLE})}.
+\newblock Number \bibinfo{number}{703} in \bibinfo{series}{Agriculture
+  Handbook}, \bibinfo{publisher}{USDA}, \bibinfo{address}{Washington, DC}.
+%Type = Incollection
+\bibitem[{R{\"o}mkens et~al.(1997)R{\"o}mkens, Young, Poesen, McCool, El-Swaify
+  and Bradford}]{roemkens_et_al_1997}
+\bibinfo{author}{R{\"o}mkens, M.J.M.}, \bibinfo{author}{Young, R.A.},
+  \bibinfo{author}{Poesen, J.W.A.}, \bibinfo{author}{McCool, D.K.},
+  \bibinfo{author}{El-Swaify, S.A.}, \bibinfo{author}{Bradford, J.M.},
+  \bibinfo{year}{1997}.
+\newblock \bibinfo{title}{Soil erodibility factor ({K})}, in:
+  \bibinfo{booktitle}{Predicting soil erosion by water: a guide to conservation
+  planning with the {Revised Universal Soil Loss Equation} ({RUSLE})}.
+  \bibinfo{publisher}{USDA}, \bibinfo{address}{Washington, DC}, pp.
+  \bibinfo{pages}{65--99}.
+%Type = Book
+\bibitem[{Saltelli et~al.(2004)Saltelli, Tarantola, Campolongo and
+  Ratto}]{saltelli_et_al_2004}
+\bibinfo{author}{Saltelli, A.}, \bibinfo{author}{Tarantola, S.},
+  \bibinfo{author}{Campolongo, F.}, \bibinfo{author}{Ratto, M.},
+  \bibinfo{year}{2004}.
+\newblock \bibinfo{title}{Sensitivity analysis in practice: a guide to
+  assessing scientific models}.
+\newblock \bibinfo{publisher}{John Wiley \& Sons},
+  \bibinfo{address}{Chichester}.
+%Type = Article
+\bibitem[{Sidorchuk(2006)}]{sidorchuk_2006}
+\bibinfo{author}{Sidorchuk, A.}, \bibinfo{year}{2006}.
+\newblock \bibinfo{title}{Stages in gully evolution and self‐organized
+  criticality}.
+\newblock \bibinfo{journal}{Earth Surface Processes and Landforms}
+  \bibinfo{volume}{31}, \bibinfo{pages}{1329--1344}.
+%Type = Article
+\bibitem[{Silva et~al.(2009)Silva, Silva, Curi, Avanzi and
+  Ferreira}]{silva_et_al_2009}
+\bibinfo{author}{Silva, A.M.d.}, \bibinfo{author}{Silva, M.L.N.},
+  \bibinfo{author}{Curi, N.}, \bibinfo{author}{Avanzi, J.C.},
+  \bibinfo{author}{Ferreira, M.M.}, \bibinfo{year}{2009}.
+\newblock \bibinfo{title}{Erosividade da chuva e erodibilidade de {Cambissolo}
+  e {Latossolo} na região de {Lavras}, sul de {Minas Gerais}}.
+\newblock \bibinfo{journal}{Revista Brasileira de Ciência do Solo}
+  \bibinfo{volume}{33}, \bibinfo{pages}{1811--1820}.
+\newblock \DOIprefix\doi{10.1590/S0100-06832009000600029}.
+%Type = Article
+\bibitem[{Sobol'(2001)}]{sobol_2001}
+\bibinfo{author}{Sobol', I.M.}, \bibinfo{year}{2001}.
+\newblock \bibinfo{title}{Global sensitivity indices for nonlinear mathematical
+  models and their {Monte Carlo} estimates}.
+\newblock \bibinfo{journal}{Mathematics and Computers in Simulation}
+  \bibinfo{volume}{55}, \bibinfo{pages}{271--280}.
+\newblock \DOIprefix\doi{10.1016/S0378-4754(00)00270-6}.
+%Type = Article
+\bibitem[{Torri and Poesen(2014)}]{torri_poesen_2014}
+\bibinfo{author}{Torri, D.}, \bibinfo{author}{Poesen, J.},
+  \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{A review of topographic threshold conditions for
+  gully head development in different environments}.
+\newblock \bibinfo{journal}{Earth-Science Reviews} \bibinfo{volume}{130},
+  \bibinfo{pages}{73--85}.
+\newblock \DOIprefix\doi{10.1016/j.earscirev.2013.12.006}.
+%Type = Article
+\bibitem[{Vandekerckhove et~al.(2003)Vandekerckhove, Poesen and
+  Govers}]{vandekerckhove_et_al_2003}
+\bibinfo{author}{Vandekerckhove, L.}, \bibinfo{author}{Poesen, J.},
+  \bibinfo{author}{Govers, G.}, \bibinfo{year}{2003}.
+\newblock \bibinfo{title}{Medium-term gully headcut retreat rates in southeast
+  spain determined from aerial photographs and ground measurements}.
+\newblock \bibinfo{journal}{CATENA} \bibinfo{volume}{50},
+  \bibinfo{pages}{329--352}.
+\newblock \DOIprefix\doi{10.1016/s0341-8162(02)00132-7}.
+%Type = Article
+\bibitem[{Vanmaercke et~al.(2021)}]{vanmaercke_et_al_2021}
+\bibinfo{author}{Vanmaercke, M.}, et~al., \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{Measuring, modelling and managing gully erosion at
+  large scales: A state of the art}.
+\newblock \bibinfo{journal}{Earth-Science Reviews} \bibinfo{volume}{218},
+  \bibinfo{pages}{103637}.
+%Type = Article
+\bibitem[{Vannoppen et~al.(2015)Vannoppen, Vanmaercke, De~Baets and
+  Poesen}]{vannoppen_2015}
+\bibinfo{author}{Vannoppen, W.}, \bibinfo{author}{Vanmaercke, M.},
+  \bibinfo{author}{De~Baets, S.}, \bibinfo{author}{Poesen, J.},
+  \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{A review of the mechanical effects of plant roots on
+  concentrated flow erosion rates}.
+\newblock \bibinfo{journal}{Earth-Science Reviews}
+  \DOIprefix\doi{10.1016/j.earscirev.2015.08.011}.
+%Type = Article
+\bibitem[{Wang et~al.(1999)Wang, Shao and Horton}]{wang_et_al_1999}
+\bibinfo{author}{Wang, Q.}, \bibinfo{author}{Shao, M.},
+  \bibinfo{author}{Horton, R.}, \bibinfo{year}{1999}.
+\newblock \bibinfo{title}{Modified green and ampt models for layered soil
+  infiltration and muddy water infiltration}.
+\newblock \bibinfo{journal}{Soil Science} \bibinfo{volume}{164},
+  \bibinfo{pages}{445--453}.
+\newblock \DOIprefix\doi{10.1097/00010694-199907000-00001}.
+%Type = Article
+\bibitem[{Wang et~al.(2020)Wang, Wu, Huang, Tian, Zhang and
+  Yang}]{wang_et_al_2020}
+\bibinfo{author}{Wang, Y.}, \bibinfo{author}{Wu, T.}, \bibinfo{author}{Huang,
+  J.}, \bibinfo{author}{Tian, P.}, \bibinfo{author}{Zhang, H.},
+  \bibinfo{author}{Yang, T.}, \bibinfo{year}{2020}.
+\newblock \bibinfo{title}{Soil hydraulic properties of plinthosol in the middle
+  yangtze river basin, southern china}.
+\newblock \bibinfo{journal}{Water} \bibinfo{volume}{12}, \bibinfo{pages}{1783}.
+\newblock \DOIprefix\doi{10.3390/w12061783}.
+%Type = Article
+\bibitem[{Wilkinson et~al.(2024)}]{wilkinson_et_al_2024}
+\bibinfo{author}{Wilkinson, S.N.}, et~al., \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Achieving change through gully erosion research}.
+\newblock \bibinfo{journal}{Earth Surface Processes and Landforms}
+  \bibinfo{volume}{49}, \bibinfo{pages}{49--57}.
+%Type = Article
+\bibitem[{Wischmeier et~al.(1971)Wischmeier, Johnson and
+  Cross}]{wischmeier_et_al_1971}
+\bibinfo{author}{Wischmeier, W.H.}, \bibinfo{author}{Johnson, C.B.},
+  \bibinfo{author}{Cross, B.V.}, \bibinfo{year}{1971}.
+\newblock \bibinfo{title}{A soil erodibility nomograph for farmland and
+  construction sites}.
+\newblock \bibinfo{journal}{Journal of Soil and Water Conservation}
+  \bibinfo{volume}{26}, \bibinfo{pages}{189--193}.
+%Type = Techreport
+\bibitem[{Wischmeier and Smith(1978)}]{wischmeier_smith_1978}
+\bibinfo{author}{Wischmeier, W.H.}, \bibinfo{author}{Smith, D.D.},
+  \bibinfo{year}{1978}.
+\newblock \bibinfo{title}{Predicting rainfall erosion losses: A guide to
+  conservation planning}.
+\newblock \bibinfo{type}{Agriculture Handbook} \bibinfo{number}{537}. U.S.
+  Department of Agriculture. \bibinfo{address}{Washington, DC}.
+
+\end{thebibliography}

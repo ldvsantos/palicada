@@ -1,0 +1,525 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.23)  16 APR 2026 08:56
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./manuscript.tex
+(manuscript.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-12-29>
+(elsarticle.cls
+Document Class: elsarticle 2024/04/04, 3.4: Elsevier Ltd
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
+)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2025-12-29 L3 programming layer (loader) 
+
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def
+File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count275
+))
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
+e.sty
+Package: xparse 2025-10-09 L3 Experimental document command parser
+)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count276
+)
+\@bls=\dimen148
+
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
+File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count277
+\c@section=\count278
+\c@subsection=\count279
+\c@subsubsection=\count280
+\c@paragraph=\count281
+\c@subparagraph=\count282
+\c@figure=\count283
+\c@table=\count284
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen149
+)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen150
+\Gin@req@width=\dimen151
+)
+\c@tnote=\count285
+\c@fnote=\count286
+\c@cnote=\count287
+\c@ead=\count288
+\c@author=\count289
+\@eadauthor=\toks18
+\c@affn=\count290
+\absbox=\box53
+\elsarticlehighlightsbox=\box54
+\elsarticlegrabsbox=\box55
+\keybox=\box56
+\Columnwidth=\dimen152
+\space@left=\dimen153
+\els@boxa=\box57
+\els@boxb=\box58
+\leftMargin=\dimen154
+\@enLab=\toks19
+\@sep=\skip51
+\@@sep=\skip52
+ (manuscript.spl)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip53
+\bibsep=\skip54
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count291
+)
+\splwrite=\write3
+\openout3 = `manuscript.spl'.
+
+\appnamewidth=\dimen155
+)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks20
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2025/07/09 v2.17z AMS math features
+\@mathmargin=\skip55
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks21
+\ex@=\dimen156
+))
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen157
+)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count292
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count293
+\leftroot@=\count294
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count295
+\DOTSCASE@=\count296
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box59
+\strutbox@=\box60
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen158
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count297
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count298
+\dotsspace@=\muskip17
+\c@parentequation=\count299
+\dspbrk@lvl=\count300
+\tag@help=\toks22
+\row@=\count301
+\column@=\count302
+\maxfields@=\count303
+\andhelp@=\toks23
+\eqnshift@=\dimen159
+\alignsep@=\dimen160
+\tagshift@=\dimen161
+\tagwidth@=\dimen162
+\totwidth@=\dimen163
+\lineht@=\dimen164
+\@envbody=\toks24
+\multlinegap=\skip56
+\multlinetaggap=\skip57
+\mathdisplay@stack=\toks25
+LaTeX Info: Redefining \[ on input line 2950.
+LaTeX Info: Redefining \] on input line 2951.
+)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen165
+\lightrulewidth=\dimen166
+\cmidrulewidth=\dimen167
+\belowrulesep=\dimen168
+\belowbottomsep=\dimen169
+\aboverulesep=\dimen170
+\abovetopsep=\dimen171
+\cmidrulesep=\dimen172
+\cmidrulekern=\dimen173
+\defaultaddspace=\dimen174
+\@cmidla=\count304
+\@cmidlb=\count305
+\@aboverulesep=\dimen175
+\@belowrulesep=\dimen176
+\@thisruleclass=\count306
+\@lastruleclass=\count307
+\@thisrulewidth=\dimen177
+)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks26
+\inpenc@posthook=\toks27
+)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
+)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/lineno\lineno.sty
+Package: lineno 2025/05/13 line numbers on paragraphs v5.5
+
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))
+\linenopenalty=\count308
+\output=\toks28
+\linenoprevgraf=\count309
+\linenumbersep=\dimen178
+\linenumberwidth=\dimen179
+\c@linenumber=\count310
+\c@pagewiselinenumber=\count311
+\c@LN@truepage=\count312
+\c@internallinenumber=\count313
+\c@internallinenumbers=\count314
+\quotelinenumbersep=\dimen180
+\bframerule=\dimen181
+\bframesep=\dimen182
+\bframebox=\box61
+\@LN@amsmath@ams@eqpen=\count315
+) (manuscript.aux)
+\openout1 = `manuscript.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count316
+\scratchdimen=\dimen183
+\scratchbox=\box62
+\nofMPsegments=\count317
+\nofMParguments=\count318
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count319
+\MPscratchDim=\dimen184
+\MPnumerator=\count320
+\makeMPintoPDFobject=\count321
+\everyMPtoPDFconversion=\toks30
+)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+fg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+LaTeX Font Info:    Trying to load font information for U+msa on input line 72.
+
+ (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 72.
+
+
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Overfull \hbox (28.1742pt too wide) in paragraph at lines 79--80
+[]\T1/cmr/m/n/12 Green--Ampt model val-i-dates infiltration-rate thresh-old sep
+-a-rat-ing Plinthosol
+ []
+
+[1
+
+{C:/Users/vidal/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [1
+
+
+]
+[2] [3] [4] [5] [6] [7] [8] [9] [10] [11]
+<fig_00a_area_estudo_aerea.png, id=61, 319.6305pt x 226.008pt>
+File: fig_00a_area_estudo_aerea.png Graphic file (type png)
+<use fig_00a_area_estudo_aerea.png>
+Package pdftex.def Info: fig_00a_area_estudo_aerea.png  used on input line 202.
+
+(pdftex.def)             Requested size: 331.50238pt x 234.40479pt.
+<fig_00b_feicoes_drone_campo.jpeg, id=63, 365.949pt x 177.0615pt>
+File: fig_00b_feicoes_drone_campo.jpeg Graphic file (type jpg)
+<use fig_00b_feicoes_drone_campo.jpeg>
+Package pdftex.def Info: fig_00b_feicoes_drone_campo.jpeg  used on input line 2
+03.
+(pdftex.def)             Requested size: 331.50238pt x 160.39671pt.
+ [12] [13 <./fig_00a_area_estudo_aerea.png> <./fig_00b_feicoes_drone_campo.jpeg
+>]
+<fig_09_sitio_experimental.png, id=72, 407.121pt x 202.356pt>
+File: fig_09_sitio_experimental.png Graphic file (type png)
+<use fig_09_sitio_experimental.png>
+Package pdftex.def Info: fig_09_sitio_experimental.png  used on input line 212.
+
+(pdftex.def)             Requested size: 390.0pt x 193.85814pt.
+
+Overfull \hbox (9.2111pt too wide) in paragraph at lines 224--242
+ [][] 
+ []
+
+[14] [15 <./fig_09_sitio_experimental.png (PNG copy)>] [16]
+Overfull \hbox (14.55388pt too wide) in paragraph at lines 250--251
+[]\T1/cmr/m/n/12 Instrumented ero-sion plots equipped with sediment-collection 
+boxes, tipping-
+ []
+
+[17] [18]
+Overfull \hbox (4.24669pt too wide) in paragraph at lines 281--282
+[]\T1/cmr/m/n/12 The se-quen-tial cal-i-bra-tion pro-to-col re-cov-ered the thr
+ee hydraulic-biological
+ []
+
+[19]
+<fig_01_calibracao_sintetica.png, id=96, 578.16pt x 361.35pt>
+File: fig_01_calibracao_sintetica.png Graphic file (type png)
+<use fig_01_calibracao_sintetica.png>
+Package pdftex.def Info: fig_01_calibracao_sintetica.png  used on input line 28
+5.
+(pdftex.def)             Requested size: 350.99762pt x 219.37006pt.
+ [20 <./fig_01_calibracao_sintetica.png>]
+<fig_02_boxplot_parametros.png, id=102, 1300.86pt x 361.35pt>
+File: fig_02_boxplot_parametros.png Graphic file (type png)
+<use fig_02_boxplot_parametros.png>
+Package pdftex.def Info: fig_02_boxplot_parametros.png  used on input line 298.
+
+(pdftex.def)             Requested size: 390.0pt x 108.33415pt.
+ [21]
+Overfull \hbox (11.16438pt too wide) in paragraph at lines 305--306
+\T1/cmr/m/n/12 served un-der-es-ti-ma-tion in cal-care-ous soils with sub-sur-f
+ace hy-draulic impedance,
+ []
+
+[22 <./fig_02_boxplot_parametros.png>]
+<fig_03_sensibilidade_sobol.png, id=110, 1011.78pt x 722.7pt>
+File: fig_03_sensibilidade_sobol.png Graphic file (type png)
+<use fig_03_sensibilidade_sobol.png>
+Package pdftex.def Info: fig_03_sensibilidade_sobol.png  used on input line 315
+.
+(pdftex.def)             Requested size: 390.0pt x 278.57669pt.
+ [23] [24 <./fig_03_sensibilidade_sobol.png>]
+<fig_04_interacoes_s2.png, id=119, 505.89pt x 433.62pt>
+File: fig_04_interacoes_s2.png Graphic file (type png)
+<use fig_04_interacoes_s2.png>
+Package pdftex.def Info: fig_04_interacoes_s2.png  used on input line 328.
+(pdftex.def)             Requested size: 272.99881pt x 233.99913pt.
+ [25] [26 <./fig_04_interacoes_s2.png>] [27]
+<fig_05_estabilidade_taludes.png, id=130, 1011.78pt x 433.62pt>
+File: fig_05_estabilidade_taludes.png Graphic file (type png)
+<use fig_05_estabilidade_taludes.png>
+Package pdftex.def Info: fig_05_estabilidade_taludes.png  used on input line 34
+1.
+(pdftex.def)             Requested size: 390.0pt x 167.14601pt.
+ [28 <./fig_05_estabilidade_taludes.png>] [29]
+<fig_06_infiltracao_escoamento.png, id=138, 1011.78pt x 433.62pt>
+File: fig_06_infiltracao_escoamento.png Graphic file (type png)
+<use fig_06_infiltracao_escoamento.png>
+Package pdftex.def Info: fig_06_infiltracao_escoamento.png  used on input line 
+379.
+(pdftex.def)             Requested size: 390.0pt x 167.14601pt.
+ [30 <./fig_06_infiltracao_escoamento.png>]
+<fig_07_hidrograma_i60.png, id=144, 578.16pt x 361.35pt>
+File: fig_07_hidrograma_i60.png Graphic file (type png)
+<use fig_07_hidrograma_i60.png>
+Package pdftex.def Info: fig_07_hidrograma_i60.png  used on input line 390.
+(pdftex.def)             Requested size: 312.00119pt x 194.99928pt.
+ [31] [32 <./fig_07_hidrograma_i60.png>]
+<fig_08_erosao_virtual.png, id=152, 1011.78pt x 867.24pt>
+File: fig_08_erosao_virtual.png Graphic file (type png)
+<use fig_08_erosao_virtual.png>
+Package pdftex.def Info: fig_08_erosao_virtual.png  used on input line 403.
+(pdftex.def)             Requested size: 390.0pt x 334.29204pt.
+ [33] [34 <./fig_08_erosao_virtual.png>] [35] [36]
+! Undefined control sequence.
+l.443 ...ted figures are available at Zenodo (\url
+                                                  {https://doi.org/10.5281/z...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[37] (manuscript.bbl [38]
+Underfull \hbox (badness 1383) in paragraph at lines 128--136
+[]\T1/cmr/m/n/12 Chaves, H.M.L., Near-ing, M.A., 1991.  Un-cer-tainty anal-y-si
+s of the
+ []
+
+[39]
+Underfull \hbox (badness 6978) in paragraph at lines 155--164
+[]\T1/cmr/m/n/12 Deviren Say-gin, S., Huang, C.H., Flana-gan, D.C., Er-pul, G.,
+
+ []
+
+
+Underfull \hbox (badness 2229) in paragraph at lines 155--164
+\T1/cmr/m/n/12 2018.  Process-based soil erodi-bil-ity es-ti-ma-tion for em-pir
+-i-cal wa-
+ []
+
+
+Underfull \hbox (badness 1859) in paragraph at lines 155--164
+\T1/cmr/m/n/12 ter ero-sion mod-els.  Jour-nal of Hy-draulic Re-search 56, 181-
+-195.
+ []
+
+[40]
+Underfull \hbox (badness 4229) in paragraph at lines 239--245
+[]\T1/cmr/m/n/12 Horton, R.E., 1933.  The role of in-fil-tra-tion in the hy-dro
+-logic
+ []
+
+
+Underfull \hbox (badness 3746) in paragraph at lines 239--245
+\T1/cmr/m/n/12 cy-cle.  Trans-ac-tions, Amer-i-can Geo-phys-i-cal Union 14, 446
+--460.
+ []
+
+[41]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.316 ...OIprefix\doi{10.1007/978-3-642-58913-3_5}
+                                                  .
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.318 ...ixeira~de Oliveira(1991)}]{oliveira_1991}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.318 ...ixeira~de Oliveira(1991)}]{oliveira_1991}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+[42] [43] [44]) [45] (manuscript.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-12-29>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 5006 strings out of 467871
+ 77438 string characters out of 5418376
+ 482581 words of memory out of 5000000
+ 33814 multiletter control sequences out of 15000+600000
+ 647986 words of font info for 95 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 72i,11n,79p,1611b,421s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\vidal\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm
+1095.pk> <C:\Users\vidal\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi45
+0\ecss0800.pk> <C:\Users\vidal\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+/dpi600\ecti1200.pk> <C:\Users\vidal\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+pen/ec/dpi600\ectt1000.pk> <C:\Users\vidal\AppData\Local\MiKTeX\fonts/pk/ljfour
+/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\vidal\AppData\Local\MiKTeX\fonts/pk/
+ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\vidal\AppData\Local\MiKTeX\fon
+ts/pk/ljfour/jknappen/ec/dpi600\ecti0700.pk> <C:\Users\vidal\AppData\Local\MiKT
+eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\vidal\AppData\Loca
+l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\vidal\AppDat
+a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\vidal\
+AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\
+vidal\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk><C:/U
+sers/vidal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.p
+fb><C:/Users/vidal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmex10.pfb><C:/Users/vidal/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmmi10.pfb><C:/Users/vidal/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmmi12.pfb><C:/Users/vidal/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/vidal/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/vidal/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/vidal/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/vidal
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Use
+rs/vidal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb>
+<C:/Users/vidal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+r7.pfb><C:/Users/vidal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmr8.pfb><C:/Users/vidal/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmsy10.pfb><C:/Users/vidal/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmsy7.pfb><C:/Users/vidal/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on manuscript.pdf (46 pages, 7038362 bytes).
+PDF statistics:
+ 750 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+

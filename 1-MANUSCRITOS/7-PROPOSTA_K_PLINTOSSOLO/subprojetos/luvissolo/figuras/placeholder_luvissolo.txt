@@ -1,0 +1,17 @@
+# Placeholder — Figura de campo do sítio Luvissolo
+
+Substituir este arquivo `placeholder_luvissolo.txt` por uma imagem nomeada
+`fig_luvissolo_erodido.jpg` (ou .png) representando feição erosiva ativa em
+Luvissolo Crômico Órtico da depressão sertaneja sobre cristalino.
+
+CRITÉRIOS PARA A FOTO:
+- Parede de feição com mudança textural abrupta visível entre A (mais claro,
+  mais arenoso) e Bt (mais escuro, argiloso adensado)
+- Idealmente com sinal de escoamento concentrado preferencial sobre o Bt
+- Sinais de selamento superficial e/ou eflorescência salina indicativa de ESP
+  elevado (se possível)
+- Escala humana ou trena de referência
+- Caatinga arbustiva descontínua no entorno
+
+Após inserir a imagem, o Quarto compilará automaticamente o bloco
+`#fig-luvissolo-campo` declarado em `Proposta_Kluv_USLE.qmd`.

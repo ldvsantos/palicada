@@ -193,7 +193,7 @@ def main():
             vib_med = np.mean(list(SOLOS[nome]['VIB'].values()))
             a_val = float(alpha(vib_med, n1_t))
             ax2.axhline(a_val, color=cor, linestyle=ls, alpha=0.4)
-        ax2.plot([], [], 'k' + ls, label=f'$\\alpha$ teórico ($n_1$={n1_t})')
+        ax2.plot([], [], 'k' + ls, label=f'Theoretical $\\alpha$ ($n_1$={n1_t})')
 
     ax2.set_xlabel('Maximum 30-min intensity, $I_{30}$ (mm/h)', fontsize=12)
     ax2.set_ylabel('RC$_{soil}$ / RC$_{Ferralsol}$ ratio', fontsize=12)
