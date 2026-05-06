@@ -1,7 +1,7 @@
 """
-Simulação 05 — Modelo de Erosão Virtual (WEPP/USLE-M simplificado).
+Simulação 05 -- Modelo de Erosão Virtual (WEPP/USLE-M simplificado).
 Gera escoamento (Green-Ampt) → tensão cisalhante → destacamento →
-inversão de K_obs → comparação δ_obs com δ_model(K_plint).
+inversão de K_obs → comparação delta_obs com delta_model(K_plint).
 
 Valida a Eq. 8 como preditor integrado de perda de solo entre classes.
 """
@@ -28,7 +28,7 @@ LARGURA_PARCELA = 3.5  # m  (parcela padrão)
 COMPRIMENTO = 22.13   # m  (parcela Wischmeier)
 MANNING_N = 0.03      # s/m^(1/3)  solo exposto
 
-# Parâmetros de erodibilidade intrínseca do solo (k_r, τ_c)
+# Parâmetros de erodibilidade intrínseca do solo (k_r, tau_c)
 # Estimativas baseadas em literatura para solos tropicais
 SOLOS_EROD = dict(
     plintossolo=dict(k_r=0.008, tau_c=1.5),   # menos coeso, baixa VIB
@@ -72,17 +72,17 @@ def calcular_erosao(I_mm_h, Ksat_eff, k_r, tau_c, duracao_min=60.0):
     if R_mm <= 0:
         return 0.0, R_mm, 0.0
 
-    # Lâmina de escoamento (m) — regime uniforme em parcela
+    # Lâmina de escoamento (m) -- regime uniforme em parcela
     R_m = R_mm / 1000.0  # depth (m)
     q = R_m / (duracao_min * 60.0) * COMPRIMENTO  # m³/s/m (vazão unitária estabilizada)
 
     # Profundidade normal (Manning): h = (n*q / S^0.5)^(3/5)
     h_flow = (MANNING_N * q / SLOPE_M_M ** 0.5) ** 0.6  # m
 
-    # Tensão cisalhante: τ = ρ g h S
+    # Tensão cisalhante: tau = ρ g h S
     tau = RHO_W * G * h_flow * SLOPE_M_M  # Pa
 
-    # Destacamento (kg/m²/s) — modelo WEPP simplificado
+    # Destacamento (kg/m²/s) -- modelo WEPP simplificado
     if tau > tau_c:
         D = k_r * (tau - tau_c)
     else:
@@ -108,9 +108,9 @@ def inverter_K_obs(perda_t_ha, R_mm, I_mm_h, duracao_min=60.0):
     if perda_t_ha <= 0:
         return 0.0
 
-    # E unitária (MJ / ha / mm) — Wischmeier & Smith 1978
+    # E unitária (MJ / ha / mm) -- Wischmeier & Smith 1978
     I_val = max(I_mm_h, 0.1)
-    e_unit = 0.119 + 0.0873 * np.log10(I_val)  # MJ/(ha·mm)
+    e_unit = 0.119 + 0.0873 * np.log10(I_val)  # MJ/(ha.mm)
 
     # Chuva total (mm) e EI30
     P_mm = I_mm_h * duracao_min / 60.0
@@ -144,7 +144,7 @@ def main():
             K_obs = inverter_K_obs(perda, R_mm, I, duracao)
             delta_obs = K_obs / K_RUSLE[nome] if K_RUSLE[nome] > 0 else 1.0
 
-            # δ modelo (com parâmetros verdadeiros)
+            # delta modelo (com parâmetros verdadeiros)
             vibs = list(solo['VIB'].values())
             vib_med = np.mean(vibs)
             m_vals = list(solo['m_Al'].values())
@@ -164,10 +164,10 @@ def main():
 
     # ── Tabela resumo ───────────────────────────────────────────────
     print("=" * 80)
-    print("EROSÃO VIRTUAL (WEPP-like) — RESULTADOS POR CLASSE E INTENSIDADE")
+    print("EROSÃO VIRTUAL (WEPP-like) -- RESULTADOS POR CLASSE E INTENSIDADE")
     print("=" * 80)
-    print(f"{'Solo':>15} {'I30':>5} {'Perda':>10} {'R_mm':>8} {'τ(Pa)':>8} "
-          f"{'K_obs':>8} {'δ_obs':>8} {'δ_mod':>8}")
+    print(f"{'Solo':>15} {'I30':>5} {'Perda':>10} {'R_mm':>8} {'tau(Pa)':>8} "
+          f"{'K_obs':>8} {'delta_obs':>8} {'delta_mod':>8}")
 
     for nome in solos_nomes:
         for r in resultados[nome]:
@@ -178,9 +178,9 @@ def main():
                       f"{r['delta_mod']:>8.2f}")
         print()
 
-    # ── Comparação δ médio por classe ───────────────────────────────
+    # ── Comparação delta médio por classe ───────────────────────────────
     print("=" * 80)
-    print("COMPARAÇÃO δ MÉDIO (I30 ≥ 40 mm/h) POR CLASSE")
+    print("COMPARAÇÃO delta MÉDIO (I30 >= 40 mm/h) POR CLASSE")
     print("=" * 80)
     for nome in solos_nomes:
         deltas_obs = [r['delta_obs'] for r in resultados[nome]
@@ -190,10 +190,10 @@ def main():
             d_mean = np.mean(deltas_obs)
             d_std = np.std(deltas_obs)
             erro_rel = abs(d_mean - d_mod) / d_mod * 100
-            print(f"  {nome:>15}: δ_obs = {d_mean:.2f} ± {d_std:.2f}, "
-                  f"δ_mod = {d_mod:.2f}, erro relativo = {erro_rel:.1f}%")
+            print(f"  {nome:>15}: delta_obs = {d_mean:.2f} +/- {d_std:.2f}, "
+                  f"delta_mod = {d_mod:.2f}, erro relativo = {erro_rel:.1f}%")
         else:
-            print(f"  {nome:>15}: sem erosão observada para I30 ≥ 40 mm/h")
+            print(f"  {nome:>15}: sem erosão observada para I30 >= 40 mm/h")
 
     # ── Figura 1: Perda de solo vs I30 ──────────────────────────────
     fig, axes = plt.subplots(2, 2, figsize=(14, 12))
@@ -229,7 +229,7 @@ def main():
     ax.legend(fontsize=10)
     ax.grid(True, alpha=0.3)
 
-    # (c) δ_obs vs I30 com δ_mod como referência
+    # (c) delta_obs vs I30 com delta_mod como referência
     ax = axes[1, 0]
     for nome, cor, mk in zip(solos_nomes, cores, markers):
         I_vals = [r['I'] for r in resultados[nome] if r['perda'] > 0]
@@ -247,7 +247,7 @@ def main():
     ax.legend(fontsize=9)
     ax.grid(True, alpha=0.3)
 
-    # (d) δ_obs vs δ_mod (1:1)
+    # (d) delta_obs vs delta_mod (1:1)
     ax = axes[1, 1]
     for nome, cor, mk in zip(solos_nomes, cores, markers):
         d_vals = [r['delta_obs'] for r in resultados[nome]

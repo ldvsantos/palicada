@@ -1,8 +1,8 @@
 """
-Simulação 04 — Modelo de Infiltração e Geração de Escoamento (Green-Ampt).
-Valida α(VIB) modelando perfis de solo em camadas sob eventos de chuva
+Simulação 04 -- Modelo de Infiltração e Geração de Escoamento (Green-Ampt).
+Valida alpha(VIB) modelando perfis de solo em camadas sob eventos de chuva
 com diferentes intensidades (I30). Quantifica excedente hortoniano e
-correlaciona com o fator α proposto.
+correlaciona com o fator alpha proposto.
 """
 import sys
 from pathlib import Path
@@ -29,12 +29,12 @@ def green_ampt_infiltracao(I_mm_h, Ksat_cm_h, psi_cm=20.0,
 
     Parameters
     ----------
-    I_mm_h : float  — intensidade de chuva constante (mm/h)
-    Ksat_cm_h : float — condutividade hidráulica saturada (cm/h)
-    psi_cm : float — sucção na frente de umedecimento (cm)
-    theta_s, theta_i : float — umidade saturada e inicial
-    dt_min : float — passo de tempo (min)
-    duracao_min : float — duração do evento (min)
+    I_mm_h : float  -- intensidade de chuva constante (mm/h)
+    Ksat_cm_h : float -- condutividade hidráulica saturada (cm/h)
+    psi_cm : float -- sucção na frente de umedecimento (cm)
+    theta_s, theta_i : float -- umidade saturada e inicial
+    dt_min : float -- passo de tempo (min)
+    duracao_min : float -- duração do evento (min)
     """
     Ksat_mm_h = Ksat_cm_h * 10.0  # cm/h → mm/h
     psi_mm = psi_cm * 10.0
@@ -115,7 +115,7 @@ def main():
 
     # ── Tabela resumo ───────────────────────────────────────────────
     print("=" * 70)
-    print("INFILTRAÇÃO E ESCOAMENTO (Green-Ampt) — RESUMO POR CLASSE")
+    print("INFILTRAÇÃO E ESCOAMENTO (Green-Ampt) -- RESUMO POR CLASSE")
     print("=" * 70)
     print(f"{'Solo':>15}  {'Ksat_eff':>8}  {'VIB_med':>7}  "
           f"{'CE(I30=30)':>10}  {'CE(I30=60)':>10}  {'CE(I30=90)':>10}")
@@ -129,9 +129,9 @@ def main():
         print(f"{nome:>15}  {Ksat:>8.2f}  {VIB:>7.2f}  "
               f"{ce30:>10.3f}  {ce60:>10.3f}  {ce90:>10.3f}")
 
-    # ── Correlação CE com α(VIB) ────────────────────────────────────
+    # ── Correlação CE com alpha(VIB) ────────────────────────────────────
     print(f"\n{'='*70}")
-    print("CORRELAÇÃO: Coeficiente de Escoamento vs α(VIB)")
+    print("CORRELAÇÃO: Coeficiente de Escoamento vs alpha(VIB)")
     print(f"{'='*70}")
 
     # Para I30 = 60 mm/h (evento moderado-alto)
@@ -142,12 +142,12 @@ def main():
         ce_60[nome] = next(r['coef_esc'] for r in res if r['I_mm_h'] == 60)
         vib_medios[nome] = res[0]['VIB_mean']
 
-    # α com diferentes n1
+    # alpha com diferentes n1
     for n1_test in [0.5, 1.0, 1.5, 2.0]:
         print(f"\n  n1 = {n1_test}:")
         for nome in solos_nomes:
             a_val = float(alpha(vib_medios[nome], n1_test))
-            print(f"    {nome:>15}: α = {a_val:.3f}, CE = {ce_60[nome]:.3f}, "
+            print(f"    {nome:>15}: alpha = {a_val:.3f}, CE = {ce_60[nome]:.3f}, "
                   f"razão CE/CE_lat = {ce_60[nome]/max(ce_60['latossolo'],1e-6):.2f}")
 
     # ── Figura 1: Coeficiente de escoamento vs I30 ──────────────────
@@ -171,7 +171,7 @@ def main():
     ax1.grid(True, alpha=0.3)
     ax1.set_ylim(0, 1)
 
-    # ── Figura 2: α teórico vs razão CE observada ───────────────────
+    # ── Figura 2: alpha teórico vs razão CE observada ───────────────────
     # Para cada solo e I30, calcular razão de CE relativa ao Latossolo
     I_plot = [30, 45, 60, 75, 90]
     for nome, cor in zip(['plintossolo', 'argissolo'], cores[:2]):
@@ -187,7 +187,7 @@ def main():
         ax2.plot(I_plot, razoes, 's-', color=cor, linewidth=2, markersize=8,
                  label=f'{DISPLAY_NAME[nome]} (mean BIR = {vib_med:.1f} cm/h)')
 
-    # α teórico para referência
+    # alpha teórico para referência
     for n1_t, ls in [(0.5, ':'), (1.0, '--'), (1.5, '-.')]:
         for nome, cor in zip(['plintossolo', 'argissolo'], cores[:2]):
             vib_med = np.mean(list(SOLOS[nome]['VIB'].values()))

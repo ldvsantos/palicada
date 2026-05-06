@@ -1,6 +1,6 @@
 """
-Simulação 02 — Análise de Sensibilidade Global (Sobol).
-Quantifica a contribuição de cada parâmetro livre à variância de δ
+Simulação 02 -- Análise de Sensibilidade Global (Sobol).
+Quantifica a contribuição de cada parâmetro livre à variância de delta
 para cada classe de solo e para o conjunto.
 """
 import sys
@@ -39,7 +39,7 @@ def main():
     param_samples = saltelli.sample(problem, N, calc_second_order=True)
     print(f"Amostras Saltelli geradas: {param_samples.shape[0]}")
 
-    # ── Avaliar δ para condições representativas de cada classe ─────
+    # ── Avaliar delta para condições representativas de cada classe ─────
     cenarios = {
         'Plinthosol\n(BIR=1.53 cm/h, m$_{Al}$=84%, H/H$_c$=0.33)': (1.53, 84.0, 0.33),
         'Plinthosol\n(BIR=3.13 cm/h, m$_{Al}$=15%, H/H$_c$=0.12)': (3.13, 15.2, 0.12),
@@ -65,7 +65,7 @@ def main():
         print(f"{'Parâmetro':>12}  {'S1':>8}  {'ST':>8}  {'S1_conf':>10}")
         for i, p in enumerate(problem['names']):
             print(f"{p:>12}  {Si['S1'][i]:>8.4f}  {Si['ST'][i]:>8.4f}  "
-                  f"±{Si['S1_conf'][i]:.4f}")
+                  f"+/-{Si['S1_conf'][i]:.4f}")
 
     # ── Figura: barras S1 e ST por cenário ──────────────────────────
     fig, axes = plt.subplots(2, 2, figsize=(14, 10))
@@ -101,7 +101,7 @@ def main():
         ax.legend(fontsize=9)
         ax.grid(True, alpha=0.2, axis='y')
 
-    fig.suptitle('Global sensitivity analysis (Sobol) — $S_1$ (first-order) and $S_T$ (total) indices',
+    fig.suptitle('Global sensitivity analysis (Sobol) -- $S_1$ (first-order) and $S_T$ (total) indices',
                  fontsize=14, fontweight='bold')
     fig.tight_layout()
     fig.savefig(FIG_DIR / 'fig_03_sensibilidade_sobol.png', dpi=300)
@@ -137,7 +137,7 @@ def main():
                 ax3.text(j, i, f'{s2_matrix[i,j]:.3f}',
                          ha='center', va='center', fontsize=10)
     plt.colorbar(im, ax=ax3, label='$S_2$ index (second-order interaction)')
-    ax3.set_title('Parameter interactions — Intermediate Plinthosol\n'
+    ax3.set_title('Parameter interactions -- Intermediate Plinthosol\n'
                   '(BIR = 1.53 cm/h, m$_{Al}$ = 84%, H/H$_c$ = 0.33)',
                   fontsize=12, fontweight='bold')
     fig3.tight_layout()

@@ -12,7 +12,7 @@ FIG_DIR.mkdir(exist_ok=True)
 
 # ── Parâmetros fixos do modelo K_plint ──────────────────────────────
 VIB_REF = 6.0       # cm/h  (limiar infiltração-dominante)
-M0 = 50.0           # %     (ponto de inflexão da sigmoide β)
+M0 = 50.0           # %     (ponto de inflexão da sigmoide beta)
 
 # ── Parâmetros "verdadeiros" para calibração sintética ──────────────
 TRUE_PARAMS = dict(n1=1.0, beta_max=2.5, k2=0.10, k3=3.0, n3=2.0)
@@ -20,7 +20,7 @@ TRUE_PARAMS = dict(n1=1.0, beta_max=2.5, k2=0.10, k3=3.0, n3=2.0)
 # ── K_RUSLE nominal por classe (t h MJ⁻¹ mm⁻¹) ────────────────────
 K_RUSLE = dict(plintossolo=0.035, latossolo=0.015, argissolo=0.025)
 
-# ── Dados reais — Plintossolo Argilúvico Distrófico (Sergipe) ──────
+# ── Dados reais -- Plintossolo Argilúvico Distrófico (Sergipe) ──────
 PLINTOSSOLO = dict(
     VIB=dict(superior=3.13, intermediario=1.53, inferior=1.59),
     m_Al=dict(Ap=15.2, BAc=99.2, Bt=84.0),
@@ -40,7 +40,7 @@ PLINTOSSOLO = dict(
     n_solo_nu=12, n_exposto=4, n_cobertura=6,
 )
 
-# ── Dados da literatura — Latossolo Vermelho-Amarelo (controle −) ──
+# ── Dados da literatura -- Latossolo Vermelho-Amarelo (controle −) ──
 LATOSSOLO = dict(
     VIB=dict(superior=12.0, intermediario=9.0, inferior=7.0),
     m_Al=dict(Ap=10.0, Bw=20.0),
@@ -53,7 +53,7 @@ LATOSSOLO = dict(
     n_solo_nu=12, n_cobertura=4,
 )
 
-# ── Dados da literatura — Argissolo Vermelho-Amarelo (controle ±) ──
+# ── Dados da literatura -- Argissolo Vermelho-Amarelo (controle +/-) ──
 ARGISSOLO = dict(
     VIB=dict(superior=4.5, intermediario=2.5, inferior=2.8),
     m_Al=dict(Ap=20.0, Bt=45.0),
@@ -107,7 +107,7 @@ def K_plint(K_rusle, vib_local, m_al, H_Hc, n1, beta_max, k2, k3, n3):
 
 
 def delta_model(vib_local, m_al, H_Hc, n1, beta_max, k2, k3, n3):
-    """Razão δ = K_plint / K_RUSLE (independe de K_RUSLE)."""
+    """Razão delta = K_plint / K_RUSLE (independe de K_RUSLE)."""
     return (alpha(vib_local, n1)
             * beta(m_al, beta_max, k2)
             * gamma(H_Hc, k3, n3))

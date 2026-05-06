@@ -1,0 +1,933 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.23)  4 MAY 2026 19:03
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**"c:/Users/vidal/OneDrive/Documentos/13 - CLONEGIT/artigo-posdoc/3-EROSIBIDADE/1-MANUSCRITOS/8-SIMULACAO_K_PLINTOSSOLO/Simulacao_Kplint_USLE_ECZ_PT.tex"
+(c:/Users/vidal/OneDrive/Documentos/13 - CLONEGIT/artigo-posdoc/3-EROSIBIDADE/1-MANUSCRITOS/8-SIMULACAO_K_PLINTOSSOLO/Simulacao_Kplint_USLE_ECZ_PT.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-12-29>
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/elsarticle\elsarticle.cls
+Document Class: elsarticle 2026/01/09, 3.5: Elsevier Ltd
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
+) (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2025-12-29 L3 programming layer (loader) 
+ (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count275
+)) (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse.sty
+Package: xparse 2025-10-09 L3 Experimental document command parser
+) (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count276
+)
+\@bls=\dimen148
+ (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
+File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count277
+\c@section=\count278
+\c@subsection=\count279
+\c@subsubsection=\count280
+\c@paragraph=\count281
+\c@subparagraph=\count282
+\c@figure=\count283
+\c@table=\count284
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen149
+) (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+ (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+) (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+ (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+) (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+ (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen150
+\Gin@req@width=\dimen151
+)
+\c@tnote=\count285
+\c@fnote=\count286
+\c@cnote=\count287
+\c@ead=\count288
+\c@elsarticle@author=\count289
+\@eadauthor=\toks18
+\c@affn=\count290
+\absbox=\box53
+\elsarticlehighlightsbox=\box54
+\elsarticlegrabsbox=\box55
+\keybox=\box56
+\Columnwidth=\dimen152
+\space@left=\dimen153
+\els@boxa=\box57
+\els@boxb=\box58
+\leftMargin=\dimen154
+\@enLab=\toks19
+\@sep=\skip51
+\@@sep=\skip52
+ (Simulacao_Kplint_USLE_ECZ_PT.spl) (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip53
+\bibsep=\skip54
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count291
+)
+\splwrite=\write3
+\openout3 = `Simulacao_Kplint_USLE_ECZ_PT.spl'.
+
+\appnamewidth=\dimen155
+) (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks20
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2025/07/09 v2.17z AMS math features
+\@mathmargin=\skip55
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+ (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks21
+\ex@=\dimen156
+)) (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen157
+) (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count292
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count293
+\leftroot@=\count294
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count295
+\DOTSCASE@=\count296
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box59
+\strutbox@=\box60
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen158
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count297
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count298
+\dotsspace@=\muskip17
+\c@parentequation=\count299
+\dspbrk@lvl=\count300
+\tag@help=\toks22
+\row@=\count301
+\column@=\count302
+\maxfields@=\count303
+\andhelp@=\toks23
+\eqnshift@=\dimen159
+\alignsep@=\dimen160
+\tagshift@=\dimen161
+\tagwidth@=\dimen162
+\totwidth@=\dimen163
+\lineht@=\dimen164
+\@envbody=\toks24
+\multlinegap=\skip56
+\multlinetaggap=\skip57
+\mathdisplay@stack=\toks25
+LaTeX Info: Redefining \[ on input line 2950.
+LaTeX Info: Redefining \] on input line 2951.
+) (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen165
+\lightrulewidth=\dimen166
+\cmidrulewidth=\dimen167
+\belowrulesep=\dimen168
+\belowbottomsep=\dimen169
+\aboverulesep=\dimen170
+\abovetopsep=\dimen171
+\cmidrulesep=\dimen172
+\cmidrulekern=\dimen173
+\defaultaddspace=\dimen174
+\@cmidla=\count304
+\@cmidlb=\count305
+\@aboverulesep=\dimen175
+\@belowrulesep=\dimen176
+\@thisruleclass=\count306
+\@lastruleclass=\count307
+\@thisrulewidth=\dimen177
+) (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks26
+\inpenc@posthook=\toks27
+) (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
+) (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2025/12/30 v25.18 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
+\babel@savecnt=\count308
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input line 2068.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input line 2070.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input line 2072.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input line 2073.
+LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) on input line 2074.
+LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) on input line 2076.
+LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) on input line 2101.
+\U@D=\dimen178
+\l@unhyphenated=\language79
+ (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count309
+Package babel Info: Configuration files are deprecated, as
+(babel)             they can break document portability.
+(babel)             Reported on input line 4197.
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
+) (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/invalid\babel-brazil.tex)
+
+Package babel Warning: Name 'brazil' is deprecated.
+(babel)                Use 'brazilian' instead.
+(babel)                Reported on input line 4321.
+
+Package babel Info: Importing font and identification data for brazil
+(babel)             from babel-pt-BR.ini. Reported on input line 4321.
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/babel-portuges\brazilian.ldf
+Language: portuges 2021/07/09 v1.2t Portuguese support from the babel system
+Package babel Info: Hyphen rules for 'brazil' set to \l@portuguese
+(babel)             (\language56). Reported on input line 111.
+Package babel Info: Making " an active character on input line 143.
+)) (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/lineno\lineno.sty
+Package: lineno 2025/05/13 line numbers on paragraphs v5.5
+ (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+ (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+) (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))
+\linenopenalty=\count310
+\output=\toks28
+\linenoprevgraf=\count311
+\linenumbersep=\dimen179
+\linenumberwidth=\dimen180
+\c@linenumber=\count312
+\c@pagewiselinenumber=\count313
+\c@LN@truepage=\count314
+\c@internallinenumber=\count315
+\c@internallinenumbers=\count316
+\quotelinenumbersep=\dimen181
+\bframerule=\dimen182
+\bframesep=\dimen183
+\bframebox=\box61
+\@LN@amsmath@ams@eqpen=\count317
+)
+No file Simulacao_Kplint_USLE_ECZ_PT.aux.
+\openout1 = `Simulacao_Kplint_USLE_ECZ_PT.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count318
+\scratchdimen=\dimen184
+\scratchbox=\box62
+\nofMPsegments=\count319
+\nofMParguments=\count320
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count321
+\MPscratchDim=\dimen185
+\MPnumerator=\count322
+\makeMPintoPDFobject=\count323
+\everyMPtoPDFconversion=\toks30
+) (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+Package babel Info: 'brazil' activates 'portuges' shorthands.
+(babel)             Reported on input line 19.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 78.
+ (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 78.
+ (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
+
+{C:/Users/vidal/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [1
+
+
+]
+
+Package natbib Warning: Citation `montgomery_2007' on page 2 undefined on input line 104.
+
+
+Package natbib Warning: Citation `borrelli_et_al_2017' on page 2 undefined on input line 104.
+
+
+Package natbib Warning: Citation `lal_2001' on page 2 undefined on input line 104.
+
+[2]
+
+Package natbib Warning: Citation `wischmeier_smith_1978' on page 3 undefined on input line 106.
+
+
+Package natbib Warning: Citation `renard_et_al_1997' on page 3 undefined on input line 106.
+
+
+Package natbib Warning: Citation `alewell_et_al_2019' on page 3 undefined on input line 106.
+
+
+Package natbib Warning: Citation `wischmeier_et_al_1971' on page 3 undefined on input line 106.
+
+
+Package natbib Warning: Citation `roemkens_et_al_1997' on page 3 undefined on input line 106.
+
+
+Package natbib Warning: Citation `alewell_et_al_2019' on page 3 undefined on input line 108.
+
+
+Package natbib Warning: Citation `cassol_et_al_2023' on page 3 undefined on input line 108.
+
+
+Package natbib Warning: Citation `silva_et_al_2009' on page 3 undefined on input line 108.
+
+
+Package natbib Warning: Citation `lafayette_cantalice_coutinho_2011' on page 3 undefined on input line 108.
+
+
+Package natbib Warning: Citation `wang_et_al_2020' on page 3 undefined on input line 108.
+
+
+Package natbib Warning: Citation `embrapa_2018' on page 3 undefined on input line 108.
+
+
+Package natbib Warning: Citation `horton_1933' on page 3 undefined on input line 108.
+
+
+Package natbib Warning: Citation `bertoni_lombardi_neto_2017' on page 3 undefined on input line 108.
+
+
+Package natbib Warning: Citation `gura_et_al_2022' on page 3 undefined on input line 108.
+
+
+Package natbib Warning: Citation `poesen_2018' on page 3 undefined on input line 108.
+
+
+Package natbib Warning: Citation `poesen_et_al_2003' on page 3 undefined on input line 108.
+
+
+Package natbib Warning: Citation `kirkby_bracken_2009' on page 3 undefined on input line 108.
+
+
+Package natbib Warning: Citation `vanmaercke_et_al_2021' on page 3 undefined on input line 108.
+
+
+Package natbib Warning: Citation `nearing_et_al_1989' on page 3 undefined on input line 108.
+
+
+Package natbib Warning: Citation `sidorchuk_2006' on page 3 undefined on input line 108.
+
+
+Package natbib Warning: Citation `wilkinson_et_al_2024' on page 3 undefined on input line 108.
+
+[3]
+
+Package natbib Warning: Citation `alewell_et_al_2019' on page 4 undefined on input line 110.
+
+
+Package natbib Warning: Citation `saltelli_et_al_2004' on page 4 undefined on input line 110.
+
+
+Package natbib Warning: Citation `sobol_2001' on page 4 undefined on input line 110.
+
+
+Package natbib Warning: Citation `francois_et_al_2024' on page 4 undefined on input line 110.
+
+
+Package natbib Warning: Citation `nascimento_pedrotti_2004' on page 4 undefined on input line 112.
+
+
+Package natbib Warning: Citation `embrapa_2018' on page 4 undefined on input line 112.
+
+
+Package natbib Warning: Citation `gura_et_al_2022' on page 4 undefined on input line 112.
+
+
+Package natbib Warning: Citation `poesen_2018' on page 4 undefined on input line 112.
+
+
+Package natbib Warning: Citation `wischmeier_et_al_1971' on page 4 undefined on input line 112.
+
+
+Package natbib Warning: Citation `roemkens_et_al_1997' on page 4 undefined on input line 112.
+
+
+Package natbib Warning: Citation `alewell_et_al_2019' on page 4 undefined on input line 112.
+
+[4]
+
+Package natbib Warning: Citation `alewell_et_al_2019' on page 5 undefined on input line 114.
+
+
+Package natbib Warning: Citation `saltelli_et_al_2004' on page 5 undefined on input line 114.
+
+
+Package natbib Warning: Citation `beven_freer_2001' on page 5 undefined on input line 114.
+
+
+Package natbib Warning: Citation `her_chaubey_2015' on page 5 undefined on input line 114.
+
+
+Package natbib Warning: Citation `gupta_et_al_2024' on page 5 undefined on input line 116.
+
+
+Package natbib Warning: Citation `benavidez_et_al_2018' on page 5 undefined on input line 116.
+
+
+Package natbib Warning: Citation `alewell_et_al_2019' on page 5 undefined on input line 116.
+
+
+Package natbib Warning: Citation `poesen_2018' on page 5 undefined on input line 116.
+
+
+Package natbib Warning: Citation `vanmaercke_et_al_2021' on page 5 undefined on input line 116.
+
+
+Package natbib Warning: Citation `gupta_et_al_2024' on page 5 undefined on input line 118.
+
+
+Package natbib Warning: Citation `cheviron_et_al_2010' on page 5 undefined on input line 118.
+
+
+Package natbib Warning: Citation `rao_et_al_2016' on page 5 undefined on input line 118.
+
+
+Package natbib Warning: Citation `gudino_elizondo_et_al_2018' on page 5 undefined on input line 118.
+
+
+Package natbib Warning: Citation `barthes_roose_2002' on page 5 undefined on input line 118.
+
+
+Package natbib Warning: Citation `silva_et_al_2009' on page 5 undefined on input line 120.
+
+
+Package natbib Warning: Citation `bertoni_lombardi_neto_2017' on page 5 undefined on input line 120.
+
+[5]
+
+Package natbib Warning: Citation `poesen_2018' on page 6 undefined on input line 130.
+
+
+LaTeX Warning: Reference `eq:kplint' on page 6 undefined on input line 132.
+
+[6]
+
+Package natbib Warning: Citation `deroo_1992' on page 7 undefined on input line 145.
+
+
+Package natbib Warning: Citation `de_moraes_et_al_2006' on page 7 undefined on input line 145.
+
+
+Package natbib Warning: Citation `padmanabhan_2005' on page 7 undefined on input line 147.
+
+
+Package natbib Warning: Citation `bertoni_lombardi_neto_2017' on page 7 undefined on input line 147.
+
+
+LaTeX Warning: Reference `eq:alpha' on page 7 undefined on input line 149.
+
+
+Package natbib Warning: Citation `kinnell_2005' on page 7 undefined on input line 156.
+
+[7]
+
+Package natbib Warning: Citation `embrapa_2018' on page 8 undefined on input line 158.
+
+
+Package natbib Warning: Citation `embrapa_2018' on page 8 undefined on input line 162.
+
+
+Package natbib Warning: Citation `kochian_et_al_2005' on page 8 undefined on input line 162.
+
+
+Package natbib Warning: Citation `gyssels_et_al_2005' on page 8 undefined on input line 162.
+
+
+LaTeX Warning: Reference `eq:beta' on page 8 undefined on input line 164.
+
+[8]
+
+Package natbib Warning: Citation `fredlund_rahardjo_1993' on page 9 undefined on input line 177.
+
+
+LaTeX Warning: Reference `eq:gamma' on page 9 undefined on input line 179.
+
+[9]
+
+Package natbib Warning: Citation `embrapa_2018' on page 10 undefined on input line 199.
+
+
+LaTeX Warning: Reference `sec:validation' on page 10 undefined on input line 199.
+
+
+Package natbib Warning: Citation `nascimento_pedrotti_2004' on page 10 undefined on input line 209.
+
+[10]
+
+LaTeX Warning: Reference `fig:area' on page 11 undefined on input line 211.
+
+
+LaTeX Warning: Reference `fig:area' on page 11 undefined on input line 213.
+
+
+LaTeX Warning: Reference `eq:hc' on page 11 undefined on input line 213.
+
+<figuras/fig_00a_area_estudo_aerea.png, id=57, 319.6305pt x 226.008pt>
+File: figuras/fig_00a_area_estudo_aerea.png Graphic file (type png)
+<use figuras/fig_00a_area_estudo_aerea.png>
+Package pdftex.def Info: figuras/fig_00a_area_estudo_aerea.png  used on input line 217.
+(pdftex.def)             Requested size: 331.50238pt x 234.40479pt.
+<figuras/fig_00b_feicoes_drone_campo.jpeg, id=59, 365.949pt x 177.0615pt>
+File: figuras/fig_00b_feicoes_drone_campo.jpeg Graphic file (type jpg)
+<use figuras/fig_00b_feicoes_drone_campo.jpeg>
+Package pdftex.def Info: figuras/fig_00b_feicoes_drone_campo.jpeg  used on input line 218.
+(pdftex.def)             Requested size: 331.50238pt x 160.39671pt.
+[11] [12 <./figuras/fig_00a_area_estudo_aerea.png> <./figuras/fig_00b_feicoes_drone_campo.jpeg>]
+
+Package natbib Warning: Citation `wischmeier_et_al_1971' on page 13 undefined on input line 229.
+
+
+LaTeX Warning: Reference `tab:profiles' on page 13 undefined on input line 229.
+
+
+Package natbib Warning: Citation `silva_et_al_2009' on page 13 undefined on input line 231.
+
+
+Package natbib Warning: Citation `bertoni_lombardi_neto_2017' on page 13 undefined on input line 231.
+
+[13]
+Overfull \hbox (40.3112pt too wide) in paragraph at lines 238--256
+ [][] 
+ []
+
+
+LaTeX Warning: Reference `eq:hc' on page 14 undefined on input line 257.
+
+[14]
+
+LaTeX Warning: Reference `fig:sitio' on page 15 undefined on input line 265.
+
+<figuras/fig_09_sitio_experimental.png, id=77, 407.121pt x 202.356pt>
+File: figuras/fig_09_sitio_experimental.png Graphic file (type png)
+<use figuras/fig_09_sitio_experimental.png>
+Package pdftex.def Info: figuras/fig_09_sitio_experimental.png  used on input line 269.
+(pdftex.def)             Requested size: 390.0pt x 193.85814pt.
+[15 <./figuras/fig_09_sitio_experimental.png (PNG copy)>]
+
+Package natbib Warning: Citation `sobol_2001' on page 16 undefined on input line 286.
+
+[16]
+
+Package natbib Warning: Citation `saltelli_et_al_2004' on page 17 undefined on input line 288.
+
+
+Package natbib Warning: Citation `rankine_1857' on page 17 undefined on input line 293.
+
+
+Package natbib Warning: Citation `green_ampt_1911' on page 17 undefined on input line 297.
+
+[17]
+
+LaTeX Warning: Reference `eq:kplint' on page 18 undefined on input line 301.
+
+
+LaTeX Warning: Reference `tab:profiles' on page 18 undefined on input line 311.
+
+
+LaTeX Warning: Reference `fig:area' on page 18 undefined on input line 311.
+
+
+Package natbib Warning: Citation `alewell_et_al_2019' on page 18 undefined on input line 313.
+
+
+Package natbib Warning: Citation `vannoppen_2015' on page 18 undefined on input line 315.
+
+[18]
+
+LaTeX Warning: Reference `fig:calibracao' on page 19 undefined on input line 321.
+
+[19]
+<figuras/fig_01_calibracao_sintetica.png, id=94, 578.16pt x 361.35pt>
+File: figuras/fig_01_calibracao_sintetica.png Graphic file (type png)
+<use figuras/fig_01_calibracao_sintetica.png>
+Package pdftex.def Info: figuras/fig_01_calibracao_sintetica.png  used on input line 327.
+(pdftex.def)             Requested size: 350.99762pt x 219.37006pt.
+
+
+LaTeX Warning: Reference `fig:boxplot' on page 20 undefined on input line 332.
+
+
+Package natbib Warning: Citation `beven_freer_2001' on page 20 undefined on input line 332.
+
+
+Package natbib Warning: Citation `beven_2006' on page 20 undefined on input line 332.
+
+[20 <./figuras/fig_01_calibracao_sintetica.png>]
+
+Package natbib Warning: Citation `her_chaubey_2015' on page 21 undefined on input line 334.
+
+<figuras/fig_02_boxplot_parametros.png, id=99, 1300.86pt x 361.35pt>
+File: figuras/fig_02_boxplot_parametros.png Graphic file (type png)
+<use figuras/fig_02_boxplot_parametros.png>
+Package pdftex.def Info: figuras/fig_02_boxplot_parametros.png  used on input line 340.
+(pdftex.def)             Requested size: 390.0pt x 108.33415pt.
+[21 <./figuras/fig_02_boxplot_parametros.png>]
+
+Package natbib Warning: Citation `cassol_et_al_2023' on page 22 undefined on input line 347.
+
+
+Package natbib Warning: Citation `auerswald_et_al_2014' on page 22 undefined on input line 347.
+
+
+Package natbib Warning: Citation `ostovari_et_al_2016' on page 22 undefined on input line 347.
+
+
+LaTeX Warning: Reference `fig:sobol' on page 22 undefined on input line 351.
+
+
+Package natbib Warning: Citation `saltelli_et_al_2004' on page 22 undefined on input line 351.
+
+
+Package natbib Warning: Citation `chaves_nearing_1991' on page 22 undefined on input line 351.
+
+[22]
+<figuras/fig_03_sensibilidade_sobol.png, id=107, 1011.78pt x 722.7pt>
+File: figuras/fig_03_sensibilidade_sobol.png Graphic file (type png)
+<use figuras/fig_03_sensibilidade_sobol.png>
+Package pdftex.def Info: figuras/fig_03_sensibilidade_sobol.png  used on input line 355.
+(pdftex.def)             Requested size: 390.0pt x 278.57669pt.
+
+
+Package natbib Warning: Citation `francois_et_al_2024' on page 23 undefined on input line 362.
+
+
+Package natbib Warning: Citation `alewell_et_al_2019' on page 23 undefined on input line 362.
+
+
+Package natbib Warning: Citation `bagarello_et_al_2012' on page 23 undefined on input line 362.
+
+[23 <./figuras/fig_03_sensibilidade_sobol.png>]
+
+LaTeX Warning: Reference `fig:interacoes' on page 24 undefined on input line 364.
+
+<figuras/fig_04_interacoes_s2.png, id=114, 505.89pt x 433.62pt>
+File: figuras/fig_04_interacoes_s2.png Graphic file (type png)
+<use figuras/fig_04_interacoes_s2.png>
+Package pdftex.def Info: figuras/fig_04_interacoes_s2.png  used on input line 370.
+(pdftex.def)             Requested size: 272.99881pt x 233.99913pt.
+
+LaTeX Warning: Reference `fig:taludes' on page 24 undefined on input line 377.
+
+
+Package natbib Warning: Citation `fredlund_rahardjo_1993' on page 24 undefined on input line 377.
+
+[24] [25 <./figuras/fig_04_interacoes_s2.png>]
+
+Package natbib Warning: Citation `oliveira_1991' on page 26 undefined on input line 379.
+
+
+Package natbib Warning: Citation `vandekerckhove_et_al_2003' on page 26 undefined on input line 379.
+
+
+Package natbib Warning: Citation `campo_bescos_et_al_2013' on page 26 undefined on input line 379.
+
+<figuras/fig_05_estabilidade_taludes.png, id=124, 1011.78pt x 433.62pt>
+File: figuras/fig_05_estabilidade_taludes.png Graphic file (type png)
+<use figuras/fig_05_estabilidade_taludes.png>
+Package pdftex.def Info: figuras/fig_05_estabilidade_taludes.png  used on input line 383.
+(pdftex.def)             Requested size: 390.0pt x 167.14601pt.
+
+Package natbib Warning: Citation `vanmaercke_et_al_2021' on page 26 undefined on input line 388.
+
+[26]
+
+LaTeX Warning: Reference `tab:fs' on page 27 undefined on input line 390.
+
+
+Package natbib Warning: Citation `poesen_2018' on page 27 undefined on input line 390.
+
+
+LaTeX Warning: Reference `fig:infiltracao' on page 27 undefined on input line 413.
+
+
+Package natbib Warning: Citation `wang_et_al_1999' on page 27 undefined on input line 413.
+
+[27 <./figuras/fig_05_estabilidade_taludes.png>]
+<figuras/fig_06_infiltracao_escoamento.png, id=132, 1011.78pt x 433.62pt>
+File: figuras/fig_06_infiltracao_escoamento.png Graphic file (type png)
+<use figuras/fig_06_infiltracao_escoamento.png>
+Package pdftex.def Info: figuras/fig_06_infiltracao_escoamento.png  used on input line 417.
+(pdftex.def)             Requested size: 390.0pt x 167.14601pt.
+
+
+LaTeX Warning: Reference `eq:alpha' on page 28 undefined on input line 418.
+
+
+LaTeX Warning: Reference `eq:alpha' on page 28 undefined on input line 418.
+
+
+Package natbib Warning: Citation `morgan_2005' on page 28 undefined on input line 422.
+
+
+Package natbib Warning: Citation `bertoni_lombardi_neto_2017' on page 28 undefined on input line 422.
+
+[28]
+
+LaTeX Warning: Reference `fig:hidrograma' on page 29 undefined on input line 424.
+
+
+Package natbib Warning: Citation `horton_1933' on page 29 undefined on input line 424.
+
+[29 <./figuras/fig_06_infiltracao_escoamento.png>]
+<figuras/fig_07_hidrograma_i60.png, id=141, 578.16pt x 361.35pt>
+File: figuras/fig_07_hidrograma_i60.png Graphic file (type png)
+<use figuras/fig_07_hidrograma_i60.png>
+Package pdftex.def Info: figuras/fig_07_hidrograma_i60.png  used on input line 430.
+(pdftex.def)             Requested size: 312.00119pt x 194.99928pt.
+
+
+LaTeX Warning: Reference `fig:erosao' on page 30 undefined on input line 437.
+
+[30 <./figuras/fig_07_hidrograma_i60.png>]
+
+Package natbib Warning: Citation `nearing_nicks_1998' on page 31 undefined on input line 441.
+
+
+Package natbib Warning: Citation `deviren_saygin_et_al_2018' on page 31 undefined on input line 441.
+
+<figuras/fig_08_erosao_virtual.png, id=147, 1011.78pt x 867.24pt>
+File: figuras/fig_08_erosao_virtual.png Graphic file (type png)
+<use figuras/fig_08_erosao_virtual.png>
+Package pdftex.def Info: figuras/fig_08_erosao_virtual.png  used on input line 445.
+(pdftex.def)             Requested size: 390.0pt x 334.29204pt.
+
+Package natbib Warning: Citation `renard_et_al_1997' on page 31 undefined on input line 450.
+
+
+Package natbib Warning: Citation `lafayette_cantalice_coutinho_2011' on page 31 undefined on input line 450.
+
+
+Package natbib Warning: Citation `cassol_et_al_2023' on page 31 undefined on input line 450.
+
+
+Package natbib Warning: Citation `wischmeier_et_al_1971' on page 31 undefined on input line 450.
+
+
+Package natbib Warning: Citation `alewell_et_al_2019' on page 31 undefined on input line 452.
+
+
+Package natbib Warning: Citation `torri_poesen_2014' on page 31 undefined on input line 452.
+
+[31] [32 <./figuras/fig_08_erosao_virtual.png>]
+
+Package natbib Warning: Citation `bagarello_et_al_2012' on page 33 undefined on input line 454.
+
+
+Package natbib Warning: Citation `ostovari_et_al_2016' on page 33 undefined on input line 454.
+
+
+Package natbib Warning: Citation `francois_et_al_2024' on page 33 undefined on input line 454.
+
+
+Package natbib Warning: Citation `beven_freer_2001' on page 33 undefined on input line 456.
+
+
+Package natbib Warning: Citation `nearing_govers_norton_1999' on page 33 undefined on input line 461.
+
+[33]
+
+Package natbib Warning: Citation `nyssen_et_al_2007' on page 34 undefined on input line 463.
+
+
+Package natbib Warning: Citation `vancampenhout_et_al_2006' on page 34 undefined on input line 463.
+
+
+Overfull \hbox (2.97202pt too wide) in paragraph at lines 463--464
+[]\T1/cmr/m/n/12 Essa va-ri-a-bi-li-dade n„o in-va-lida a re-cu-pe-ra-bi-li-dade de-mons-trada no Teste 1,
+ []
+
+[34]
+Overfull \hbox (380.13792pt too wide) in paragraph at lines 470--482
+ [][] 
+ []
+
+
+LaTeX Warning: Reference `tab:comparativa' on page 35 undefined on input line 485.
+
+[35] [36]
+c:/Users/vidal/OneDrive/Documentos/13 - CLONEGIT/artigo-posdoc/3-EROSIBIDADE/1-MANUSCRITOS/8-SIMULACAO_K_PLINTOSSOLO/Simulacao_Kplint_USLE_ECZ_PT.tex:513: Undefined control sequence.
+l.513 ...radas est√£o dispon√≠veis no Zenodo (\url
+                                                  {https://doi.org/10.5281/z...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/vidal/OneDrive/Documentos/13 - CLONEGIT/artigo-posdoc/3-EROSIBIDADE/1-MANUSCRITOS/8-SIMULACAO_K_PLINTOSSOLO/Simulacao_Kplint_USLE_ECZ_PT.tex:513: Undefined control sequence.
+l.513 ...√≠veis no reposit√≥rio do projeto em \url
+                                                  {https://github.com/ldvsan...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (61.74228pt too wide) in paragraph at lines 513--514
+\T1/cmr/m/n/12 Á„o es-t„o dis-po-nÌ-veis no re-po-si-tÛ-rio do pro-jeto em https://github.com/ldvsantos/palicada
+ []
+
+[37]
+
+LaTeX Warning: Reference `sec:test3' on page 38 undefined on input line 534.
+
+(Simulacao_Kplint_USLE_ECZ_PT.bbl [38] [39]
+Underfull \hbox (badness 1383) in paragraph at lines 128--136
+[]\T1/cmr/m/n/12 Chaves, H.M.L., Ne-a-ring, M.A., 1991.  Un-cer-tainty analy-sis of the
+ []
+
+
+Underfull \hbox (badness 6978) in paragraph at lines 155--164
+[]\T1/cmr/m/n/12 Deviren Say-gin, S., Hu-ang, C.H., Fla-na-gan, D.C., Er-pul, G.,
+ []
+
+
+Underfull \hbox (badness 2229) in paragraph at lines 155--164
+\T1/cmr/m/n/12 2018.  Process-based soil ero-di-bi-lity es-ti-ma-tion for em-pi-ri-cal wa-
+ []
+
+
+Underfull \hbox (badness 1859) in paragraph at lines 155--164
+\T1/cmr/m/n/12 ter ero-sion mo-dels.  Jour-nal of Hy-drau-lic Re-se-arch 56, 181--195.
+ []
+
+[40] [41]
+Underfull \hbox (badness 4229) in paragraph at lines 249--255
+[]\T1/cmr/m/n/12 Horton, R.E., 1933.  The role of in-fil-tra-tion in the hy-dro-lo-gic
+ []
+
+
+Underfull \hbox (badness 3746) in paragraph at lines 249--255
+\T1/cmr/m/n/12 cy-cle.  Tran-sac-ti-ons, Ame-ri-can Ge-ophy-si-cal Union 14, 446--460.
+ []
+
+[42]
+Simulacao_Kplint_USLE_ECZ_PT.bbl:357: Missing $ inserted.
+<inserted text> 
+                $
+l.357 ...OIprefix\doi{10.1007/978-3-642-58913-3_5}
+                                                  .
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Simulacao_Kplint_USLE_ECZ_PT.bbl:361: LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.361   Deckers}]{nyssen_et_al_2007}
+                                    
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Simulacao_Kplint_USLE_ECZ_PT.bbl:361: Missing $ inserted.
+<inserted text> 
+                $
+l.361   Deckers}]{nyssen_et_al_2007}
+                                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+[43] [44] [45] [46])
+
+Package natbib Warning: There were undefined citations.
+
+[47] (Simulacao_Kplint_USLE_ECZ_PT.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-12-29>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 6155 strings out of 467871
+ 100171 string characters out of 5418376
+ 509751 words of memory out of 5000000
+ 34939 multiletter control sequences out of 15000+600000
+ 650234 words of font info for 98 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 72i,11n,79p,2526b,426s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\vidal\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\vidal\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\vidal\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\vidal\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\vidal\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\vidal\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi450\ecss0800.pk> <C:\Users\vidal\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\vidal\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\vidal\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti0700.pk> <C:\Users\vidal\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\vidal\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\vidal\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\vidal\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\vidal\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\vidal\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk><C:/Users/vidal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/vidal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/vidal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/vidal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/vidal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/vidal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/vidal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/vidal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/vidal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/vidal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/vidal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/vidal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/vidal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/vidal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/vidal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on Simulacao_Kplint_USLE_ECZ_PT.pdf (48 pages, 7052271 bytes).
+PDF statistics:
+ 783 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+

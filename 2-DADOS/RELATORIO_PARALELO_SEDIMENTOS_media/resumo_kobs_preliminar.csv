@@ -1,0 +1,21 @@
+metrica,valor
+Comprimento de rampa lambda (m),2.4
+Largura da parcela (m),0.5
+Area da parcela (m2),1.2
+Inclinacao (graus),22.0
+Precipitacao total experimento (mm),846.6
+Precipitacao anual media historica (mm),1092.2
+Fracao da chuva anual coberta,0.775
+EI30 anual medio historico (MJ mm ha-1 h-1 ano-1),3799.0
+R estimado para o intervalo experimental,2944.7
+"L (lambda/22,13)^0,5",0.329
+S (McCool 22 graus),5.793
+"LS (talude 22 graus, lambda=2,40 m)",1.908
+Perda media por parcela LIMPO (g),2396.3
+Perda media por parcela PEDRA (g),1024.4
+Perda media LIMPO (t/ha),19.97
+Perda media PEDRA (t/ha),8.537
+Razao perdas LIMPO:PEDRA,2.34
+K_obs preliminar LIMPO (t h MJ-1 mm-1),0.003554
+K_RUSLE nominal Plintossolo (t h MJ-1 mm-1),0.035
+Razao K_obs / K_RUSLE (delta aparente),0.102

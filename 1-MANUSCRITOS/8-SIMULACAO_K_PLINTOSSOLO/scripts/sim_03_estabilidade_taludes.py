@@ -1,8 +1,8 @@
 """
-Simulação 03 — Estabilidade de Taludes e Validação de γ(H/Hc).
+Simulação 03 -- Estabilidade de Taludes e Validação de gamma(H/Hc).
 Modela fator de segurança (FS) por Bishop simplificado para cortes em
 Plintossolo sob saturação progressiva, e verifica se a forma funcional
-γ = 1 + k3*(H/Hc)^n3 captura a transição para colapso.
+gamma = 1 + k3*(H/Hc)^n3 captura a transição para colapso.
 """
 import sys
 from pathlib import Path
@@ -22,7 +22,7 @@ from config_simulacao import (
 def fator_seguranca_rankine(H, c, phi_deg, gamma_sat, gamma_w=9.81, ru=0.0):
     """
     Fator de segurança para corte vertical (Rankine modificado).
-    ru = pressão de poros normalizada (u / γ_sat * H), 0 a ~0.5.
+    ru = pressão de poros normalizada (u / gamma_sat * H), 0 a ~0.5.
     FS = Hc_efetivo / H
     """
     phi_rad = np.radians(phi_deg)
@@ -37,7 +37,7 @@ def fator_seguranca_rankine(H, c, phi_deg, gamma_sat, gamma_w=9.81, ru=0.0):
 def volume_ruptura(H, phi_deg, largura=1.0):
     """
     Volume de cunha de ruptura planar por metro de comprimento.
-    V = 0.5 * H² / tan(45 - φ/2) * largura
+    V = 0.5 * H² / tan(45 - phi/2) * largura
     """
     phi_rad = np.radians(phi_deg)
     ang_ruptura = np.pi / 4 - phi_rad / 2
@@ -45,7 +45,7 @@ def volume_ruptura(H, phi_deg, largura=1.0):
 
 
 def gamma_func(h_hc, k3, n3):
-    """Forma funcional de γ para ajuste."""
+    """Forma funcional de gamma para ajuste."""
     return 1.0 + k3 * h_hc ** n3
 
 
@@ -69,9 +69,9 @@ def main():
     V = volume_ruptura(H_range, phi)
     V_norm = V / volume_ruptura(Hc, phi)  # normalizado por V(Hc)
 
-    # ── δ_geotécnico como proxy: contribuição relativa ──────────────
+    # ── delta_geotécnico como proxy: contribuição relativa ──────────────
     # A contribuição geotécnica cresce com V e com 1/FS
-    # Proxy: δ_geo ∝ V_norm / FS (mais volume mobilizado quando FS baixo)
+    # Proxy: delta_geo ∝ V_norm / FS (mais volume mobilizado quando FS baixo)
     delta_geo = np.zeros_like(H_Hc_range)
     for i, h_hc in enumerate(H_Hc_range):
         # Usar FS médio entre ru=0 e ru=0.3 (condição sazonal)
@@ -82,10 +82,10 @@ def main():
         else:
             delta_geo[i] = 0.0
 
-    # Normalizar para que γ(0) = 1
+    # Normalizar para que gamma(0) = 1
     gamma_sim = 1.0 + delta_geo / max(delta_geo.max(), 1e-10) * 5.0
 
-    # ── Ajustar γ = 1 + k3*(H/Hc)^n3 aos dados simulados ──────────
+    # ── Ajustar gamma = 1 + k3*(H/Hc)^n3 aos dados simulados ──────────
     mask = H_Hc_range > 0.05
     popt, pcov = curve_fit(gamma_func, H_Hc_range[mask], gamma_sim[mask],
                            p0=[3.0, 2.0], bounds=([0.1, 0.5], [20.0, 5.0]))
@@ -93,18 +93,18 @@ def main():
     perr = np.sqrt(np.diag(pcov))
 
     print("=" * 60)
-    print("ESTABILIDADE DE TALUDES — VALIDAÇÃO DE γ(H/Hc)")
+    print("ESTABILIDADE DE TALUDES -- VALIDAÇÃO DE gamma(H/Hc)")
     print("=" * 60)
-    print(f"Parâmetros geotécnicos: c={c} kPa, φ={phi}°, γ_sat={g_sat} kN/m³")
+    print(f"Parâmetros geotécnicos: c={c} kPa, phi={phi} deg, gamma_sat={g_sat} kN/m³")
     print(f"Hc (Rankine, saturado) = {Hc:.2f} m")
-    print(f"\nAjuste γ = 1 + k3·(H/Hc)^n3:")
-    print(f"  k3 = {k3_fit:.3f} ± {perr[0]:.3f}")
-    print(f"  n3 = {n3_fit:.3f} ± {perr[1]:.3f}")
+    print(f"\nAjuste gamma = 1 + k3.(H/Hc)^n3:")
+    print(f"  k3 = {k3_fit:.3f} +/- {perr[0]:.3f}")
+    print(f"  n3 = {n3_fit:.3f} +/- {perr[1]:.3f}")
     print(f"  (Valor inicial proposto: k3=3.0, n3=2.0)")
 
     # ── Verificar FS para feições reais ─────────────────────────────
     print(f"\n{'Feição':>8}  {'H(m)':>6}  {'H/Hc':>6}  {'FS(ru=0)':>8}  "
-          f"{'FS(ru=0.3)':>10}  {'γ_ajust':>8}")
+          f"{'FS(ru=0.3)':>10}  {'gamma_ajust':>8}")
     for fn, fd in PLINTOSSOLO['feicoes'].items():
         H = fd['prof']
         h_hc = fd['H_Hc']
@@ -136,8 +136,8 @@ def main():
 
     ax1.set_xlabel('Normalized feature depth (H / H$_c$)', fontsize=12)
     ax1.set_ylabel('Factor of safety (FS)', fontsize=12)
-    ax1.set_title('Vertical-cut stability — Plinthosol\n'
-                  r'($c$ = 13.02 kPa, $\phi$ = 34.93°, H$_c$ = 3.35 m)',
+    ax1.set_title('Vertical-cut stability -- Plinthosol\n'
+                  r'($c$ = 13.02 kPa, $\phi$ = 34.93 deg, H$_c$ = 3.35 m)',
                   fontsize=12)
     ax1.text(-0.05, 1.12, '(a)', transform=ax1.transAxes,
              fontsize=14, fontweight='bold', va='top')
@@ -146,7 +146,7 @@ def main():
     ax1.set_xlim(0, 1)
     ax1.set_ylim(0, 8)
 
-    # ── Figura 2: γ simulado vs ajustado ────────────────────────────
+    # ── Figura 2: gamma simulado vs ajustado ────────────────────────────
     ax2.plot(H_Hc_range, gamma_sim, 'ko', markersize=4, alpha=0.5,
              label='$\\gamma$ simulated (FS-volume proxy)')
     h_fit = np.linspace(0, 0.95, 100)

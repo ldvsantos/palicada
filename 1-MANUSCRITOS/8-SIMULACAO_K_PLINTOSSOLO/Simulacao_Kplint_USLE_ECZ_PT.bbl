@@ -1,4 +1,4 @@
-\begin{thebibliography}{55}
+\begin{thebibliography}{61}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -226,6 +226,16 @@
 \newblock \bibinfo{journal}{Soil and Tillage Research} \bibinfo{volume}{220},
   \bibinfo{pages}{105378}.
 %Type = Article
+\bibitem[{Gyssels et~al.(2005)Gyssels, Poesen, Bochet and
+  Li}]{gyssels_et_al_2005}
+\bibinfo{author}{Gyssels, G.}, \bibinfo{author}{Poesen, J.},
+  \bibinfo{author}{Bochet, E.}, \bibinfo{author}{Li, Y.}, \bibinfo{year}{2005}.
+\newblock \bibinfo{title}{Impact of plant roots on the resistance of soils to
+  erosion by water: a review}.
+\newblock \bibinfo{journal}{Progress in Physical Geography: Earth and
+  Environment} \bibinfo{volume}{29}, \bibinfo{pages}{189--217}.
+\newblock \DOIprefix\doi{10.1191/0309133305pp443ra}.
+%Type = Article
 \bibitem[{Her and Chaubey(2015)}]{her_chaubey_2015}
 \bibinfo{author}{Her, Y.}, \bibinfo{author}{Chaubey, I.}, \bibinfo{year}{2015}.
 \newblock \bibinfo{title}{Impact of the numbers of observations and calibration
@@ -257,6 +267,16 @@
   \bibinfo{volume}{34}, \bibinfo{pages}{1841--1851}.
 \newblock \DOIprefix\doi{10.1002/esp.1866}.
 %Type = Article
+\bibitem[{Kochian et~al.(2005)Kochian, Pi{\~n}eros and
+  Hoekenga}]{kochian_et_al_2005}
+\bibinfo{author}{Kochian, L.V.}, \bibinfo{author}{Pi{\~n}eros, M.A.},
+  \bibinfo{author}{Hoekenga, O.A.}, \bibinfo{year}{2005}.
+\newblock \bibinfo{title}{The physiology, genetics and molecular biology of
+  plant aluminum resistance and toxicity}.
+\newblock \bibinfo{journal}{Plant and Soil} \bibinfo{volume}{274},
+  \bibinfo{pages}{175--195}.
+\newblock \DOIprefix\doi{10.1007/s11104-004-1158-7}.
+%Type = Article
 \bibitem[{Lafayette et~al.(2011)Lafayette, Cantalice and
   Coutinho}]{lafayette_cantalice_coutinho_2011}
 \bibinfo{author}{Lafayette, K.P.V.}, \bibinfo{author}{Cantalice, J.R.B.},
@@ -279,6 +299,17 @@
 \newblock \bibinfo{journal}{Proceedings of the National Academy of Sciences}
   \bibinfo{volume}{104}, \bibinfo{pages}{13268--13272}.
 \newblock \DOIprefix\doi{10.1073/pnas.0611508104}.
+%Type = Article
+\bibitem[{de~Moraes et~al.(2006)de~Moraes, Schuler, Dunne, Figueiredo and
+  Victoria}]{de_moraes_et_al_2006}
+\bibinfo{author}{de~Moraes, J.M.}, \bibinfo{author}{Schuler, A.E.},
+  \bibinfo{author}{Dunne, T.}, \bibinfo{author}{Figueiredo, R.d.O.},
+  \bibinfo{author}{Victoria, R.L.}, \bibinfo{year}{2006}.
+\newblock \bibinfo{title}{Water storage and runoff processes in plinthic soils
+  under forest and pasture in eastern amazonia}.
+\newblock \bibinfo{journal}{Hydrological Processes} \bibinfo{volume}{20},
+  \bibinfo{pages}{2509--2526}.
+\newblock \DOIprefix\doi{10.1002/hyp.6213}.
 %Type = Book
 \bibitem[{Morgan(2005)}]{morgan_2005}
 \bibinfo{author}{Morgan, R.P.C.}, \bibinfo{year}{2005}.
@@ -306,6 +337,16 @@
 \newblock \bibinfo{journal}{Transactions of the ASAE} \bibinfo{volume}{32},
   \bibinfo{pages}{1587--1593}.
 \newblock \DOIprefix\doi{10.13031/2013.31195}.
+%Type = Article
+\bibitem[{Nearing et~al.(1999)Nearing, Govers and
+  Norton}]{nearing_govers_norton_1999}
+\bibinfo{author}{Nearing, M.A.}, \bibinfo{author}{Govers, G.},
+  \bibinfo{author}{Norton, L.D.}, \bibinfo{year}{1999}.
+\newblock \bibinfo{title}{Variability in soil erosion data from replicated
+  plots}.
+\newblock \bibinfo{journal}{Soil Science Society of America Journal}
+  \bibinfo{volume}{63}, \bibinfo{pages}{1829--1835}.
+\newblock \DOIprefix\doi{10.2136/sssaj1999.6361829x}.
 %Type = Incollection
 \bibitem[{Nearing and Nicks(1998)}]{nearing_nicks_1998}
 \bibinfo{author}{Nearing, M.A.}, \bibinfo{author}{Nicks, A.D.},
@@ -314,6 +355,22 @@
   (wepp) model for hillslopes}, in: \bibinfo{booktitle}{Modelling Soil Erosion
   by Water}. \bibinfo{publisher}{Springer}, pp. \bibinfo{pages}{43--56}.
 \newblock \DOIprefix\doi{10.1007/978-3-642-58913-3_5}.
+%Type = Article
+\bibitem[{Nyssen et~al.(2007)Nyssen, Poesen, Gebremichael, Vancampenhout,
+  D'aes, Yihdego, Govers, Leirs, Moeyersons, Naudts, Haregeweyn, Haile and
+  Deckers}]{nyssen_et_al_2007}
+\bibinfo{author}{Nyssen, J.}, \bibinfo{author}{Poesen, J.},
+  \bibinfo{author}{Gebremichael, D.}, \bibinfo{author}{Vancampenhout, K.},
+  \bibinfo{author}{D'aes, M.}, \bibinfo{author}{Yihdego, G.},
+  \bibinfo{author}{Govers, G.}, \bibinfo{author}{Leirs, H.},
+  \bibinfo{author}{Moeyersons, J.}, \bibinfo{author}{Naudts, J.},
+  \bibinfo{author}{Haregeweyn, N.}, \bibinfo{author}{Haile, M.},
+  \bibinfo{author}{Deckers, J.}, \bibinfo{year}{2007}.
+\newblock \bibinfo{title}{Interdisciplinary on-site evaluation of stone bunds
+  to control soil erosion on cropland in northern ethiopia}.
+\newblock \bibinfo{journal}{Soil and Tillage Research} \bibinfo{volume}{94},
+  \bibinfo{pages}{151--163}.
+\newblock \DOIprefix\doi{10.1016/j.still.2006.07.011}.
 %Type = Article
 \bibitem[{Accioly Teixeira~de Oliveira(1991)}]{oliveira_1991}
 \bibinfo{author}{Accioly Teixeira~de Oliveira, M.}, \bibinfo{year}{1991}.
@@ -442,6 +499,18 @@
 \newblock \bibinfo{journal}{Earth-Science Reviews} \bibinfo{volume}{130},
   \bibinfo{pages}{73--85}.
 \newblock \DOIprefix\doi{10.1016/j.earscirev.2013.12.006}.
+%Type = Article
+\bibitem[{Vancampenhout et~al.(2006)Vancampenhout, Nyssen, Gebremichael,
+  Deckers, Poesen, Haile and Moeyersons}]{vancampenhout_et_al_2006}
+\bibinfo{author}{Vancampenhout, K.}, \bibinfo{author}{Nyssen, J.},
+  \bibinfo{author}{Gebremichael, D.}, \bibinfo{author}{Deckers, J.},
+  \bibinfo{author}{Poesen, J.}, \bibinfo{author}{Haile, M.},
+  \bibinfo{author}{Moeyersons, J.}, \bibinfo{year}{2006}.
+\newblock \bibinfo{title}{Stone bunds for soil conservation in the northern
+  ethiopian highlands: Impacts on soil fertility and crop yield}.
+\newblock \bibinfo{journal}{Soil and Tillage Research} \bibinfo{volume}{90},
+  \bibinfo{pages}{1--15}.
+\newblock \DOIprefix\doi{10.1016/j.still.2005.08.004}.
 %Type = Article
 \bibitem[{Vandekerckhove et~al.(2003)Vandekerckhove, Poesen and
   Govers}]{vandekerckhove_et_al_2003}

@@ -1,5 +1,5 @@
 """
-Simulação 01 — Calibração Sintética.
+Simulação 01 -- Calibração Sintética.
 Testa se o protocolo sequencial de 4 etapas recupera parâmetros conhecidos
 a partir de dados ruidosos (56 parcelas, 3 classes de solo).
 """
@@ -23,7 +23,7 @@ np.random.seed(2026)
 
 
 def gerar_delta_obs(vib, m, h_hc, cv, params):
-    """Gera δ_obs = δ_true × (1 + ruído), com ruído ~ N(0, cv)."""
+    """Gera delta_obs = delta_true x (1 + ruído), com ruído ~ N(0, cv)."""
     d_true = delta_model(vib, m, h_hc, **params)
     ruido = 1.0 + np.random.normal(0, cv, size=d_true.shape)
     return d_true * np.clip(ruido, 0.3, 3.0), d_true
@@ -32,32 +32,32 @@ def gerar_delta_obs(vib, m, h_hc, cv, params):
 def calibrar_sequencial(vib, m, h_hc, classe, d_obs):
     """Protocolo sequencial de 4 etapas (§4.5 do manuscrito)."""
 
-    # Etapa 1: verificação controle negativo (Latossolo δ ≈ 1)
+    # Etapa 1: verificação controle negativo (Latossolo delta ~ 1)
     mask_lat = classe == 'latossolo'
     delta_lat_mean = np.mean(d_obs[mask_lat])
 
-    # Etapa 2: calibração marginal de α via Argissolo
+    # Etapa 2: calibração marginal de alpha via Argissolo
     mask_arg = classe == 'argissolo'
     vib_arg = vib[mask_arg]
     d_arg = d_obs[mask_arg]
-    # δ_arg ≈ α(VIB) × β(m_arg≈30-45) × γ(H/Hc≈0)
-    # Como β e γ são ~1 no Argissolo, δ_arg ≈ α
+    # delta_arg ~ alpha(VIB) x beta(m_arg~30-45) x gamma(H/Hc~0)
+    # Como beta e gamma são ~1 no Argissolo, delta_arg ~ alpha
     def res_alpha(p):
         n1 = p[0]
         return alpha(vib_arg, n1) - d_arg
     sol_a = least_squares(res_alpha, [0.5], bounds=([0.01], [5.0]))
     n1_est = sol_a.x[0]
 
-    # Etapa 3: calibração de β via Plintossolo (Ap vs BAc exposto)
+    # Etapa 3: calibração de beta via Plintossolo (Ap vs BAc exposto)
     mask_plint = classe == 'plintossolo'
     vib_p = vib[mask_plint]
     m_p = m[mask_plint]
     h_hc_p = h_hc[mask_plint]
     d_p = d_obs[mask_plint]
-    # Remover efeito de α já calibrado
+    # Remover efeito de alpha já calibrado
     d_corr_alpha = d_p / alpha(vib_p, n1_est)
-    # E γ ≈ 1 + k3*(H/Hc)^n3, mas estimar β antes de γ
-    # Aproximar γ ≈ 1 para esta etapa (H/Hc baixo em muitas parcelas)
+    # E gamma ~ 1 + k3*(H/Hc)^n3, mas estimar beta antes de gamma
+    # Aproximar gamma ~ 1 para esta etapa (H/Hc baixo em muitas parcelas)
     def res_beta(p):
         bmax, k2_ = p
         return beta(m_p, bmax, k2_) - d_corr_alpha
@@ -65,7 +65,7 @@ def calibrar_sequencial(vib, m, h_hc, classe, d_obs):
                           bounds=([1.01, 0.001], [10.0, 1.0]))
     bmax_est, k2_est = sol_b.x
 
-    # Etapa 4: calibração de γ via Plintossolo (resíduo)
+    # Etapa 4: calibração de gamma via Plintossolo (resíduo)
     d_residual = d_corr_alpha / beta(m_p, bmax_est, k2_est)
     def res_gamma(p):
         k3_, n3_ = p
@@ -114,7 +114,7 @@ def main():
 
     # ── Tabela de resultados ────────────────────────────────────────
     print("\n" + "=" * 80)
-    print(f"CALIBRAÇÃO SINTÉTICA — RECUPERAÇÃO DE PARÂMETROS ({n_rep} repetições)")
+    print(f"CALIBRAÇÃO SINTÉTICA -- RECUPERAÇÃO DE PARÂMETROS ({n_rep} repetições)")
     print("=" * 80)
     params_nomes = ['n1', 'beta_max', 'k2', 'k3', 'n3']
     true_vals = [TRUE_PARAMS[p] for p in params_nomes]
@@ -122,7 +122,7 @@ def main():
     print(f"{'CV':>6} | ", end='')
     for p in params_nomes:
         print(f"  {p:>10} (true={TRUE_PARAMS[p]:.2f})", end='')
-    print(f"  |  δ_Lat (≈1.0)")
+    print(f"  |  delta_Lat (~1.0)")
     print("-" * 100)
 
     tabela_bias = {}
@@ -135,7 +135,7 @@ def main():
 
         print(f"{cv:>6.0%} | ", end='')
         for p in params_nomes:
-            print(f"  {medians[p]:>6.3f} [{iqr25[p]:.2f}–{iqr75[p]:.2f}]", end='')
+            print(f"  {medians[p]:>6.3f} [{iqr25[p]:.2f}-{iqr75[p]:.2f}]", end='')
         print(f"  |  {d_lat:.3f}")
 
         tabela_bias[cv] = {p: abs(medians[p] - TRUE_PARAMS[p]) / TRUE_PARAMS[p]
@@ -159,7 +159,7 @@ def main():
 
     ax.set_xlabel('Coefficient of variation of noise (%)', fontsize=12)
     ax.set_ylabel('Median relative bias (%)', fontsize=12)
-    ax.set_title('Parameter recovery — Synthetic calibration of K$_{plint}$',
+    ax.set_title('Parameter recovery -- Synthetic calibration of K$_{plint}$',
                  fontsize=13)
     ax.legend(fontsize=9)
     ax.grid(True, alpha=0.3)
@@ -171,17 +171,17 @@ def main():
     # ── Figura: boxplot por CV para cada parâmetro ──────────────────
     # Títulos descritivos para cada subplot do boxplot
     param_titulos_box = {
-        'n1': '$n_1$ — hydraulic exponent',
-        'beta_max': r'$\beta_{max}$ — max. toxicity amplification',
-        'k2': '$k_2$ — sigmoid transition rate',
-        'k3': '$k_3$ — slope amplification scale',
-        'n3': '$n_3$ — slope response curvature',
+        'n1': '$n_1$ -- hydraulic exponent',
+        'beta_max': r'$\beta_{max}$ -- max. toxicity amplification',
+        'k2': '$k_2$ -- sigmoid transition rate',
+        'k3': '$k_3$ -- slope amplification scale',
+        'n3': '$n_3$ -- slope response curvature',
     }
 
     fig2, axes = plt.subplots(1, 5, figsize=(18, 5), sharey=False)
     for i, p in enumerate(params_nomes):
         data = [[e[p] for e in resultados[cv]] for cv in cvs]
-        bp = axes[i].boxplot(data, labels=[f'{cv:.0%}' for cv in cvs],
+        bp = axes[i].boxplot(data, tick_labels=[f'{cv:.0%}' for cv in cvs],
                              patch_artist=True)
         for patch in bp['boxes']:
             patch.set_facecolor('#4C72B0')
