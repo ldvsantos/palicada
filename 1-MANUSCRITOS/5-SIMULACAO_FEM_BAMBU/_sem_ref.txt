@@ -1,0 +1,778 @@
+ORIGINAL ARTICLE
+Wood decaying properties of the termite mushroom Termitomyces
+eurrhizus
+Kazuko Ono 1 • Toshimitsu Hata 1 • Tsuyoshi Yoshimura 1 • Kazuhiko Kinjo 2
+Received: 26 April 2016 / Accepted: 14 September 2016 / Published online: 29 September 2016
+/C211The Japan Wood Research Society 2016
+Abstract Four strains of the termite mushroom Termito-
+myces eurrhizus collected in Japan were surveyed for their
+wood decaying properties in three softwood and two
+hardwood species, in comparison with the white-rot fungus
+Trametes versicolor and the brown-rot fungus Fomitopsis
+palustris. All strains of T. eurrhizus degraded only the
+surfaces of the wood samples, and differences in mass-loss
+rates between heartwood and sapwood were generally not
+signiﬁcant. Higher mass-loss rates were generally obtained
+in softwood than in hardwood. The results of chemical
+analyses of decayed wood samples indicated that T. eur-
+rhizus does not have high lignin-degradation ability, even
+though it is categorized as a white-rot fungus. These results
+clearly suggest the unique physiological characteristics of
+T. eurrhizus .
+Keywords Chemical analysis /C1 Scanning electron
+microscope (SEM) /C1 Termite mushroom /C1 Wood decay test
+Introduction
+The fungi Termitomyces are known to have a unique life
+cycle. These fungi are distributed in tropical and sub-
+tropical areas from Africa to Southeast Asia [ 1], and are
+found only in nests of Macrotermitinae termites in the
+wild. They live in a medium called the fungus comb,
+located in a special chamber, fungus garden, inside the
+nest. The termites collect plant materials from outside the
+nest to maintain the fungus combs, which they later eat
+[2]. The function of this symbiotic relation is still not
+clear, but some tentative theories have been proposed [ 3]:
+(1) Termitomyces is an additional protein-rich food source
+for the termites; (2) Termitomyces has a role in lignin
+degradation for the termites, facilitating their access to
+cellulose; (3) Termitomyces decreases the C/N ratio of
+foraged plant materials by metabolizing carbohydrates;
+(4) Termitomyces provides cellulases and xylanases to
+work synergistically and/or complementarily with
+endogenous termite enzymes.
+In Japan, two Termitomyces fungi have been reported
+from a region of Okinawa Prefecture, the southernmost tip
+of Japan [ 4–6]. These mushrooms have fruit bodies during
+a brief period at the end of the rainy season, and are not
+only edible but actually prized for their taste [ 7]. Thus,
+Termitomyces mushrooms have a potential market value in
+Japan, where wide variety of mushrooms is incorporated
+into the traditional cuisine, and where mushrooms are
+artiﬁcially cultivated. If artiﬁcial cultivation methods could
+be developed for these tasty mushroom species, they would
+likely ﬁnd an appreciative audience in Japan. However,
+because of the symbiotic relationship with termites, there
+has been no report of the successful cultivation of these
+mushrooms under artiﬁcial conditions.
+The only known host termite of Termitomyces fungi in
+Japan is Odontotermes formosanus [8, 9]. This subter-
+ranean termite is known as an important pest for agricul-
+tural crops, forest and timber constructions in Asia [ 10]. It
+is believed that O. formosanus collects various plant resi-
+dues in the ﬁeld to prepare the fungal media. Therefore, we
+consider that various plant materials can be used for the
+media of Termitomyces fungi.
+& Kazuko Ono
+onokazu@rish.kyoto-u.ac.jp
+1 Research Institute for Sustainable Humanosphere, Kyoto
+University, Gokasho, Uji-Shi, Kyoto, Japan
+2 Faculty of Agriculture, University of the Ryukyus, 1 Senbaru,
+Nishihara-cho, Nakagami-gun, Okinawa, Japan
+123
+J Wood Sci (2017) 63:83–94
+DOI 10.1007/s10086-016-1588-x
+In this study, we surveyed the wood-decaying charac-
+teristics of four strains of Termitomyces eurrhizus . These
+strains were selected from twenty-seven strains collected in
+Okinawa Prefecture, Japan, for their rapid growth and easy
+handling [ 11]. The major aim of this study was to evaluate
+wood decaying ability of T. eurrhizus with some strains
+under the same culture condition. In addition, the feasi-
+bility of wood materials to artiﬁcial media was also dis-
+cussed. It would also reveal some unknown relationships
+between host termites and Termitomyces. Among the ﬁve
+wood species used in the present study, Pinus densiﬂora is
+generally preferred by termites. Cryptomeria japonica and
+Chamaecyparis obtusa are dominant softwood plantation
+trees in Japan. Fagus crenata is commonly used in artiﬁcial
+cultivation of mushrooms in Japan. Finally, Quercus
+miyagii is a hardwood species distributed in the southern
+islands of Japan, where T. eurrhizus and O. formosanus are
+also present [ 12].
+Materials and methods
+Fungal strains
+Four strains of Termitomyces eurrhizus (T3, T11, T25 and
+T26) were used in this study. They were collected in
+Okinawa Prefecture, Japan in 2004 and 2005, and isolated
+from fruit bodies. As controls, a white-rot fungus,
+Trametes versicolor (FFPRI 1030), and a brown-rot fun-
+gus, Fomitopsis palustris (FFPRI 0507), were also
+employed. These two strains were designated as decay
+test fungi according to the Japan Industrial Standard [ 13]
+(JIS K 1571-2010).
+Wood samples
+Heartwood and sapwood of three softwood species, Pinus
+densiﬂora, Cryptomeria japonica , and Chamaecyparis
+obtusa and one hardwood species, Fagus crenata , were
+employed for an eight-week decay test. C. obtusa is highest
+decay durability, followed by C. japonica , P. densiﬂora
+and F. crenata [14]. For the twelve-week decay test,
+heartwood and sapwood of the above four wood species
+and the hardwood Quercus miyagii were used. Wood
+species was same, but samples for the eight-week test were
+taken from different logs than samples for twelve-week
+test. The sample size was 10 mm (R) 9 10 mm
+(T) 9 5 mm (L). This small size of samples was deter-
+mined by the slow growth of T. eurrhizus , 1.1–1.2 mm/day
+on cellulose containing medium [ 15]. They were dried at
+60 /C176C for 48 hours to determine the oven-dried weight
+before the tests according to the methods of JIS K
+1571-2010 [ 13].
+Decay tests
+Fungal inoculums were prepared with potato dextrose agar
+(PDA; Nissui, Tokyo, Japan) plates. A seven-mm-diameter
+inoculum was taken from the plate, and was inoculated on
+100 ml of agar medium [glucose 4 % (w/v), malt extract
+1.5 % (w/v), peptone 0.3 % (w/v), agar 2 % (w/v)] in a
+450-ml screw cap glass bottle. After the mycelia grew over
+the media surface, three test wood blocks were set on the
+mycelial mat. The bottle-caps were tightly sealed because
+T. eurrhizus is extremely sensitive to contamination, and
+then kept for eight or twelve weeks at 26 /C176C in the dark.
+After exposure, the mycelia that covered the samples were
+removed gently, and the samples were dried at 60 /C176C for
+48 hours and weighed to determine the mass loss. The
+numbers of repetitions were six and nine for the eight- and
+twelve-week trials, respectively.
+Scanning electron microscopic (SEM) observation
+The eight-week decay samples were subjected to micro-
+scopic observation. The samples were dehydrated using a
+solvent displacement method by soaking in an ethanol
+series [10, 20, 40, 60, 80, 90 and 100 % (v/v)], acetone and
+pentane for 10 minutes, respectively. Each sample was
+sliced with a fresh razor and coated with gold for obser-
+vation under a SEM (JSM-5310; JEOL, Tokyo, Japan) at
+10 kV. Both surfaces and core portions of the samples were
+observed (Fig. 1).
+Chemical analyses
+For chemical analyses, twelve-week decay samples were
+ground into 40-mesh-pass size by a high-speed blender
+(VM0113; Vitamix, Cleveland, OH). Lignin content was
+determined by the Klason method [ 16]. Using the ﬁltrates
+from the Klason lignin analysis, holocellulose was quan-
+titated as a total sugar by the phenol–sulfuric acid method
+Fig. 1 Objects of SEM observation
+84 J Wood Sci (2017) 63:83–94
+123
+[17]. Glucose was used as a standard. The lignin decrease
+rates (LDRs) and total sugar decrease rates (SDRs) were
+calculated from these results using the following pair of
+equations:
+LDR ¼ L1 /C0 100 /C0 MLRðÞ =100 /C2 L2½/C138 =L1 /C2 100
+where L1 is the average lignin content of sound wood
+samples ( n = 3), L2 is the lignin content of the individual
+decayed wood sample, and MLR is the mass-loss rate of
+the sample, and
+SDR ¼ S1 /C0 100 /C0 MLRðÞ =100 /C2 S2½/C138 =S1 /C2 100
+where S1 is the average total sugar content of sound wood
+samples ( n = 3), S2 is the total sugar content of the indi-
+vidual decayed wood sample, and MLR is the mass-loss
+rate of the sample.
+Statistical analysis
+The mass-loss rates (MLRs) of the decay tests, LDRs and
+SDRs were analyzed using analysis of variance (ANOVA)
+and Tukey–Kramer tests ( p \ 0.05).
+Results
+Eight-week decay test
+The MLRs of the wood samples after the 8-week decay
+tests are displayed in Table 1.
+In the heartwood of P. densiﬂora , there were no sig-
+niﬁcant difference in MLRs between the strains of T.
+eurrhizus and the control strain T. versicolor , with the
+exception of T25. T25 showed lower MLRs in both
+heartwood and sapwood than those of the other T. eur-
+rhizus strains. In all the T. eurrhizus strains, the MLRs of
+sapwood (8.7, 7.6, 6.0 and 8.3 %) were signiﬁcantly higher
+than those of heartwood (6.7, 6.6, 3.5 and 6.8 %).
+There was a wide variety in the strains of T. eurrhizus
+regarding decay in the heartwood of C. japonica . The MLR
+by T11 (10.1 %) was not signiﬁcantly different from that of
+T. versicolor , which had the highest rate (11.5 %). Mean-
+while, T25 showed the lowest MLR (4.4 %), and those of
+T3 and T26 were not signiﬁcantly different. The MLR of
+T26 (5.6 %) was not signiﬁcantly different from that of the
+brown-rot fungus F. palustris (8.0 %). In sapwood, T.
+eurrhizus exhibited lower MLRs than those of T. versicolor
+and F. palustris . In addition, T11 and T25 did not display a
+signiﬁcant difference in MLRs between heartwood and
+sapwood. However, T3 and T26 showed lower MLRs in
+heartwood than in sapwood.
+The various strains of Termitomyces eurrhizus also
+showed a variety of MLRs for heartwood of C. obtusa . T11
+had the highest MLR (10.2 %), while T25 had the lowest
+MLR (5.2 %). There was no signiﬁcant difference between
+the MLRs of T25 and F. palustris (5.2 %), but both were
+signiﬁcantly lower than the MLRs of the other 3 strains. In
+sapwood, two strains (T3 and T26; 11.7 and 12.0 %,
+respectively) showed no signiﬁcant difference from T.
+versicolor (14.5 %) and other 2 strains (T11 and T25; 8.7
+and 7.2 %) showed lower than T. versicolor . All the strains
+had lower MLRs than that of F. palustris (21.1 %).
+In the case of the hardwood F. crenata , all strains of T.
+eurrhizus showed unexpected results. This wood is known
+to be susceptible to decay fungi [ 18], yet the MLRs of the 4
+strains were 2.3, 2.3, 0.9 and 2.4 % in heartwood, and 5.3,
+3.7, 3.2 and 4.7 % in sapwood, respectively. These values
+were signiﬁcantly lower than those of the two control
+fungi, T. versicolor and F. palustris , in both heartwood
+(15.3 and 8.5 %) and sapwood (17.9 and 15.2 %).
+In this test, strain T25 showed the lowest MLRs in all
+wood samples with the exception of P. densiﬂora sapwood.
+In many cases, the MLRs of T. eurrhizus in sapwood were
+higher than those of heartwood, and in some cases, there
+was no signiﬁcant difference in MLRs between heartwood
+and sapwood.
+Twelve-week decay test
+The MLRs in twelve-week decay tests are also shown in
+Table 1. In all test bottles, the mycelia of strain T25 died
+before ﬁnishing the test period; therefore, the results in T25
+were omitted.
+For P. densiﬂora
+, all fungi showed similar MLRs in the
+heartwood; in the sapwood; only T11 had lower MLR
+(4.8 %) than the others. T11 had a lower MLR in sapwood
+than in heartwood, but the others showed no signiﬁcant
+difference between heartwood and sapwood.
+For C. japonica heartwood, T11 had a signiﬁcantly
+lower MLR (1.1 %) than the other 2 strains of T. eurrhizus
+(2.2 and 4.9 %). All T. eurrhizus strains showed lower
+MLRs than that of F. palustris (9.4 %), but there was no
+signiﬁcant difference from that of T. versicolor . T26
+(8.4 %) showed no signiﬁcant difference from F. palustris
+(9.9 %) in sapwood, and both were higher than those of the
+other strains. The MLRs of T3 and T11 were not signiﬁ-
+cantly different between heartwood and sapwood, but the
+MLR of T26 in heartwood was signiﬁcantly lower than that
+in sapwood.
+In C. obtsa heartwood, T26 showed a signiﬁcantly
+higher MLR (10.2 %) than all the other test fungi. There
+was no signiﬁcant difference in the MLRs of T3 (7.0 %)
+and T11 (7.7 %), T11 and F. palustris (8.6 %), respec-
+tively. In sapwood, T26 had a higher MLR (10.0 %) than
+the other T. eurrhizus strains (7.9 and 6.4 %). In addition,
+T26 and the control fungi did not have signiﬁcantly
+J Wood Sci (2017) 63:83–94 85
+123
+different MLRs. No T. eurrhizus strains showed a signiﬁ-
+cant different in MLRs between heartwood and sapwood.
+In the heartwood and sapwood of F. crenata , the MLRs
+in T3 (4.4, 4.2 %) and T26 (4.2, 4.8 %) were signiﬁcantly
+lower than those of T. versicolor (17.9, 26.1 %), but they
+were not signiﬁcantly different from those of F. palustris
+(5.2, 4.5 %), while the MLRs of T11 (1.4, 0.9 %) were
+signiﬁcantly lower than those of the other fungi. There was
+no signiﬁcant difference between heartwood and sapwood
+MLRs for any T. eurrhizus strain.
+Table 1 Mass-loss rates of 4 wood samples after eight-week decay tests and ﬁve wood samples after twelve-week decay tests
+Strains The mass loss rates of decay samples
+P. densiﬂora C. japonica
+Heartwood Sapwood Heartwood Sapwood
+8-
+week
+SD 12-
+week
+SD 8-
+week
+SD 12-
+week
+SD 8-
+week
+SD 12-
+week
+SD 8-
+week
+SD 12-
+week
+SD
+T3 6.7 0.4B 8.2 1.5A* 8.7 0.2A 7.3 0.6A 4.7 1.8D 2.2 3.5B* 8.8 2.2CD 1.8 2.2B
+T11 6.6 0.7B 7.6 1.2A 7.6 0.1AB 4.8 1.0B 10.1 1.6AB* 1.1 2.8C* 7.5 3.0CD 4.4 1.8B
+T25 3.5 0.4C 6.0 0.3B 4.4 1.3D* 5.5 1.5D
+T26 6.8 0.5B 8.3 0.9A* 8.3 0.4A 7.9 0.7A 5.6 0.7CD 4.9 2.2B 10.8 2.6C 8.4 0.7A
+T. versicolor 8.3 0.8B* 8.5 2.9A* 7.0 1.3AB 8.0 2.0A 11.5 1.1A -5.2 9.7BC* 16.7 0.6B 3.7 2.7B
+F. palustris 16.3 2.0A 9.0 1.3A* 5.5 2.0B 8.1 0.8A 8.0 1.4BC 9.4 1.8A* 22.7 0.7A 9.9 1.1A
+Strains The mass loss rates of decay samples
+C. obtusa F. crenata
+Heartwood Sapwood Heartwood Sapwood
+8-
+week
+SD 12-
+week
+SD 8-
+week
+SD 12-
+week
+SD 8-
+week
+SD 12-
+week
+SD 8-
+week
+SD 12-
+week
+SD
+T3 7.8 0.5B 7.0 1.0C* 11.7 0.4BC 7.9 0.9B 2.3 0.2C 4.4 0.3B* 5.3 0.2B 4.2 0.4B
+T11 10.2 0.4A* 7.7 0.7BC* 8.7 1.2C 6.4 1.6B 2.3 0.5C 1.4 1.0C* 3.7 0.3B 0.9 1.7C
+T25 5.2 1.1C 7.2 0.8D 0.9 0.5C 3.2 0.5B
+T26 9.4 0.8AB 10.2 0.5A* 12.0 0.8B 10.0 0.6A 2.4 0.4C 4.2 0.3B* 4.7 0.2B 4.8 0.4B
+T. versicolor 7.8 1.5B -7.8 3.9D 14.5 2.2B 6.5 6.8AB 15.3 3.2A* 17.9 5.0A* 17.9 3.6A 26.1 12.3A
+F. palustris 5.2 1.1C 8.6 0.4B 21.1 2.2A 10.0 0.5A 8.5 6.6B* 5.2 0.5B 15.2 1.0A 4.5 0.1B
+Strains The mass loss rates of decay samples
+Q. miyagii
+Heartwood Sapwood
+8-
+week
+SD 12-
+week
+SD 8-
+week
+SD 12-
+week
+SD
+T3 0.5 0.3B 2.1 0.7C
+T11 1.2 0.6AB 2.4 0.2C
+T25
+T26 1.0 0.3A 3.0 0.2B
+T. versicolor 1.1 2.4ABC 5.1 1.9A
+F. palustris -0.3 0.2C 2.2 0.3C
+The same characters indicate no signiﬁcant difference by Tukey–Kramer test ( p [ 0.05)
+The samples for the 8-week test were taken from different logs with samples for 12-week test
+The mass-loss rates for 8-week decayed samples cannot be compared with those for 12-week decayed ones
+SD standard deviation of mass-loss rate
+* There was no signiﬁcant difference between heartwood and sapwood ( t-test p [ 0.05)
+86 J Wood Sci (2017) 63:83–94
+123
+All the fungi showed the lower MLRs for the heartwood
+of Q. miyagii than for other wood species. Three T. eur-
+rhizus strains showed low MLRs (0.5, 1.2 and 1.0 %),
+without any signiﬁcant difference from that of T. versicolor
+(1.1 %). In contrast, for sapwood, T. versicolor had a
+higher MLR (5.1 %) than those of the T. eurrhizus strains
+(2.1, 2.4 and 3.0 %). All T. eurrhizus strains displayed
+signiﬁcantly lower MLRs in heartwood than in sapwood.
+SEM observation
+In this observation, wood samples decayed by the white-rot
+fungus T. versicolor were employed as comparative con-
+trol, because Termitomyces fungi are classiﬁed as white-rot
+fungi [ 19]. The observation positions in the sample are
+indicated in Fig. 1. The results of SEM observations are
+shown in Figs. 2, 3, 4, 5.
+In all samples exposed to T. versicolor , there were many
+mycelia in almost all tracheids and vessels, with serious
+decay symptoms ( P. densiﬂora , Fig. 2 A-B; C. japonica ,
+Fig. 3a, b; C. obtusa , Fig. 4a, b; and F. crenata , Fig. 5a, b).
+However, mycelia of T. eurrhizus were rarely found in the
+tracheids of softwood ( P. densiﬂora , Fig. 2c, d; C. japon-
+ica, Fig. 3c, d; and C. obtusa , Fig. 4c, d). Additionally,
+there were no decay symptoms around the mycelia at all. In
+F. crenata , the mycelia of T. eurrhizus were found inside
+vessels in the hardwood more frequency than tracheids in
+softwood (Fig. 5c, d), but no decay symptoms were
+observed. In addition, there were no mycelia in other
+woody tissues, such as xylem rays and ﬁbers. There were
+many T. eurrhizus mycelia covering the sample surfaces
+and edges ( P. densiﬂora , Fig. 2e, f; C. japonica , Fig. 3e, f;
+C. obtusa , Fig. 4e, f; and F. crenata , Fig. 5e, f).
+Component analyses
+LDRs and SDRs of 3 T. eurrhizus strains (T3, T11 and
+T26), T. versicolor and F. palustris are shown in Tables 2
+and 3, respectively.
+There was no signiﬁcant difference among all fungal
+strains in either the LDRs or the SDRs of heartwood and
+sapwood for P. densiﬂora (Tables 2, 3).
+In C. japonica , none of the strains showed any signiﬁ-
+cant difference in LDRs between the heartwood and sap-
+wood samples (Table 2). They also showed no difference
+in SDRs in the heartwood of C. japonica . In the sapwood,
+there was no signiﬁcant difference in SDRs among the
+three T. eurrhizus strains and T. versicolor . T3 exhibited a
+signiﬁcantly lower SDR than that of F. palustris , but the
+other two strains showed no signiﬁcant difference from F.
+palustris (Table 3).
+Interestingly, all the fungi exhibited negative LDRs in
+heartwood of C. obtusa , and T3 and T11 also showed
+negative LRDs in sapwood (Table 2). LDRs of all the
+fungal strains were not signiﬁcantly different in sapwood.
+It is suggested that T. eurrhizus has low lignin degradation
+ability in C. obtusa . In heartwood, the SDRs of T11 and
+T26 were not signiﬁcantly different from that of F.
+palustris; in sapwood, only the SDR of T26 was not sig-
+niﬁcantly different from that of F. palustris (Table 3). With
+respect to the LDRs and the SDRs of C. obtusa , there was
+no signiﬁcant difference among T. eurrhizus strains.
+In the heartwood of F. crenata , the LDRs of T3 and T11
+were signiﬁcantly lower than that of T. versicolor , while
+the LDR of T26 was not signiﬁcantly different. On the
+other hand, the LDRs of all the T. eurrhizus strains were
+signiﬁcantly lower than that of T. versicolor in sapwood.
+The SDRs in heartwood of all fungal strains were not
+signiﬁcantly different. But, in sapwood, the SDR of T11
+was signiﬁcantly lower than that of F. palustris .
+Lignin degradation of
+Q. miyagii was not signiﬁcantly
+different among all the fungal strains in heartwood, and in
+sapwood, the only signiﬁcant difference was signiﬁcantly
+lower LDR in T11 compared to T. versicolor . In heart-
+wood, no fungal strains had signiﬁcantly different SDRs.
+T26 did exhibit a signiﬁcantly higher SDR than those of
+other T. eurrhizus strains in sapwood, but it was not sig-
+niﬁcantly different from that of F. palustris .
+Discussion
+Regardless of wood species and sample location, all T. eur-
+rhizus strains showed similar mass losses after eight-week
+exposure. The results suggested that T. eurrhizus can degrade
+heartwood as well as sapwood. Heartwood generally exhibits
+higher durability than that of sapwood, because heartwood
+has more extractives than that in sapwood. T. eurrhizus may
+have some resistance to extractives. We propose that a
+mixture of heartwood and sapwood may be used as a medium
+for artiﬁcial cultivation of T. eurrhizus , e.g., a whole small
+log produced by forest thinning.
+From the results of eight-week decay test, T25 showed the
+lowest values of MLRs in all wood species both heartwood
+and sapwood. This strain has low degradation potential of
+wood. On the other hand, T26 showed the highest MLRs both
+decay tests in most of wood species. T26 is comparatively
+high wood degradation ability among four strains.
+Meanwhile, the LDRs of T. eurrhizus were not signiﬁ-
+cantly different from that of the brown-rot fungus F.
+palustris. Since brown-rot fungi generally decompose little
+lignin [ 20], this might indicate that T. eurrhizus has low
+lignin degradation ability. Termitomyces fungi are sym-
+bionts of Macrotermitinae termites, and one of the roles of
+the fungi is thought to be decomposition of lignin for ter-
+mite digestion [ 21]. Other scientists have reported that the
+J Wood Sci (2017) 63:83–94 87
+123
+roles of symbiotic fungi are unclear and differ depending
+on their host termites [ 22, 23]. The host termite Odon-
+totermes formosanus in Japan might not depend on high
+lignin degradation by T. eurrhizus . The lignin contents of
+the fungus comb collected in Japan were 3–10 % [ 24],
+signiﬁcantly lower than those of plants. Odontotermes
+formosanus may collect lignin-decomposed material for
+the comb. Alternatively, Xylaria fungi are known to settle
+in fungus combs of Macrotermitinae termites [ 7, 25, 26].
+Xylaria species have a solitary habit and the ability to
+degrade lignin [ 27]. Hence, the lignin of the comb may be
+decomposed by these Xylaria fungi. The termites are also
+known to feed on the fungal nodules, balls of Termitomyces
+mycelia, on the fungus comb [ 3]. T. eurrhizus is likely to be
+a source of protein for O. formosanus . Although we found
+wide variation in the SDRs, those of T. eurrhizus and
+Fig. 2 SEM images of decayed wood samples of Pinus densiﬂora.
+a Heartwood core sample decayed by T. versicolor (FFPRI1030).
+b Sapwood core sample decayed by T. versicolor (FFPRI1030).
+c Heartwood core sample decayed by T. eurrhizus (T3). d Sapwood
+core sample decayed by T. eurrhizus (T26). e The surface of a
+heartwood sample decayed by T. eurrhizus (T11). f The surface of a
+sapwood sample decayed by T. eurrhizus (T3)
+88 J Wood Sci (2017) 63:83–94
+123
+control fungi were not signiﬁcantly different. It might
+indicate the similar degradation abilities of T. eurrhizus to
+holocellulose. Our previous study indicated that T. eur-
+rhizus could grow sufﬁciently on cellulose-containing
+medium as a carbon-source [ 15].
+In general, F. crenata is known to be susceptible to
+wood-decaying fungi, and is used in the cultivation of
+mushrooms in Japan [ 28]. But our T. eurrhizus strains
+induced little decay in either the 8- or the 12-week expo-
+sure. In addition, these strains also could not degrade Q.
+miyagii. These two species belong to the family Fagaceae.
+Fagaceae has tannin (0.2–8.8 %) in wood [ 29], and tannin
+was reported to inhibit fungal decomposition [ 30]. Tannin
+could inhibit wood degradation of T. eurrhizus . Timbers of
+Fig. 3 SEM images of decayed wood samples of Cryptomeria
+japonica. a Heartwood core sample decayed by T. versicolor
+(FFPRI1030). b Sapwood core sample decayed by T. versicolor
+(FFPRI1030). c Heartwood core sample decayed by T. eurrhizus (T3).
+d Sapwood core sample decayed by T. eurrhizus (T11). e The surface
+of a heartwood sample decayed by T. eurrhizus (T26). f The surface
+of a sapwood sample decayed by T. eurrhizus (T25)
+J Wood Sci (2017) 63:83–94 89
+123
+Q. miyagii have been known as hard and durable materials
+since early times [ 31, 32]; the heartwood is especially
+known for its high decay durability.
+Since T25 did not survive through the end of the test
+period of twelve weeks, T. eurrhizus might be unﬁt for
+long-term cultivation on artiﬁcial media. This was
+supported by the results that the MLRs of T3, T11 and
+T26 after twelve weeks were the same as those of the
+eight-week tests. We incuba ted all the bottles hermet-
+ically because T. eurrhizus seemed to be sensitive to
+bacterial and fungal contam ination in our preliminary
+experiments (Ono, unpublished data). On the other
+hand, the nests of the host te rmites are well ventilated
+[33, 34]. Fungus combs have a sponge-like appearance
+Fig. 4 SEM images of decayed wood samples of Chamaecyparis
+obtusa. a Heartwood core sample decayed by T. versicolor
+(FFPRI1030). b Sapwood core sample decayed by T. versicolor
+(FFPRI1030). c Heartwood core sample decayed by T. eurrhizus
+(T25). d Sapwood core sample decayed by T. eurrhizus (T26). e The
+surface of a heartwood sample decayed by T. eurrhizus (T11). f The
+surface of a sapwood sample decayed by T. eurrhizus (T26)
+90 J Wood Sci (2017) 63:83–94
+123
+with a large surface area, meaning that Termitomyces
+fungi may prefer a well-ven tilated condition. Moreover,
+fungus combs are fed from the bottom, and are main-
+tained by termites by adding fresh media [ 2, 35]. It is
+assumed that some metabolic products by the fungus
+might be stored in the agar media, and inhibit the
+growth of T. eurrhizus .
+The results of SEM observation clearly showed that the
+mycelia of T. eurrhizus could not penetrate even the
+smaller wood blocks [1 cm (R) 9 1 cm (T) 9 0.5 cm (L)].
+It is presumed that T. eurrhizus can only decay the surfaces
+of the samples. Wood materials of small particle size such
+as saw-dust are strongly recommended for the artiﬁcial
+media. However, mycelia of T. eurrhizus were often found
+Fig. 5 SEM images of decayed wood samples of Fagus crenata.
+a Heartwood core sample decayed by T. versicolor (FFPRI1030).
+b Sapwood core sample decayed by T. versicolor (FFPRI1030).
+c Heartwood core sample decayed by T. eurrhizus (T11). d Sapwood
+core sample decayed by T. eurrhizus (T3). e The surface of a
+heartwood sample decayed by T. eurrhizus (T3). f The surface of a
+sapwood sample decayed by T. eurrhizus (T11)
+J Wood Sci (2017) 63:83–94 91
+123
+Table 2 Average of lignin content rates and lignin decrease rates (LDRs) of 5 wood species after twelve week decay tests
+Lignin
+P. densiﬂora C. japonica C. obtusa
+Heart wood Sap wood Heart wood Sap wood Heart wood Sap wood
+Content
+(%)
+LDR
+(%)
+SD Content
+(%)
+LDR
+(%)
+SD Content
+(%)
+LDR
+(%)
+SD Content
+(%)
+LDR
+(%)
+SD Content
+(%)
+LDR
+(%)
+SD Content
+(%)
+LDR
+(%)
+SD
+Sound wood 27.0 26.7 33.9 31.1 26.4 28.9
+T3 29.3 0.6 3.2a 27.9 3.2 0.5a 35.9 -4.9 6.3a 31.2 0.8 3.7a 32.1 -11.6 3.3ab 31.8 -1.2 1.1a
+T11 29.4 -1.0 2.1a 28.6 -1.1 3.6a 33.6 2.4 2.4a 31.2 3.9 2.2a 31.6 -9.9 3.6b 31.5 -1.2 1.8a
+T26 29.3 1.1 5.4a 28.9 0.2 5.0a 35.0 1.5 11.2a 34.2 -0.5 7.1a 30.4 -3.1 1.7b 31.7 1.5 0.2a
+T. versicolor 28.6 4.2 5.3a 28.9 0.5 1.6a 32.1 6.9 12.2a 28.8 10.3 1.2a 29.8 -22.8 8.3a 29.1 3.5 3.5a
+F. palustris 34.1 -4.9 9.3a 30.4 -4.7 6.4a 44.0 -7.4 8.0a 40.3 6.5 35.6a 32.5 -10.1 1.4b 35.1 4.9 8.5a
+Lignin
+F. crenata Q. miyagii
+Heart wood Sap wood Heart wood Sap wood
+Content (%) LDR (%) SD Content (%) LDR (%) SD Content (%) LDR (%) SD Content (%) LDR (%) SD
+Sound wood 27.7 28.1 28.6 25.7
+T3 27.8 3.9 7.5b 27.1 7.6 4.8b 29.7 -3.1 2.9a 26.4 -1.1 8.4a
+T11 27.5 1.7 0.5b 27.5 2.8 3.5b 30.4 -4.8 3.5a 27.1 -3.3 4.1a
+T26 25.3 12.2 3.9b 27.0 8.5 4.1b 30.2 -4.1 3.0a 26.7 -0.8 2.0a
+T. versicolor 23.3 31.9 4.6a 21.3 45.8 13.6a 28.8 -0.6 3.6a 23.5 12.3 8.6a
+F. palustris 29.9 6.8 4.8b 36.2 14.3 5.8b 30.3 -1.9 6.9a 27.8 6.7 2.0a
+The same characters indicate no signiﬁcant difference by Tukey–Kramer test ( p [ 0.05)
+LDR lignin decrease rate, SD standard deviation of lignin decrease rate
+92 J Wood Sci (2017) 63:83–94
+123
+Table 3 Average of total sugar component rates and total sugar decrease rates (SDRs) of 5 wood species after twelve-week decay tests
+Total sugar
+P. densiﬂora C. japonica C. obtusa
+Heart wood Sap wood Heart wood Sap wood Heart wood Sap wood
+Content
+(%)
+SDR
+(%)
+SD Content
+(%)
+SDR
+(%)
+SD Content
+(%)
+SDR
+(%)
+SD Content
+(%)
+SDR
+(%)
+SD Content
+(%)
+SDR
+(%)
+SD Content
+(%)
+SDR
+(%)
+SD
+Sound wood 65.0 65.7 62.9 65.2 62.0 62.4
+T3 67.9 4.5 11.6a 65.9 7.3 13.1a 67.0 -5.6 7.3a 71.2 -8.0 7.3b 66.3 1.6 1.2b 59.7 12.0 11.2b
+T11 73.6 -5.1 8.9a 73.5 -5.7 5.3a 64.2 -0.5 7.1a 66.2 2.7 1.7ab 63.8 5.6 14.7ab 66.9 0.5 4.4b
+T26 58.1 18.5 15.9a 62.9 11.8 6.5a 54.4 17.0 14.7a 50.3 29.6 9.6ab 60.8 12.1 9.9ab 58.4 15.9 8.2ab
+T. versicolor 65.5 8.9 1.4a 67.0 6.2 2.6a 61.1 4.6 8.6a 66.5 1.3 2.2ab 61.3 -7.5 11.3b 64.5 1.1 4.6b
+F. palustris 60.1 21.9 16.2a 65.6 4.3 31.4a 54.9 23.4 27.7a 55.4 36.2 30.2a 50.0 27.8 2.3a 51.9 34.8 7.1a
+Total sugar
+F. crenata Q. miyagii
+Heart wood Sap wood Heart wood Sap wood
+Content
+(%)
+SDR
+(%)
+SD Content
+(%)
+SDR
+(%)
+SD Content
+(%)
+SDR
+(%)
+SD Content
+(%)
+SDR
+(%)
+SD
+Sound wood 66.6 66.7 64.1 69.0
+T3 67.1 3.6 4.8a 62.5 10.3 18.9a 68.7 -6.6 1.9a 74.3 -5.9 2.8c
+T11 71.4 -6.1 12.5a 68.1 -1.2 8.1a 63.8 1.9 8.6a 72.2 -2.2 7.2c
+T26 70.6 -1.7 4.2a 65.3 6.7 3.8a 60.8 6.4 2.4a 62.3 12.5 4.0ab
+T. versicolor 69.9 15.1 6.4a 70.3 23.5 23.1a 64.7 -0.9 1.9a 69.4 3.9 1.3bc
+F. palustris 63.3 17.3 13.6a 59.3 39.5 15.0a 71.1 -6.8 6.9a 67.5 15.8 6.5ab
+The same characters indicate no signiﬁcant difference by Tukey–Kramer test ( p [ 0.05)
+SDR total sugar decrease rate, SD standard deviation of total sugar decrease rate
+J Wood Sci (2017) 63:83–94 93
+123
+in the vessels of F. crenata . The size of vessels of F.
+crenata is larger than those of the softwood tracheids
+(Figs. 2–5). If the mycelia of T. eurrhizus prefer a well-
+ventilated condition, they might not penetrate deep into
+tracheids.
+This study shows that T. eurrhizus collected in Japan
+does not have high lignin-degradation ability. The low
+lignin content wood species may be favorable to T. eur-
+rhizus. In addition, the fungus can only decay the surfaces
+of wood block samples. There is a possibility that the
+fungus prefers softwood to hardwood, suggesting that in
+the future artiﬁcial cultivation with forest-thinning resource
+such as Japanese cedar ( C. japonica ) and cypress ( C.
+obtusa) would be targeted. The presence of extractives
+might be one of factors relating to from this phenomenon.
+Acknowledgments We would like to give special thanks to Mr. Akio
+Adachi, RISH, Kyoto University, for preparing wood specimens.
+References
+1. Aanen DK, Eggleton P (2005) Fungus-growing termites origi-
+nated in African rain forest. Curr Biol 15:851–855
+2. Otani Y (1992) The fungi grown with termites (in Japanese).
+Shiroari 90:3–10
+3. Nobre N, Rouland-Lefe `vre C, Aanen DK (2011) Comparative
+biology of fungus cultivation in termites and ants. In: Bignell DE,
+Roisin Y, Lo N (eds) Biology of termites: a modern synthesis.
+Springer, Dordrecht, pp 193–210
+4. Otani Y (1979) Termitomyces albuminosus (Berk.) Heim col-
+lected in Ishigaki Island of Ryukyu archipelago Japan (in Japa-
+nese). Trans Mycol Soc Japan 20:195–202
+5. Otani Y, Shimizu D (1981) Termitomyces clypeatus Heim col-
+lected from Iriomote Island, Okinawa, Japan (in Japanese). Bull
+Natn Sci Mus Tokyo Ser B 7(4):131–134
+6. Kinjo K, Anucha P, Miyagi T (2005) Termitomyces eurrhizus
+collected from the main island of Okinawa (in Japanese). Trans
+Mycol Soc Japan 46:41–44
+7. Otani Y (1982) The fungi grown with termites (in Japanese). Iden
+36(12):8–12
+8. Ikehara S (1966) Distribution of termites in the Ryukyu Archi-
+pelago (in Japanese). Bull Art Sci Univ Ryukyus (Math & Nat
+Sci) 9:49–176
+9. Yasuda I, Nakasone Y, Kinjo K, Yaga S (2000) Morphology and
+distribution of termites in Ryukyu Islands and north and south
+Daito Islands (in Japanese). Jpn J Ent (N S) 3:139–156
+10. Huang Q-Y, Lei C-L, Xue D (2006) Field evaluation of a ﬁpronil
+bait against subterranean termite Odontotermes formosanus
+(Isoptera: Termitidae). J Econ Entomol 99:455–461
+11. Ono K, Yoshimura T, Kinjo K (2015) Screening of strains and
+media of Termitomyces eurrhizus collected from Japan toward
+nutritional analyses. The 6th international conference on sus-
+tainable future for human security 2015 (Oral), Bali, Indonesia,
+17–19 November 2015
+12. Kitamura S, Murata G (1979) Okinawa-urajirogashi (in Japa-
+nese). In: Colored illustrations of woody plants of Japan vol.II.
+Hoikusha Publishing, Osaka, pp 274–275
+13. JIS K1571–2010 (2010) Test methods for determining the effec-
+tiveness of wood preservatives and their performance requirements
+(in Japanese). Japanese Standard Association, Tokyo
+14. Meguro T (1997) Decay durability of timber (in Japanese). In:
+Yaga Y, Kawachi S, Imamura Y (eds) Wood science series 12
+Preservation & durability. Kaiseisha, Otsu, pp 79–82
+15. Ono K, Yoshimura T, Kinjo K (2015) Effects of carbohydrate sub-
+strates on vegetative mycelial growth of Termitomyces eurrhizus
+from Okinawa Prefecture. Mushroom Sci Biotechnol 22:169–171
+16. Dence CW (1994) Quantitative determination of lignin (in
+Japanese). In: Lin SY, Dence CW (eds) Methods in lignin
+chemistry. Uni Press, Tokyo, pp 21–25
+17. Hodge JE, Hofreiter BT (1962) Phenol-sulfuric acid colorimetric
+method. In: Whisler RL, Wolfrom ML (eds) Methods in carbo-
+hydrate chemistry I: analysis and preparation of sugars. Aca-
+demic Press, New York, pp 388–389
+18. Takahashi M (1989) Decay durability of important timbers (in
+Japanese). Mushroom and wood. Tsukiji Shokan Publishing,
+Tokyo, pp 73–76
+19. Bignell DE (2000) Introduction to symbiosis. In: Abe T, Bignell
+DE, Higashi M (eds) Termites: evolution, sociality, symbioses,
+ecology. Kluwer Academic Publishers, Dordrecht, pp 189–208
+20. Takahashi M (1993) Biology of brown-rot fungi (in Japanese).
+Mokuzai Hozon 19:2–12
+21. Hyodo F, Inoue T, Azuma J-I, Tayasu T, Abe T (2000) Role of
+the mutualistic fungus in lignin degradation in the fungus-
+growing termites (Macrotermitinae: Isoptera). Soil Biol Biochem
+32:653–658
+22. Rouland C, Lenoir F, Lepage M (1991) The role of the symbiotic
+fungus in the digestive metabolism of several species of fungus-
+growing termites. Comp Biochem Physiol 99A:657–663
+23. Hyodo F, Tayasu I, Inoue T, Azuma J-I, Kudo T (2003) Different
+role of symbiotic fungi in lignin degradation and food provision
+for fungus-growing termites (Macrotermitinae: Isoptera). Funct
+Ecol 17:186–193
+24. Kinjo K (2000) The mushroom cultivated by termite (in Japa-
+nese). Shinrin Kagaku 30:20–25
+25. Rogers JD, Ju Y-M, Lehmann J (2005) Some Xylaria species on
+termite nests. Mycologia 94:914–923
+26. Visser AA, Ros VID, De Beer ZW, Debets AJM, Hartog E,
+Kuyper TW, Læssøe T, Slippers B, Aanen DK (2009) Levels of
+speciﬁcity of Xylaria species associated with fungus-growing
+termites: a phylogenetic approach. Mol Ecol 18:553–567
+27. Osono T, Takeda H (2001) Effects of organic chemical quality and
+mineral nitrogen addition on lignin and holocellulose decomposi-
+tion of beech leaf litter by Xylaria sp. Eur J Soil Biol 37:17–23
+28. Koide H (2001) The repertoire of mushroom and the basis of
+cultivation (in Japanese). In: Ohmori S, Koide H (eds) The
+complete of mushroom cultivation. Rural Culture Association
+Japan, Tokyo, pp 29–42
+29. Mokuzai-Kogyo handbook 3rd edition (1982) Wood chemical
+property (in Japanese). Maruzen Publishing, Tokyo, p 133–174
+30. Harrison AF (1971) The inhibitory effect of oak leaf litter tann-
+nins on the growth of fungi, in relation to litter decomposition.
+Soil Biol Biochem 3:167–172
+31. Nakama Y, Purves JM, Chen B (2013) Modern Japanese &
+English translations and content analyses of ‘The scope of the
+bureau of forest administration’ from the ‘Eight volumes on
+forest administration’. Sci Bull Agri Univ Ryukyus 60:45–58
+32. Fujita S (1990) Some mechanical properties and utilization in
+Kiruki, Inosugi and Okinawa-urajirogashi wood (in Japanese).
+Bull Agri Kagoshima Univ 40:193–199
+33. Turner JS (1994) Ventilation and thermal constancy of a colony
+of a southern African termite ( Odontotermes transvaalensis :
+Macrotermitinae). J Arid Environ 28:231–248
+34. Korb J (2003) Thermoregulation and ventilation of termite
+mound. Naturwissenschaften 90:212–219
+35. Okuma M (2003) Termite symbiotic systems: efﬁcient bio-re-
+cycling of lignocellulose. Appl Microbiol Biotechnol 61:1–9
+94 J Wood Sci (2017) 63:83–94
+123
