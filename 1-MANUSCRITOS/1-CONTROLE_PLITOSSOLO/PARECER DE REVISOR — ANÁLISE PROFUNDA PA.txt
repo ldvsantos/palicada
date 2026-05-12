@@ -1,0 +1,234 @@
+PARECER DE REVISOR — ANÁLISE PROFUNDA PARA SUBMISSÃO Q1
+Manuscrito: "Controle de erosão com a implantação de paliçadas em área de ocorrência de Plintossolo degradado pela presença de ravinas"
+Data da revisão: 12 de maio de 2026
+Revisor: Diego Vidal (Autor and Editor mode)
+Verificações automatizadas: 75 citações · 0 ausentes · Build Quarto ✅
+
+SUMÁRIO EXECUTIVO
+O manuscrito apresenta um estudo de caso de bioengenharia de solos com paliçadas de bambu em série para controle de ravina em Plintossolo, integrando monitoramento por pinos (2 anos), caracterização geotécnica, série pluviométrica regional (20 anos) e simulação espacial de cenários. Há mérito técnico e densidade de dados. Contudo, o manuscrito, no estado atual, seria rejeitado na triagem inicial (desk rejection) em periódicos Q1 como Catena, Geoderma, Land Degradation & Development ou Geomorphology. As razões são estruturais e metodológicas, não cosméticas. Abaixo, organizo os problemas em ordem de gravidade.
+
+🔴 BLOCO 1 — PROBLEMAS CRÍTICOS (DESK REJECTION)
+1.1. Inconsistência numérica entre Resumo e Resultados (ERRO FATAL)
+O Resumo reporta:
+
+"contribuições de 37,7% (SUP), 22,6% (MED) e 39,7% (INF)"
+
+Os Resultados (linha 250) reportam:
+
+"35,0% no superior, 33,7% no inferior e 31,3% no intermediário"
+
+São conjuntos de números completamente diferentes. Um revisor Q1 detecta isso em 30 segundos e recomenda rejeição imediata por falta de rigor. É imperativo rastrear qual conjunto está correto (presumivelmente o dos Resultados, por ter origem direta nos dados) e corrigir o Resumo. Além disso, o Resumo omite o horizonte crítico de 0,8 ano do segmento inferior e reporta apenas os 4,8 anos do segmento superior — isso configura viés de reporte seletivo (cherry-picking), que revisores Q1 identificam como má prática científica.
+
+Ação: Corrigir números do Resumo para baterem com Resultados. Reportar a faixa completa de longevidade (0,8–4,8 anos), não apenas o valor mais favorável.
+
+1.2. N = 1 sem delineamento BACI (pseudoreplicação)
+O estudo baseia-se em uma única ravina (Ravina 1), sem réplica, sem ravina-controle (sem paliçadas) e sem medições pré-intervenção. O manuscrito reconhece a limitação (linha 146: "restringindo a generalização às condições geomórficas, pedológicas e hidrológicas da feição monitorada"), mas isso não resolve o problema de fundo: sem baseline pré-paliçada, não é possível atribuir causalmente as mudanças morfométricas às estruturas. A redução de profundidade de 0,80 m para 0,30 m no segmento superior poderia refletir deposição natural por sazonalidade, colapso de taludes ou simplesmente erro de medição — sem um controle, a inferência causal é frágil.
+
+Para Q1, o mínimo exigido seria: (a) medições pré-intervenção por pelo menos 6–12 meses para estabelecer taxa de erosão basal, ou (b) uma ravina-controle adjacente sem intervenção, ou (c) um delineamento BACI (Before-After-Control-Impact) explícito. O manuscrito não tem nenhum dos três.
+
+Ação: Reformular o enquadramento do estudo como prova de conceito (proof-of-concept) ou estudo de caso instrumental, com linguagem explicitamente não generalizável. Incluir na Discussão uma subseção "Limitations" que detalhe a ausência de baseline e de controle como restrições à inferência causal. Se houver qualquer dado pretérito (fotos, relatos, medições informais), incorporá-lo como evidência qualitativa de linha de base.
+
+1.3. Cálculo de EI30 não documentado (lacuna metodológica grave)
+O manuscrito usa EI30 (erosividade mensal) como preditor em correlações e regressões (linhas 244–246), mas em nenhum lugar de Methods se explica como EI30 foi calculado. O EI30 requer dados de intensidade de chuva em escala sub-horária (preferencialmente breakpoint ou no mínimo horária). Com uma estação a 15 km de distância e dados diários, como se obteve EI30? Se foi usada uma equação empírica de estimativa a partir de totais mensais (ex.: equação de Lombardi Neto, equação de Rufino, ou outra regional), é preciso declará-la com a referência. Se foi calculado a partir dos dados diários usando a metodologia de Wischmeier-Smith com energia cinética por intervalo, é preciso descrever o procedimento.
+
+Sem essa informação, todos os resultados que envolvem EI30 (
+r
+=
+0
+,
+32
+r=0,32, 
+R
+2
+≈
+0
+,
+32
+R 
+2
+ ≈0,32) são não reprodutíveis e, portanto, não publicáveis em Q1.
+
+Ação: Inserir em Methods (2.5 ou 2.7) a equação ou o protocolo de cálculo do EI30, com citação da fonte metodológica. Se a estimativa for indireta (ex.: regressão regional mensal), declarar a incerteza associada.
+
+1.4. Ensaio de infiltração (VIB) não descrito
+A seção 2.9 (linha 174) menciona "Velocidade de Infiltração Básica (VIB, cm/h), estimada por segmento como a média das últimas cinco leituras do ensaio de infiltração". Contudo, não há nenhuma descrição do ensaio de infiltração em Methods. Qual método? Duplo anel? Infiltrômetro de disco? Permeâmetro de Guelph? Quantas repetições por segmento? Em que data? Sob que condição de umidade antecedente?
+
+Sem essa descrição, a Equação 2 e todo o acoplamento VIB→Cr→deposição são não auditáveis. Revisores Q1 exigem rastreabilidade completa de cada parâmetro que entra em simulação.
+
+Ação: Inserir subseção em Methods descrevendo o ensaio de infiltração (método, norma, n, datas, condições). Reportar os valores de VIB por segmento.
+
+1.5. Simulação espacial sem validação e sem análise de sensibilidade
+As Figuras 9–11 e toda a seção 3.5 baseiam-se em simulação espacial que: (a) usa tradução empírica chuva→deposição calibrada nos mesmos dados que depois são usados para projetar cenários (circularidade); (b) não tem validação independente (ex.: comparação entre depósito simulado e observado em um subperíodo); (c) não reporta análise de sensibilidade aos parâmetros da Equação 2 (
+α
+α, 
+C
+r
+e
+f
+C 
+ref
+​
+ , 
+V
+I
+B
+r
+e
+f
+VIB 
+ref
+​
+ ); (d) assume taxas de deposição constantes e ausência de adensamento/remobilização (a própria nota da Figura 10 admite isso).
+
+Para Q1, simulações sem validação são consideradas exercícios especulativos. No mínimo, seria necessário: (i) validação cruzada leave-one-out ou split-sample; (ii) análise de sensibilidade tipo OAT (one-at-a-time) ou Morris para os parâmetros da Eq. 2; (iii) discussão explícita de como a não consideração de adensamento afeta as projeções de longevidade (viés de superestimativa).
+
+Ação: Inserir validação (mesmo que qualitativa: comparar depósito simulado para o período monitorado com o observado). Inserir análise de sensibilidade dos parâmetros 
+C
+r
+e
+f
+C 
+ref
+​
+ , 
+α
+α, 
+V
+I
+B
+r
+e
+f
+VIB 
+ref
+​
+ . Reportar incerteza nas projeções de longevidade (intervalos, não valores pontuais).
+
+1.6. Título inadequado para Q1
+O título atual — "Controle de erosão com a implantação de paliçadas em área de ocorrência de Plintossolo degradado pela presença de ravinas" — tem 17 palavras, é descritivo-genérico, contém a construção problemática "degradado pela presença de ravinas" (ravinas são manifestação da degradação, não sua causa) e não sinaliza o mecanismo, a métrica principal ou a contribuição do estudo.
+
+Títulos Q1 no campo têm 10–15 palavras, são nominais (sem verbos no infinitivo) e contêm: objeto de estudo + mecanismo/intervenção + métrica principal + contexto pedológico/ climático. Exemplos reais de Q1: "Check dam performance in a tropical Plintosol gully: sediment retention, morphometric adjustment, and operational longevity under rainfall thresholds" ou "Bamboo check dams for gully stabilization in Plintosols: two-year monitoring of sediment trapping efficiency and fill scenarios".
+
+Ação: Reescrever o título em 12–15 palavras, estrutura nominal, com mecanismo + métrica + contexto.
+
+🟠 BLOCO 2 — PROBLEMAS MODERADOS (REVISÃO SUBSTANTIVA)
+2.1. Duplicação entre seções 2.5 e 2.6
+As seções 2.5 ("Monitoramento de erosão e sedimentação") e 2.6 ("Protocolo de monitoramento e condições de contorno") descrevem o mesmo método dos pinos com sobreposição considerável. A 2.5 é uma versão resumida; a 2.6 é a versão detalhada. Isso configura redundância estrutural que editores Q1 veem como falta de polimento.
+
+Ação: Fundir 2.5 e 2.6 em uma única seção "2.5 Monitoramento de erosão e sedimentação", mantendo o protocolo detalhado e eliminando a duplicação.
+
+2.2. Seção 2.8 é uma frase
+"Para organizar e comunicar os resultados em termos espaciais, os produtos do levantamento planialtimétrico e o inventário de feições erosivas foram estruturados em ambiente de Sistema de Informação Geográfica (SIG)..." — isso não é uma seção, é uma frase. Em Q1, cada seção/subseção precisa ter substância.
+
+Ação: Incorporar esse conteúdo em 2.3 (Levantamento planialtimétrico) ou eliminar como seção independente.
+
+2.3. Análise de defasagem (lag) mencionada em Methods mas ausente em Results
+A seção 2.10 descreve análise de correlação por defasagem com janela de ±6 meses. Contudo, os resultados dessa análise não aparecem em lugar nenhum de Results. Nenhum valor de lag ótimo é reportado, nenhuma figura de cross-correlograma é apresentada. Isso é uma desconexão Methods↔Results que revisores Q1 identificam imediatamente.
+
+Ação: Reportar os resultados da análise de lag em 3.3 (com figura ou tabela) OU remover a descrição do método de 2.10.
+
+2.4. Parâmetros IDF sem justificativa local
+A Equação 1 adota 
+K
+=
+1200
+K=1200, 
+a
+=
+0,20
+a=0,20, 
+b
+=
+15
+b=15, 
+c
+=
+0,80
+c=0,80 citando @melo_et_al_2015. Mas Melo et al. (2015) calibraram IDF para qual região? Se for para o estado de Sergipe ou Aracaju, isso precisa ser explicitado. Se for para outra região, a transposição de parâmetros IDF precisa ser justificada (ou substituída por parâmetros locais). Revisores hidrológicos Q1 são implacáveis com transposição não justificada de parâmetros IDF.
+
+Ação: Especificar a região de calibração dos parâmetros de Melo et al. (2015). Se não forem locais, buscar equação IDF calibrada para Aracaju ou litoral sergipano (ex.: há trabalhos de Aragão, Silva et al. com IDF para capitais nordestinas).
+
+2.5. Métrica de eficiência (cm/mm) não convencional
+A eficiência de retenção é reportada como cm de deposição por mm de chuva (
+1,12
+1,12 a 
+1,97
+×
+10
+−
+4
+1,97×10 
+−4
+  cm/mm). Essa métrica não é padrão na literatura de check-dams, que tipicamente usa: (a) taxa de retenção mássica (kg/ano ou t/ha/ano), (b) eficiência de aprisionamento (trap efficiency, %), ou (c) volume retido por evento (m³). A métrica cm/mm é fisicamente questionável porque 1 cm de deposição em uma ravina de 1 m de largura não é equivalente a 1 cm em uma ravina de 3 m de largura — a largura varia entre segmentos (Tabela 4).
+
+Ação: Justificar a métrica ou convertê-la para volume retido por mm de chuva (m³/mm), que é independente da geometria e comparável entre estudos.
+
+2.6. Figura 4 — legenda menciona "ravinas" (plural)
+A legenda da Figura 4 diz "coleta dos dados morfométricos das ravinas" (plural), mas o estudo é sobre uma única ravina. Inconsistência que enfraquece a credibilidade.
+
+Ação: Corrigir para "da ravina" (singular).
+
+2.7. Discussão sem benchmarks quantitativos externos
+A Discussão compara resultados com a literatura de forma qualitativa ("compatível com", "corroborado por", "difere dos achados de"), mas raramente quantifica o quanto os valores observados se aproximam ou se afastam de estudos comparáveis. Por exemplo: a retenção de 76 cm em 2 anos é alta ou baixa comparada a outros check-dams em clima tropical? A longevidade de 0,8–4,8 anos é típica ou atípica? A eficiência de 
+1,97
+×
+10
+−
+4
+1,97×10 
+−4
+  cm/mm está em que faixa do espectro reportado?
+
+Ação: Inserir 3–5 comparações quantitativas explícitas com valores de outros estudos (ex.: "Zema et al. (2014) reportaram retenção de X cm/ano em check-dams na Calábria; no presente estudo, a taxa equivalente foi de Y cm/ano, sugerindo que...").
+
+🟡 BLOCO 3 — PROBLEMAS MENORES (POLIMENTO)
+3.1. Palavras-chave misturando PT e EN
+"check dams" nas keywords de um manuscrito em português. Usar "paliçadas permeáveis" ou, se o periódico for internacional, submeter em inglês.
+
+3.2. Resumo com 7 frases longas — comprimir para 5
+O Resumo atual tem ~200 palavras e 7 frases. O padrão Q1 é 150–250 palavras em 5–6 frases. Há espaço para fundir as frases 4–5 (eficiência por segmento + capacidade residual).
+
+3.3. Conclusão com 4 parágrafos — Q1 espera 1 parágrafo
+A Conclusão atual tem 4 parágrafos e repete valores numéricos já apresentados em Results. O padrão Q1 (ver §8.1 e §9 do protocolo) é 1 parágrafo de 3–5 frases, sem repetir estatísticas, sintetizando significado e direção futura.
+
+3.4. "não adensado" vs "normalmente adensado" — possível confusão
+A Tabela 2 e o texto (linha 71) dizem "ensaio rápido, não adensado" (modalidade de ensaio: sem fase de adensamento prévio). Já a linha 98 diz "solo normalmente adensado" (história de tensões do solo: OCR ≈ 1). São conceitos diferentes, mas a proximidade dos termos pode confundir o leitor. Esclarecer.
+
+3.5. Faltam as contribuições de cada autor
+O YAML diz author: Emersson Guedes da Silva et al. sem lista explícita de coautores, afiliações ou ORCID. Para submissão Q1, isso precisa estar completo.
+
+📊 TABELA-RESUMO DE PRIORIDADES
+#	Problema	Gravidade	Seção afetada	Risco de rejeição
+1	Inconsistência Resumo vs Resultados (37,7/22,6/39,7 vs 35,0/31,3/33,7)	🔴 CRÍTICO	Resumo + 3.3	Rejeição imediata
+2	N=1 sem baseline nem controle (pseudoreplicação)	🔴 CRÍTICO	2.1, 2.6, Discussão	Rejeição por delineamento
+3	EI30 sem método de cálculo documentado	🔴 CRÍTICO	2.5, 3.3	Não reprodutível
+4	Ensaio de infiltração (VIB) não descrito	🔴 CRÍTICO	2.9	Não auditável
+5	Simulação espacial sem validação nem sensibilidade	🔴 CRÍTICO	2.9, 3.5	Especulativo
+6	Título inadequado (17 palavras, passivo, impreciso)	🔴 CRÍTICO	YAML	Desk rejection
+7	Duplicação 2.5 / 2.6	🟠 MODERADO	Methods	Falta de polimento
+8	Seção 2.8 (1 frase)	🟠 MODERADO	Methods	Estrutura frágil
+9	Análise de lag em Methods mas não em Results	🟠 MODERADO	2.10, 3.3	Desconexão M→R
+10	Parâmetros IDF sem justificativa local	🟠 MODERADO	2.7	Questionável
+11	Métrica cm/mm não convencional	🟠 MODERADO	3.3, 3.5	Comparabilidade
+12	"ravinas" (plural) na legenda da Fig. 4	🟠 MODERADO	Fig. 4	Credibilidade
+13	Discussão sem benchmarks quantitativos	🟠 MODERADO	3.1–3.5	Profundidade
+14	Keywords misturando PT/EN	🟡 MENOR	YAML	Polimento
+15	Resumo: 7 frases → comprimir para 5	🟡 MENOR	Resumo	Polimento
+16	Conclusão: 4 parágrafos → 1 parágrafo	🟡 MENOR	4	Formato Q1
+17	"não adensado" vs "normalmente adensado"	🟡 MENOR	2.2.1	Clareza
+18	Autoria incompleta (et al. sem lista)	🟡 MENOR	YAML	Submissão
+✅ PONTOS FORTES (não descartar o manuscrito)
+Apesar dos problemas acima, há méritos reais que justificam o investimento em revisão:
+
+Integração de métodos (pinos + chuva + EI30 + morfometria + simulação) é exatamente o tipo de abordagem multidimensional que Q1 valoriza.
+Série de 20 anos como contexto climático regional é um diferencial frente a estudos que usam apenas o período monitorado.
+Caracterização geotécnica completa (cisalhamento direto inundado com 4 CPs, envoltória de Mohr-Coulomb, índices físicos) é rara em estudos de erosão e fortalece a interpretação mecanística.
+Simulação espacial com restrição geométrica (cunha até a crista) é uma abordagem criativa para conectar monitoramento temporal e projeção espacial.
+Transparência sobre limitações (ravina única, simulação sem adensamento) já está parcialmente presente e pode ser expandida.
+🎯 RECOMENDAÇÃO FINAL
+Recomendação: Revisão maior (major revision) com correção obrigatória de todos os itens 🔴 antes de re-submeter. O manuscrito tem potencial para Q1 (Catena, Geoderma, Land Degradation & Development) se os problemas críticos forem resolvidos, particularmente: (1) corrigir a inconsistência numérica Resumo↔Resultados, (2) documentar o cálculo de EI30, (3) descrever o ensaio de infiltração, (4) validar a simulação, e (5) reformular o enquadramento como prova de conceito com declaração explícita de limitações.
+
+Se os autores não puderem resolver os itens 2–5 por falta de dados (ex.: não há baseline pré-intervenção, não há como recuperar o método de cálculo do EI30), recomendo mirar um periódico Q2–Q3 (ex.: Environmental Monitoring and Assessment, Revista Brasileira de Ciência do Solo, Engenharia Agrícola) onde o rigor metodológico exigido é proporcionalmente menor e o valor do estudo de caso é mais bem recebido.
+
+Quer que eu implemente as correções dos itens 🔴 e 🟠 diretamente no QMD?
+

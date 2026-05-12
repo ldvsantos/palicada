@@ -35,7 +35,7 @@ warnings.filterwarnings("ignore")
 
 # ── Diretório de saída ────────────────────────────────────────────────────────
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-OUT_DIR = os.path.join(SCRIPT_DIR, "..", "2-CARACTERIZACAO_FEICAO", "media")
+OUT_DIR = os.path.join(SCRIPT_DIR, "..", "..", "2-CARACTERIZACAO_FEICAO", "media")
 os.makedirs(OUT_DIR, exist_ok=True)
 
 # ── Configuração global de figuras ────────────────────────────────────────────
@@ -540,7 +540,7 @@ def fig_fluxograma():
 
 # ── Fig. S2: Funções de pertinência fuzzy ─────────────────────────────────────
 def fig_pertinencia():
-    fig, axes = plt.subplots(2, 3, figsize=(12, 7))
+    fig, axes = plt.subplots(2, 3, figsize=(13, 8.2))
 
     def plot_var(ax, universe, mfs, names, title, xlabel, colors=None):
         if colors is None:
@@ -584,9 +584,10 @@ def fig_pertinencia():
     ax_out.grid(alpha=0.3)
 
     fig.suptitle("Funções de pertinência do sistema fuzzy Mamdani", fontsize=13,
-                  fontweight="bold", y=1.01)
-    fig.tight_layout()
-    fig.savefig(os.path.join(OUT_DIR, "fig_S2_funcoes_pertinencia_fuzzy.png"))
+                  fontweight="bold", y=0.98)
+    fig.tight_layout(rect=[0.02, 0.02, 0.98, 0.93])
+    fig.savefig(os.path.join(OUT_DIR, "fig_S2_funcoes_pertinencia_fuzzy.png"),
+                bbox_inches="tight", pad_inches=0.30, dpi=300)
     plt.close()
     print("  → fig_S2_funcoes_pertinencia_fuzzy.png")
 
@@ -698,14 +699,14 @@ def fig_radar():
              "Regressão-dominante": 0.7}.get(row_f["Mecanismo"], 0.5),
             {"Baixa": 0.2, "Moderada": 0.5, "Crítica": 0.9}[row_f["Vulnerabilidade"]],
             row_fz["Severidade"] / 100.0,
-            row_f["N_criticos"] / 5.0,
+            row_f["N_criticos"] / 6.0,
         ]
 
     N = len(categorias)
     angles = np.linspace(0, 2 * np.pi, N, endpoint=False).tolist()
     angles += angles[:1]
 
-    fig, ax = plt.subplots(figsize=(7, 7), subplot_kw=dict(polar=True))
+    fig, ax = plt.subplots(figsize=(8.4, 8.4), subplot_kw=dict(polar=True))
     colors_radar = {"F2": "#3498DB", "F4": "#F39C12", "F5": "#E74C3C"}
 
     for f in feicoes_radar:
@@ -715,15 +716,17 @@ def fig_radar():
 
     ax.set_xticks(angles[:-1])
     ax.set_xticklabels(categorias, fontsize=9)
+    ax.tick_params(axis="x", pad=14)
     ax.set_ylim(0, 1)
     ax.set_yticks([0.2, 0.4, 0.6, 0.8, 1.0])
     ax.set_yticklabels(["0.2", "0.4", "0.6", "0.8", "1.0"], fontsize=7, color="#888")
-    ax.set_title("Perfil multidimensional: EGC vs. Classificação Processo-Funcional",
-                  fontweight="bold", pad=20)
-    ax.legend(loc="upper right", bbox_to_anchor=(1.25, 1.1), fontsize=9)
+    fig.suptitle("Perfil multidimensional\nEGC vs. classificação processo-funcional",
+                 fontsize=12, fontweight="bold", y=0.96)
+    ax.legend(loc="upper right", bbox_to_anchor=(1.18, 1.10), fontsize=9)
 
-    fig.tight_layout()
-    fig.savefig(os.path.join(OUT_DIR, "fig_S5_radar_comparativo.png"))
+    fig.subplots_adjust(left=0.18, right=0.82, top=0.84, bottom=0.18)
+    fig.savefig(os.path.join(OUT_DIR, "fig_S5_radar_comparativo.png"),
+                bbox_inches="tight", pad_inches=0.35, dpi=300)
     plt.close()
     print("  → fig_S5_radar_comparativo.png")
 

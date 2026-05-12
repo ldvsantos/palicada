@@ -1,0 +1,1185 @@
+
+===PAGE 1===
+Limites da classificação morfológica e como parâmetros hidrodinâmicos ampliam o
+diagnóstico de ravinas em Plintossolos tropicais
+Emersson Guedes da Silva.
+09 de abril de 2026 1ª versão completa
+12 de maio de 2026 1ª “correção”
+Resumo
+Classificações morfológicas de erosão linear tendem a homogeneizar feições com
+severidade processual distinta, sobretudo em contextos tropicais específicos tais como em
+plintossolos nos quais a baixa capacidade de infiltração, a elevada saturação por alumínio
+em determinados faixas ácidas e a concentração sazonal das chuvas podem atuar como
+condicionantes de trajetórias erosivas aceleradas. Neste estudo avaliou-se se a inclusão de
+parâmetros hidrodinâmicos (velocidade de infiltração básica, VIB; precipitação P95) e
+geoquímicos (saturação por alumínio) amplia a capacidade da EGC em discriminar
+severidade de feições erosivas em Plintossolo Argilúvico Distrófico nos Tabuleiros
+Costeiros de Sergipe, Brasil. A EGC enquadrou seis feições (profundidade 0,40–1,50 m)
+como ravinas permanentes ativas em topo de vale, sem diferenciação de severidade. A VIB
+reduziu 51% entre o terço superior (3,13 cm/h) e o intermediário (1,53 cm/h), indicando
+transição para regime de escoamento-dominante sob intensidades recorrentes no período
+chuvoso, ao passo que horizontes subsuperficiais com saturação por alumínio de 84–99%
+são consistentes com restrição de cobertura vegetal e instabilidade de taludes sob
+umedecimento sazonal. Uma extensão processo-funcional em três níveis hierárquicos,
+complementada por inferência fuzzy Mamdani, reclassificou duas feições como voçorocas
+incipientes (severidade de 79,7 e 85,0), distinção validada por agrupamento hierárquico de
+Ward (silhouette = 0,434, k = 2) e que a classificação morfológica não captura. Um ábaco
+bidimensional (profundidade × VIB) sintetiza os contornos de severidade em formato de
+campo consultável sem computação. Os resultados sugerem que indicadores
+hidrodinâmicos e edáficos podem ampliar o diagnóstico de severidade erosiva em
+Plintossolos tropicais e subsidiar a priorização de intervenções.
+Keywords: Process-based gully classification, fuzzy logic, erosion severity, Plinthosol,
+tropical weathering, Coastal Tablelands, Brazil
+1. Introdução
+A erosão hídrica em Plintossolos subtropicais e em ambientes de tabuleiros costeiros
+constitui um vetor crônico fator persistente de degradação territorial na América do Sul,
+resultante da convergência entre de elevada fração argilosa, condutividade hidráulica
+===PAGE 2===
+restritiva e forte sazonalidade pluviométrica, extrema condições que
+favorecem/facilitam/aceleram a evolução de feições erosivas lineares (Cassol et al., 2023;
+Oliveira et al., 2024).
+Essa vulnerabilidade intrínseca assume maior relevância contornos críticos diante de
+projeções que indicam incrementos superiores a 11% na magnitude da erosão hídrica nessas
+latitudes até 2090 (Xiong & Leng, 2024). Nesse cenário, em que solos com de
+permeabilidade subsuperficial limitada/restrita tendem a concentrar parcela desproporcional
+do risco erosivo e da produção de sedimentos, ampliando os impactos
+hidrossedimentológicos em bacias tropicais (Kuhn et al., 2023).
+A formulação de estratégias eficazes diretrizes de controle requer demanda a tipificação
+rigorosa precisa dessas feições; contudo, a diferenciação operacional entre ravinas e
+voçorocas permanece globalmente ambígua (Kumar et al., 2020). A literatura recente
+registra uso sobreposto dessas terminologias nomenclatura para descrever feições
+resultantes ou associadas ao escoamento concentrado (Amare et al., 2019; Frankl et al.,
+2021), evidenciando que critérios topológicos baseados exclusivamente na permanência do
+fluxo e/ou no aprofundamento vertical transcendem as classificações puramente
+morfométricas predominantes (Ganerød et al., 2023; Mohapatra, 2022; Rashmi & Kala,
+2021).
+Nesse contexto, a taxonomia classificação morfológica foi sistematizada camente unificada
+pela Elementary Gully Classification (EGC) (Thwaites et al., 2022), que propõe uma
+estrutura integrada arcabouço que tipifica feições lineares mediante a integração de sua
+posição na vertente, dinâmica de atividade, geometria em planta transversal e na classe de
+profundidade.
+Embora represente a EGC tenha estabelecido um avanço na padronização taxonômica, a
+EGC foi desenvolvida/estabelecida majoritariamente para ambientes temperados e
+semiáridos, sua transposição direta para Plintossolos tropicais enfrenta o viés de Comentado [EG1]: Verificar esses ambientes citados
+homogeneizar feições com severidade processual muito distinta (Poesen, 2018),
+especialmente Essa imprecisão materializa-se quando a classificação enquadra na mesma
+categoria morfológica vertentes cujo destacamento responde a mecanismos hidrodinâmicos Comentado [EG2]: Buscar outro termo
+===PAGE 3===
+divergentes díspares. Como consequência, o enquadramento exclusivamente geométrico
+acaba não captando o gradiente contínuo de intensidade erosiva que governa a evolução
+dessas feições subjacente (Poesen et al., 2003).
+Em unidades pedológicas dominadas por horizontes plínticos coesos, a dinâmica de
+evolução trajetória evolutiva das ravinas é balizada/condicionada por um limiares
+hidrológicos e restrições químicas. Valores de velocidade de infiltração básica
+frequentemente inferior a 2 cm/h promovem rápida geração de escoamento superficial,
+enquanto a elevada saturação por alumínio inviabiliza o aprofundamento/desenvolvimento
+radicular e estabilização estrutural do solo (Ribeiro Filho et al., 2023; Silva Rodrigues et al.,
+2021).
+Em/Sob condições de saturação/umedecimento sazonal, o aumento das pressões
+intersticiais dessas fraturas acelera a instabilidade de taludes por cisalhamento antes que a
+profundidade atinja o critério clássico adotado para voçorocamento, expondo/evidenciando
+uma insuficiência diagnóstica relevante: o enquadramento puramente geométrico oculta a
+severidade hidrodinâmica e edáfica que governa o colapso estrutural (Igwe, 2012; Morgan
+& Rickson, 2020). Esse mascaramento inviabiliza a priorização de intervenções
+conservacionistas, visto que barreiras permeáveis e estruturas de dissipação demandam
+dimensionamento Fundamentado ancorado na taxa de escoamento e na coesão do substrato,
+e não apenas nas dimensões externas da ravina (Castillo et al., 2014; Stokes et al., 2014).
+Até o presente momento, a EGC não foi calibrada para incorporar variáveis como redução
+de infiltração, suscetibilidade química a colapsos e o contraste de precipitação de projeto Comentado [EG3]: Não entendi essa “de projeto”
+como vetores contínuos de severidade em Plintossolos tropicais, restando uma lacuna a ser Comentado [DV4R3]: Retire
+abordada/palavra semelhante a “fechada” integrando entre a geometria morfologia da
+feição e sua energia processual na avaliação do risco erosivo.
+Neste estudo avalia-se se a inclusão analítica da velocidade de infiltração básica, da
+precipitação extrema e da saturação por alumínio permite ampliar a capacidade da EGC em
+discriminar a severidade de feições erosivas em Plintossolo Argilúvico Distrófico nos
+Tabuleiros Costeiros de Sergipe, Brasil. Adicionalmente, o estudo também examina se a
+aplicação de um gradiente contínuo de severidade, estruturado por inferência fuzzy
+===PAGE 4===
+Mamdani, captura transições de instabilidade que a tipificação discreta convencional tende
+a omitir omistir, fornecendo uma base hierárquica verificável mais robusta para o
+planejamento de intervenções de bioengenharia.
+2. Materiais e métodos
+2.1. Caracterização da área de estudo
+O estudo foi conduzido em uma área localizada no povoado Timbó, município de São
+Cristóvão (-10.927923° de latitude; -37.195820° de longitude), a aproximadamente 22,3
+km de Aracaju, capital do estado de Sergipe, na região Nordeste do Brasil. A área está
+inserida na unidade geomorfológica dos tabuleiros costeiros, pertencentes ao Grupo
+Barreiras, que correspondem a cerca de 32% da superfície estadual (Azambuja et al., 2024).
+A localidade climatológica úmida transita para estações concentradas severamente no
+período abril-setembro, sustentando precipitações médias consistentes de 1.400 mm e
+máximos críticos em maio (164,7 mm) sobre perfis restritos de Plintossolo Háplico
+Distrófico e Neossolo Flúvico Psamítico (Duarte et al., 2021; Nascimento & Pedrotti, 2004).
+Concomitantemente, enquanto o relevo amplificado do tabuleiro taboleiro exibe
+homogeneidade moderada em partes alteadas, o local isolado de implantação converge
+declividades elevadamente sinuosas (7% a 24%), arquitetando a convergência imediata do
+escoamento primário linear que potencializa vertentes suscetíveis (Figura 1). Comentado [DV5]: Incluir mapa de localização em mú
+ltiplas escalas (Brasil → Sergipe → Área) com escala grá
+Figura 1 - Foto aérea da área estudada. Map lines delineate the study area and do not fica, norte e coordenadas.]
+necessarily depict accepted national boundaries.
+===PAGE 5===
+2.2. Classificação do solo
+A identificação e classificação do perfil edáfico foi realizada segundo os protocolos do
+Sistema Brasileiro de Classificação de Solos (SiBCS) (Empresa Brasileira de Pesquisa
+Agropecuária, 2018), com base em caracterização morfológica conforme Tomé Júnior
+(Tomé Júnior, 1997). Para geração de base diagnóstica representativa das propriedades do
+Plintossolo junto às feições erosivas, procedeu-se à abertura de uma trincheira com
+dimensões de 1,5 m de profundidade, 1,5 m de comprimento e 1,0 m de largura, localizada
+próximo à Feição 1, permitindo descrição detalhada de cor, textura, estrutura, consistência e
+demais atributos morfológicos de cada horizonte.
+Reconhece-se que a caracterização edáfica baseada em perfil único constitui limitação, pois
+a heterogeneidade lateral ao longo da vertente pode não ser integralmente captada. Contudo,
+o perfil foi posicionado em setor representativo da topossequência e a extrapolação aos
+demais pontos é respaldada pela uniformidade da classe de solo mapeada na área
+(Nascimento & Pedrotti, 2004).
+Amostras de cada horizonte foram coletadas em triplicata e submetidas a análises físicas
+(granulometria pelo método do densímetro de Bouyoucos da pipeta com dispersante NaOH
+1 mol/L, conforme metodologia da Embrapa (Empresa Brasileira de Pesquisa Agropecuária,
+2017) e químicas (pH em água 1:2,5; cátions trocáveis Al³⁺, K⁺, Ca²⁺, Mg²⁺ por extração
+===PAGE 6===
+com KCl 1 mol/L; fósforo disponível por Mehlich-1; carbono orgânico por método de
+Walkley-Black), fundamentando a classificação taxonômica. Os resultados analíticos do Comentado [EG6]: Não lembro dessa analise ter sido
+realizada
+perfil são apresentados na Tabela 1.
+Tabela 1. Atributos químicos e físicos do Plintossolo Argilúvico Distrófico Comentado [EG7]: Achei interessante o fósforo não
+mudar mesmo nas condições desse solo, independente
+de solo de tabuleiro. Além disso, nas camadas mais
+Atributos Ap (0–10 cm) AB (10–25 cm) BAc (25–40 cm) Bt (40–150+ cm)
+profundas, o ph segue e o alumínio aumenta, isso não
+deveria alterar algo?
+pH em água 5,2 4,5 4,6 4,6
+(1:2,5)
+P (Fósforo) – 1,4 1,4 1,4 1,4
+mg/dm3
+K (Potássio) – 82,1 17,0 6,5 5,6
+mg/dm3
+Al (Alumínio) – 0,56 2,9 3,7 5,9
+cmolc/dm3
+T (CTC a pH 7,0) 5,3 4,1 4,4 7,9
+– cmolc/dm3
+m (Saturação por 15,2 89,8 99,2 84,7
+Alumínio) - %
+V (Saturação por 58,4 14,5 9,5 13,6
+Bases) - %
+Areia - % 51,5 43,6 43,5 39,65
+Silte - % 14,9 8,9 7,5 8,9
+Argila - % 33,4 47,4 49,2 51,4
+Textura Franco argilo- Argilosa Argilosa Argilosa
+arenosa
+2.2.1 Caracterização geotécnica
+Para a obtenção dos parâmetros de resistência ao cisalhamento, extraiu-se uma amostra
+indeformada (bloco de solo) do talude exposto adjacente à Feição 1, à profundidade de 1,20
+m, correspondente ao horizonte Bt. O material foi classificado como pedregulho areno-
+===PAGE 7===
+argiloso, vermelho escuro, compatível com a presença de nódulos plínticos ferruginosos
+cimentados na matriz argilosa.
+Os ensaios de cisalhamento direto foram realizados na modalidade rápido, não adensado e
+inundado (ASTM D 6528-17), com quatro corpos de prova (CPs) moldados com dimensões
+aproximadas de 50 mm × 50 mm × 20 mm, sob tensões normais de 20, 40, 80 e 200 kPa e
+velocidade de cisalhamento de 0,5 mm/min (deformação controlada). A inundação prévia
+dos CPs simula a condição crítica de campo em que a saturação por precipitação intensa
+reduz a sucção matricial e a resistência efetiva (Fredlund & Rahardjo, 1993). A massa
+específica dos grãos (𝛾 =2,654 g/cm³) foi determinada pelo método DNER-ME 93-94.
+𝑔
+Os resultados do ensaio de cisalhamento direto, incluindo os parâmetros de envoltória e as
+características individuais dos quatro corpos de prova, são apresentados na Tabela 2.
+Tabela 2. Resultados do ensaio de cisalhamento direto do Plintossolo (horizonte Bt, 1,20
+m), modalidade rápido, não adensado, inundado.
+Parâmetro CP 1 CP 2 CP 3 CP 4
+Tensão normal (𝜎 ), kPa 20,0 40,0 80,0 200,0
+𝑛
+Massa esp. seca inicial (g/cm³) 1,531 1,491 1,294 1,320
+Índice de vazios inicial (𝑒) 0,734 0,780 1,051 1,011
+𝑖
+Grau de saturação inicial (𝑆), % 42,3 36,2 36,2 37,9
+𝑖
+Índice de vazios final (𝑒 ) 0,666 0,620 0,642 0,487
+𝑓
+Grau de saturação final (𝑆), % 118,3 109,9 117,6 138,9
+𝑓
+Resistência de pico (𝜏 ), kPa 22,61 45,70 69,19 152,07
+𝑝
+Nota: Parâmetros de envoltória: coesão (c) = 13,02 kPa, ângulo de atrito interno (ϕ) =
+34,93°, massa específica dos grãos (γ ) = 2,654 g/cm³, peso específico saturado (γ ) =
+g sat
+19,93 kN/m³.
+A envoltória de Mohr-Coulomb obtida (𝜏=13,02+𝜎 ⋅tan34,93°) indica coesão baixa e
+𝑛
+ângulo de atrito moderado a alto. A redução do índice de vazios ao final do cisalhamento
+(Δ𝑒 de −0,07 a −0,52) confirma comportamento contrátil (solo normalmente adensado),
+que sob cisalhamento rápido tende a gerar poropressão positiva e reduzir a tensão efetiva,
+===PAGE 8===
+ampliando a suscetibilidade a rupturas durante eventos de saturação rápida (Caputo &
+Caputo, 2015). A altura crítica de corte vertical sob condição inundada, estimada pela teoria
+de Rankine com fissura de tração preenchida por água, resultou em 𝐻 𝑐 =3,35 m — valor Comentado [EG8]: Ref dessa teoria deve ser
+adicionada??
+próximo ao limiar de 3m da EGC para classificação como voçoroca, o que sugere
+convergência entre o critério morfométrico e a limitação geotécnica do substrato.
+A Velocidade de Infiltração Básica (VIB) foi determinada mediante o método de
+infiltrômetro de anéis concêntricos descrito por Bernardo et al. (2008). Utilizou-se
+equipamento composto por dois anéis de diâmetros 20 cm (interno) e 40 cm (externo), com
+altura de 15 cm, cravados a 5 cm de profundidade no solo para minimizar o fluxo lateral.
+Os anéis foram instalados em três pontos estratificados (terço superior, médio e inferior da
+vertente), com três réplicas por posição (total de nove ensaios).
+A água utilizada foi armazenada em reservatório sombreado para manter a temperatura
+próxima à ambiente (25 ± 2 °C), minimizando o efeito da variação de viscosidade sobre as
+taxas de infiltração. Não foi aplicada correção de capilaridade, o que constitui limitação do
+método em solos com fração argilosa elevada, onde a sucção matricial pode superestimar a
+VIB inicial antes da estabilização.
+Cada ensaio teve duração mínima de 120 minutos, com leituras registradas a intervalos de 5
+minutos nos primeiros 30 min e de 10 minutos até estabilização. O critério de estabilização
+adotado foi a obtenção de três leituras consecutivas sem variação superior a 10% entre si.
+Para fins de síntese, a VIB em cada posição foi estimada como a média das cinco últimas
+leituras da série temporal do ensaio, utilizando a velocidade média expressa em cm/h.
+2.3 Morfologia e caracterização topográfica da ravina
+A aquisição de dados geoespaciais de alta resolução foi conduzida mediante sistema aéreo
+não tripulado (UAV) modelo DJI Phantom 4 PRO (SZ DJI Technology Co., Ltd., Shenzhen,
+China), a altitude de voo de 40 m acima do terreno, gerando ortomosaicos com resolução
+espacial (GSD) de aproximadamente 3 cm por pixel. Dois voos fotogramétricos foram
+planejados com sobreposição longitudinal de 80% e lateral de 60%, abrangendo
+aproximadamente 5 hectares.
+===PAGE 9===
+O processamento fotogramétrico para geração do Modelo Digital de Elevação (MDE) e
+nuvem de pontos (densidade média de 120 pontos/m²) foi realizado no software Agisoft
+Metashape Professional Edition 1.6. Embora a ausência de pontos de controle terrestres
+(GCPs) limite a acurácia posicional absoluta ao GNSS embarcado (XY ≈ 1,5 m, Z ≈ 0,5 m),
+as métricas relativas viabilizaram a avaliação morfométrica detalhada de largura,
+comprimento e profundidade nas seções superior, média e inferior das incisões.
+Consequentemente, seis incisões erosivas foram identificadas e medidas sistematicamente
+na área, suportadas pela geração de ortomosaicos aéreos que se consolidam como técnica
+acurada para reconstrução topográfica e extração geométrica (Raj et al., 2022; Wilkinson et
+al., 2024). Para contextualização da evolução morfológica temporal, conduziu-se
+adicionalmente análise multitemporal de imagens orbitais (2007–2023), rastreando a Comentado [EG9]: Acho que em algum momento essas
+imagens saíram do trabalho, lembro que eram umas 6 fts,
+dinâmica da cobertura vegetal e da exposição edáfica.
+parte em p&b. Devemos adicionar de volta ou não soma?
+Achei interessante visualmente, na época
+2.4 Classificação dos processos erosivos
+A tipificação das incisões erosivas conforme The Elementary Gully Classification (EGC)
+proposta por Thwaites et al. (2022) foi operacionalizada seguindo a sequência decisória
+hierárquica de oito níveis (Figura 2) que considera posicionamento na paisagem, grau de
+atividade, forma em planta, geometria da seção transversal, tipo de cabeça erosiva e classes
+de profundidade.
+Figura 2 - Fluxograma hierárquico da Elementary Gully Classification (EGC) com oito
+níveis de atributos classificatórios, adaptado de Thwaites et al. (2022)
+===PAGE 10===
+O enquadramento decisório da EGC fundamentou-se na integração das medidas
+morfométricas com a interpretação métrica do MDE fotogramétrico, identificando as
+frentes de expansão, a organização espacial das feições e os padrões estruturais de
+conectividade hidrológica. Paralelamente às restrições edáficas inerentes do substrato, o
+regime climático mensal agregado (série 2005–2025) definiu as janelas sazonais de máxima
+propensão pluviométrica, constituindo a justaposição física governante para a intensificação
+do escoamento concentrado e a suscetível perenidade erosiva ao longo da vertente (Duarte
+et al., 2021).
+2.5 Análise exploratória de dados morfométricos
+As variáveis morfométricas (largura, profundidade, comprimento) foram compiladas em
+matriz feição × atributo, a partir da qual se derivaram profundidade máxima, largura média
+e estimativa de volume mobilizável por aproximação geométrica de seção trapezoidal. As
+relações entre variáveis foram avaliadas por correlação de postos de Spearman
+(scipy.stats.spearmanr, SciPy 1.14, Python 3.13), adotando α = 0,05 sem correção para
+===PAGE 11===
+comparações múltiplas dado o caráter exploratório da análise e o tamanho amostral
+reduzido (n ≤ 6) (Zar, 2014).
+Para identificação de agrupamentos morfológicos entre feições, aplicou-se clusterização
+hierárquica aglomerativa pelo método de Ward, com distância euclidiana calculada sobre Comentado [EG10]: É conhecido o suficiente pra não
+referenciar? Vi que é machine learning então não manjo
+variáveis padronizadas por z-score (média = 0, σ = 1), utilizando scipy.cluster.hierarchy.
+muito.
+Todos os resultados estatísticos devem ser interpretados como indicativos de tendência, não
+como evidência confirmatória, em razão do baixo poder estatístico inerente à amostra.
+A VIB, quantificada por posição na vertente, foi utilizada como variável de contexto
+hidrológico para interpretação qualitativa da suscetibilidade erosiva, sem modelagem feição
+a feição, limitação decorrente da ausência de séries completas de infiltração por feição e
+por segmento e de medidas de condutividade hidráulica saturada.
+2.6 Classificação processo-funcional complementar à EGC
+Para superar as limitações da EGC na diferenciação de feições com profundidade inferior a
+3m, porém com dinâmica funcional intensa, propôs-se uma classificação processo-
+funcional em três níveis hierárquicos, operando como camada decisória posterior à
+tipificação morfológica (Figura 7).
+O primeiro nível reproduz o critério de profundidade da EGC (< 0,3 m → sulco; 0,3–3,0 m
+→ ravina; > 3,0 m → voçoroca). O segundo nível identifica o mecanismo dominante
+mediante combinação de VIB, fração argilosa do horizonte B e geometria da cabeça erosiva,
+diferenciando processos de saturação-dominante (VIB < 2 cm/h e argilaB > 45%), incisão-
+dominante (VIB ≥ 2 cm/h e declividade > 12%) e regressão-dominante (cabeça escarpada e
+profundidade > 0,8 m).
+O terceiro nível quantifica a vulnerabilidade funcional por contagem de cinco indicadores
+críticos (VIB < 2 cm/h, argilaB > 45%, saturação por alumínio m > 80%, P95 mensal > 150
+mm e profundidade > 1,0 m com cabeça escarpada). Feições com quatro ou mais
+indicadores são classificadas como de vulnerabilidade crítica, correspondendo a equivalente
+funcional de voçoroca incipiente.
+===PAGE 12===
+Adicionalmente, para tratar o continuum sulco–ravina–voçoroca como gradiente contínuo e
+não como dicotomia (Poesen et al., 2003; Poesen, 2018), implementou-se um sistema de
+inferência fuzzy tipo Mamdani (Mamdani & Assilian, 1975) com cinco variáveis de entrada
+(profundidade, VIB, saturação por alumínio, P95 mensal e declividade) e uma variável de
+saída contínua (índice de severidade, 0–100).
+As funções de pertinência trapezoidais foram calibradas a partir dos limiares empíricos
+deste estudo (Material Suplementar, Figura S1). A variável de saída foi particionada em Comentado [EG11]: ?
+quatro conjuntos fuzzy: sulco [0, 0, 15, 30], ravina estável [15, 30, 45, 55], ravina
+transicional [40, 55, 70, 80] e voçoroca incipiente [65, 80, 100, 100].
+A base de regras compreende 18 regras IF-THEN derivadas do conhecimento de campo e
+da literatura. A defuzzificação foi realizada pelo método do centróide. A implementação Comentado [EG12]: Devemos citar essas tais?
+utilizou a biblioteca scikit-fuzzy 0.5.0 em Python 3.13.
+A coerência interna da classificação foi avaliada por clustering hierárquico (Ward) e k-
+means (k = 2, k = 3) sobre a matriz morfométrica normalizada (profundidade, largura,
+comprimento e declividade) das cinco feições com dados completos, com coeficiente de
+silhouette como critério de qualidade do agrupamento.
+Para consolidação dos resultados em formato operacional, construiu-se um ábaco
+bidimensional mediante redução paramétrica do sistema fuzzy pentavariado a uma
+superfície de severidade em duas dimensões. A redução consiste em fixar três das cinco
+variáveis de entrada nos valores representativos do sítio, de modo que o índice de
+severidade passa a depender exclusivamente da profundidade e da VIB conforme a
+expressão proposta na Equação 1.
+𝑆(𝑑,𝑣)=𝐹 (𝑑, 𝑣 | 𝑚 =99,2%, 𝑃 =181,8 mm, 𝜃=12%) (1)
+Mamdani Al 95
+Onde 𝑑 é a profundidade máxima da feição (m), 𝑣 a velocidade de infiltração básica (cm/h),
+𝑚 a saturação por alumínio do horizonte diagnóstico (%), 𝑃 o percentil 95 da
+Al 95
+precipitação mensal (mm) e 𝜃 a declividade local (%). 𝐹 representa a saída
+Mamdani
+defuzzificada pelo método do centróide do sistema de 18 regras descrito acima, avaliada Comentado [EG13]: As 18 foram descritas, li um pouco
+sobre mamdani mas sou leigo no geral
+===PAGE 13===
+sobre grade regular de 80 × 80 pontos no domínio 𝑑∈[0,01; 3,0] m e 𝑣∈[0,01; 10,0]
+cm/h. As isolinhas 𝑆=30, 𝑆=55 e 𝑆=80 particionam o espaço 𝑑×𝑣 em quatro zonas
+diagnósticas (sulco, ravina estável, ravina transicional e voçoroca incipiente).
+A lógica construtiva do ábaco inspira-se no paradigma de classificação MCT (Miniatura,
+Compactado, Tropical) proposto por Nogami e Villibor (1981, 1995), no qual solos
+tropicais são enquadrados em sete grupos por posição no espaço definido pelo coeficiente
+de deformabilidade 𝑐′ (adimensional, obtido do ensaio Mini-MCV) e pelo índice de
+laterização (Equação 2).
+𝑃 20 (2)
+𝑒′= 𝑖 +
+100 𝑑′
+Onde 𝑃 é a perda de massa por imersão em água (%) e 𝑑′ o coeficiente angular da curva
+𝑖
+Mini-MCV (mm). No ábaco MCT, limites lineares no plano 𝑐′×𝑒′ separam grupos
+lateríticos (LA, LA’, LG’) de não lateríticos (NA, NA’, NS’, NG’), permitindo
+enquadramento expedito sem ensaios complementares. A adaptação proposta preserva a
+estrutura bidimensional de consulta expedita, porém substitui os índices geotécnicos
+intrínsecos (𝑐′, 𝑒′) por variáveis hidrogeomorfológicas mensuráveis em campo (𝑑, 𝑣), e as
+fronteiras lineares entre grupos MCT pelas isolinhas não lineares de severidade fuzzy (𝑆=
+30,55,80), conferindo ao diagrama capacidade de gradação contínua que o ábaco MCT
+original, de natureza discreta, não possui.
+3. Resultados e discussão
+3.1 Inventário morfológico e aplicação da EGC
+A aplicação da chave de classificação EGC (Thwaites et al., 2022) resultou no
+enquadramento diagnóstico de seis incisões erosivas (Tabela 3) como permanentes e ativas,
+sem sinais evidências de estabilização secundária ou revegetação parcial. A taxonomia
+integral foi efetivada nas Feições 1, 4 e 5 por possuírem calhas contínuas com registros
+elucidados caracterização morfológica nos segmentos superior, intermediário e inferior. Por
+===PAGE 14===
+outro lado, nas Feições 2, 3 e 6, de caráter incipiente e de extensão limitada, a
+parametrização de seção transversal e tipo de cabeça esteve restrita apenas ao terço superior.
+O comportamento dessas feições reflete a combinação entre baixa infiltração, elevada
+geração de escoamento superficial e reduzida resistência estrutural do horizonte superficial,
+condições que promovem a elevação da tensão cisalhante do fluxo. Esse processo sustenta a
+incisão progressiva durante eventos pluviométricos de alta magnitude e contribui para a
+persistência das feições erosivas no Plintossolo estudado.
+Contudo, embora os descritores dimensionais situem satisfatoriamente as feições abertura
+erosiva no relevo, a classificação morfológica descreve a geometria sem explicitar os
+mecanismos temporais subjacente dominantes da evolução erosiva (Kumar et al., 2020;
+Poesen, 2018). A persistência das feições em Plintossolos reflete a combinação entre baixa
+infiltração, elevada geração de escoamento superficial e reduzida resistência estrutural do
+horizonte superficial.
+A persistência dessas feições tratativas crônicas em Plintossolos reflete a combinação entre
+indica a atuação de um sistema cujo controle é dado por sugere que há forte
+retroalimentação hidrológica, no qual a baixa capacidade de infiltração entre a restrição
+hidrodinâmica efetiva (VIB de 1,5–1,6 cm/h contida nos terços intermediário e inferior)
+favorece a geração de escoamento superficial concentrado. Comentado [EG14]: Cortei aqui pq a gente explica muito
+sobre isso em 3.2 e 3.3
+Esse processo eleva a tensão cisalhante do fluxo e sustenta a incisão progressiva em
+eventos pluviométricos que excedem esse limiar. a massiva geração de deflúvio
+concentrado em eventos que superem esse baixo limiar e a escassa resistência do epípedon
+limitante ao destacamento (horizonte Ap, 33% de argila).
+Em hiatos pluviométricos secos, a coesão de face estática do bloco aparente dos horizontes
+subsuperficiais pode mascarar provisoriamente a evolução contínua da feição escavação.
+No entanto, sob regime de saturação sazonal (abril–agosto, com recargas frequentes de
+141–165 mm/mês), a franca ascensão o aumento das pressões intersticiais minimiza a
+tensão efetiva do solo lateral, o que acelera desprendimentos no talude e propicia rápido
+alargamento e colapso basal de paredes (Cassol et al., 2023). Acompanhando esse vetor de
+desagregação morfológica da feição célula, a intensidade do processo erosivo ao longo do
+===PAGE 15===
+leito pode ser interpretada pela tensão cisalhante do escoamento, expressa pela severidade
+cisalhante da erosão longitudinal sobre o leito consolidado é aferida analiticamente de
+forma análoga à Equação 3.
+𝜏=𝛾⋅𝑅 ⋅𝑆 (3)
+ℎ
+Onde 𝛾 é o peso específico da água (kN/m³), 𝑅 o raio hidráulico da seção (m) e 𝑆 a
+ℎ
+declividade do leito (m/m). Preconizada para regime permanente e uniforme em canais
+abertos, a aplicação qualitativa da Equação 3 permite identificar os gradientes espaciais em
+que a energia erosiva atinge limiares restritivos. Nas declividades de 8–17% observada nos
+terços intermediários, 𝜏 se amplifica proporcionalmente a ponto de superar a resistência
+basal do horizonte Ap e sustentar incisão vertical ativa (Lafayette et al., 2011; Silva
+Rodrigues et al., 2021).
+Parametricamente, o ensaio de cisalhamento direto inundado (Tabela 2) atestou a coesão do
+horizonte Bt em 𝑐=13,02 kPa e atrito nulo em 𝜙=34,93°, viabilizando a estimativa
+analítica da altura crítica de corte vertical saturado em 𝐻 =3,35 m, segundo a teoria de
+𝑐
+Rankine com fissura de tração preenchida. Apesar dos fatores de segurança elevados, as Comentado [EG15]: É a de 1857 mesmo? Cabe ref?
+feições mais profundas já apresentam sinais de degradação progressiva sob ciclos
+sucessivos de umedecimento e secagem.
+Embora o balanço global apresente estabilidade estática perfeitamente aceitável no
+equilíbrio instantâneo (FOS 2,2–8,4), e a razão de encastramento 𝐻/𝐻 opere com folgas
+𝑐
+variando de 0,12 (F2) a 0,45 (F5), as incisões mais aprofundadas já adentram a faixa
+crônica de degradação progressiva, onde repetidos ciclos de umedecimento-secagem e
+colapsos basais amortizam a coesão temporal e induzem o sistema tridimensional ao limiar
+gravitacional de ruptura (Firoozi & Firoozi, 2024; Vanmaercke et al., 2021). Comentado [EG16]: Achei os termos mt rebuscado pro
+leitor, eu mermo não entendi ... refiz em amarelo acima
+Tabela 3. Síntese tipológica e morfométrica das feições erosivas segundo a EGC
+===PAGE 16===
+F
+ei
+ç Larg. Prof. Forma Tipo
+ã Comp. média máx. Posição na Ativi em Seção de Classe de
+o (m) (m) (m) paisagem dade planta transversal cabeça profundidade
+1 35,0 1,37 1,10 Topo de Ativa Compo Em “U” Vertical/es Moderada
+vale sta/digi carpada mente
+tada profunda
+2 8,0 1,87 0,40 Topo de Ativa Linear Em “V”a Suavea Rasa
+vale
+3 9,0 1,30 0,60 Topo de Ativa Linear Em “V”a Suavea Rasa
+vale
+4 20,2 1,39 1,40 Topo de Ativa Linear Em “V” Vertical Moderada
+vale mente
+profunda
+5 24,8 1,38 1,50 Topo de Ativa Linear Em “V” Vertical/es Profunda
+vale carpada
+6 n.d. 2,37 0,60 Topo de Ativa Linear Em “V”a Suavea Rasa
+vale
+a Classificação parcial: dados disponíveis apenas para segmento superior. n.d. = não
+determinado.
+A atividade erosiva é indicada evidenciada por cabeceiras abruptas, taludes sem ausência
+de cobertura vegetal e evidências de recuo regressivo. na análise multitemporal de 16 anos
+(2007–2023, Figura 3). Nenhuma feição apresenta sinais de estabilização ou revegetação
+parcial.
+Figura 3 - Foto aérea com identificação das feições erosivas (a) e foto de coleta de dados
+morfométricos de uma feição erosiva na área estudada (b)
+===PAGE 17===
+A forma em planta é predominantemente linear nas Feições 2, 3, 4, 5 e 6, padrão
+característico de escoamento concentrado em perfis pedogênicos rasos em vias de
+exumação (Kumar et al., 2020). Em contraste, a Feição 1 exibe conformação dendrítica
+com ramificações laterais, refletindo a combinação de incisão vertical e colapso de margens
+sob forte convergência de fluxo, indicando perda de resistência ao cisalhamento dos taludes
+sob encharcamento contínuo durante a estação chuvosa (abril–agosto) em topos de vale
+argilosos (Dey et al., 2018; Sidorchuk, 2006).
+Essa morfologia em planta é consistente com a seção transversal em “V” (Tabela 3),
+indicando incisão vertical dominada pela tensão cisalhante do escoamento. Nas
+declividades de 8–17% dos terços intermediários, a vazão confinada escava o substrato
+argiloso (49–51% de argila em BAc e Bt; Tabela 1) antes que a desagregação maceração
+lateral rompa a coesão basal, à medida que a incisão aprofunda a cabeceira e desestabiliza
+as margens, a calha evolui para o padrão em “U”, refletindo o estágio de maturação da
+feição (Cassol et al., 2023; Bull & Kirkby, 1997; Kirkby & Bracken, 2009; Vanmaercke et
+al., 2021). Na base dos braços dendríticos da Feição 1, a conformação trapezoidal (“U”)
+evidencia a perda de resistência ao cisalhamento dos taludes sob encharcamento contínuo
+durante a estação chuvosa (abril–agosto). Essa transição de “V” para “U”, no qual a incisão
+do leito induz instabilidade basal e o subsequente colapso das margens (Bull & Kirkby,
+1997; Kirkby & Bracken, 2009). Esse mecanismo corrobora as observações de
+===PAGE 18===
+Podwojewski et al. (2020) em ravinas consolidadas, nas quais o recuo lateral estacional
+resulta de colapsos controlados pela variação do teor de umidade, dinâmica aplicável aos
+Tabuleiros Costeiros (Vanmaercke et al., 2021).
+Esse padrão alinha-se ao modelo de Dey et al. (2018) para domínios lateríticos, no qual o
+alargamento da feição depende criticamente da deterioração da coesão do material saturado,
+e não apenas da tensão cisalhante transversal do escoamento. A instabilidade das paredes é
+governada pelo balanço entre a resistência interna do solo úmido e o alívio de tensão
+gerado pela incisão do leito (Kirkby & Bracken, 2009).
+As feições mais profundas (Feições 1, 4 e 5) apresentam cabeceiras escarpadas quase
+verticais, associadas à formação de poços de dissipação (Plunge Pool). Conforme Flores-
+Cervantes et al. (2006), o recuo dessas fraturas depende do balanço espacial da interação
+entre a escavação basal e o colapso por alívio de tensão gravitacional do talude superior.
+Nas declividades locais (8–17%), a convergência de escoamento sustenta o recuo contínuo
+da cabeceira headcut (Vanmaercke et al., 2021). Rengers e Tucker (2015) reportam que até
+80% do desprendimento volumétrico em ravinas processa-se pelo colapso da face vertical,
+fenômeno consistente com os depósitos sedimentares acumulados na base das Feições 4 e 5.
+Em comparação, as feições rasas (Feições 2, 3 e 6) apresentam perfis longitudinais suaves
+nas cabeceiras, operando em estágio inicial de aprofundamento e ainda sem instabilidade
+maciça dos taludes (Dey et al., 2018). Contudo, a transição destas incisões incipientes para
+frentes escarpadas é acelerada durante a fase chuvosa (maio–agosto), quando a elevada
+recarga precipita o escoamento rápido na bacia de contribuição (VIB de 1,5 cm/h),
+ampliando a energia de chegada dos fluxos sobre o limite superior exposto (Cassol et al.,
+2023).
+Embora a EGC classifique todas as incisões como ravinas puras por restrição de
+profundidade (< 3,0 m), este enquadramento morfológico estático subestima a dinâmica o
+estágio funcional severo do sistema. A combinação de declividades acentuadas (7–24%),
+substrato coeso instável sob umidade acentuada e perda crônica de proteção superficial
+indica alta propensão ao cisalhamento reverso de taludes, projetando o escalonamento
+===PAGE 19===
+progressivo para voçorocamentos se a energia de fundo não for contida (Kumar et al., 2020; Comentado [EG17]: Rebuscado dms pro leitor
+Poesen, 2018).
+3.2 Condicionantes morfométricos, edáficos e hidráulicos
+A progressão da erosão linear reflete-se na variação espacial de profundidade máxima, que
+oscilou de 0,40 m (Feição 2) a 1,50 m (Feição 5), com comprimentos totais entre 8,0 m
+(Feição 2) e 35,0 m (Feição 1), e largura média de 1,30 m (Feição 3) a 2,37 m (Feição 6),
+reflete os diferentes estágios de evolução das feições (Tabela 3). A profundidade máxima O
+aprofundamento mais severo concentra-se nos terços intermediários das incisões mais
+extensas (Feições 1, 4 e 5), posições onde a combinação entre declividade acentuada (8–
+17%) e convergência de fluxo amplifica a tensão cisalhante do escoamento. Em
+contrapartida, as Feições 2, 3 e 6, contidas no segmento superior da rampa, registram
+profundidades menores (0,40–0,60 m), sugerindo estágio incipiente da incisão.
+As relações morfométricas exploratórias corroboram o referencial dinâmico do crescimento
+da ravina (n = 5 feições com comprimento disponível). A correlação de Spearman indicou
+tendência positiva entre profundidade máxima e comprimento (ρ = 0,70, p = 0,188), e
+inversa com a largura média (ρ = −0,667, p = 0,148, n = 6). Apesar da baixa amostragem,
+embora não atinjam significância estatística nominal pelo tamanho amostral, essas as
+tendências reproduzem o padrão evolutivo reportado por Dey et al. (2018), no qual o
+aprofundamento vertical acoplado ao recuo frontal são motores da expansão em dominam
+os estágios preliminares de evolução da feição, antecedendo o alargamento lateral.
+prevalecendo inicialmente sobre o alargamento lateral.
+O desdobramento claro desse controle que a incisão vertical exerce torna-se ainda mais
+evidente quando observamos a correlação entre o hidromecânico consolida-se na variação
+do volume estimado de solo mobilizado (6,4 a 56,1 m³), o qual revelou forte correlação
+positiva com e a profundidade máxima (ρ = 0,90, p = 0,037, n = 5), esse acoplamento
+sinaliza que a incisão vertical opera rigorosamente como amplificador de toda a escala
+tridimensional da feição calha de drenagem. Padrões semelhantes idênticos de controle
+geométrico governando a relação volume-comprimento (V–L) e respondendo
+primariamente pelo afundamento foram mensurados por Kompani-Zare et al. (2011) em
+bacias do Irã, por Frankl et al. (2013) em ravinas africanas e por Sidorchuk (2006), onde
+===PAGE 20===
+observaram que o aprofundamento constitui a principal variável controladora da relação
+volume-comprimento em feições lineares submetidas a escoamento concentrado. em áreas
+controladas pelo escoamento profundo. Martins et al. (2024), ao detalharem a morfologia
+em regiões mediterrâneas, registraram feições com centenas de metros em expansões
+longitudinais sem necessariamente elevar a largura transversal (1–2 m), confirmando que a
+dimensão horizontal obedece estritamente à resistência do limite mecânico do solo. No
+Plintossolo estudado, essa limitação estrutural é particularmente relevante devido à elevada
+coesão inicial dos horizontes argilosos subsuperficiais (BAc e Bt).
+Sob o contexto das restrições neotropicais, os levantamentos confirmam proporções
+operacionais documentadas para os Tabuleiros Costeiros (Cassol et al., 2023; Oliveira et al.,
+2024), limitando o uso abrangente das classificações morfológicas como a EGC, uma vez
+que esta ignora ativamente as frações de profundímetro volumétrico em função das
+respostas climáticas e litológicas. Comentado [EG18]: Acho esse um paragrafo pra corte...
+já é menos algumas palavras pra se enquadrar depois
+Integrado à vulnerabilidade morfológica, o Plintossolo local impõe barreira drástica no
+perfil de solo, composto por restritos horizontes edáficos (Ap, AB, BAc, Bt) adensados em
+curto espaço. Os horizontes subsuperficiais (BAc e Bt) não apenas abrigam severa
+acumulação de argila (49,2% a 51,4%) de fração coeso argilosa (Tabela 1), mas configuram
+um meio ácido (pH 4,5–4,6) regido por alta toxicidade por saturação de alumínio (> 80%) e
+baixa saturação por bases deficiência básica (9,5–13,6%).
+Esse arranjo geoquímico exclui a possibilidade de desenvolvimento radicular e compromete
+a estabilização de cobertura vegetal relva natural contínua, forçando a superfície a sofrer
+diretamente a lâmina hídrica torrencial e a escavação intermitente de seu epípedon.
+Ademais, essas paredes semimulchadas não se limitam estruturalmente ao seco: frente a
+longos recarregos pluviométricos (estação chuvosa), os altos teores argilosos absorvem
+encharcamento acentuado que precipita brutalmente os cisalhamentos internos ao eliminar
+pressões efetivas intergranulares, liberando o colapso estático generalizado das faces e
+recuos agressivos de escarpas (Cassol et al., 2023; Firoozi & Firoozi, 2024). Rapaz, não me
+somou conhecimento esse parágrafo ... já foi explicado umas vezes, mas se for leigo da
+minha parte, perdão, tachei por isso mesmo.
+===PAGE 21===
+Além de condicionar a química vegetal, esses horizontes subsuperficiais argilosos conferem
+coesão no estado seco, mas reduzem drasticamente a condutividade hidráulica sob
+saturação sazonal, favorecendo a perda de resistência ao cisalhamento e a instabilidade dos
+taludes (Shah et al., 2017; Viana et al., 2011). Ao operarem como barreira física,
+concentram o escoamento excedente em rotas preferenciais de dissipação, intensificando o
+recuo das cabeceiras das feições.
+A flora observada no entorno das feições resume-se predominantemente a porte arbustivo-
+arbóreo esparso com folhas coriáceas, refletindo simultaneamente a toxicidade do substrato
+e a baixa recuperação ecofisiológica regional (Cassol et al., 2023; Oliveira et al., 2024).
+O bloqueio na infiltração evidenciou-se pelo acentuado gradiente da Velocidade de
+Infiltração Básica (VIB) ao longo do declive. Ocorreu uma queda de 51% da capacidade
+permeável entre o terço superior (3,13 ± 0,14 cm/h) e o intermediário (1,53 ± 0,14 cm/h),
+estabilizando em 1,59 ± 0,05 cm/h no sopé (Figura 4). Esse declínio abrupto sinaliza a
+transição geomorfológica de um regime infiltração-dominante para escoamento-dominante,
+de forma que chuvas com intensidades superiores a 15 mm/h superam a capacidade de
+infiltração do solo (1,5 cm/h) saturam o terço intermediário em episódios rápidos, gerando
+deflúvio contínuo.
+Na modelagem da série local decadal (2005–2025), foi possível observar que chuvas de
+intensidades superior ao limiar citado maior a 15 mm/h ocorrem frequentemente amiúde
+nos episódios meses mais úmidos de (abril-julho), favorecendo episódios sucessivos de
+saturação superficial e amplificação da conectividade hidrossedimentológica. Tais
+restrições assemelham-se diretamente às limitações de solos da Índia compilados por Patle
+et al. (2019), nos quais faixas moderadas saturadas a menos de 1,4 cm/h reverteram
+bruscamente em vias de avanço canalado erosivo no período ativo.
+Figura 4 - Curvas de infiltração acumulada (a) e velocidade de infiltração (b) por posição
+na vertente, com indicação da VIB estabilizada
+===PAGE 22===
+Na síntese da variância morfodinâmica via Análise de Componentes Principais (PCA), a
+retenção atingiu 94,6% nos eixos primários (PC1 = 64,9%; PC2 = 29,7%). O eixo PC1 isola
+frentes rasas de incisões profundas e consolidadas, confirmando estatisticamente que a
+instabilidade trativa local afunila as vias na frente incisiva prioritária. O modelo espelha as
+medições rigorosas efetuadas em vertentes do planalto de Deng et al. (2015), que atestaram
+comportamentos de aprofundamento acoplador. Simetricamente, o eixo PC2 ordena
+larguras atreladas ao recuo dendrítico.
+Esse isolamento analítico de que a geometria responde primeiro à tração linear inferior,
+seguida de recuo marginal secundário, demonstra a robustez da correspondência entre
+volume de colapso progressivo e estabilidade por fadiga temporal [ρ = 0,90; Bouramtane et
+al. (2022)], referendando o comportamento geomecânico induzido pela topografia das
+bacias de retenção rasas.
+O mapeamento geomorfológico (Figura 5) evidencia feições com padrões lineares e
+digitados associados à convergência do escoamento superficial. A Feição 1 apresenta
+expansão dendrítica vinculada à concentração de fluxo em topo de vale, enquanto as
+Feições 4 e 5 exibem cabeceiras escarpadas e margens instáveis, indicando atuação
+contínua de recuo regressivo e colapso lateral. Esses padrões reproduzem os mecanismos
+de avanço retrocedente descritos por Flores-Cervantes et al. (2006), nos quais a erosão
+basal favorece sucessivos episódios de instabilidade das margens.
+===PAGE 23===
+Geomorfologicamente, o mapeamento ilustra contornos radiais com frentes digitadas
+exumadas (Figura 5), provando o trânsito da concentração de carga fluvial contínua. Na
+Feição 1, a ampliação dendrítica contorna confluências pluviais adjacentes maximizando a
+descarga e intensificando o recuo progressivo da cabeceira. As calhas profundas (Feições 4
+e 5, por sua vez, apresentaram acusam margens de recuo subverticais mantidas vivas sobre
+matrizes colapsadas internas. Tais desprendimentos operam consistentemente na fase
+restritiva do outono, de onde o afrouxamento colapsável atua perante maceração expansiva
+do leque escarpo em “U” (Bull & Kirkby, 1997; Sidorchuk, 2006).
+A arquitetura dessas escavações reproduz fielmente as premissas estipuladas do avanço
+retrocedente da cascata erosiva formalizada por Flores-Cervantes et al. (2006). Nessas
+fraturas primárias, os saltos de impacto lavam lateralmente a subcamada de apoio da
+vertente superior e causam rompimento cíclico das franjas limitantes até encontrar novo
+bloqueio estratigráfico maciço.
+Figura 5 - Feições erosivas com cabeças verticais (a) e digitadas (b)
+Ao convergir espacialmente sobre as feições mais profundas calhas aprofundadas (Feições
+1, 4 e 5), as vias traçadas do MDE ressaltam confluências maciças da microbacia nos
+ângulos entre 8% e 17%. Sustentando VIBs diminutas (1,53 cm/h), precipitações curtas
+===PAGE 24===
+(>15 mm/h) disparam regimes estressantes torrenciais amplificados integralmente nas
+aberturas limitadas do gradiente trativo, perpetuando o corte retrocedente.
+Por conseguinte, as ravinas, postadas obrigatoriamente neste topo de vale vulnerável
+(Tabela 3), ilustram o vetor crônico sem proteção das convergências
+hidrossedimentológicas expostas em inventários extensivos similares nos planaltos
+limitantes (Dey et al., 2018; Thwaites et al., 2022). A drástica transição mineral contendo
+até 51% de argila super-alumínica suprime vegetação nativa contida, entregando os canais
+coesos a desagregação estrutural dilaceração seu escombro. Ao passo que a coesão é
+momentânea na seca invernal estendida, as elevadas pressões neutras retidas no
+umedecimento anual rebaixam bruscamente os limites do cisalhamento efetivo, forçando ao
+colapso final massivo as faces do platô exposto nas correntes fluviais de saída da depressão
+hidrológica dos cordões litorâneos (Cassol et al., 2023; Firoozi & Firoozi, 2024). Comentado [EG19]: Aqui a gente já falou algumas vezes
+lá em cima, por mim é tesoura
+3.3 Regime pluviométrico e controle sazonal da atividade erosiva
+A dinâmica erosiva sazonal observada na área relaciona-se diretamente ao regime
+pluviométrico concentrado e às restrições hidrológicas previamente identificadas no
+Plintossolo estudado. Sob essas condições, a recorrência de chuvas intensas durante o
+período úmido favorece rápida saturação do perfil e amplifica a geração de escoamento
+superficial concentrado.
+A mobilização primária de sedimentos na área atende fisicamente à incapacidade de
+infiltração do perfil sob o rigor do regime pluvial. No Plintossolo limitante estudado, a
+coesão momentânea dos horizontes esfacela-se sob as chuvas recorrentes, fomentando
+massiva conectividade hidrossedimentológica, o que, em declives severos (7–24%),
+intensifica o aprofundamento das incisões e o recuo das cabeceiras erosivas. Esse
+comportamento torna-se particularmente relevante em vertentes submetidas a eventos
+pluviométricos sucessivos, nos quais a saturação antecedente reduz progressivamente a
+capacidade de dissipação hidráulica do perfil.
+Sob essas circunstâncias de baixíssima condutividade, a literatura costuma alertar para a
+ocorrência de fluxos subsuperficiais difusos como piping e sapping capazes de cavar vãos
+subterrâneos e solapar massas isoladas (Dagar, 2018; Dey et al., 2018). Contudo, não
+===PAGE 25===
+ratificamos em campo indícios dessa exfiltração; assim, a corrosão operante nas feições
+concentra-se unicamente pelo rasgo contínuo de lâminas rasas superiores. Vale destacar que
+a taxonomia oficial da EGC não engloba diretamente discriminação explícita de
+mecanismos subterrâneos restritos, reforçando sua limitação operacional (Dagar, 2018).
+A variação estacional interanual apurada para o sítio (2005–2025, n = 7.305 dias) confirma
+que o cenário úmido se concentra em uma janela de outono-inverno. Mensuramos os
+aportes máximos em maio (164,7 mm), abril (145,7 mm) e junho (141,5 mm), contrapostos
+às escassas contribuições de novembro (43,9 mm) e outubro (49,1 mm) (Figura 6).
+Tais registros posicionaram as curvas mensais de perigo P90 e P95 em montantes elevados
+(168,1 mm e 181,8 mm, respectivamente). Esse estrangulamento trimestral (abril-agosto)
+afoga rapidamente o manto superficial e reduz a capacidade responsiva dos terços centrais
+até drásticos 2 cm/h. Submetidas a esse lastro contínuo de saturação, as raízes das calhas
+amplificam o acúmulo de umidade em cota, elevando brutalmente a susceptibilidade de
+colapsamento dos platôs taludiais perante quebras agudas do atrito mecânico (Wang et al.,
+2020).
+O desencadeamento sazonal conecta-se imediatamente às restrições verticais (VIB em 1,5–
+1,6 cm/h), constituindo o motor hidrológico impulsionador do recuo escavado.
+Operacionalmente, a superação da barreira de escoamento atua cada vez que uma chuva
+precipite momentaneamente volumes intensos (cima de 15 mm/h). Essa carga excede o
+balanço estático das Feições 1, 4 e 5, aprisionado o efluente e em declividades até 17%, a
+tensão cisalhante acobertadora amplifica intensamente impetuosamente incisões frontais
+ativas. Esse processo é consistente com os modelos hidromecânicos descritos por Lafayette
+et al. (2011), nos quais a saturação recorrente acelera a evolução de ravinas em materiais
+coesivos submetidos a forte variabilidade sazonal.
+Sob as mesmas angulações geológicas e densidades, Bajirao e Vishnu (2023) relataram
+limites similares (VIB 1,15–1,36 cm/h), o que sugere abertamente que a compactação
+prévia inferior pelas rotas passadas exauriu os patamares da permeabilidade do reverso
+litorâneo local. Esse comportamento apresenta forte similaridade com os padrões
+===PAGE 26===
+observados nos Plintossolos dos Tabuleiros Costeiros de Sergipe, sugerindo que a limitação
+hidráulica constitui um dos principais condicionantes da persistência erosiva regional.
+Tal comportamento consolida-se pela concentração de precipitações superiores a 50 mm no
+período de abril a julho (Figura 6). A ocorrência sucessiva de eventos individuais acima de
+100 mm nesse intervalo sustenta a degradação estrutural contínua por saturação antecedente,
+ao passo que os limiares de P90 e P95 alinham-se sistematicamente aos meses de maio e
+junho, o que demarca essa janela sazonal como o período de maior transferência de energia
+pluvial e de efetivação dos recuos regressivos na bacia amostral.
+Figura 6 - Série de precipitação diária e acumulado móvel de 30 dias para São Cristóvão,
+SE (2005–2025)
+Além do efeito hidrológico direto, a manutenção prolongada da umidade promove
+degradação gradual da resistência mecânica dos horizontes subsuperficiais argilosos. Sob
+saturação contínua, o aumento das pressões neutras reduz o atrito efetivo entre partículas,
+favorecendo a ruptura dos agregados e a instabilidade dos taludes. Esse mecanismo explica
+a recorrência de depósitos sedimentares basais observados nas Feições 4 e 5, indicando
+episódios repetitivos de colapso gravitacional durante os períodos mais úmidos do ano.
+A atuação conjunta entre precipitação extrema, saturação prolongada e baixa
+permeabilidade indica que o regime sazonal exerce papel central na manutenção da
+===PAGE 27===
+atividade erosiva. Nesse sistema, a evolução das ravinas não depende exclusivamente da
+geometria inicial das feições, mas da persistência de condições hidrológicas capazes de
+sustentar o escoamento concentrado e reduzir continuamente a estabilidade estrutural do
+solo. Esse comportamento aproxima-se do modelo conceitual proposto por Wang et al.
+(2020), no qual a saturação antecedente controla a transição entre estabilidade relativa e
+colapso progressivo em ambientes suscetíveis à erosão linear.
+A elevada concentração de precipitação durante a estação chuvosa também amplia a
+conectividade hidrossedimentológica da vertente. À medida que múltiplas linhas de fluxo
+convergem para as ravinas ativas, ocorre aumento da capacidade de transporte de
+sedimentos e intensificação do recuo regressivo das cabeceiras. Esse padrão reforça a
+interpretação de que a dinâmica erosiva observada nos Tabuleiros Costeiros não resulta
+apenas da ação isolada do escoamento superficial, mas da integração entre conectividade
+topográfica, limitação hidráulica e fragilidade estrutural do substrato.
+Portanto, o regime pluviométrico sazonal constitui um dos principais moduladores da
+atividade erosiva nas feições estudadas. A recorrência de chuvas intensas sobre um
+substrato hidraulicamente restritivo mantém o sistema próximo de limiares críticos de
+instabilidade, favorecendo a continuidade do aprofundamento, do recuo regressivo e da
+evolução funcional das ravinas em direção a formas erosivas mais complexas.
+3.4 Extensão processo-funcional da classificação
+A uniformidade morfológica atribuída pela EGC aplicada as seis feições estudadas, onde
+todas foram classificadas como ravinas ativas em topo de vale, não capturou o gradiente de
+severidade processual evidenciado entre incisões com profundidade de 0,40 m e 1,50 m. A
+convergência simultânea de infiltração restrita (VIB de 1,53 cm/h nos terços intermediário
+e inferior), saturação tóxica por alumínio (84–99%) e elevada energia pluvial (P95 de 181,8
+mm) exige a adoção de limiares processo-funcionais (Tabela 4) capazes de quantificar a
+suscetibilidade ao colapso geomorfológico não explicada pela taxonomia exclusivamente
+geométrica.
+Tabela 4. Critérios complementares propostos para classificação de feições erosivas em
+Plintossolos tropicais
+===PAGE 28===
+Baixa
+Indicador Parâmetro vulnerabilidade Moderada Crítica Fundamentação
+Geração de VIB (cm/h) > 6,0 2,0–6,0 < 2,0 Limiar empírico deste
+enxurrada estudo; VIB < 2 cm/h no
+terço intermediário
+coincide com feições de
+maior profundidade
+Impedância Argila no < 35 35–45 > 45 Horizontes BAc e Bt
+hidráulica horizonte B com 49–51% de argila
+(%) operam como barreira
+hidráulica
+Restrição Sat. por Al, m < 50 50–80 > 80 m = 84–99% nos
+vegetacional (%) horizontes
+subsuperficiais é
+consistente com a
+ausência de cobertura
+vegetal observada nas
+feições
+Forçante P95 mensal < 100 100–150 > 150 P95 = 181,8 mm na série
+sazonal (mm) 2005–2025; limiares
+acima de 150 mm
+sustentam saturação
+prolongada
+Evolução Profundidade < 0,5 m, suave 0,5–1,0 m, > 1,0 m, Feições 4 e 5, com 1,4–
+morfológica + cabeça ativa suave/vertical escarpada 1,5 m e cabeças
+escarpadas, operam
+como ravinas
+transicionais
+Instabilidade H/Hc (razão < 0,25 0,25–0,40 > 0,40 Hc = 3,35 m (Rankine,
+geotécnica prof./altura inundado); F4 e F5 com
+crítica) H/Hc = 0,42–0,45
+indicam proximidade ao
+limiar de degradação
+progressiva
+===PAGE 29===
+3.4.1 Resultados da chave determinística processo-funcional
+A integração da profundidade e da contagem de indicadores restritivos definiu a
+vulnerabilidade funcional das feições (Figura 7). A profundidade condiciona o mecanismo
+dominante ao passo que a acumulação de variáveis críticas quantifica a severidade.
+Consequentemente, feições limitadas dimensionalmente a ravinas pela EGC adquirem
+comportamento geotécnico de voçoroca incipiente ao convergirem quatro ou mais
+indicadores restritivos, embasando a priorização do controle.
+Figura 7 - Extensão processo-funcional para classificação de feições erosivas em
+Plintossolos tropicais
+===PAGE 30===
+Nota: Articulação a base morfológica da EGC (sete atributos) com três níveis
+complementares de profundidade, mecanismo dominante e vulnerabilidade funcional
+No Plintossolo Argilúvico Distrófico estudado, a convergência estrita de quatro indicadores
+edafo-climáticos severos categorizou todas as incisões como críticas (Tabela 5). A
+profundidade atrelada à escarpa operou como diferenciador mecanicista, ou seja, o desnível Comentado [EG20]: Foi isso? Carece dessa explicação
+a mais?
+vertical acentuado maximizou o gradiente hidráulico, transformando a energia potencial da
+água em um fluxo de alto poder de atrito, capaz de superar a coesão interna das camadas do
+solo. As Feições 1, 4 e 5 acumularam cinco indicadores sob o espectro duplo de saturação e
+regressão, ao passo que as Feições 2, 3 e 6 estacionaram em quatro condicionantes
+impulsionados pelo encharcamento. Essa divisão funcional contorna a taxonomia estática
+ao atestar que a capacidade preditiva em matrizes coesas saturadas provém da trajetória
+mecânica do colapso e não apenas do somatório de fatores dimensionais.
+O isolamento mecanicista orienta diretamente o dimensionamento preventivo. Feições
+propelidas unicamente por saturação (Feições 2, 3 e 6) demandam o confinamento
+hidrológico do escoamento a montante, como redistribuição do fluxo e aumento da
+infiltração local. Enquanto os sistemas retrocedentes, submetidas a saturação e ao recuo
+progressivo (Feições 1, 4 e 5) exigem adicionalmente a contenção física da cabeceira por
+paliçadas permeáveis e amortecimento do fluxo basal (Lucas-Borja et al., 2021; C. Tang et
+al., 2019). Embora o escalonamento em gradiente do controle linear tenha sido outrora
+conjecturado por Poesen et al. (2003), o enquadramento determinístico reportado consolida
+as tensões físicas reais do terreno em métricas viáveis capazes de suportar o cálculo da
+intervenção biotecnológica (Le Roux et al., 2020).
+Tabela 5. Classificação processo-funcional integrada das feições erosivas (chave
+determinística + inferência fuzzy Mamdani)
+EGC Mecanismo N° Severidade
+Feição Prof. (m) original dominante ind. Vulnerabilidade fuzzy Classe fuzzy
+F1 1,10 Ravina Saturação + 5 Crítica 72,9 Ravina
+mod. Regressão transicional
+profunda
+===PAGE 31===
+EGC Mecanismo N° Severidade
+Feição Prof. (m) original dominante ind. Vulnerabilidade fuzzy Classe fuzzy
+F2 0,40 Ravina Saturação 4 Crítica 52,5 Ravina
+rasa transicional
+F3 0,60 Ravina Saturação 4 Crítica 73,4 Ravina
+rasa transicional
+F4 1,40 Ravina Saturação + 5 Crítica 79,7 Voçoroca
+mod. Regressão incipiente
+profunda
+F5 1,50 Ravina Saturação + 5 Crítica 85,0 Voçoroca
+profunda Regressão incipiente
+F6 0,60 Ravina Saturação 4 Crítica 73,4 Ravina
+rasa transicional
+3.4.2 Classificação contínua e validação por agrupamento
+A atribuição associada de graus de pertinência simultâneos explicitou a gradação erosiva
+supostamente omitida pelos compartimentos discretos lineares convencionais (Arabameri et
+al., 2020; Bennett & Wells, 2019). Sustentando índices de pertinência elevados (79,7 e
+85,0), as Feições 4 e 5 alinharam-se na taxonomia como voçorocas incipientes. Esse
+escalonamento demonstra isoladamente as interações limitantes entre restrição
+pedogenética e precipitações extremas mapeadas no espectro paramétrico de Valentin et al.
+(2005).
+A variação de profundidade repercutiu assimetricamente sobre a severidade total calculada.
+Ao passo que a métrica aglomerou estatisticamente as Feições 4 e 5 (distantes apenas 5,3
+pontos contínuos no agregado fuzzy), as correlatas Feições 2 e 3 fragmentaram a
+distribuição distanciadas por margens de 20,9 pontos sobre perfis curtos (0,40 m e 0,60 m,
+respectivamente). O espalhamento algorítmico da leitura indica enfaticamente que a estreita
+camada superficial operante em 0,3–0,6 m concentra fortes disparidades hidromecânicas
+não lineares.
+Ainda no limiar diminuto da Feição 2 (0,40 m de corte), o acoplamento determinou
+participações nos níveis de ravina estável (𝜇=0,25) e concomitantemente em ravina
+transicional (𝜇=0,84). A justaposição constata fisicamente que a impermeabilidade severa
+===PAGE 32===
+geradora do bloqueio de 1,53 cm/h e as chuvas perigosas concentradas (𝑃95=181,8 mm)
+escalonam retrocessões incipientes aos limites instáveis definidos por Poesen (2018). Essa
+constatação anula a segurança esperada apenas pela visão geométrica isolada, requerendo
+balançamento com os vetores funcionais de escoamento (Frankl et al., 2021).
+O dimensionamento preditivo entre as mecânicas operou de maneira estritamente
+complementar, contornando a exclusão redundante identificada em limiares puramente
+discretos combinados no domínio fuzzy (Arabameri et al., 2020; Roy & Saha, 2019). A
+contagem de traços determinou um grau unificado de avanço e vulnerabilidade à base geral.
+Ao agregar o cômputo da fuzzy iterada, as faixas limítrofes entre 52,5 e 85,0 extraíram
+assimetrias profundas da base crítica. A separação consolidativa dividiu corretamente
+restrições dominantes de saturação das progressões conjuntas trativas (saturação e avanço
+regressivo), evidenciando a precisão hierárquica do método.
+O comportamento matemático do processo validou-se internamente perante a clusterização
+de separação aglomerativa (método de Ward), em concordância análoga a avaliações da
+literatura baseadas no perfilhamento morfológico tridimensional (Cheng et al., 2021;
+Ciccolini et al., 2024). O agrupamento segregou o comportamento espacial dividindo
+linearmente os pares de recuo superficial (Feições 2 e 3) e o esgoto denso do volume
+acoplado de exaustão superior (Feições 1, 4 e 5). Consequentemente, o índice avaliativo de
+Silhouette atestou robustez satisfatória em divisão paritária de blocos dualistas (𝑘=2,
+valor 0,434), preterindo particionamento difusos forçados em patamares triplos (𝑘=3,
+valor de queda abrupta para 0,298). A transição natural das respostas atesta
+irrefutavelmente a consonância objetiva entre métodos exatos independentes amarrando o
+modelo inferencial.
+3.4.3 Ábaco de classificação bidimensional
+Para sintetizar a classificação em formato operacional de pronta consulta, parametrizou-se
+um ábaco bidimensional (Figura 8). A profundidade máxima baliza o eixo geométrico ao
+passo que a VIB baliza ortogonalmente a severidade hidráulica. Essa modelagem condensa
+atributos multifatoriais em contornos limitantes práticos, análogo funcionalmente aos
+envelopes mapeados globalmente por Torri e Poesen (2014). As curvas de isovalor iteradas
+===PAGE 33===
+na lógica Mamdani (𝑆=30,55 e 80) agrupam a transição agêntica, suportados pela inércia
+dos agravantes fixados localmente (saturação por alumínio e percentil P95 extremo).
+Figura 8 - Ábaco de classificação processo-funcional de feições erosivas em Plintossolos
+tropicais
+Nota: Contornos de severidade fuzzy Mamdani (S = 30, 55, 80) delimitam quatro zonas
+diagnósticas. As seis feições do inventário são plotadas com seus respectivos índices de
+severidade. Variáveis fixadas: m(Al) = 99,2%, P95 = 181,8 mm/mês, declividade = 12%.
+O estrangulamento da VIB no limite local (1,53 cm/h) forçou todas as seis feições
+amostradas à base crítica do diagrama; nestas condições opressivas, a distância horizontal
+separou rigidamente a evolução geomórfica hierarquizada. Adentrando a barreira
+paramétrica correspondente (𝑆≥80), as Feições 4 e 5 transicionaram isoladamente ao
+enquadramento agudo de voçoroca incipiente. A transição dessas feições ocorreu
+principalmente devido à combinação entre profundidade elevada, cabeceiras escarpadas e
+forte restrição hidráulica. Esse resultado evidencia que, em Plintossolos tropicais, a baixa
+capacidade de infiltração reduz significativamente os limiares geométricos necessários para
+a transição funcional entre ravinas e voçorocas.
+===PAGE 34===
+A não linearidade manifesta nas curvas atesta que a agressividade imposta pela incisão
+atrela-se intimamente ao gargalo condutivo da calha, repetindo mecanicamente a proporção
+matemática consolidada no regime torrencial por Tang et al. (2022). O limite severo
+imposto no patamar de VIB < 2 cm/h propicia que rebaixos estritos de 0,5 m na ravina
+transponham imediatamente as delimitações diagnósticas (de 𝑆<55 para 𝑆>55). Isso
+reflete fisicamente que o somatório de argila superior a 45% e o percentil de 181,8 mm
+neutralizam a inércia do topo da vertente. Em contrapartida, simulações teóricas com VIB
+superiores a 6 cm h⁻¹ deslocaram as curvas diagnósticas para faixas de menor severidade,
+exigindo profundidades significativamente maiores para atingir níveis equivalentes de risco
+erosivo. O deslocamento de faixas assenta empiricamente o postulado balizador de resposta
+condicional validado por Poesen (2018), estabelecendo a relação entre resistores múltiplos
+convergentes e susceptibilidades limiares isoladas na superfície.
+Esse mecanismo intrincado baliza o alerta registrado por Ghosh e Guchhait (2016) e Hayas
+et al. (2017) para complexos de alta concentração argilosa expostos nos trópicos. Sob a
+restrição extrema da saturação por alumínio excedendo 80%, a resistência dissipada de
+cobertura reduz imediatamente as demandas morfométricas mínimas para escalonarem as
+vertentes a episódios crônicos de avanço.
+Em via inversão, as calhas com permeabilidade razoável simuladas (VIB acima de 6 cm/h)
+forçam a atenuação edáfica. Esse alívio requer aberturas escavadas superiores a 2 m de
+profundidade para acusarem índices de preocupação. O deslocamento de faixas assenta
+empiricamente o postulado balizador de resposta condicional validado por Poesen (2018),
+estabelecendo a relação entre resistores múltiplos convergentes e susceptibilidades limiares
+isoladas na superfície.
+A compressão concentrada do grupo das seis células litorâneas rastreadas (Feições de 1 a 6)
+represa explicitamente a restrição imposta pela barreira pedológica do Plintossolo
+Argilúvico. Encarceradas em 1,53 cm/h de reabastecimento superficial, as oscilações
+remanescentes dependem puramente das declividades frontais geradoras do corte inferior
+regressivo. Padrão idêntico sobreveio no modelamento indiano das ravinas de Rarh aferidas
+por Majhi et al. (2021), ratificando a dominância topográfica sobre o alicerce colapsável
+saturado no envelope de chuvas.
+===PAGE 35===
+Simulando-se inversamente uma VIB ampliada teórica de 4 cm/h na localidade de
+ocorrência, todas as feições sofreriam imediato rebaixamento paramétrico de alerta,
+restabelecendo a exigência geométrica superior a 2 m de escavação para reativação
+transicional. A sensibilidade contínua assegura que este ábaco reflete condições
+regionalizadas de um envelope restrito de saturação, ancorando-se no preceito geográfico
+idêntico aos nomogramas restritos testados por Bouaichi e Touaibia (2024) em bacias do
+norte africano. Transcrições de métricas idênticas em pedologias similares demandarão
+forçosa recalibração de limites edáficos e pluviais.
+Sob uso extensivo real no terreno, o arranjo transforma a contagem multifatorial intrincada
+numa interface consultiva binária (profundidade versus permeabilidade) sem qualquer
+computação preliminar no front de trabalho. A simplificação atende incondicionalmente
+aos imperativos operacionais urgentes elencados por Poesen (2018) e Vanmaercke et al.
+(2021). O protocolo exime-se de topografia robusta remota ao transferir a ancoragem para
+variáveis locais (trena e infiltrômetros). A justaposição no plano vetorial emula o
+paradigma do ábaco MCT validado de Nogami e Villibor (1995), trocando métricas
+laborais subsuperficiais herméticas por mensurações hidrogeomorfológicas de campo,
+preceito fundamental exigido empiricamente por Anderson et al. (2021) para rastrear
+processos de ruptura.
+Eventuais inflexões conjunturais atenuadas em Plintossolos submetidos a regimes pluviais
+rasos (𝑃95<100 mm) ou rebaixados da toxicidade de saturação estrutural transladam
+invariavelmente as curvas agressivas ao topo limítrofe inativo exposto neste estudo. Em tais
+ocorrências espaciais, as famílias parametrizadoras dependentes da cobertura e do estresse
+geográfico reproduzem a dependência matricial adaptativa topográfica mapeada
+assertivamente por Torri e Poesen (2014), delineando os ajustes regionais subsequenciais
+imediatos aplicáveis da proposição.
+Portanto, o ábaco processo-funcional representa não apenas uma extensão da EGC, mas
+uma ferramenta integradora capaz de conectar atributos morfológicos, hidráulicos e
+geotécnicos em uma abordagem operacional de avaliação da severidade erosiva em
+Plintossolos tropicais.
+===PAGE 36===
+4. Conclusões
+A classificação morfológica da EGC, aplicada ao Plintossolo Argilúvico dos Tabuleiros
+Costeiros, enquadrou feições com trajetórias evolutivas distintas numa mesma categoria
+taxonômica, confirmando que critérios exclusivamente geométricos tendem a omitir o
+gradiente de severidade processual em solos tropicais com impedância hidráulica
+subsuperficial. A inclusão da velocidade de infiltração básica, da saturação por alumínio e
+da precipitação extrema como variáveis complementares permitiu discriminar dois grupos
+funcionais que a tipologia original não diferenciou, sendo que a redução acentuada da VIB
+ao longo da vertente emergiu como o principal condicionante da transição para regime de
+escoamento-dominante. A inferência fuzzy Mamdani capturou transições contínuas de
+severidade entre ravinas estáveis e voçorocas incipientes, gradação que a classificação
+discreta convencional suprime, e a convergência entre o agrupamento hierárquico
+independente e os escores fuzzy sugere consistência interna da extensão proposta. A
+estimativa da altura crítica de corte vertical sob saturação revelou convergência entre o
+limiar geotécnico e o limiar morfométrico da EGC para voçorocamento, o que indica que
+feições aparentemente estáveis pelo critério de profundidade podem operar próximas ao
+limiar de colapso sob ciclos sazonais de umedecimento. O ábaco bidimensional
+profundidade–infiltração oferece uma ferramenta de campo consultável sem computação,
+embora sua transferência para Plintossolos sob regimes pluviométricos ou níveis de
+toxicidade distintos requeira recalibração dos limiares edáficos e climáticos que governam
+as isolinhas de severidade.
+Declaration of competing interests
+Os autores declaram que não possuem conflitos de interesse financeiros ou pessoais
+conhecidos que possam ter influenciado o trabalho reportado neste artigo.
+Funding
+Esta pesquisa não recebeu financiamento específico de agências de fomento dos setores
+público, comercial ou sem fins lucrativos.
+===PAGE 37===
+CRediT author statement
+Silva. E. G: Conceptualization, Investigation, Data curation, Formal analysis, Writing –
+original draft, Visualization.
+Data availability
+Os dados morfométricos, os resultados de infiltração e as séries climatológicas utilizados
+neste estudo estão disponíveis no repositório do projeto em
+https://doi.org/10.5281/zenodo.19284972.
+Referências
+Amare, S. et al. (2019). Causes and controlling factors of Valley bottom Gullies. Land, 8(9),
+141.
+Anderson, R. L., Rowntree, K. M., & Le Roux, J. J. (2021). An interrogation of research on
+the influence of rainfall on gully erosion. Catena, 206, 105482.
+https://doi.org/10.1016/j.catena.2021.105482
+Arabameri, A., Blaschke, T., Pradhan, B., Pourghasemi, H. R., Tiefenbacher, J. P., & Bui,
+D. T. (2020). Evaluation of recent advanced soft computing techniques for gully erosion
+susceptibility mapping: A comparative study. Sensors, 20(2), 335.
+https://doi.org/10.3390/s20020335
+Azambuja, R. N., Missura, R., & Araújo, H. M. de. (2024). Geomorphology of Sergipe
+State. Em Geomorphology of the Northeast Region of Brazil (p. 223–251). Springer Nature
+Switzerland.
+Bajirao, T. S., & Vishnu, P. (2023). Comparative performance of different infiltration
+models for prediction of infiltration rate under different land-use conditions. Environmental
+Earth Sciences, 82(4), 112.
+Bennett, S. J., & Wells, R. R. (2019). Gully erosion processes, disciplinary fragmentation,
+and technological innovation. Earth Surface Processes and Landforms, 44(1), 46–60.
+https://doi.org/10.1002/esp.4522
+===PAGE 38===
+Bernardo et al. (2008). Referência não localizada no DOCX (metodologia do infiltrômetro
+de anéis concêntricos).
+Bouaichi, A., & Touaibia, B. (2024). Nomograph development for water erosion
+quantification in Wadi Cheliff’s catchment, Algeria. Eurasian Journal of Soil Science,
+13(2), 147–155. https://doi.org/10.18393/ejss.1383236
+Bouramtane, T., Hilal, H., Rezende-Filho, A. T., Bouramtane, K., Barbiero, L., Abraham,
+S., Valles, V., & Kacimi, I. (2022). Mapping Gully Erosion Variability and Susceptibility
+Using Remote Sensing, Multivariate Statistical Analysis, and Machine Learning in South
+Mato Grosso, Brazil. Geosciences, 12(6), 235.
+https://doi.org/10.3390/geosciences12060235
+Bull, L. J., & Kirkby, M. J. (1997). Gully processes and modelling. Progress in Physical
+Geography, 21(3), 354–374. https://doi.org/10.1177/030913339702100302
+Caputo, H. P., & Caputo, A. N. (2015). Mecânica dos Solos e suas Aplicações:
+Fundamentos (7º ed.). LTC.
+Cassol, C. J. et al. (2023). Natural fertility and intrinsic fragility of soils in the Brazilian
+Cerrado. Revista em Agronegócio e Meio Ambiente, 16(2), 1–22.
+Castillo, C., Pérez, R., James, M. R., & Gómez, J. A. (2014). A conceptual model of check
+dam hydraulics for gully control: efficiency, optimal spacing and relation with step-pools.
+Hydrology and Earth System Sciences, 18(4), 1705–1721. https://doi.org/10.5194/hess-18-
+1705-2014
+Cheng, Y., Li, J., Xiong, L., & Tang, G. (2021). Clustering gully profiles for investigating
+the spatial variation in landform formation on the Chinese Loess Plateau. Journal of
+Mountain Science, 18(11), 3064–3079. https://doi.org/10.1007/s11629-021-6862-y
+Ciccolini, U., Bufalini, M., Materazzi, M., & Dramis, F. (2024). Gully erosion development
+in drainage basins: A new morphometric approach. Land, 13(6), 792.
+https://doi.org/10.3390/land13060792
+===PAGE 39===
+Dagar, J. C. (2018). Ravines: formation, extent, classification, evolution and measures of
+prevention and control. Em Ravine lands: greening for livelihood and environmental
+security (p. 19–67). Springer Singapore.
+Deng, Q., Qin, F., Zhang, B., Wang, H., Luo, M., Shu, C., Liu, H., & Liu, G. (2015).
+Characterizing the morphology of gully cross-sections based on PCA: A case of Yuanmou
+Dry-Hot Valley. Geomorphology, 228, 131–144.
+https://doi.org/10.1016/j.geomorph.2014.09.019
+Dey, S. et al. (2018). Gully erosion processes and modeling. Catena.
+Duarte, T., Santos, J., & Castelhano, A. (2021). Precipitação no semiárido. Revista
+Brasileira de Meteorologia.
+Empresa Brasileira de Pesquisa Agropecuária. (2018). Sistema Brasileiro de Classificação
+de Solos.
+Firoozi, A. A., & Firoozi, A. A. (2024). Water erosion processes: Mechanisms, impact, and
+management strategies. Results in Engineering, 24, 103237.
+Flores-Cervantes, J. H., Istanbulluoglu, E., & Bras, R. L. (2006). Development of gullies on
+the landscape: A model of headcut retreat resulting from plunge pool erosion. Journal of
+Geophysical Research: Earth Surface, 111(F4), F04010.
+https://doi.org/10.1029/2004JF000226
+Frankl, A. et al. (2021). Gully prevention and control: Techniques, failures and
+effectiveness. Earth Surface Processes and Landforms, 46(1), 220–238.
+Frankl, A., Poesen, J., Scholiers, N., & Nyssen, J. (2013). Factors controlling the
+morphology and volume (V)–length (L) relations of permanent gullies in the northern
+Ethiopian Highlands. Earth Surface Processes and Landforms, 38(14), 1672–1684.
+https://doi.org/10.1002/esp.3405
+Fredlund, D. G., & Rahardjo, H. (1993). Soil mechanics for unsaturated soils. John Wiley
+& Sons.
+===PAGE 40===
+Ganerød, A. J., Van Boeckel, M., & Solberg, I.-L. (2023). Where are the ravines? A Case
+Study of Gully Landscapes in Norway Using Deep Learning. Authorea Preprints.
+Ghosh, S., & Guchhait, S. K. (2016). Geomorphic threshold estimation for gully erosion in
+the lateritic soil of Birbhum, West Bengal, India. SOIL Discussions.
+https://doi.org/10.5194/soil-2015-85
+Hayas, A., Poesen, J., & Vanwalleghem, T. (2017). Rainfall and vegetation effects on
+temporal variation of topographic thresholds for gully initiation in Mediterranean cropland
+and olive groves. Land Degradation & Development, 28(8), 2540–2552.
+https://doi.org/10.1002/ldr.2805
+Igwe, C. A. (2012). Gully Erosion in Southeastern Nigeria: Role of Soil Properties and
+Environmental Factors. Research on Soil Erosion, 157–171. https://doi.org/10.5772/51020
+Kirkby, M. J., & Bracken, L. J. (2009). Gully processes and gully dynamics. Earth Surface
+Processes and Landforms, 34(14), 1841–1851. https://doi.org/10.1002/esp.1866
+Kompani-Zare, M., Soufi, M., Hamzehzarghani, H., & Dehghani, M. (2011). The effect of
+some watershed, soil characteristics and morphometric factors on the relationship between
+the gully volume and length in Fars Province, Iran. Catena, 88(1), 36–45.
+https://doi.org/10.1016/j.catena.2011.03.013
+Kuhn, C. E. S. et al. (2023). Ravines and gullies, a review about impact valuation. Natural
+Hazards, 117(1), 597–624.
+Kumar et al. (2020). Referência não localizada no DOCX (citação "Kumar et al., 2020").
+Lafayette, K. P. V., Cantalice, J. R. B., & Coutinho, R. Q. (2011). Resistência à erosão em
+ravinas, em latossolo argiloarenoso. Revista Brasileira de Ciência do Solo, 35, 2167–2174.
+Le Roux, J. J. et al. (2020). Gully erosion susceptibility modelling for avoided degradation
+planning. EGU General Assembly 2020. https://doi.org/10.5194/egusphere-egu2020-1471
+Lucas-Borja, M. E. et al. (2021). Erosão em áreas de pastagem no Mediterrâneo. Catena.
+===PAGE 41===
+Majhi, A., Nyssen, J., & Verdoodt, A. (2021). What is the best technique to estimate
+topographic thresholds of gully erosion? Insights from a case study on the permanent
+gullies of Rarh plain, India. Geomorphology, 375, 107547.
+https://doi.org/10.1016/j.geomorph.2020.107547
+Mamdani, E. H., & Assilian, S. (1975). An experiment in linguistic synthesis with a fuzzy
+logic controller. International Journal of Man-Machine Studies, 7(1), 1–13.
+https://doi.org/10.1016/S0020-7373(75)80002-2
+Martins, B. et al. (2024). Avaliação de fatores locais responsáveis pela distribuição de
+ravinas em ambiente Mediterrâneo. Publicações da Associação Portuguesa de
+Geomorfólogos, 12.
+Mohapatra, R. (2022). Application of revised universal soil loss equation model for
+assessment of soil erosion and prioritization of ravine infested sub basins of a semi-arid
+river system in India. Modeling Earth Systems and Environment, 8(4), 4883–4896.
+Morgan, R. P. C., & Rickson, R. J. (2020). Slope Stabilization and Erosion Control: A
+Bioengineering Approach (2nd ed.). E & FN Spon.
+Nascimento, C. F. B., & Pedrotti, A. (2004). Levantamento detalhado dos solos ocorrentes
+no Campus Rural – UFS, Povoado de Timbó, Município de São Cristóvão – porção centro-
+litorânea do estado de Sergipe (p. 28). Universidade Federal de Sergipe.
+Nogami, J. S., & Villibor, D. F. (1981). Uma nova classificação de solos para finalidades
+rodoviárias. Simpósio Brasileiro de Solos Tropicais em Engenharia, 30–41.
+Nogami, J. S., & Villibor, D. F. (1995). Pavimentação de Baixo Custo com Solos
+Lateríticos. Editora Vilibor.
+Oliveira, V. L. C. de et al. (2024). Soil erosion vulnerability in Brazilian semiarid. Revista
+Brasileira de Geomorfologia, 25(2).
+Patle, G. T. et al. (2019). Estimation of infiltration rate from soil properties using regression
+model for cultivated land. Geology, Ecology, and Landscapes, 3(1), 1–13.
+===PAGE 42===
+Podwojewski, P., Janeau, J. L., Grellier, S., Valentin, C., Lorentz, S., & Chaplot, V. (2020).
+Mechanisms of lateral and linear extension of gullies (dongas) in a subhumid grassland of
+South Africa. Earth Surface Processes and Landforms, 45(14), 3202–3215.
+https://doi.org/10.1002/esp.4960
+Poesen, J. (2018). Soil erosion in the Anthropocene: Research needs. Earth Surface
+Processes and Landforms, 43(1), 64–84.
+Poesen, J., Nachtergaele, J., Verstraeten, G., & Valentin, C. (2003). Gully erosion and
+environmental change: importance and research needs. Catena, 50(2–4), 91–133.
+https://doi.org/10.1016/S0341-8162(02)00143-1
+Raj, R. et al. (2022). Towards evaluating gully erosion volume and erosion rates in the
+Chambal badlands, Central India. Land Degradation & Development, 33(9), 1495–1510.
+Rashmi, I., & Kala, S. (2021). Rehabilitation of ravine lands with multipurpose tree
+plantations. Range Management and Agroforestry, 42(1), 22–29.
+Rengers, F. K., & Tucker, G. E. (2015). The evolution of gully headcut morphology: a case
+study using terrestrial laser scanning and hydrological monitoring. Earth Surface Processes
+and Landforms, 40(11), 1549–1568. https://doi.org/10.1002/esp.3721
+Ribeiro Filho, N. M. et al. (2023). Soil erodibility and critical shear stress in tropical soils
+with plinthic horizons. Geoderma Regional, 32, e00611.
+https://doi.org/10.1016/j.geodrs.2023.e00611
+Roy, J., & Saha, S. (2019). GIS-based gully erosion susceptibility evaluation using
+frequency ratio, cosine amplitude and logistic regression ensembled with fuzzy logic in
+Hinglo River Basin, India. Remote Sensing Applications: Society and Environment, 15,
+100232. https://doi.org/10.1016/j.rsase.2019.100232
+Shah, A. N. et al. (2017). Soil compaction effects on soil health and crop productivity: an
+overview. Environmental Science and Pollution Research, 24(11), 10056–10067.
+Sidorchuk, A. (2006). Stages in gully evolution and self‐organized criticality. Earth Surface
+Processes and Landforms, 31(11), 1329–1344.
+===PAGE 43===
+Silva Rodrigues, D. B. et al. (2021). Morphological and hydrological characterization of
+gullies in the Brazilian Cerrado. Catena, 204, 105390.
+https://doi.org/10.1016/j.catena.2021.105390
+Stokes, A., Douglas, G. B., Fourcaud, T., Giadrossich, F., Gillies, C., Hubble, T., Kim, J.
+H., Loades, K. W., Mao, Z., McIvor, I. R., Mickovski, S. B., Mitchell, S., Osman, N.,
+Phillips, C., Poesen, J., Polster, D., Preti, F., Raymond, P., Rey, F., … Walker, L. R. (2014).
+Desirable plant root traits for protecting natural and engineered slopes against landslides.
+Plant and Soil, 377, 1–38. https://doi.org/10.1007/s11104-013-1927-x
+Tang, C. et al. (2019). Physics-Based Simulation of Hydrologic Response and Sediment
+Transport in a Hilly-Gully Catchment with a Check Dam System on the Loess Plateau,
+China. Water, 11(6), 1161. https://doi.org/10.3390/w11061161
+Tang, J., Liu, G., Xie, Y., Dun, X., Wang, D., & Zhang, S. (2022). Effect of topographic
+variations and tillage methods on gully erosion in the black soil region of Northeast China.
+Land Degradation & Development, 33(8), 1229–1240. https://doi.org/10.1002/ldr.4213
+Thwaites, R. N. et al. (2022). What type of gully is that? The need for a classification of
+gullies. Earth Surface Processes and Landforms, 47(1), 109–128.
+Tomé Júnior, J. B. (1997). Manual para interpretação de análise de solo (p. 247).
+Agropecuária.
+Torri, D., & Poesen, J. (2014). A review of topographic threshold conditions for gully head
+development in different environments. Earth-Science Reviews, 130, 73–85.
+https://doi.org/10.1016/j.earscirev.2013.12.006
+Valentin, C., Poesen, J., & Li, Y. (2005). Gully erosion: Impacts, factors and control.
+Catena, 63(2–3), 132–153. https://doi.org/10.1016/j.catena.2005.06.001
+Vanmaercke, M. et al. (2021). Measuring, modelling and managing gully erosion at large
+scales: A state of the art. Earth-Science Reviews, 218, 103637.
+Viana, E. T. et al. (2011). Atributos físicos e carbono orgânico em Latossolo Vermelho sob
+diferentes sistemas de uso e manejo. Revista Brasileira de Ciência do Solo, 35, 2105–2114.
+===PAGE 44===
+Wang, Y. et al. (2020). Soil Hydraulic Properties of Plinthosol in the Middle Yangtze River
+Basin, Southern China. Water, 12(6), 1783.
+Wilkinson, S. N. et al. (2024). Achieving change through gully erosion research. Earth
+Surface Processes and Landforms, 49(1), 49–57.
+Xiong, M., & Leng, G. (2024). Global soil water erosion responses to climate and land use
+changes. Catena, 241, 108043.
+Zar, J. H. (2014). Biostatistical Analysis (5th ed.). Pearson.
